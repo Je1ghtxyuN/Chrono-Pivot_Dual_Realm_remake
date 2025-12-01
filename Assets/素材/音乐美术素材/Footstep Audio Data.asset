@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712888de6e6802549b701f9af5b2a3e6, type: 3}
+  m_Name: Footstep Audio Data
+  m_EditorClassIdentifier: 
+  FootstepAudio:
+  - Tag: snow
+    AudioClips:
+    - {fileID: 8300000, guid: 0c3b51e0dbdf01941b91098e5ce650eb, type: 3}
+    - {fileID: 8300000, guid: fa813b9099324844d9c9b023e0c0593e, type: 3}
+    - {fileID: 8300000, guid: a3acf5bde6d01aa45bf17975ec69c077, type: 3}
+    - {fileID: 8300000, guid: 34bd9f32b2754b94b8838f05bf66782a, type: 3}
+    - {fileID: 8300000, guid: a0ac38acdafe9274ba0d1512585f6b97, type: 3}
+    - {fileID: 8300000, guid: d7c720f3ccd5b8446a7485aecc7ba92f, type: 3}
+    - {fileID: 8300000, guid: f67dbdf0533e2cd49bacb73cdd295030, type: 3}
+    - {fileID: 8300000, guid: 2ccb8a247d35c1444a284f650f763c54, type: 3}
+    - {fileID: 8300000, guid: 07806a81b474f01409ce77ec839c81b3, type: 3}
+    - {fileID: 8300000, guid: bb9f67636a4aa684195d5f0da11dcf3b, type: 3}
+    - {fileID: 8300000, guid: 5dd7f88e7eabf064b91ec22135d44f91, type: 3}
+    - {fileID: 8300000, guid: 971d83e6580295e4fa2e593c8c7201f2, type: 3}
+    Delay: 0.5
+  - Tag: water
+    AudioClips:
+    - {fileID: 8300000, guid: d323f962cb9a771429839fd692c4a1d4, type: 3}
+    - {fileID: 8300000, guid: a72b6bd41569d424f83de5d5857cee91, type: 3}
+    - {fileID: 8300000, guid: 2125ed3ad92f16341b38c9b4ae035400, type: 3}
+    - {fileID: 8300000, guid: d8f710ae26585ec4588ce54c6b0f617a, type: 3}
+    - {fileID: 8300000, guid: d4bf1214a23e4a54da9d8fa45fe95299, type: 3}
+    - {fileID: 8300000, guid: 5513cd6750bb75b44a1d8d633b607d4d, type: 3}
+    - {fileID: 8300000, guid: 368650ba2c2fece408e54ccd8de96336, type: 3}
+    - {fileID: 8300000, guid: e54534ca0eb7b644a91b71f40fa3c3f8, type: 3}
+    Delay: 0.5
+  - Tag: rock
+    AudioClips:
+    - {fileID: 8300000, guid: f374e4bb0a72e1e4998b7c00e375c793, type: 3}
+    - {fileID: 8300000, guid: cfd281a9e64c1264b9f2b42fb9096a9e, type: 3}
+    - {fileID: 8300000, guid: 4bfe0f71ce2f2aa459fe0c0e9640762c, type: 3}
+    - {fileID: 8300000, guid: 03da0528f7ce83849b2b517a14f35226, type: 3}
+    - {fileID: 8300000, guid: 0e3bc1a5cab232541a630796f716956a, type: 3}
+    - {fileID: 8300000, guid: 2e100a08b43f225439751a5649eb08c6, type: 3}
+    - {fileID: 8300000, guid: a2f06c829e62c9d49b6dc43e02376f2b, type: 3}
+    - {fileID: 8300000, guid: 261aaa6d499b36540b86ff9e9ca9d79d, type: 3}
+    - {fileID: 8300000, guid: be00c245d1162564380e0441ab3367ba, type: 3}
+    - {fileID: 8300000, guid: b632dbfd31dbbe1479f67126392d2221, type: 3}
+    - {fileID: 8300000, guid: 77b0958831ad0c449bf6166b83729680, type: 3}
+    - {fileID: 8300000, guid: 083f3c2f1983dd8419a9336eef471567, type: 3}
+    Delay: 0.3
+  - Tag: wood
+    AudioClips:
+    - {fileID: 8300000, guid: a419eb06472c83845b41b59bc20f0197, type: 3}
+    - {fileID: 8300000, guid: af547309758ebf3458c1780053acb9a2, type: 3}
+    - {fileID: 8300000, guid: e410ae1bb9b1a974eb9bc2ace8a9b356, type: 3}
+    - {fileID: 8300000, guid: 1283dd26001023947b06278a33954801, type: 3}
+    - {fileID: 8300000, guid: 6fd3f276155fdd24d9914bb2177e8c64, type: 3}
+    - {fileID: 8300000, guid: 9615af069fa403947bbba84c09060804, type: 3}
+    - {fileID: 8300000, guid: 6f543785bbc25e04294dad22ba39fb50, type: 3}
+    - {fileID: 8300000, guid: 3218a7c2c4f85494eac892859d72332b, type: 3}
+    - {fileID: 8300000, guid: c91822a7c4758a14fb75e6513ea7d9a0, type: 3}
+    - {fileID: 8300000, guid: dd8994018d37d834a9ca298fc0c0c5d8, type: 3}
+    - {fileID: 8300000, guid: c9a64ebe05e584445b20423794d8c2e4, type: 3}
+    - {fileID: 8300000, guid: 7f8db19fe56fe2a459fb4b2d4e8fd382, type: 3}
+    Delay: 0.5

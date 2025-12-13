@@ -1,0 +1,62 @@
+1. 坐标系统使用原则
+
+   子物体制作标准：制作子物体时，以其父物体的(0,0,0)为本地原点进行制作
+
+   模块化装置方向：制作模块化装置时，以装置自身的局部坐标系为参考，而非世界坐标
+
+   模块中心化：无明确主体的模块，使用空物体作为父物体，模块内容应尽量集中在该空物体附近
+
+   脚本编写基准：编写脚本时优先使用相对坐标（局部坐标），避免直接使用世界坐标
+
+   玩家起始位置：整个场景以世界坐标(0,0,0)作为玩家的初始出生点
+
+2. 命名规则总结
+
+   类名：大驼峰，如 PhysicsPuzzleController
+
+   方法名：大驼峰，如 CalculateReflectionAngle()
+
+   公有/序列化变量：小驼峰，如 playerSpeed
+
+   私有变量：小驼峰 + 下划线前缀，如 _currentState
+
+   常量：全大写 + 下划线分隔，如 MAX_PLAYER_COUNT
+
+   拼音使用：允许使用拼音，需加注音，如 Shi2Zi4Puzzle（识字谜题）
+
+3. Inspector友好性
+
+   总之就是下面这样：
+
+   // ✅ 使用Header和Tooltip提高可读性
+   [Header("移动设置")]
+   [Tooltip("玩家基础移动速度，需要调试确定最佳值")]
+   [SerializeField] private float moveSpeed = 5.0f;
+   
+   [Header("跳跃设置")]
+   [SerializeField] private float jumpForce = 8.0f;
+   [SerializeField] private float gravityMultiplier = 2.0f;
+   
+   [Header("VR舒适性设置")]
+   [Range(0.1f, 2.0f)]
+   [SerializeField] private float comfortTurningSpeed = 1.0f;
+   
+   // 需要大量调试的变量可以分组
+   [Header("高级设置 (需要精细调试)")]
+   [SerializeField] private float accelerationRate = 10f;
+   [SerializeField] private float decelerationRate = 15f;
+   [SerializeField] private float airControlFactor = 0.5f;
+
+4.文件规范建议
+   脚本--
+         个人脚本--
+                  as811的脚本
+                  ......
+         已完成  --
+                  管理
+                  物理系统
+                  渲染
+                  特效
+                  VR
+                  AI
+                  ......

@@ -18,6 +18,10 @@ public class LocalBodySurfaceGravity : MonoBehaviour
     [SerializeField] private float influenceRadius = 30f;
     [Tooltip("仅对已被本天体吸附的物体施加引力。")]
     [SerializeField] private bool onlyAffectAttachedBodies = true;
+    [Tooltip("当启用自动吸附时，允许未吸附目标先受到牵引，帮助其进入吸附距离。")]
+    [SerializeField] private bool allowPreAttachAttraction = true;
+    [Tooltip("用于计算表面距离的碰撞体。为空时自动使用当前物体 Collider。")]
+    [SerializeField] private Collider gravitySurfaceCollider;
 
     // ===== 吸附规则 =====
     [Header("吸附规则")]
@@ -33,6 +37,10 @@ public class LocalBodySurfaceGravity : MonoBehaviour
     [SerializeField] private bool reparentOnAttach = true;
     [Tooltip("吸附后的父节点。为空时默认使用当前天体 Transform。")]
     [SerializeField] private Transform attachRoot;
+    [Tooltip("吸附后是否锁定在当前表面锚点，避免在天体运动时乱滑。")]
+    [SerializeField] private bool stabilizeAttachedPosition = true;
+    [Tooltip("吸附后是否清空线速度和角速度，快速消除残余漂移。")]
+    [SerializeField] private bool zeroVelocityOnAttach = true;
 
     // ===== 局部引力参数 =====
     [Header("局部引力参数")]
@@ -63,6 +71,7 @@ public class LocalBodySurfaceGravity : MonoBehaviour
         public Transform originalParent;
         public bool originalUseGravity;
         public int originalLayer;
+        public Vector3 localAnchorPosition;
     }
 
     public int AttachedBodyCount => attachedBodies.Count;
@@ -70,6 +79,11 @@ public class LocalBodySurfaceGravity : MonoBehaviour
     private void Awake()
     {
         selfRigidbody = GetComponent<Rigidbody>();
+
+        if (gravitySurfaceCollider == null)
+        {
+            gravitySurfaceCollider = GetComponent<Collider>();
+        }
 
         if (attachRoot == null)
         {
@@ -120,27 +134,33 @@ public class LocalBodySurfaceGravity : MonoBehaviour
                 continue;
             }
 
-            float distance = Vector3.Distance(transform.position, target.worldCenterOfMass);
+            float surfaceDistance = GetSurfaceDistance(target.worldCenterOfMass);
             bool isAttached = attachedBodies.ContainsKey(target);
 
-            if (autoAttach && !isAttached && distance <= attachDistance)
+            if (autoAttach && !isAttached && surfaceDistance <= attachDistance)
             {
                 AttachBody(target);
                 isAttached = true;
             }
 
-            if (isAttached && distance > detachThreshold)
+            if (isAttached && surfaceDistance > detachThreshold)
             {
                 DetachBody(target);
                 isAttached = false;
             }
 
-            if (onlyAffectAttachedBodies && !isAttached)
+            bool canAffect = isAttached || !onlyAffectAttachedBodies || (autoAttach && allowPreAttachAttraction);
+            if (!canAffect)
             {
                 continue;
             }
 
-            if (!target.isKinematic)
+            if (isAttached && stabilizeAttachedPosition)
+            {
+                StabilizeAttachedBody(target);
+            }
+
+            if (!target.isKinematic && !(isAttached && stabilizeAttachedPosition))
             {
                 Vector3 direction = (transform.position - target.worldCenterOfMass).normalized;
                 target.AddForce(direction * gravityAcceleration, ForceMode.Acceleration);
@@ -178,8 +198,8 @@ public class LocalBodySurfaceGravity : MonoBehaviour
                 continue;
             }
 
-            float distance = Vector3.Distance(transform.position, target.worldCenterOfMass);
-            if (distance <= attachDistance)
+            float surfaceDistance = GetSurfaceDistance(target.worldCenterOfMass);
+            if (surfaceDistance <= attachDistance)
             {
                 AttachBody(target);
             }
@@ -218,7 +238,8 @@ public class LocalBodySurfaceGravity : MonoBehaviour
         {
             originalParent = target.transform.parent,
             originalUseGravity = target.useGravity,
-            originalLayer = target.gameObject.layer
+            originalLayer = target.gameObject.layer,
+            localAnchorPosition = (attachRoot != null ? attachRoot : transform).InverseTransformPoint(target.worldCenterOfMass)
         };
 
         attachedBodies.Add(target, state);
@@ -231,6 +252,12 @@ public class LocalBodySurfaceGravity : MonoBehaviour
         if (disableAttachedUseGravity)
         {
             target.useGravity = false;
+        }
+
+        if (zeroVelocityOnAttach)
+        {
+            target.velocity = Vector3.zero;
+            target.angularVelocity = Vector3.zero;
         }
 
         if (changeLayerOnAttach && attachedLayer >= 0 && attachedLayer <= 31)
@@ -271,9 +298,41 @@ public class LocalBodySurfaceGravity : MonoBehaviour
         target.rotation = Quaternion.Slerp(target.rotation, desired, alignSpeed * Time.fixedDeltaTime);
     }
 
+    private void StabilizeAttachedBody(Rigidbody target)
+    {
+        if (!attachedBodies.TryGetValue(target, out AttachedBodyState state))
+        {
+            return;
+        }
+
+        Transform root = attachRoot != null ? attachRoot : transform;
+        Vector3 anchorWorld = root.TransformPoint(state.localAnchorPosition);
+
+        if (target.isKinematic)
+        {
+            target.transform.position = anchorWorld;
+            return;
+        }
+
+        target.MovePosition(anchorWorld);
+        target.velocity = Vector3.zero;
+        target.angularVelocity = Vector3.zero;
+    }
+
     private void OnDisable()
     {
         DetachAllBodies();
+    }
+
+    private float GetSurfaceDistance(Vector3 worldPoint)
+    {
+        if (gravitySurfaceCollider == null)
+        {
+            return Vector3.Distance(transform.position, worldPoint);
+        }
+
+        Vector3 closestPoint = gravitySurfaceCollider.ClosestPoint(worldPoint);
+        return Vector3.Distance(worldPoint, closestPoint);
     }
 
     private void OnDrawGizmosSelected()

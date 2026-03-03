@@ -1,98 +1,82 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LocalBodySurfaceGravity : MonoBehaviour
 {
-    // 注意：只能作用于球体之间。非球体可以为其制作一个近似的球形碰撞体来实现类似效果。
     // 说明：
-    // 1) 挂载在“非中心天体”上，仅对指定 Layer 的物体施加局部引力。
-    // 2) 可在靠近表面时自动“吸附”物体，吸附后保持其原有刚体类型（不改 Kinematic）。
-    // 3) 通过 LayerMask 与吸附状态联合筛选，实现“只影响吸附在其上的物体”。
+    // 1) 挂在“非中心天体”上，仅影响指定 Layer 的目标。
+    // 2) 目标靠近表面后自动吸附，吸附后可沿表面走动。
+    // 3) 通过径向纠偏实现贴地，切向速度保留，避免“钉死不动”。
 
-    // ===== 目标筛选 =====
     [Header("目标筛选")]
     [Tooltip("可被该天体局部引力影响的层级。")]
     [SerializeField] private LayerMask affectedLayers = ~0;
-    [Tooltip("引力作用半径（以天体中心为球心）。")]
+    [Tooltip("引力检测半径（以天体中心为球心）。")]
     [SerializeField] private float influenceRadius = 30f;
-    [Tooltip("仅对已被本天体吸附的物体施加引力。")]
-    [SerializeField] private bool onlyAffectAttachedBodies = true;
-    [Tooltip("当启用自动吸附时，允许未吸附目标先受到牵引，帮助其进入吸附距离。")]
-    [SerializeField] private bool allowPreAttachAttraction = true;
-    [Tooltip("用于计算表面距离的碰撞体。为空时自动使用当前物体 Collider。")]
+    [Tooltip("用于表面距离与法线计算的碰撞体；为空时默认使用当前物体Collider。")]
     [SerializeField] private Collider gravitySurfaceCollider;
 
-    // ===== 吸附规则 =====
-    [Header("吸附规则")]
-    [Tooltip("是否在接近表面时自动吸附。")]
+    [Header("吸附逻辑")]
+    [Tooltip("是否自动吸附接近表面的目标。")]
     [SerializeField] private bool autoAttach = true;
-    [Tooltip("进入该距离后会被吸附。")]
-    [SerializeField] private float attachDistance = 2.0f;
-    [Tooltip("超过该距离后会自动脱离（建议 >= attachDistance）。")]
-    [SerializeField] private float detachDistance = 4.0f;
-    [Tooltip("吸附后是否关闭物体自身 useGravity。")]
-    [SerializeField] private bool disableAttachedUseGravity = true;
-    [Tooltip("吸附后是否设为该节点的子物体。")]
-    [SerializeField] private bool reparentOnAttach = true;
-    [Tooltip("吸附后的父节点。为空时默认使用当前天体 Transform。")]
-    [SerializeField] private Transform attachRoot;
-    [Tooltip("吸附后是否锁定在当前表面锚点，避免在天体运动时乱滑。")]
-    [SerializeField] private bool stabilizeAttachedPosition = true;
-    [Tooltip("吸附后是否清空线速度和角速度，快速消除残余漂移。")]
-    [SerializeField] private bool zeroVelocityOnAttach = true;
+    [Tooltip("接触判定容差。距离小于等于该值视为碰到天体表面。")]
+    [SerializeField] private float contactEpsilon = 0.02f;
+    [Tooltip("已吸附目标离开表面超过该距离后脱离。")]
+    [SerializeField] private float detachDistance = 0.5f;
+    [Tooltip("仅对已吸附目标施加影响。")]
+    [SerializeField] private bool onlyAffectAttachedBodies = true;
+    [Tooltip("仅影响已吸附目标时，是否允许未吸附目标先被牵引靠近。")]
+    [SerializeField] private bool allowPreAttachAttraction = true;
+    [Tooltip("吸附后是否关闭目标自身的Unity重力。")]
+    [SerializeField] private bool disableUseGravityOnAttach = true;
+    [Tooltip("吸附后是否忽略目标与天体碰撞，减少顶开/抖动。")]
+    [SerializeField] private bool ignoreCollisionWithBody = true;
+    [Tooltip("吸附后与表面的目标间距偏移。0表示尽量贴地。")]
+    [SerializeField] private float surfaceOffset = 0f;
 
-    // ===== 局部引力参数 =====
-    [Header("局部引力参数")]
-    [Tooltip("局部引力加速度（ForceMode.Acceleration）。")]
+    [Header("移动与贴地")]
+    [Tooltip("未吸附目标的牵引加速度（ForceMode.Acceleration）。")]
     [SerializeField] private float gravityAcceleration = 16f;
-    [Tooltip("是否将吸附/受力物体的 up 方向缓慢对齐到表面法线。")]
-    [SerializeField] private bool alignUpToSurface = true;
-    [Tooltip("仅对已吸附物体执行朝向对齐（Y+ 朝外法线）。")]
-    [SerializeField] private bool alignOnlyAttachedBodies = true;
-    [Tooltip("对齐速度。")]
-    [SerializeField] private float alignSpeed = 8f;
+    [Tooltip("吸附后径向纠偏速度，越大越快贴回表面。")]
+    [SerializeField] private float radialSnapSpeed = 18f;
+    [Tooltip("径向速度阻尼。1表示完全移除径向速度，保留切向速度。")]
+    [SerializeField, Range(0f, 1f)] private float radialVelocityDamping = 1f;
+    [Tooltip("吸附后是否将目标Y+对齐到表面外法线。")]
+    [SerializeField] private bool alignUpToNormal = true;
+    [Tooltip("朝向对齐速度。")]
+    [SerializeField] private float alignSpeed = 10f;
 
-    // ===== Layer 管理（可选） =====
-    [Header("Layer 管理（可选）")]
-    [Tooltip("吸附时是否自动切换物体 Layer。")]
-    [SerializeField] private bool changeLayerOnAttach = false;
-    [Tooltip("吸附后切换到的 Layer（-1 表示不切换）。")]
-    [SerializeField] private int attachedLayer = -1;
+    [Header("调试")]
+    [Tooltip("是否在Scene视图绘制目标到表面的调试线。")]
+    [SerializeField] private bool drawDebugRays = true;
+    [Tooltip("是否输出吸附/脱离日志。")]
+    [SerializeField] private bool logAttachEvents = false;
 
     private readonly Collider[] overlapResults = new Collider[256];
     private readonly HashSet<Rigidbody> processedBodies = new HashSet<Rigidbody>();
-    private readonly Dictionary<Rigidbody, AttachedBodyState> attachedBodies = new Dictionary<Rigidbody, AttachedBodyState>();
+    private readonly Dictionary<Rigidbody, AttachState> attachedBodies = new Dictionary<Rigidbody, AttachState>();
+    private readonly Dictionary<Rigidbody, Collider[]> colliderCache = new Dictionary<Rigidbody, Collider[]>();
 
     private Rigidbody selfRigidbody;
+    private Collider[] bodyColliders;
 
-    private struct AttachedBodyState
+    private struct AttachState
     {
-        public Transform originalParent;
+        // 吸附前状态缓存：用于脱离时恢复。
         public bool originalUseGravity;
-        public int originalLayer;
-        public Vector3 localAnchorPosition;
+        public float desiredRadius;
+        public Collider[] targetColliders;
     }
 
-    public int AttachedBodyCount => attachedBodies.Count;
-
+    // 初始化：缓存自身组件并修正参数上下限。
     private void Awake()
     {
         selfRigidbody = GetComponent<Rigidbody>();
+        bodyColliders = GetComponentsInChildren<Collider>(true);
 
         if (gravitySurfaceCollider == null)
         {
             gravitySurfaceCollider = GetComponent<Collider>();
-        }
-
-        if (attachRoot == null)
-        {
-            attachRoot = transform;
-        }
-
-        if (detachDistance < attachDistance)
-        {
-            detachDistance = attachDistance;
         }
     }
 
@@ -108,8 +92,6 @@ public class LocalBodySurfaceGravity : MonoBehaviour
             QueryTriggerInteraction.Ignore
         );
 
-        float detachThreshold = Mathf.Max(detachDistance, attachDistance + 0.01f);
-
         for (int i = 0; i < hitCount; i++)
         {
             Collider hit = overlapResults[i];
@@ -119,31 +101,22 @@ public class LocalBodySurfaceGravity : MonoBehaviour
             }
 
             Rigidbody target = hit.attachedRigidbody;
-            if (target == null)
+            if (target == null || target == selfRigidbody || !processedBodies.Add(target))
             {
                 continue;
             }
 
-            if (target == selfRigidbody)
-            {
-                continue;
-            }
-
-            if (!processedBodies.Add(target))
-            {
-                continue;
-            }
-
-            float surfaceDistance = GetSurfaceDistance(target.worldCenterOfMass);
+            float surfaceDistance = GetSurfaceDistance(target);
             bool isAttached = attachedBodies.ContainsKey(target);
+            bool isTouchingSurface = surfaceDistance <= Mathf.Max(0f, contactEpsilon);
 
-            if (autoAttach && !isAttached && surfaceDistance <= attachDistance)
+            if (autoAttach && !isAttached && isTouchingSurface)
             {
                 AttachBody(target);
                 isAttached = true;
             }
 
-            if (isAttached && surfaceDistance > detachThreshold)
+            if (isAttached && surfaceDistance > detachDistance)
             {
                 DetachBody(target);
                 isAttached = false;
@@ -155,76 +128,23 @@ public class LocalBodySurfaceGravity : MonoBehaviour
                 continue;
             }
 
-            if (isAttached && stabilizeAttachedPosition)
+            Vector3 outwardNormal = GetOutwardNormal(target.worldCenterOfMass);
+
+            if (isAttached)
             {
-                StabilizeAttachedBody(target);
+                StabilizeOnSurface(target, outwardNormal);
+            }
+            else if (!target.isKinematic)
+            {
+                target.AddForce(-outwardNormal * gravityAcceleration, ForceMode.Acceleration);
             }
 
-            if (!target.isKinematic && !(isAttached && stabilizeAttachedPosition))
+            if (drawDebugRays)
             {
-                Vector3 direction = (transform.position - target.worldCenterOfMass).normalized;
-                target.AddForce(direction * gravityAcceleration, ForceMode.Acceleration);
-            }
-
-            if (alignUpToSurface && (!alignOnlyAttachedBodies || isAttached))
-            {
-                AlignBodyUp(target.transform);
-            }
-        }
-    }
-
-    [ContextMenu("吸附范围内目标")]
-    public void AttachBodiesInRange()
-    {
-        int hitCount = Physics.OverlapSphereNonAlloc(
-            transform.position,
-            influenceRadius,
-            overlapResults,
-            affectedLayers,
-            QueryTriggerInteraction.Ignore
-        );
-
-        for (int i = 0; i < hitCount; i++)
-        {
-            Collider hit = overlapResults[i];
-            if (hit == null)
-            {
-                continue;
-            }
-
-            Rigidbody target = hit.attachedRigidbody;
-            if (target == null || target == selfRigidbody)
-            {
-                continue;
-            }
-
-            float surfaceDistance = GetSurfaceDistance(target.worldCenterOfMass);
-            if (surfaceDistance <= attachDistance)
-            {
-                AttachBody(target);
+                Vector3 toSurface = gravitySurfaceCollider != null ? gravitySurfaceCollider.ClosestPoint(target.worldCenterOfMass) : transform.position;
+                Debug.DrawLine(target.worldCenterOfMass, toSurface, isAttached ? Color.green : Color.yellow, Time.fixedDeltaTime, false);
             }
         }
-    }
-
-    [ContextMenu("全部脱离")]
-    public void DetachAllBodies()
-    {
-        List<Rigidbody> snapshot = new List<Rigidbody>(attachedBodies.Keys);
-        for (int i = 0; i < snapshot.Count; i++)
-        {
-            Rigidbody body = snapshot[i];
-            if (body != null)
-            {
-                DetachBody(body);
-            }
-        }
-
-        attachedBodies.Clear();
-    }
-
-    public bool IsBodyAttached(Rigidbody target)
-    {
-        return target != null && attachedBodies.ContainsKey(target);
     }
 
     public void AttachBody(Rigidbody target)
@@ -234,116 +154,213 @@ public class LocalBodySurfaceGravity : MonoBehaviour
             return;
         }
 
-        AttachedBodyState state = new AttachedBodyState
+        Collider[] targetColliders = GetTargetColliders(target);
+        AttachState state = new AttachState
         {
-            originalParent = target.transform.parent,
             originalUseGravity = target.useGravity,
-            originalLayer = target.gameObject.layer,
-            localAnchorPosition = (attachRoot != null ? attachRoot : transform).InverseTransformPoint(target.worldCenterOfMass)
+            desiredRadius = GetSurfaceRadius(target.worldCenterOfMass) + surfaceOffset,
+            targetColliders = targetColliders
         };
 
         attachedBodies.Add(target, state);
 
-        if (reparentOnAttach && attachRoot != null)
-        {
-            target.transform.SetParent(attachRoot, true);
-        }
-
-        if (disableAttachedUseGravity)
+        if (disableUseGravityOnAttach)
         {
             target.useGravity = false;
         }
 
-        if (zeroVelocityOnAttach)
+        if (ignoreCollisionWithBody)
         {
-            target.velocity = Vector3.zero;
-            target.angularVelocity = Vector3.zero;
+            SetIgnoreCollision(state.targetColliders, true);
         }
 
-        if (changeLayerOnAttach && attachedLayer >= 0 && attachedLayer <= 31)
+        if (logAttachEvents)
         {
-            target.gameObject.layer = attachedLayer;
+            Debug.Log($"[LocalBodySurfaceGravity] Attach: {target.name}", this);
         }
     }
 
     public void DetachBody(Rigidbody target)
     {
-        if (target == null)
+        if (target == null || !attachedBodies.TryGetValue(target, out AttachState state))
         {
             return;
         }
 
-        if (!attachedBodies.TryGetValue(target, out AttachedBodyState state))
-        {
-            return;
-        }
-
-        target.transform.SetParent(state.originalParent, true);
         target.useGravity = state.originalUseGravity;
-        target.gameObject.layer = state.originalLayer;
+
+        if (ignoreCollisionWithBody)
+        {
+            SetIgnoreCollision(state.targetColliders, false);
+        }
 
         attachedBodies.Remove(target);
+
+        if (logAttachEvents)
+        {
+            Debug.Log($"[LocalBodySurfaceGravity] Detach: {target.name}", this);
+        }
     }
 
-    private void AlignBodyUp(Transform target)
+    [ContextMenu("全部脱离")]
+    public void DetachAllBodies()
     {
-        Vector3 surfaceUp = (target.position - transform.position).normalized;
-        if (surfaceUp.sqrMagnitude < 0.000001f)
+        List<Rigidbody> snapshot = new List<Rigidbody>(attachedBodies.Keys);
+        for (int i = 0; i < snapshot.Count; i++)
+        {
+            DetachBody(snapshot[i]);
+        }
+    }
+
+    // 吸附后仅清除法线方向速度分量，不做其他位置/朝向修改。
+    private void StabilizeOnSurface(Rigidbody target, Vector3 outwardNormal)
+    {
+        if (!attachedBodies.ContainsKey(target) || target.isKinematic)
         {
             return;
         }
 
-        Quaternion fromTo = Quaternion.FromToRotation(target.up, surfaceUp);
-        Quaternion desired = fromTo * target.rotation;
-        target.rotation = Quaternion.Slerp(target.rotation, desired, alignSpeed * Time.fixedDeltaTime);
+        Vector3 velocity = target.velocity;
+        float normalSpeed = Vector3.Dot(velocity, outwardNormal);
+        target.velocity = velocity - outwardNormal * normalSpeed;
     }
 
-    private void StabilizeAttachedBody(Rigidbody target)
+    // 计算目标刚体到“指定表面碰撞体”的最短距离（按Collider最近点）。
+    private float GetSurfaceDistance(Rigidbody target)
     {
-        if (!attachedBodies.TryGetValue(target, out AttachedBodyState state))
+        if (target == null)
         {
-            return;
+            return float.MaxValue;
         }
 
-        Transform root = attachRoot != null ? attachRoot : transform;
-        Vector3 anchorWorld = root.TransformPoint(state.localAnchorPosition);
-
-        if (target.isKinematic)
+        if (gravitySurfaceCollider == null)
         {
-            target.transform.position = anchorWorld;
-            return;
+            return Vector3.Distance(transform.position, target.worldCenterOfMass);
         }
 
-        target.MovePosition(anchorWorld);
-        target.velocity = Vector3.zero;
-        target.angularVelocity = Vector3.zero;
+        Collider[] targetColliders = GetTargetColliders(target);
+        if (targetColliders == null || targetColliders.Length == 0)
+        {
+            return Vector3.Distance(transform.position, target.worldCenterOfMass);
+        }
+
+        float minDistance = float.MaxValue;
+        for (int i = 0; i < targetColliders.Length; i++)
+        {
+            Collider targetCol = targetColliders[i];
+            if (targetCol == null)
+            {
+                continue;
+            }
+
+            if (targetCol.transform.IsChildOf(transform))
+            {
+                continue;
+            }
+
+            Vector3 pOnSurface = gravitySurfaceCollider.ClosestPoint(targetCol.bounds.center);
+            Vector3 pOnTarget = targetCol.ClosestPoint(pOnSurface);
+            float d = Vector3.Distance(pOnSurface, pOnTarget);
+            if (d < minDistance)
+            {
+                minDistance = d;
+            }
+        }
+
+        if (minDistance == float.MaxValue)
+        {
+            return Vector3.Distance(transform.position, target.worldCenterOfMass);
+        }
+
+        return minDistance;
     }
 
-    private void OnDisable()
-    {
-        DetachAllBodies();
-    }
-
-    private float GetSurfaceDistance(Vector3 worldPoint)
+    // 计算表面点到天体中心半径，用于吸附后目标半径。
+    private float GetSurfaceRadius(Vector3 worldPoint)
     {
         if (gravitySurfaceCollider == null)
         {
             return Vector3.Distance(transform.position, worldPoint);
         }
 
-        Vector3 closestPoint = gravitySurfaceCollider.ClosestPoint(worldPoint);
-        return Vector3.Distance(worldPoint, closestPoint);
+        Vector3 closest = gravitySurfaceCollider.ClosestPoint(worldPoint);
+        return Vector3.Distance(transform.position, closest);
+    }
+
+    // 获取表面外法线（由中心指向表面点）。
+    private Vector3 GetOutwardNormal(Vector3 worldPoint)
+    {
+        if (gravitySurfaceCollider == null)
+        {
+            return (worldPoint - transform.position).normalized;
+        }
+
+        Vector3 closest = gravitySurfaceCollider.ClosestPoint(worldPoint);
+        Vector3 normal = closest - transform.position;
+        if (normal.sqrMagnitude < 0.000001f)
+        {
+            normal = worldPoint - transform.position;
+        }
+
+        return normal.normalized;
+    }
+
+    // 批量设置目标与天体碰撞忽略状态。
+    private void SetIgnoreCollision(Collider[] targetColliders, bool ignore)
+    {
+        if (targetColliders == null || bodyColliders == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < targetColliders.Length; i++)
+        {
+            Collider targetCol = targetColliders[i];
+            if (targetCol == null)
+            {
+                continue;
+            }
+
+            for (int j = 0; j < bodyColliders.Length; j++)
+            {
+                Collider bodyCol = bodyColliders[j];
+                if (bodyCol == null || bodyCol == targetCol)
+                {
+                    continue;
+                }
+
+                Physics.IgnoreCollision(targetCol, bodyCol, ignore);
+            }
+        }
+    }
+
+    // 脚本禁用时恢复所有目标状态，避免残留。
+    private void OnDisable()
+    {
+        DetachAllBodies();
+        colliderCache.Clear();
+    }
+
+    private Collider[] GetTargetColliders(Rigidbody target)
+    {
+        if (target == null)
+        {
+            return null;
+        }
+
+        if (colliderCache.TryGetValue(target, out Collider[] cached) && cached != null)
+        {
+            return cached;
+        }
+
+        Collider[] colliders = target.GetComponentsInChildren<Collider>(true);
+        colliderCache[target] = colliders;
+        return colliders;
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = new Color(0.4f, 1f, 1f, 1f);
         Gizmos.DrawWireSphere(transform.position, influenceRadius);
-
-        Gizmos.color = new Color(1f, 0.7f, 0.2f, 1f);
-        Gizmos.DrawWireSphere(transform.position, attachDistance);
-
-        Gizmos.color = new Color(1f, 0.35f, 0.2f, 1f);
-        Gizmos.DrawWireSphere(transform.position, detachDistance);
     }
 }

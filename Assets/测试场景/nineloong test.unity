@@ -259,6 +259,77 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &384507245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 384507246}
+  - component: {fileID: 384507247}
+  m_Layer: 0
+  m_Name: "\u9762\u677F1"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &384507246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384507245}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1021653896}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &384507247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384507245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21aae480c7338445a4efcea8b4d041f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildOnStart: 1
+  autoCreateEventSystem: 1
+  panelObjectName: PhysicsRuntimePanel
+  panelTitle: "\u7269\u7406\u53C2\u6570\u9762\u677F"
+  panelSize: {x: 700, y: 520}
+  panelLocalPosition: {x: 0, y: 0, z: 0.45}
+  panelLocalEulerAngles: {x: 0, y: 0, z: 0}
+  panelLocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  columnCount: 1
+  defaultItemSize: {x: 300, y: 90}
+  itemSpacing: {x: 12, y: 12}
+  contentPadding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  autoExpandPanelHeight: 0
+  panelColor: {r: 0, g: 0, b: 0, a: 0}
+  itemBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  labelColor: {r: 0, g: 0, b: 0, a: 0}
+  sliderBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  sliderFillColor: {r: 0, g: 0, b: 0, a: 0}
+  sliderHandleColor: {r: 0, g: 0, b: 0, a: 0}
+  warningTextColor: {r: 0, g: 0, b: 0, a: 0}
+  syncUiFromTargetEveryFrame: 0
+  floatDisplayDecimals: 0
+  controls: []
 --- !u!1 &539684933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1192,7 @@ GameObject:
   - component: {fileID: 878928243}
   - component: {fileID: 878928245}
   m_Layer: 0
-  m_Name: "AI\u6D4B\u8BD5\u7528"
+  m_Name: "AI\u8C03\u8BD5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,6 +1428,38 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 878707572}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1021653895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021653896}
+  m_Layer: 0
+  m_Name: "\u7269\u7406\u9762\u677F\u8C03\u8BD5"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1021653896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021653895}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -47.51, y: 0, z: -1109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 384507246}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045837196
 GameObject:
@@ -2218,3 +2321,4 @@ SceneRoots:
   - {fileID: 1049400371}
   - {fileID: 878928244}
   - {fileID: 878707572}
+  - {fileID: 1021653896}

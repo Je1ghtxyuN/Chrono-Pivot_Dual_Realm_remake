@@ -58990,7 +58990,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  randSeed: 12037953
+  randSeed: 287904546
   isDoingTransition: 0
   minimumHeight: 0
 --- !u!114 &1684094502

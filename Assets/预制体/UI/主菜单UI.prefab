@@ -1726,6 +1726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToSwitch: 1
+  menuUI: {fileID: 0}
 --- !u!1 &1593496921865073965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4502,6 +4503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToSwitch: 1
+  menuUI: {fileID: 0}
 --- !u!1 &5636638653987966072
 GameObject:
   m_ObjectHideFlags: 0

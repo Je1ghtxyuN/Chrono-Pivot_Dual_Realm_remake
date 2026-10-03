@@ -1,0 +1,1 @@
+PASS: 15 levels, 45 puzzles, 291 assertions; missing/wrong choices, repeated validation, future stations, misplaced/missing pieces, extra cargo, animation delay, correct solutions, exit locks, browsing lock and reset. Held-item and physical input checked separately in Play Mode.

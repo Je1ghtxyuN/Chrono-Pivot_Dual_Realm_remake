@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88918ffe9e8891469a9b4400c2e2fe3, type: 3}
+  m_Name: Twilight
+  m_EditorClassIdentifier: 
+  zenith: {r: 0.13, g: 0.2, b: 0.39, a: 1}
+  horizon: {r: 0.65, g: 0.6, b: 0.74, a: 1}
+  clouds: {r: 0.66, g: 0.66, b: 0.83, a: 1}
+  cloudCover: 0.18
+  stars: 0.9
+  dialRadius: 9.5
+  dialDistance: 70
+  dialHeight: 26
+  dialSideOffset: 19
+  dialFace: {r: 0.34, g: 0.44, b: 0.6, a: 1}
+  brass: {r: 0.93, g: 0.77, b: 0.43, a: 1}
+  mountainDistance: 62
+  mountainCount: 9
+  plantingCount: 6
+  distantMountain: {r: 0.39, g: 0.46, b: 0.64, a: 1}
+  nearbyMountain: {r: 0.28, g: 0.39, b: 0.53, a: 1}
+  foliage: {r: 0.28, g: 0.57, b: 0.44, a: 1}
+  foliageLight: {r: 0.54, g: 0.75, b: 0.55, a: 1}
+  blossom: {r: 0.96, g: 0.74, b: 0.65, a: 1}
+  stone: {r: 0.72, g: 0.77, b: 0.72, a: 1}
+  ivory: {r: 0.96, g: 0.94, b: 0.84, a: 1}
+  wood: {r: 0.54, g: 0.39, b: 0.24, a: 1}
+  seed: 317
+  fogColor: {r: 0.53, g: 0.59, b: 0.72, a: 1}
+  fogDensity: 0.003

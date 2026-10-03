@@ -1,0 +1,2827 @@
+[
+  {
+    "Path": "Assets\\ReportVR\\Editor\\ReportInteriorDetails.cs",
+    "SourceHash": "D518DF024CEC111B075EBAB49FC4F268DEC45E0261FB48459EBE40F8306D998E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Editor\\ReportInteriorDetails.cs.meta",
+    "SourceHash": "061EC8D5C3740E2C82D67139FA3E93C6D2D31EBA62484B209F9C23F8B556E545",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Editor\\ReportPhotography.cs",
+    "SourceHash": "876B0DE3115C39F91ABB01007FA6E29686D5AE0713C1F47CD6A59986C6640835",
+    "OriginalHash": "5BC104928C2275F3CC7098CE4D30E15168829933BB886AB1DE56B825F2E2715A"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Editor\\ReportSceneDetails.cs",
+    "SourceHash": "AC8322822BD55A4BDF1E7E2AB6E49FC0B174497A459BE8B4BBC993FEE0CFBBB6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Editor\\ReportSceneDetails.cs.meta",
+    "SourceHash": "CA2F452D0F7E4678A57BA8ABBE613C0C0EC52802654E9BBB2560176FD885F7A7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_0_园墙与漏窗.asset",
+    "SourceHash": "4D9B861BFC374CDE371AE52CF2573FBE6A40D91BCF7904874BF445A6326B6452",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_0_园墙与漏窗.asset.meta",
+    "SourceHash": "6EC9A92AE165182026E0666BADE6C8321769316F946E16155484DD8918825181",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_1_休憩花廊.asset",
+    "SourceHash": "C2F02297C892B20968B302680E689450DD1E134A679BC257689CB1025CA0169A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_1_休憩花廊.asset.meta",
+    "SourceHash": "172E512EDB098DB989B72B8801D1D06721CE789C181556A5B244D10FB26B2967",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_2_休憩花廊.asset",
+    "SourceHash": "D084EE74B7B9B66DD8840A6B920F49F07E62802954915558E5667A7CEF219464",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_2_休憩花廊.asset.meta",
+    "SourceHash": "D57C8EECDDE6182F6AE072378380E91227F39BFB898887857F1771A6E19C2217",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_3_层叠竹石花池.asset",
+    "SourceHash": "5E2BCC3CA697A5CE206EC71ED6C833F17CA051967E1BCB11DA7A83A46060663A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_3_层叠竹石花池.asset.meta",
+    "SourceHash": "FA8EAB5CAEC13AFDBC81ED60199C04B9002587BD235E026EF42EE1961007C156",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_4_层叠竹石花池.asset",
+    "SourceHash": "B7DFD6C94047BE500194FC67486FC69858015A1605CD0ABD8812862251426857",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_4_层叠竹石花池.asset.meta",
+    "SourceHash": "CE8FF6C6F91174192B49F0315A0322D8767088DC84A6D105E1B9CE84409111E0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_5_石景与地被.asset",
+    "SourceHash": "BD2E5C7C688856E7A73C3CE19DB1765CC34E92FC164984CB4BEB89B1784CBE79",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_5_石景与地被.asset.meta",
+    "SourceHash": "934FFBEF9E071A9EEA1317D4A729F247860EC3021945F085154A306AFB710636",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_6_石景与地被.asset",
+    "SourceHash": "82610830EF211BFF569A580F2BAA2D10A1772212B62393957599CDD06CCE9FEA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_6_石景与地被.asset.meta",
+    "SourceHash": "2A7A215FB578333CD52525DC32572CE07A880EE9CD2A631E1F7B484B4DD3EF90",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_7_石灯笼.asset",
+    "SourceHash": "D6F8742ABCB9F6DF47A0201B545D6815CAE969A4D56BC82F48BC9D300DF35974",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_7_石灯笼.asset.meta",
+    "SourceHash": "A96182A6A782A6A9B1A188E2689720FA5D70338BF72EC22677BBD1E679E13CAD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_8_石灯笼.asset",
+    "SourceHash": "FB0566B12487B6C3ABAE09744385430EFE88FD67A96A74474E3C55D1F7AF38BF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_AncientGarden_LowPoly_8_石灯笼.asset.meta",
+    "SourceHash": "5693FF78357B8BA0BC81B9F590E0C8B1D243DF1E6B032E77045EC4ADAE5ACE1D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_0_园墙与漏窗.asset",
+    "SourceHash": "7DE1D99AD75211FDA719AC0DC6D641DF1D39CCBC2BA3BCE3567C6CDB4B819AAF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_0_园墙与漏窗.asset.meta",
+    "SourceHash": "A2029D5BA14D716410B434E8F90023068797BDB9A33C9C08FC3B95F2BFC3EBF7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_1_休憩花廊.asset",
+    "SourceHash": "85F2665504BCBE587FC939C9813C862EA7FB5CE52318DACBFFB31FCA65EF8156",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_1_休憩花廊.asset.meta",
+    "SourceHash": "1450C790E90CC341E3DCC50D2DB7B4E246E8F9D354D8FFA8665152DC2D409A96",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_2_休憩花廊.asset",
+    "SourceHash": "44BFE9644060A60EBBF936BDCD32A63C053002F3963BF414DA05161450FCBD35",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_2_休憩花廊.asset.meta",
+    "SourceHash": "A5D3D3D9B9BEC942FE4441457DA292A0B24DC3C2698BEFB43EE9532296E77326",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_3_层叠竹石花池.asset",
+    "SourceHash": "EAEE6B42B1ACBA8D3721DF6D9CD4C360ED6D8A33D6B80D3FCDD0169A31C8B35F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_3_层叠竹石花池.asset.meta",
+    "SourceHash": "6610DCC7BF167E60C5D48034A3717693804A8C571E3D3169EFB29C4304CE3340",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_4_层叠竹石花池.asset",
+    "SourceHash": "FF38D31F35B21362A91227A249D7A7CC815725434656F48F5667666417C6BA23",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_4_层叠竹石花池.asset.meta",
+    "SourceHash": "B5C81F4EE335C5D303DEF0208253452BB3A918FF5AFBD604B4EE36DFED794C9E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_5_石景与地被.asset",
+    "SourceHash": "D37DCBFD590E8D4E27BFF0B0C20C77854BAF26905C7B5F7FF6FA757D87CF334C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_5_石景与地被.asset.meta",
+    "SourceHash": "9188AA1FE3C5EC503A07246BBF7F932EA767F3F714C7AD98A04C7AE447796836",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_6_石景与地被.asset",
+    "SourceHash": "157E424FE1807D0FDAA63D119F423F313EF51AF704F38603FE4FF16D4AC24849",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_6_石景与地被.asset.meta",
+    "SourceHash": "5CB603F5F6DB498DA1D17148D35FEB7B1973F34B5420EDF3E2908ACC685B6E72",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_7_石灯笼.asset",
+    "SourceHash": "62F7FD8A5F84DE1768625F974C2AA79A946B3DCD572601EC4BE2118917149CD9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_7_石灯笼.asset.meta",
+    "SourceHash": "D1179735383FA0A9D809804D14E788D5327F886265B16425A5D9B25940BBABDB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_8_石灯笼.asset",
+    "SourceHash": "D36759FC543A392DC60FD46D09F377CADC5D00D5574AA126CD58521AEC0A3BEA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_01_Introduction_8_石灯笼.asset.meta",
+    "SourceHash": "B11BCD2ECD70ABFEF1A44E44DCFF841CC92C20BC12A6A8875A643FB8617D2CEC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_0_园墙与漏窗.asset",
+    "SourceHash": "E3869CB8A0C05C0C5C4F6402EB29555EA7299D891A5E9858A59F4D9D5EF9B384",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_0_园墙与漏窗.asset.meta",
+    "SourceHash": "7664D82631E66D68E28237B9D37B7CA9D2067CF554D401EE44E5F18F2D7B55BE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_1_休憩花廊.asset",
+    "SourceHash": "595DB25B1E7EF814A7135D102DC9B40C5D62236BD8DA468D7917455AB9FFBB91",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_1_休憩花廊.asset.meta",
+    "SourceHash": "5EB9E93EB23516687510CF1148E9069C29163C6AA465C85FA52D19D93B4A95BD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_2_休憩花廊.asset",
+    "SourceHash": "DCD7BE90EDA8B07F56B8B3D763638C896EC2BA314CB059E2D170D97BB4DD7399",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_2_休憩花廊.asset.meta",
+    "SourceHash": "B84CB9332CC8BFAD03212DBD2F1EC42B69F1DEC2CF785BFDC624953B99E0BB47",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_3_层叠竹石花池.asset",
+    "SourceHash": "B46F75C601973CF8D455A61C293D5650C278CF10E29D8A2F43075A8BA56BE7D2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_3_层叠竹石花池.asset.meta",
+    "SourceHash": "1609017FA93B4AFA9C9EC654C5B80B539306A19873F62778855490E5309E64C7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_4_层叠竹石花池.asset",
+    "SourceHash": "9CB4551FBF7411875F6E9E6D4BE80337FBC4286682E0BCC13D9306CA182B49A2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_4_层叠竹石花池.asset.meta",
+    "SourceHash": "CAAE0F82F8D4AC5E6BC9DF5C435A62728F2C2BF205C672573B3658EDF9FD19DB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_5_石景与地被.asset",
+    "SourceHash": "78C3126CA4C3FE0F18A2E12A1B505D1484D117D36DC9ADC232DA7140E5F4C04E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_5_石景与地被.asset.meta",
+    "SourceHash": "6E15B15211FFE215325843686B15A0CFEAF323A42FFD778B5824164A8E37409A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_6_石景与地被.asset",
+    "SourceHash": "CAED490C0B9DBB2C7AD49A0D382B58E048B65B5487BCA1C0778999B3AECB860C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_6_石景与地被.asset.meta",
+    "SourceHash": "2B001213EDE759F8EDFBC1C9EDA6EF6EC21F6FD35C4DCEBDCC25815ED1E01916",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_7_石灯笼.asset",
+    "SourceHash": "B08510AE74BAB7FA54A05138533E4D99EE216B459FB40A9471B664E482E0AF7A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_7_石灯笼.asset.meta",
+    "SourceHash": "DE1F7702ED40C9C04840F2CEC0D0FB20034ACD651A3288E3CBDB82D199F2C29D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_8_石灯笼.asset",
+    "SourceHash": "670A5B7E6F29538AAA6608C7A0BCCF02D5BA7675F70DCB4BAA499C95CB14B688",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_8_石灯笼.asset.meta",
+    "SourceHash": "92AE9F6ABB000E806E40BFF184A64DBCA84A61593F4123FF8088778E23CB2DFE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_9_水工储物与木桶.asset",
+    "SourceHash": "53BBF9A25053041ED81D55B8D22FAB62EF0A59FD0BD971909417896E67A03BE1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_02_Buoyancy_Canal_9_水工储物与木桶.asset.meta",
+    "SourceHash": "90B0903FD9CC9A55B42742515DE95F3B63AFBA88022067F0E002CDD8335C435A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_0_园墙与漏窗.asset",
+    "SourceHash": "3E1ED5EDA3D3284BB3A07044F31EE8B610706E62F7FFA0E9CC01D501D11956D9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_0_园墙与漏窗.asset.meta",
+    "SourceHash": "DB28786C5406C945411C29F9D05D00A4B3EF1C9560C16F5800CA51FBD26E5B0D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_1_听风廊与铜铃.asset",
+    "SourceHash": "1D6FF9AF84B053AB3E019EB368DFC2DAA27A6CB69523708DEF3FFBA10E9363EF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_1_听风廊与铜铃.asset.meta",
+    "SourceHash": "9734E9C1528B95A8D2AD5E44356E7C74D3A74E1B9F786DA27B04BC2ED2ACEF0C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_2_休憩花廊.asset",
+    "SourceHash": "E123C691E54681477D4281F20801BE0B136D23E3294878BB5EEAB8BC986860C7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_2_休憩花廊.asset.meta",
+    "SourceHash": "E24F1D182D2807DC341D4A06F23F3DDE96A4E565F0866CD036A52F935D611563",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_3_层叠竹石花池.asset",
+    "SourceHash": "D7502636179C24CBD9BB98A35214BC2A36617F16BD5CAF3CA9946F4DBCA24480",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_3_层叠竹石花池.asset.meta",
+    "SourceHash": "EE64A8A3E0EE00CAF42A25F9DCC51C266C6C47F47E7B6F1E365D0C6C67D93212",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_4_层叠竹石花池.asset",
+    "SourceHash": "9B37E9D95F49E0FB8EBC98CA82DA7475832B2D7C3D7785293454008AB47641C2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_4_层叠竹石花池.asset.meta",
+    "SourceHash": "454F41EFD4DFE7C88BB70B708450CF6F852C7B6A0887545BF658F56360FFFE32",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_5_石景与地被.asset",
+    "SourceHash": "35B0E134C0414016962228DCA29431025418F4C60A5777739DC70571D220BDC0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_5_石景与地被.asset.meta",
+    "SourceHash": "711B33823E1124BFC42B13E46D2A0C0624791AC01F67CD27CF49FAA99E6B9E97",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_6_石景与地被.asset",
+    "SourceHash": "99FE5EEFD2D29BD04A37120170D95F7E8C1545FDE598410BFED852674915FD3D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_6_石景与地被.asset.meta",
+    "SourceHash": "CAC2941C5FBF18F8F7B904CA97104A24CE052EB552EB2BA1DEB001C0D3186751",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_7_石灯笼.asset",
+    "SourceHash": "EDEF943B5FA0AC4EE1212D97613DB2F2D2C3C8BDD54E63299A13A6D33692F3FF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_7_石灯笼.asset.meta",
+    "SourceHash": "978AB464B9AD498BC5A202BDA3B5A8D0BD39BA97B3AB015B712C9E022D27745D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_8_石灯笼.asset",
+    "SourceHash": "1134091BAFD5206D596439DB9523591280937A92524201163D48446067919B2E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_03_Acoustic_Resonance_8_石灯笼.asset.meta",
+    "SourceHash": "9A5954859B7E50D0C3C747843173DEF34A55C53F01284A433F967893FB0116FB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_0_园墙与漏窗.asset",
+    "SourceHash": "C8CD179D0BA48218F790D8E30CD914801352F139DEB9C986E66D719E76C3FDC7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_0_园墙与漏窗.asset.meta",
+    "SourceHash": "27117A6049A8D1D7508811ABB094503A3E11F048FF23BAAAE9A77F5AD19AE03A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_1_休憩花廊.asset",
+    "SourceHash": "9EB5555983F139C6A332E01D83D23F6749A9CEF501C93A76B8355418D63360B9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_1_休憩花廊.asset.meta",
+    "SourceHash": "0AA513596CE110DAE7D7CA5A5820D3C9CEECD942B70F6B1B3ADDBD24BB1660F2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_2_休憩花廊.asset",
+    "SourceHash": "549FEA30211939838AE116820666D51A52F338D00AF7339605412CA6382B015F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_2_休憩花廊.asset.meta",
+    "SourceHash": "3703705897A4F1A66A744862BABE822E93F0BA74AC6A5FECD88CCC5EC131B913",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_3_层叠竹石花池.asset",
+    "SourceHash": "C2389270BF09A40F7F3565C6944CDA260F1FDC2799154B83ADF4CECAC2B05178",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_3_层叠竹石花池.asset.meta",
+    "SourceHash": "6B7E28BFAED308BD9C8A99A8AB2F8AB1572FAF821CD5579EB5BE0BD188109171",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_4_层叠竹石花池.asset",
+    "SourceHash": "DC1B84C01E7A1FD39B074DDF0E21B170E470B1B1F7C974959595CBC2B167F382",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_4_层叠竹石花池.asset.meta",
+    "SourceHash": "D1D946E94C6A83DF712CDBAC3CCF6A5E21604C321F9C014B53CB45AC2907C74E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_5_石景与地被.asset",
+    "SourceHash": "E14D29D80EF0DC428D1AB4951E231901EA3F869750CA6AA63674E99D4A79BEA1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_5_石景与地被.asset.meta",
+    "SourceHash": "5821899735E4B660CAC2208DCE45FF8672AD3D3ECB9E5E0902F302A2930A6766",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_6_石景与地被.asset",
+    "SourceHash": "29EA9FA41ABD82955BBD96B129AAFC2606B90C321F6ECABC4570FE485A79BB6B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_6_石景与地被.asset.meta",
+    "SourceHash": "47F47CFA0DE871424112EA2331A54E644DCD08B2B0A8B01BE41421AAAAD1E07F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_7_石灯笼.asset",
+    "SourceHash": "137739038ABC05D7CB0B376E3AE9BCA9051FD49EA15B1D49B1B03A5E9559F505",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_7_石灯笼.asset.meta",
+    "SourceHash": "3C3D1DE54F2DF6F6197EB02E4C7C9B66E981122F1D889F513DAC10F71C32F889",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_8_石灯笼.asset",
+    "SourceHash": "798C9E58F685B10F00C93CF22C28D09B8FAA1D3BFA81A6757A22026681F81C75",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_8_石灯笼.asset.meta",
+    "SourceHash": "5F1F1AC565E04AFED94BB8F570DBD55BB0B465F9B13778EB79F0EB8101939CD7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_9_观星记录亭台.asset",
+    "SourceHash": "E5C3BEDC26396A3E59A028140CDAC63FF92DD4989DD9FA707984268C9B34F0BB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_04_Geomagnetic_Optics_9_观星记录亭台.asset.meta",
+    "SourceHash": "C76608A3922183A9AEB831F511A54B8C4C14E3293F85C4F4DC4BA8989B6B52B2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_0_雪檐休息棚.asset",
+    "SourceHash": "D34B7F65094A391F2DEC53B76BCEF7C27BCC8379542C0DB727E5DE4BE64DF3D5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_0_雪檐休息棚.asset.meta",
+    "SourceHash": "D0DA656FCCF07B7D207B831DA906B3EA46AF13E523429AF30659A0F443A9E21E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_1_雪檐休息棚.asset",
+    "SourceHash": "12AC54C7049FF56526AB1BA31AA9BE9382922E74DD54EF2FDC62A29EC0782F0B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_1_雪檐休息棚.asset.meta",
+    "SourceHash": "4AC84ECF532F5782E3C690A4A4E8F94468BFAF3D895ED8898CC204E6BFFB89E9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_2_营地补给与木柴.asset",
+    "SourceHash": "4494DE390EC23239BC0F1A32110EC97FC9037743B80AA3C757BDDC198CF98C15",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_2_营地补给与木柴.asset.meta",
+    "SourceHash": "FDA8A7D84AA90FC4F7410737267B0CFF275E6E89B2EFC957AEFB5B94DDC512A1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_3_营地补给与木柴.asset",
+    "SourceHash": "91EDBB8D278D35DBD678CCA92E75A70B3AF31028A127F99EA497C588BB9D6BE0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_3_营地补给与木柴.asset.meta",
+    "SourceHash": "95BDC0D19DF397FEADABFB8E906E8066A164A05560E4B97AE9F2CE6964DFA658",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_4_积雪松树花池.asset",
+    "SourceHash": "E272841A0A7D92776DA01F99F535F0ED50F9B9084FC99A26C37B1CCD98E0F464",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_4_积雪松树花池.asset.meta",
+    "SourceHash": "01548158C58312785495B2D97D7FCCA466C6AC77C8D74657DCE8EEC2A0784370",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_5_积雪松树花池.asset",
+    "SourceHash": "FDDA2A1C4BF72F91875B53AC757ADABC244B83C4FE06778D8BB0C642E0375250",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_5_积雪松树花池.asset.meta",
+    "SourceHash": "2861EFCED2BC4A0ED6BBD798ED686F14ABF6265BC3650F271DCF06F005600561",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_6_柔缓积雪边坡.asset",
+    "SourceHash": "C53821FB9BA5DE1A87F66D415D64D58BBA9FE4F9CEE8E88BAB0F0977872A3337",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_6_柔缓积雪边坡.asset.meta",
+    "SourceHash": "1E414100D5E06FCFDE325906B78309924A82E92CECF75A94D44551BE6E1D81DF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_7_柔缓积雪边坡.asset",
+    "SourceHash": "64FB10C89D0FA390748D939B006658FDDA597BB789780296CD4BC16E4CAB89BA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_7_柔缓积雪边坡.asset.meta",
+    "SourceHash": "5B089467CCE813E4F327A280CB94D6039BDC1E195247B32BFFA537A4EE3F2C0C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_8_柔缓积雪边坡.asset",
+    "SourceHash": "3320D7B79E8A222AEC79BB8CD576CAE73E7AD1BB44806BCDD3A47C657D450EC0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_8_柔缓积雪边坡.asset.meta",
+    "SourceHash": "FEBBDCAA14AC30B994FCE3E6D17E09D27AA22D9F28375EA7197D1A22526F67FD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_9_远侧木围栏.asset",
+    "SourceHash": "C4DBEBFEDB7D1E14873FFDC443C7322E576E45939B5BBFBB1F37EC700E0778A5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_08_Snow_Arena_9_远侧木围栏.asset.meta",
+    "SourceHash": "823EAFF58C7FCF642EA55BE5CF59DD90DC47DD4B1F994DC171D2BF42DD8E4A88",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_0_园墙与漏窗.asset",
+    "SourceHash": "D8C04250C478F177B8ADB3B0A642FB7A22F913ED23F27AE1BBB847D069B15266",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_0_园墙与漏窗.asset.meta",
+    "SourceHash": "89078AF64BB552C3DFAF264310F0F52F3CA8E20E5BB6354217E4C72A72AFE378",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_1_休憩花廊.asset",
+    "SourceHash": "A035804E15F8429164D47AB192E45CF491F06AE830F4768066896B23AF04191C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_1_休憩花廊.asset.meta",
+    "SourceHash": "C543AF0292AA1CBDCA6CC5C15CABBAB7A984D3539BE0A4BC604ABA5F980A8774",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_2_休憩花廊.asset",
+    "SourceHash": "A4E43FED7F51B4714375C051DB332B0DB5FE46BBAA1B00F79F357E6EFFCEEAD0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_2_休憩花廊.asset.meta",
+    "SourceHash": "2B37EABE4CC877737ECE9E07A2319BB100EFD60FEF4EBCEA4A14F0D942F6205E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_3_层叠竹石花池.asset",
+    "SourceHash": "2D55C60904F0DBA3CFEC26F2496D6EE52B5CF9182D374979D1EB37F0E61401AC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_3_层叠竹石花池.asset.meta",
+    "SourceHash": "9AC63EB35D4F7511D36C2E1ECC028955C4987EA3ECBF86BD8C17813F4F1D7959",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_4_层叠竹石花池.asset",
+    "SourceHash": "9ABD435D94D7E55D4E83C8E30C944E5CF567958E5B27350EB3BEEF4DD8F83866",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_4_层叠竹石花池.asset.meta",
+    "SourceHash": "1DC8DD5790C5614F47154951B919B5555B94A01214AAF7FF6C408A4495589964",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_5_石景与地被.asset",
+    "SourceHash": "24C43F0D291C19B9333DBD0648EDE8DEAADE0410583282C6FA8588BC92FC9CEC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_5_石景与地被.asset.meta",
+    "SourceHash": "F6E7425E2972641A3701F8B1D5AF514E160CE528668D613C67733E603E7ED6FB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_6_石景与地被.asset",
+    "SourceHash": "7A7AF357EFEB5BB604257FC75129174022DB8F4A6413C0ABD782705D5615FA2A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_6_石景与地被.asset.meta",
+    "SourceHash": "294A46C63A354C6F430B0E85C3637289837047717DF08302302E55B5B1FD4851",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_7_石灯笼.asset",
+    "SourceHash": "91F108FB182D94BA7DD8C4511DBF33AF899A5223EEBB6DFD1EB7AC069B836909",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_7_石灯笼.asset.meta",
+    "SourceHash": "800BA32CB22FC1C54B0C16818A9393491F5FC03FE797834BBAB4850485DC2439",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_8_石灯笼.asset",
+    "SourceHash": "F0AB9DF30D897C70B18F92AD7E206192DC937F8B0DD741818942761B1E32136E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_8_石灯笼.asset.meta",
+    "SourceHash": "07197B48D8D71B3838BFE6CD181DA309047C8881093B516BEB633D09F47E9C23",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_9_水工储物与木桶.asset",
+    "SourceHash": "76410AE44AE526F1C4563534A3A66FD27539BBAD79DD45FFB76A3D686BC586F1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_11_Garden_Canal_Design_9_水工储物与木桶.asset.meta",
+    "SourceHash": "31B3D6EEBA89E7236ACA6D5136AB1975D4F10A4D36A7B7ABBBD85B5F62D4BCD9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_0_园墙与漏窗.asset",
+    "SourceHash": "3641A65FE38222334AB9C1FC1181190C0DD0E3DBC836D559C8C890AB692FA752",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_0_园墙与漏窗.asset.meta",
+    "SourceHash": "099694352EC5AF0F58D93A98A1BE2ED9B2BEC4BCA59C63C566D9A194E0049F8F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_1_休憩花廊.asset",
+    "SourceHash": "BDAF345ADA2281B570524D4CA0B2FAB3F46FAFDB7CAE8B3E4E2A241120B83B99",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_1_休憩花廊.asset.meta",
+    "SourceHash": "DFE59DBD24176FEA14728B21ED4C57EBC1F0FEB3B6C1A30F73EB6FA6A258DB89",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_2_休憩花廊.asset",
+    "SourceHash": "CD624D5CB27ADC6D2FCE889A24F2CA2DFD5FEC7899197957D902C13D14BE3DEB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_2_休憩花廊.asset.meta",
+    "SourceHash": "C89BEBD0C3394C123A92231ECEAC4756742A5E18290B258E95F83AFA85ADD840",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_3_层叠竹石花池.asset",
+    "SourceHash": "90FA864912FABBAC98D2294B688CFB678B6CC13F2F9156C672DC2CD040072E82",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_3_层叠竹石花池.asset.meta",
+    "SourceHash": "5BF01788863E076956A7623ED03B0A231571A7980250D449447521635E54E596",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_4_层叠竹石花池.asset",
+    "SourceHash": "7BDF5D583F99FA89B8463FCF0DEB11CE1BEF94A5401AAB5EDA0CC2BD93A902D8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_4_层叠竹石花池.asset.meta",
+    "SourceHash": "18BF5F73119EB999A16C2743E8AFB9333560DDA5AE3CB673D624728EDCA4EB73",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_5_石景与地被.asset",
+    "SourceHash": "8DFF5BC302308AB33BFEF27060D5737DECA1496E8C5C5A7B1BA4FE3282010062",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_5_石景与地被.asset.meta",
+    "SourceHash": "AD168DF21286663949C4E46B059C4EDCC5F61D2E78AAB0757B2AD7B0406E1C13",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_6_石景与地被.asset",
+    "SourceHash": "A3FD8C0AD3CEC88A86A94136AC273BEBEEB090821017AF70CE8691B3CAEA15FE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_6_石景与地被.asset.meta",
+    "SourceHash": "5D09BCCDC5278C5AF2B7EF5C31A3A0F6F0CD8A6C3C04FA9FC09268FD9E9AD143",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_7_石灯笼.asset",
+    "SourceHash": "878C0AC7E9C5E962E2438DB26E293D9E81F7F6246087EB82C9F2569E69F374B6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_7_石灯笼.asset.meta",
+    "SourceHash": "D888E5A750073D4D9476ADB9831EA1C15C147DDFBEA7AFD901B5F7873F4A7498",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_8_石灯笼.asset",
+    "SourceHash": "43226FA040D491CBD526AFFE033906F070BCDA80AE22C48B7DBBDC2B80301E74",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_8_石灯笼.asset.meta",
+    "SourceHash": "AA0BCD506465A64CA309390C2571235218ACB20870E5E804093217824AD24605",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_9_星象展示与卷册.asset",
+    "SourceHash": "D63280148BF116A898A65090D91AC0CB7C46383DB5B2DE3C37C8F968054F905A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_12_Celestial_Sundial_9_星象展示与卷册.asset.meta",
+    "SourceHash": "6F03ED7187D1F60F1FC4139DA5F6713BA3F97C02850DB3E33DE2A0EFA3D6639D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_0_雪檐休息棚.asset",
+    "SourceHash": "02523FF062214D3A5952AB35C3B7A74312FD3D5C17409E69BBD5C04CED773F6E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_0_雪檐休息棚.asset.meta",
+    "SourceHash": "885E818CF4514F32E125A0B207B2373FC8BABC0DEA86CFDB73222F39F37775EE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_1_雪檐休息棚.asset",
+    "SourceHash": "70C018A574259100631C061B9C6E96F5AD263B24E1C50F9CDFF12C44D006DD23",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_1_雪檐休息棚.asset.meta",
+    "SourceHash": "39D9ED93F63EACC7BEA152D895BE5D676A20510CDC7CE543700D9F1958CC8942",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_2_营地补给与木柴.asset",
+    "SourceHash": "68E17F449C652A58870186E01CEE81AF1DF45268EACAD4AED65A87C9591C5CBF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_2_营地补给与木柴.asset.meta",
+    "SourceHash": "D37128745445B058FE9730E345C3CE0467DCF168152A88852CED5ECBE779E07C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_3_营地补给与木柴.asset",
+    "SourceHash": "B115D3E5D11CA85AAEB9FAB9B5365B958C9368C221C64A3A48A3AD7BA7CA98BD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_3_营地补给与木柴.asset.meta",
+    "SourceHash": "FC38230BE8FB1D50436EBC4B933B255008DE3F01FB271DE68FD7C159DE92B758",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_4_积雪松树花池.asset",
+    "SourceHash": "91F307BD6B1D49FA86201526B9E5F02C354C422ED9E5056CA161A4CF3867A79E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_4_积雪松树花池.asset.meta",
+    "SourceHash": "61F641AB31A3F70F7103CAF8C40BF6FDA1E20FE325B320E6A199C4E604D51290",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_5_积雪松树花池.asset",
+    "SourceHash": "5622D811AEE1B792A7C884E69C182613BDDB2ECCF23C8F2848E4A29CA1D639D2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_5_积雪松树花池.asset.meta",
+    "SourceHash": "9411DC9AA0856D7AFB66A5C716CF6AA505085D60E0220B3724DFAD7206D21DDD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_6_柔缓积雪边坡.asset",
+    "SourceHash": "03DA51D32F305008F8581608E525345373E9A3ED96FB7DA88D91E88F3D45452B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_6_柔缓积雪边坡.asset.meta",
+    "SourceHash": "37170230019C3A53DD40FF66D6275AD9AA95FFE09304026D9977A61C872F408F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_7_柔缓积雪边坡.asset",
+    "SourceHash": "18DB7FE95EFA244945B6048B271B18403DCA61DFCABBC25AEDEA899AC52ACADF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_7_柔缓积雪边坡.asset.meta",
+    "SourceHash": "A23600A0E1178E8B68D5DF6672FB69A791E616EF34B6DCB4A4B57147318F5088",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_8_柔缓积雪边坡.asset",
+    "SourceHash": "A3918CE4442953C3CBD881D16E74B4F6973A9AD5312E0EEEB0C4A9F329D75C0F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_8_柔缓积雪边坡.asset.meta",
+    "SourceHash": "7D7C589792C4B0642308208C71D4C06D88AC5223BF11D8D258753632309B2DD7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_9_远侧木围栏.asset",
+    "SourceHash": "B23DA5D02FD6A693545AC2168D16450B3BFAB127D3E07E2CB0E408651AC5C5D2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Fig_2_13_Winter_Asset_Design_9_远侧木围栏.asset.meta",
+    "SourceHash": "92E2ACC894D56259CFE77682FEF4572317A2BC356BB76AEB5393C3FC0C66AD4A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_0_Backing.asset",
+    "SourceHash": "057EE52C2E8472936B53B2676754A089E30C9B65A15A3EF663E46E2BE34ADD5E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_0_Backing.asset.meta",
+    "SourceHash": "DC70153F3086AEDB05F48B7817BE9D844F7D0971B322F5D789E136E774F72E1C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_0_IronCore.asset",
+    "SourceHash": "D276B004CDBE28EBDA94E6F775E932E2198D93FB7E9195C66D12E4556FBD9FBA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_0_IronCore.asset.meta",
+    "SourceHash": "B7C10C87F23DC37BA892B743841E3FFC97EEE986D3D95E4F6496E4A9DF7A26BA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_0_SpareCoil.asset",
+    "SourceHash": "2105E3328D785A971ED6B15EEC639A98C33C21474D44E9D2AAADA488671F59CC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_0_SpareCoil.asset.meta",
+    "SourceHash": "E32FC7823C8593D167372BABC8514ADB5A3306AB9BE1E05CB740719370392690",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Cabinet.asset",
+    "SourceHash": "81C5B4EB5BF2FD1BB472E84EB890E6E932B97495616B5139D65E614AC9BC0683",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Cabinet.asset.meta",
+    "SourceHash": "31A4ED8456E66A75A3F79B5BCD53517FFB2EA5BF66E4FDA5C7EB8BA95C9DADEE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Drawer0.asset",
+    "SourceHash": "A1953744DD1D5B2B9C4101E426C3533254A2E6EB05AF3171E0F2B984A22B7DF8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Drawer0.asset.meta",
+    "SourceHash": "F094B85B9FB1273FFD094B39BE262A2779BA66F2D696AE697C9072268213533C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Drawer1.asset",
+    "SourceHash": "7A3E30645F642C3DE819D646CF0230163C85EB42CE7797F526D2A25B06AF52D4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Drawer1.asset.meta",
+    "SourceHash": "A7682F6037981E0608A3383F7022AF59BCBF41587A72BB7AAFEB0652C05DD7AD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Drawer2.asset",
+    "SourceHash": "999CD8C74F44A25303A30021D562C7A292BC8BD38EFE62B4552E69E71E686E7E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Drawer2.asset.meta",
+    "SourceHash": "D198430A9CD408C4646512A6516E735BBBAB7C7159903728169326E05E5D13D7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Handle0.asset",
+    "SourceHash": "77B2B2DE3546D7CD5800C5C70AD17A5BEE52A4D2E0692EA00B0D65B8F33B4F25",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Handle0.asset.meta",
+    "SourceHash": "0BD39166ED8499C945EF7E58AB89802D4A36B0E7A7D35B9992DC56D4ACA82548",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Handle1.asset",
+    "SourceHash": "6822B271687F511973206B460A2A8D957407BB18E882207D3CDD4AC93CF1820B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Handle1.asset.meta",
+    "SourceHash": "7D013CBA3EADE110463D79E87187013589F28B90E1E33DDA929D1C356EDC4689",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Handle2.asset",
+    "SourceHash": "CB5FF36CE9E02A754DC010B7021E66363D418533A17BB96E61393DF002F561B7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Handle2.asset.meta",
+    "SourceHash": "B48BACDFBBEF324C8E1C34FE5D6FC086F99E542537151E693A029B17D723F7C0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Stock.asset",
+    "SourceHash": "562F03F6610AEC7B7A47E1E9836515D0CE126621EC66CA29FF264079800CD776",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_1_Stock.asset.meta",
+    "SourceHash": "0FE2A19DA2CA5F2129ABFCDBA811DDF995075FFE7A5279CF485BC43E8A45F1E8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_2_Equipment.asset",
+    "SourceHash": "AD01878D7EBE30FD0BBE3018A4113931FD5CA8A769C5A9E6889D525446AC6511",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_2_Equipment.asset.meta",
+    "SourceHash": "6887B31F9940055A89B7084AFF87DDE319B1ECC3CC73F33D4ACB08B4B8F59856",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_2_Panel.asset",
+    "SourceHash": "DD6960DD5FCB398EAAE6B23D2FC595349A298B04128D6E1486BF895B7FE7D780",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_04_2_Panel.asset.meta",
+    "SourceHash": "9982F1BBDA3350C22D46476B5EAE27283DF32967A93CAFA36E89F3262E561150",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_0_Backing.asset",
+    "SourceHash": "6863F1A64329222E8FF0B8D0AEA51EC195913F4894240D6C6DFB60FC383B5F32",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_0_Backing.asset.meta",
+    "SourceHash": "55DCD8FF89009B81B66939D6845ECCA05B6E1482BF9FC98671391DA5425FE805",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_0_Pipe0.asset",
+    "SourceHash": "7493AA91051AEC70A48D69CF4A0C0E0AB2D3E9B5F735832945F3F8067EBA5577",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_0_Pipe0.asset.meta",
+    "SourceHash": "DF16441DB2DFB2A04252A83997607AD48095399C26BE7F83B26220CFDE7AA7B0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_0_Pipe1.asset",
+    "SourceHash": "5E5FB525212B1D94E310699E63AA932CD55B126F0FB3CC95D8C642A1674361FF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_0_Pipe1.asset.meta",
+    "SourceHash": "4C87037EFA24D6F52EB407EFD623698400CB85E7D74B638B537777386343801D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_0_Pipe2.asset",
+    "SourceHash": "0B392C12D1D161D3AC585E323FF36DD7BBC11AD53812B05E24D51A4187A9FFD8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_0_Pipe2.asset.meta",
+    "SourceHash": "838B904B4D5F047AFF54B247D6983D36C71221FCCDA9877E44C4F52288086C08",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Cabinet.asset",
+    "SourceHash": "5346BC208BB8B556F6292B7B11493191AA645FB6AF4DF7BBC18CFC442245E04E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Cabinet.asset.meta",
+    "SourceHash": "7E1C69A7FB252F45E8E5D1FF8C6D2DE6AFAACEF41C6391D06213073089254C3E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Drawer0.asset",
+    "SourceHash": "9960AF93AB5C4C2279B32AE5E88BD7004601FA8B1390ADF58D57C6AC2785FAB0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Drawer0.asset.meta",
+    "SourceHash": "3C8E9EB5329E40505CF4D4E93E252E2E695291C40E2E718F335B8A19E76F9309",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Drawer1.asset",
+    "SourceHash": "4D3DAFCAE05491D10F16BC70099EB201C493A06C53A53F00C1998A686FCD07DE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Drawer1.asset.meta",
+    "SourceHash": "B365B65AAA6D0395DC5698646254C337F6AA81F2CBA69119D083AAD5844A6003",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Drawer2.asset",
+    "SourceHash": "9BE7A69312FB37724C14DA4B67431DC8F4C6BA25A8D5EBE8C533BCAC1753F701",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Drawer2.asset.meta",
+    "SourceHash": "C1020820BAAF365E97E6F6E0B7BF88B1391B907681E1A620021F7F2EC3980A85",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Handle0.asset",
+    "SourceHash": "0FCED70BFCCA9E7C8E52408467F379D755E04F75D29028A5D34789523DA6CEBB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Handle0.asset.meta",
+    "SourceHash": "E38B7A760E4128028B355C927B05F42436DE38C5BE579B66FAF76C91E05AF29A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Handle1.asset",
+    "SourceHash": "5D7B139D163E132A3ABE13A10DB1B739EBFB1CCDBCF2F751A6ED4E63BC87888C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Handle1.asset.meta",
+    "SourceHash": "CE5E32E6F9B695488D5811952038E6097AE2844BAA480AB66618DC15269A066F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Handle2.asset",
+    "SourceHash": "9B840B88B63ABD4AF2F2B30EAFA039185455225020E55D70147904BB3E111E1D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Handle2.asset.meta",
+    "SourceHash": "6FF48C4A4072FA53F1F2919B5AE856C628AC9EBE729459307C8BD26DBF808652",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Stock.asset",
+    "SourceHash": "FDF38C135B73AFB3B04D2CE8799248973816905C8CE91117A1F1EE882DF00E6C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_1_Stock.asset.meta",
+    "SourceHash": "3F3F453A7524A36580AE01B7EC8446E5273F4F8B95CE429DC48205857278EA51",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_2_Equipment.asset",
+    "SourceHash": "E3FC3AF181A45B3CBAC6CDA45C18B091AA1C4E953D9DA422745E5E8C6B1B4072",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_2_Equipment.asset.meta",
+    "SourceHash": "D32813759731DF9A35F5B923D1D52E1B56B50D47F255DABB1F87A48239195655",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_2_Panel.asset",
+    "SourceHash": "31171BF2260DACBD1674D741635685A1CBDE04CF245CBCD575C0EAFEE7A0D72E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_05_2_Panel.asset.meta",
+    "SourceHash": "591F40E83A08E654B3F7CFC72D959B5B66A20B73BD1E1F9A18E45557F3CA3760",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_0_Backing.asset",
+    "SourceHash": "BAB16CC5BF72C93C33C4570877B8526B6ACF9FCC714988C50526BD79F227ED73",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_0_Backing.asset.meta",
+    "SourceHash": "190C926E352F17F2CE7E232CEF69F050A1BCA543F901FD81347501AA2B729012",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_0_Weight0.asset",
+    "SourceHash": "9E1237AC31254915103ACD8C14D0D2442389F7D85C9CDE72AC5FE9CFC4AF8B67",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_0_Weight0.asset.meta",
+    "SourceHash": "1904B92B4B76C81C547DC69F0D3AAB02FEF8A8D4A343B8384AE94E955177B349",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_0_Weight1.asset",
+    "SourceHash": "78038A100C04F0377228E4A84909D966721C327C4981731B7A0C20AACC12A55B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_0_Weight1.asset.meta",
+    "SourceHash": "A760A551B283327D2F0C8AAAC18BDD90E4421F69F45E51F4AE660654680565F1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_0_Weight2.asset",
+    "SourceHash": "EBB326B290CDB2B9F1B08A770A2F93B7F057538D11298920A02F76BF61A2F370",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_0_Weight2.asset.meta",
+    "SourceHash": "10AEF0B46938CA8E358D21ACCF2FAD6FE4C662F1F750DE3AF7CC43EDDBA9049A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Cabinet.asset",
+    "SourceHash": "FBC62BBD8B3235D17FB91790FB53D2E100C632B0B7924C3C7AB70658D38513B8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Cabinet.asset.meta",
+    "SourceHash": "C1374921CA8F17F67C2066DD2A8449F978B21BE7FFA664B3ACFA27E198B1227F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Drawer0.asset",
+    "SourceHash": "D1D2B9669F1E9382D810BCD8F140AC3DACCCA0DCAAEC602CB8867D88E8EF2700",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Drawer0.asset.meta",
+    "SourceHash": "0B06F2B1CB8B2EAF320B13E93BF5426407547223203E254D800F3B038A057C0A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Drawer1.asset",
+    "SourceHash": "E93A952A9428AE2EC4FAA64E9EA9D1815FF3A8553ED6A397980B44CB52DBE3C1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Drawer1.asset.meta",
+    "SourceHash": "FF77027936C6AD0A22257D2E2F7F5C712357DBCA7D49422F55B78FD2373CD5C2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Drawer2.asset",
+    "SourceHash": "6473B6DA1400B5F1AF6BBF80E80B5795326109F897F423F02BB538E0F610EB48",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Drawer2.asset.meta",
+    "SourceHash": "74C365C3F5C3DA34B70D0D04601BDD093A7960FBBDA09DF5C251333E5488F2E1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Handle0.asset",
+    "SourceHash": "497AAB587CBDBE7C66ECC08CA137E209D1E84BC14E144FD8573B5E9E2295D210",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Handle0.asset.meta",
+    "SourceHash": "C2DFEDFC8D9324F9844AEA5FF8A20A07A5B1B1315F0F80F01BFBED74D2C27E53",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Handle1.asset",
+    "SourceHash": "1B8EA0B03F462FBD01E8F11EF4B41D70E17492F5F47D716739AE3BD7099E5880",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Handle1.asset.meta",
+    "SourceHash": "72CB9BAE7BD464EC9973E4A0DE5A9A828B7AC7321205F9CEC16303F2715C60BF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Handle2.asset",
+    "SourceHash": "51763866E48683C4706A0F5A1BEFEBC0E3602F562C33D221826C99A0D9CF16C6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Handle2.asset.meta",
+    "SourceHash": "742C69D3149668E2631D6066230DF4A3D0EE1C108D205363BDB99B61191D752F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Stock.asset",
+    "SourceHash": "067FEE7D1173E0F1ED2B2F0CDC26FA5B905BEE92EC00364D74D49A42ACF0C3E1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_1_Stock.asset.meta",
+    "SourceHash": "40243CF52B3B5781CF1C59B8DFEA8A83DA6149C1F64A410C3376B9D29F22B0AF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_2_Equipment.asset",
+    "SourceHash": "7134536DBE5E9387CA71BAD31287FEA513EC60A482B361388CC2C51703D47E79",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_2_Equipment.asset.meta",
+    "SourceHash": "E76D0A70E869FB822F9D2A051EE7CD73956A8F3F520AC7C3F7362675DCA468FB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_2_Panel.asset",
+    "SourceHash": "8B67C12F95E43811C632C7A6153CF7B23293A9CACEC60DA5DD73E393216CA5A0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_06_2_Panel.asset.meta",
+    "SourceHash": "B96237772C51A399DE77A8749C1175FD3BE11177D94390D319295CA0EA8E8959",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_0_Backing.asset",
+    "SourceHash": "E4BE0AC7B746D92154164E2FB6F568799A6172EA9ACD16714E7A0F9B87F33E14",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_0_Backing.asset.meta",
+    "SourceHash": "D22260E88D505E23646BD0EBB5976F0635218FADD941915D63B88167E1DD9C4E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_0_Tools.asset",
+    "SourceHash": "4964460FC702D0F7CB64D6F043341FB7FCB36871C1B70AEA97920FEF38D5B809",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_0_Tools.asset.meta",
+    "SourceHash": "05FF04FDBBE763B81117E8DB0D33AFBAD47B4D5B6968C00C5B3C0AD3716E7CF7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Cabinet.asset",
+    "SourceHash": "E9F99AFD657A65DFC8732B459A57279177FDC8FBCEDB3CA429A0EF7EC69DE534",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Cabinet.asset.meta",
+    "SourceHash": "E1E81B4BC185ACCA8DECC7E4F4D5A6B94484A466979230FE9A0C11A876DEEF79",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Drawer0.asset",
+    "SourceHash": "94169EE89604EAE9054344C2A7C197CFADC4CFC6048AADC6D8FD14E153B21696",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Drawer0.asset.meta",
+    "SourceHash": "71A6EF8F08BED9757CB6D2DF2A4D51A41166866D0526D0BACF3CB9C60D38FB59",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Drawer1.asset",
+    "SourceHash": "EF57610A71018C75D244E0E6ED001EF30B2FA1CA32D8B53E3FCC41509054A6CD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Drawer1.asset.meta",
+    "SourceHash": "90BA463FB5BCAF32476A976D6090E19C36EB5E2C1D20FC43B3349D4AD936D48B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Drawer2.asset",
+    "SourceHash": "62A8990E62ACE90F49EA24D929568658854373C3DC73C130A0CA77C25513C3BB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Drawer2.asset.meta",
+    "SourceHash": "A7FC634AEE5A9E0E49B356DD005E00C1FFEECCAE712436DEE16C43FD3FC21431",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Handle0.asset",
+    "SourceHash": "C361EC3B814E4DC5A7287C9F9137573AC396D62E06A3D72BB4513A7EA24D85B5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Handle0.asset.meta",
+    "SourceHash": "13AF55A6FB0B78CA0109D1A43BB289662CC9A0ED6723FC8F6177928540316CEE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Handle1.asset",
+    "SourceHash": "F0AF1E0CE8C3F42F4E4DBBFE22871F80B9393ABD380A1D9581BA371C7ABF289D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Handle1.asset.meta",
+    "SourceHash": "F7DD125E28C699724CB414D2D5C8FC8157B9B7D7FFEEEA63B30A70C97DAE237F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Handle2.asset",
+    "SourceHash": "9A683A1F23CF1AE2D1BD1359CEBB49D64569B43643C9821FD8538A8775FC9BCF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Handle2.asset.meta",
+    "SourceHash": "096DCDFA2CB5EBDEC88ECA3F28CC7DE35E80F80086BFD5006AB964AA79220B6E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Stock.asset",
+    "SourceHash": "5492134BB0E41723D09A1D1BDC75638ECA8142FBA058A6019EC54E27042182C5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_1_Stock.asset.meta",
+    "SourceHash": "E1591BD2DB4D204B4DD0012B55272B085C6C2B648C52CFD60CC64433176430BE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_2_Equipment.asset",
+    "SourceHash": "1FFA8A99D53C055E138BBD361A1AB6BF40541199EBFC1E8018E9EAA3E30A3E6C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_2_Equipment.asset.meta",
+    "SourceHash": "B1293097E97C974D2448F5FD38C9EF0EEC4529CBDA2CC7EB20FEC7EDD08B751D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_2_Panel.asset",
+    "SourceHash": "76B1F3E5AD29CF22ADB0CA051C67BA64A5D97114C5C0CB7E8A560986AE6AD680",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_08_2_Panel.asset.meta",
+    "SourceHash": "FCE1FCB3C35E9C9E62FA2C01ECC7B8EB53982473E99CC3DD9498A553C03030A0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_0_Backing.asset",
+    "SourceHash": "EAFA4F2EFBA4C8313BDAF6534192B815061FA31C618470ACCC380FA630017779",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_0_Backing.asset.meta",
+    "SourceHash": "2381A83349A1ED28EBAC636FA58C539F112353D3587F121B24C02132C350DBFC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_0_IronCore.asset",
+    "SourceHash": "295E7AA22CEAFE51573748708EB3CCAAAA90B394AB8139BAF58BFC80CAB24B18",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_0_IronCore.asset.meta",
+    "SourceHash": "46381D4788F248FDAD86161082C06ADD2CA6F31DFD55128DAFEDCE84AB09ADF1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_0_SpareCoil.asset",
+    "SourceHash": "BD4BCA0F1ECF2060D55245AF1F2C87B5458CFB1B0DB1BF2FBBC20D8BA95DADF9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_0_SpareCoil.asset.meta",
+    "SourceHash": "35B22BC813546E302A8FB73E90B64315A09C96FA057179FE9EABFAA99303AF8D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Cabinet.asset",
+    "SourceHash": "F34FDBAB734F7EB74100DFCA8B89EDDB355506A0A097BF8EA0679338A156AF8A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Cabinet.asset.meta",
+    "SourceHash": "85C1016483706D0709EC505675BFD386AC1B5ED32D15F4656597A1006E48F0AE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Drawer0.asset",
+    "SourceHash": "F2CCD1552FBADA58495C328568208BFB9102878644E1D19E312D0836120EF7C7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Drawer0.asset.meta",
+    "SourceHash": "5B2A511713EC25AA948CF72565A95A56F59A6F3DB0A57F7BA89D469DA67FF73A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Drawer1.asset",
+    "SourceHash": "D79F3C04C66D7FA6D9EF3CD5B19D0C5A7B2316FDCEB9FDB927C7970F35CC5B34",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Drawer1.asset.meta",
+    "SourceHash": "A926F39334DFBEB9AF8C1DCB736050AC0AAA1BA9D64B00FBD82E2BD0ABF23432",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Drawer2.asset",
+    "SourceHash": "6FE3E2EDB43CEAE9AAC546EE7EA0138AD0C3AD0536A98B102DD75B962327D882",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Drawer2.asset.meta",
+    "SourceHash": "E8C7A227FF7D0FCFF19ABBA3F6A60DCA5A3F8D21B3307B21F162E7FB466AA4DF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Handle0.asset",
+    "SourceHash": "B1BEB5172798FA3343CC80EBB6DE758F5857C9F4CDCF8AF95DE03A42D8AD4BF7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Handle0.asset.meta",
+    "SourceHash": "4BB074D7A6321FA34416FAC91F245EE4D0E362DBD911686B15A0B74E7F5431DC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Handle1.asset",
+    "SourceHash": "E784254F061E440ABC9111A7EDB7D4709A88BFD3DC7EB22EE4C038D7A6CD0BB2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Handle1.asset.meta",
+    "SourceHash": "5D375B2259AFB879A2EBF9A5A4BB8A5252684C5B11DFB5F79BD695CDF26ADFF8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Handle2.asset",
+    "SourceHash": "4055FCE3945EF3285CAB70CB0475C1E642394371A1206BEF270C3C0F9FED10ED",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Handle2.asset.meta",
+    "SourceHash": "409A9163724EDCA19DCDA2A00D726B48E1C01E4DC80BF7E679958BE8C6B702C9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Stock.asset",
+    "SourceHash": "CF912FF50A0206CFBCAEB6ADBD6D9F29B39E5FEB4E51810DE1510E0BF3A1C621",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_1_Stock.asset.meta",
+    "SourceHash": "DED9FB40B22E472DC9BB9478174050ABE97364A8671A4D6736B997706ED5474B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_2_Equipment.asset",
+    "SourceHash": "71BBABC027BC5D6FC6C43F1E923D78E53C4AEA2DD2D32AE29D953F72AE1EA85D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_2_Equipment.asset.meta",
+    "SourceHash": "A736C95818AFFD7EFC5667B0A6596E4FD77532383AE39D46179703DEDF7891A2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_2_Panel.asset",
+    "SourceHash": "216C70F7095845C9141E339D4C6FA708EBCD7A26C7A44B59DAAA39CD6C0C20CE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_09_2_Panel.asset.meta",
+    "SourceHash": "B7030357B5504A012FF3F963960C5A43B68A5BB2407BCB5E6B1DAAEA739F7702",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_0_Backing.asset",
+    "SourceHash": "6CA1B0EB04CD3065D753680947636F7B1DBE5817090BF06A1D76C638C9A3695D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_0_Backing.asset.meta",
+    "SourceHash": "2655CF3F527786012A84FCD291A1DC8E05BF64EF5D965D2E6037C1985E35C8A8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_0_Specimens.asset",
+    "SourceHash": "55F774E59078592DC0F3417CF7CA3C9E2568B43A4AA596E89F52AD9A9D489452",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_0_Specimens.asset.meta",
+    "SourceHash": "ED0F2DE3260C5CE7AE2B27ED451084138E311FE1DADC2FFA9D651381397AB974",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Cabinet.asset",
+    "SourceHash": "E37C4BCD706BF89A50B33415C0F5C6D9DB0B5CC1B364EF25C711025BCB1285B4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Cabinet.asset.meta",
+    "SourceHash": "4C18BC5D064F72EF60CDF48427545BD4F6A8754EF7B6D5458900F34CCDEA77CE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Drawer0.asset",
+    "SourceHash": "636B400A5E3CCD2DAB45D0A122908F9076598B9B357F826EACC24A1614989670",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Drawer0.asset.meta",
+    "SourceHash": "91CCD198D27B13600D38DED9FA175781C60593BE48EF1304F27BC9D461DF87F6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Drawer1.asset",
+    "SourceHash": "405E4242420528B3F596E04B8A1A3C3EDB3707E7FBDA2A7334F0EDBC3CFB2AEE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Drawer1.asset.meta",
+    "SourceHash": "398B5AA82FB3F9441929B300B9B4B7BC524D1B0F72C168FFACFB715BE63F7EE9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Drawer2.asset",
+    "SourceHash": "96279FA87698E686CD8B9A553E87484699415ACC4331A146DF3E5FCD7041A468",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Drawer2.asset.meta",
+    "SourceHash": "D3B530725C68EA7A62ED7B8D14FAB5A5B51F219AF12BA2F5AEE2459D09C405EC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Handle0.asset",
+    "SourceHash": "6D0D812CE0B47E02C4A0878D81A4DA6FE47A6BCBBE48399DB5BB2C934D27255A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Handle0.asset.meta",
+    "SourceHash": "62ECBB0FBDFC6FB6672B82D1470A9D77EC860F5B9B474B1954AF234085732B02",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Handle1.asset",
+    "SourceHash": "ADFC1581B086A17388D26166005C577BFC976AD7FB352D0265CF7187D9C1A186",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Handle1.asset.meta",
+    "SourceHash": "0271945D3F70D734B30A20C37C92B4C7D86D6126A9DE6E1D3591A3377E738658",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Handle2.asset",
+    "SourceHash": "C28841912F615F61ECF658FC22082BEAD48AB5C2C9E6C0A3E84596EFE8077D52",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Handle2.asset.meta",
+    "SourceHash": "F0B4BB13136E6D0746EA94D191B73E86A578BDE410D367079AB110D16992F90D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Stock.asset",
+    "SourceHash": "B3B8E955662E44C7B6BF6B520560063C57689BCE695D9C32BDF134AD5BE67B87",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_1_Stock.asset.meta",
+    "SourceHash": "1EC2DBDAB99FF55D5DB3D861611898294DFF3A503026C67A6F9E2FA5384F3495",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_2_Equipment.asset",
+    "SourceHash": "5EB0EED969B9C90A726A8E7D9038E675F3A65F9FC7DE2C95110DEB275D5847AB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_2_Equipment.asset.meta",
+    "SourceHash": "041C5408212AFFA557903FA9FC1ABF074BABF3478A7863BCB97F330BA686ECAB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_2_Panel.asset",
+    "SourceHash": "850098065BACB0E47CCEA4CCAFFEDBA38F1C425F3127CCBCCF794165DF4481CD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\LevelModels\\Details_Interior_13_2_Panel.asset.meta",
+    "SourceHash": "B5AAD6FD23949B26C30A0680C3F24711FFF06E2029B9F195AD6A2AD5D48FA17B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_01_Introduction.unity",
+    "SourceHash": "075B512558E0B453C5A8389A280DC085EA20E4EF880F5592812314DD68A10D25",
+    "OriginalHash": "C3F60A87C3819C45C88F18932CE6A902DBA0796CC1493274322EA7D5ED0D1F62"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_02_Buoyancy_Canal.unity",
+    "SourceHash": "4FBE8A27D89839FE3C5EC337C2C26959C35B757BC8A51262E9D7C0A228A211FE",
+    "OriginalHash": "2D56B01F9F72FECFB4217E8AA6039EC8C0604FA7FE78E64A13D5514B77F76984"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_03_Acoustic_Resonance.unity",
+    "SourceHash": "838A497718A5BBC8E1BD22BE4A06C1D5B182FA3B9943BB5C8AA6C2CE1DDF1B27",
+    "OriginalHash": "F767F801288832560F2444FC16EBAB15E9389ACC4140FD28829ED80438F9BC7B"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_04_Geomagnetic_Optics.unity",
+    "SourceHash": "5029D23BF0FAC7CB3C07CA983CA38059AEC7C82A2CEB9C46D68FE5EB146F88D8",
+    "OriginalHash": "8983B8BB5CD5950E37EA875BA82D5801D46B5AE903E8A594E2AF6224CE5CF8CA"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_05_Electromagnetic_Lock.unity",
+    "SourceHash": "42B3E7BC6CB5703DF5F70C01D19AE50A5D871880E867737D7E4E8657F8805B07",
+    "OriginalHash": "9C24DA10566657AE9EB3A6CCB1559B0F7E18B2DDCFCC6EBDBCEF9EA57C584CA6"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_06_Hydraulic_Pipework.unity",
+    "SourceHash": "743A399B90F3AD598B744FEABC97DDFF73ED9F7BAD2E6BB17F3ABA74DDCA5521",
+    "OriginalHash": "3433B30FDF78DEE21F7D4F028916431D85144EF1FAAC3B120369DD8B268A1C4D"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_07_Frequency_Coupling.unity",
+    "SourceHash": "905FFA544C2A5FC753AD460296B9F9A13532958A3F3F5470B79A8AB38112831D",
+    "OriginalHash": "0EF8A8BBB5F90F6A3BF2AB4424179747B96F45B9963C292EE5983D5A26AEC898"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_08_Snow_Arena.unity",
+    "SourceHash": "FAD893C727844C5FBDB848FFBB5F87A50E5FF61F81E0D47952D78ACDFAD7D8AD",
+    "OriginalHash": "EBB33F3B2EB9238C74C1326F57907ABD39746763C693E5579129E0AF31C3D4FA"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_09_Creative_Workshop.unity",
+    "SourceHash": "578F80CE79E1B25F08823CADC935FB7AA66349AEDD76FDF40659AA0FDE3BCBFA",
+    "OriginalHash": "012A7109E7412618CF1642384D42E4D0A59B7A1FB0D5297ABA304913EC54F7C6"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_10_Physics_Laboratory.unity",
+    "SourceHash": "235E410C014FFEB28C33A7DC406D1860C122DC95EFEBD11365A932025974EAC8",
+    "OriginalHash": "4A50F1FA25F99A5211F25659AD63287326408BC6DA0A0DC6BCAA9C2F7669B3FF"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_11_Garden_Canal_Design.unity",
+    "SourceHash": "1AEA3CCDE68DD7A25A0386B65F4AB873DC5016B87832B6536266B06A7B391BD5",
+    "OriginalHash": "BB66BD8FE441630B0237AEA4C3CF262759AEB7BCAEC211B8A6ECFE321DDB01BE"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_12_Celestial_Sundial.unity",
+    "SourceHash": "5C1BFA7A205E41268ABB7DFEF9A09091F732C7F0E18FC5E3DF55FF819BE25C59",
+    "OriginalHash": "4E46B495F99C16D63EEC77614090A2F715E7DDF05F2C78CDCB77BE5093B3F90B"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_13_Winter_Asset_Design.unity",
+    "SourceHash": "40C86AB8C121E1514180D849D26C4D9E13AE4DC9233DEFD73E00A786DE51E44A",
+    "OriginalHash": "F151DD46E4BA3C6104E431004F877E522D2537972B05B638F9CA7846C6C299D4"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_15_SelfModeled_Asset_Collection.unity",
+    "SourceHash": "10B5DE091E58C93C627F2E5E6A9B7822809C12D5F901EBA32F45DC9F4F07EEF2",
+    "OriginalHash": "3E01FDAD341225ECF8530B1555190602C3EC63288CB7AFD69C42B4C2E4F31B23"
+  },
+  {
+    "Path": "Assets\\ReportGardenLowPoly\\AncientGarden_LowPoly.unity",
+    "SourceHash": "9966DD93E71D472FAFF55DB2CAC1F95A19CAEB8564CED536D001B99E90AACCDC",
+    "OriginalHash": "252D8A7FEE0B0976B0A22DF99BBCF940ECCFBF3E18FF98474402338A416B54C9"
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\index.html",
+    "SourceHash": "25A41D811BB21E1B77BC96EC502898E1E8A66C79F8D900004D97DBDA32234AAC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\manifest.json",
+    "SourceHash": "B03E320C8A8BBAD2FA8E5F4951B758DC10F9EADB0B1B80463D0A52720E629855",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\README.md",
+    "SourceHash": "61A56A0C15F526E8411A91AC521AF01924B0C416EF060A7D7C74BB8564DB9E40",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\AncientGarden_LowPoly.jpg",
+    "SourceHash": "4E9D555F7369C97233175A575C28CB057756F3DCCB1C1E164499C19F18F9E251",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_01_Introduction.jpg",
+    "SourceHash": "2E800223AEA56B8DB32C2A527A5642C0DD13B51793E163753C55B07527C5CAAF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_02_Buoyancy_Canal.jpg",
+    "SourceHash": "A74E138ED81F682B9FB1325B11A6B6FF0F3FEC19BE365D73C9AF18D56F019235",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_03_Acoustic_Resonance.jpg",
+    "SourceHash": "449CC2292B2AAC2B32CFB8835A6B2FC6D920ABA61A9AF4D8FD8BF29C2CC0F1BF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_04_Geomagnetic_Optics.jpg",
+    "SourceHash": "90DC18944FE4DF03C8EEB1EC25DA8A19AC83D7375E64CEB0EDA52E6C284F7691",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_05_Electromagnetic_Lock.jpg",
+    "SourceHash": "E5F024ADACCAD41B2AA730BCAFBBB84E80D6769B25E2C2DC81F5B22EFF321B37",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_06_Hydraulic_Pipework.jpg",
+    "SourceHash": "F1AD81BE032A9D7516746B273497DDB376970F5903252A697B40B97DF2CA133B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_07_Frequency_Coupling.jpg",
+    "SourceHash": "3170205E93EEF148136C9D9AFBE5D01EC32039CB54266E234CBA9C12851E2003",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_08_Snow_Arena.jpg",
+    "SourceHash": "F57A2AB821CEACA68F613CC0370BDF9A86D84423281AAB2A7E48A7E9E786C348",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_09_Creative_Workshop.jpg",
+    "SourceHash": "F257CEAD2CC2CF5A2C17D7F2F73B3D2B5019CC89B0897617584BDBEF5E82B409",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_10_Physics_Laboratory.jpg",
+    "SourceHash": "582E9866E456D4BD2032AB0A43FBCE8C1188116621936823CFE76FB5C4AEBCEF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_11_Garden_Canal_Design.jpg",
+    "SourceHash": "769991C9AF598E42A488C3635A161A6F71CE276B6819C26449619440056A1F8C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_12_Celestial_Sundial.jpg",
+    "SourceHash": "CD579F2F859DEEE49FECEB5C70A0FB2D9CAEB0855564D84FCD4BA8095B8786C1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_13_Winter_Asset_Design.jpg",
+    "SourceHash": "397363099DC043AA4416D382B36EDD081EE66026F99899634DEC7ED25D596DCB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\ContactSheets\\Fig_2_15_SelfModeled_Asset_Collection.jpg",
+    "SourceHash": "2293C9CC6EA32ECF799EBA700BE3ABAC7674E0A5DF791F5020877AB4E3F9EC96",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\AncientGarden_LowPoly\\01_Hero.png",
+    "SourceHash": "E6E59E1A313A102366194665448D2821C5BA842DA024FA95CDEB0CD00AD1C0DA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\AncientGarden_LowPoly\\02_Reverse.png",
+    "SourceHash": "E78E2EAA15ADE244469EC14EC4F3E514AB1B6F78A53CC4E61D7ED567C0744AFC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\AncientGarden_LowPoly\\03_Eye.png",
+    "SourceHash": "C0D4B058E1D78015BECDDFAE281B48028F35B32415619848BBA3C9BBB7321259",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\AncientGarden_LowPoly\\04_Model.png",
+    "SourceHash": "E55670813E71067F148E4CDBEA80D711696B9D81FDD5D2D6C33B97C1D1159CB3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\AncientGarden_LowPoly\\05_Experiment.png",
+    "SourceHash": "271BBC90B5C7E31B82AC32CDC79E564672F62AD1F1FDB6D94DC38DD4E26D8688",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\AncientGarden_LowPoly\\06_Experiment.png",
+    "SourceHash": "B48AF902BBC9C948DF93BBEF90D02A2C53FDA7A4E0B53273993E97CB539516E3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_01_Introduction\\01_Hero.png",
+    "SourceHash": "1EE40F8B44FF2A707088D4C2D79F5173D9871B6A4A3A5BC34DC5D83F6C879071",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_01_Introduction\\02_Reverse.png",
+    "SourceHash": "610DB3E191A6A05298D0B6FD0076C8239C414F02E1D117F6ACFA6779DB5914E3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_01_Introduction\\03_Eye.png",
+    "SourceHash": "FB219EC04ED8929ABA2C021E44C5328FBCF61B4AE618E6B23CF2720B3A091E15",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_01_Introduction\\04_Model.png",
+    "SourceHash": "32079DCE373D642285545D71C1B90EB4E32AE3C9E591BCE49CF4F6B6988BF61C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_01_Introduction\\05_Experiment.png",
+    "SourceHash": "173B5E31EFD91C7D71BDD944B6EE3C5652E3CE39B7C679B6A93B3C8CBE2583AC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_01_Introduction\\06_Experiment.png",
+    "SourceHash": "238A0DF4E6D93EBD84F4585B3BA25B6BFBF84118FF68B9DCB26FA4B374835919",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_02_Buoyancy_Canal\\01_Hero.png",
+    "SourceHash": "D7A23C104C77AEF3E3E264638F6B0E4EC0A6118C689791272215C0C93D4505F7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_02_Buoyancy_Canal\\02_Reverse.png",
+    "SourceHash": "A2801B9C42DA65CD9A0D1242AB078B3C9748A85E04CA89F45CEFA7539612334C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_02_Buoyancy_Canal\\03_Eye.png",
+    "SourceHash": "2D44E0EA08545A5266DF706EB60F7720049A284176C6EE9BF010964E3B1F0AB4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_02_Buoyancy_Canal\\04_Model.png",
+    "SourceHash": "FB25D780D282DEF9D7043A93F61D9950F5BAF1C821C2190C91F3E316CABED47B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_02_Buoyancy_Canal\\05_Experiment.png",
+    "SourceHash": "21582CC1396F9B5247DAC6A8DE5641C87AB32396B044D1BBD6DFE1A5883A3300",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_02_Buoyancy_Canal\\06_Experiment.png",
+    "SourceHash": "AFC8B20DCDA5FC41F3E358A3C3E7464B04218F9FC32903F48E343B833712D5B5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_03_Acoustic_Resonance\\01_Hero.png",
+    "SourceHash": "A7BA774AA63868E8B5C43874CCA23C05743ACFAC644F42AEB06310BA50F3549D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_03_Acoustic_Resonance\\02_Reverse.png",
+    "SourceHash": "7B03F453ECB07338A39E9AFACEC561EA4CBA6A2E822B8EA5A6B1C4F1575CCFEE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_03_Acoustic_Resonance\\03_Eye.png",
+    "SourceHash": "6D3B9285B701FA61E85028AAD6A4266664638DF380DD9D1DF86021ECABD155C5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_03_Acoustic_Resonance\\04_Model.png",
+    "SourceHash": "2BD87F9FEAFDA06D257AB2FB37104129482D872519EB13E378284E449B8422EA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_03_Acoustic_Resonance\\05_Experiment.png",
+    "SourceHash": "21A43533C6CFBEF4D1760EFC6511B0A3D7B8471F65DC3D40C48B1CD9280C390A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_03_Acoustic_Resonance\\06_Experiment.png",
+    "SourceHash": "1F0CBA65D2CEFF8FA6DF119D5D333FC1E67F1B3450109D0BC0BC9C46316A9D99",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_04_Geomagnetic_Optics\\01_Hero.png",
+    "SourceHash": "6A42291ED866051E32ED8DE6BFF2659843745D7AF34C8674572764DFE5D9A203",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_04_Geomagnetic_Optics\\02_Reverse.png",
+    "SourceHash": "527F3134F43C4AB59F7B8BC31381D92AE281D84C103F86173E1AC888F72849D6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_04_Geomagnetic_Optics\\03_Eye.png",
+    "SourceHash": "053F28497049C043CA12C1C0B603B81F9858D934FE31D3494E19104D108DA038",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_04_Geomagnetic_Optics\\04_Model.png",
+    "SourceHash": "E76480D4B3C99A73BFB3EF4A224D8C8FB1D7826662576B49A395F03A82E9ED7A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_04_Geomagnetic_Optics\\05_Experiment.png",
+    "SourceHash": "AC8A7039DA78CA41894D5DC2A2196B6550BE5FAA6312A6A05ABC853F9D25FB75",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_04_Geomagnetic_Optics\\06_Experiment.png",
+    "SourceHash": "BFD11831D788C61E6133F69B999D7E83D0C4E1C927019A64427A3C692B8560FF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_05_Electromagnetic_Lock\\01_Hero.png",
+    "SourceHash": "3A37021FAF56F0FCF3DAC2D2C349208A6B609B158FC76401583BA843526B9A3A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_05_Electromagnetic_Lock\\02_Reverse.png",
+    "SourceHash": "17E23C332FBC8BA2DB4CB8AB2E055FBCD891C5927D392732B485A62A6D42A05E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_05_Electromagnetic_Lock\\03_Eye.png",
+    "SourceHash": "44C32FB385D753E139F5B6AD96F11AE63638C246110CE4803C7F980DED922F85",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_05_Electromagnetic_Lock\\04_Model.png",
+    "SourceHash": "50BCE5FDACEA4CAC029C4ED8AC8135BD660B6A00F34DF1BFBF44B693A9A27C89",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_05_Electromagnetic_Lock\\05_Experiment.png",
+    "SourceHash": "C6D4477068B7D2FB73BEA99159233BA379B214FF2D5C56089C15D0264B20BF42",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_05_Electromagnetic_Lock\\06_Experiment.png",
+    "SourceHash": "081FC0FD01F08E699A2AF34642739684F2C7AA9FBC8297714D94D393DF4298E5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_06_Hydraulic_Pipework\\01_Hero.png",
+    "SourceHash": "8B34A0895FAD6D26687544CD90595138C9EFC98744F4C277E08135E8B3C60651",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_06_Hydraulic_Pipework\\02_Reverse.png",
+    "SourceHash": "60DBC8E2F637FFC07215574BAD00BA7111A01D6061F74EB6F8719B19A6217B75",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_06_Hydraulic_Pipework\\03_Eye.png",
+    "SourceHash": "F8896E572F0351858F61BD459E0A8EACED41944638B25D9E5F77A769DC81BAD8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_06_Hydraulic_Pipework\\04_Model.png",
+    "SourceHash": "59A29F02749F79D032A502A60D44B51213B1E0CF9770AF58E68394D813217290",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_06_Hydraulic_Pipework\\05_Experiment.png",
+    "SourceHash": "76F3C694106A20273670EF5FA6DC7E06F33E8595CC0A61EEC52B3E1501F6AAA4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_06_Hydraulic_Pipework\\06_Experiment.png",
+    "SourceHash": "0BC7C91685C19DE649FA6C3B3967D4993022D45CABD8D7AEA629841903C84977",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_07_Frequency_Coupling\\01_Hero.png",
+    "SourceHash": "D1C1058CCB7C48B8327FA5B231551DAA2ABEB274C2E8C74C2324ACA0050EEEE4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_07_Frequency_Coupling\\02_Reverse.png",
+    "SourceHash": "D391DC0DC86ACD9B1D0B2A3591BDA3655DFF3DEE01D207EC6ABD18817F9BF658",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_07_Frequency_Coupling\\03_Eye.png",
+    "SourceHash": "5CE46FB280F7B7D85CC3B63FD28A031CA0075B11E7F2EE5B10D118ACE833D18E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_07_Frequency_Coupling\\04_Model.png",
+    "SourceHash": "52885B5ED300D3FEF190E0CBE5040F8F05C4FC63349D8F19939BCD50625BF779",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_07_Frequency_Coupling\\05_Experiment.png",
+    "SourceHash": "121776DBD7D1EA3964C31E09875BC4C29514A6F78512E949072030FB87B9E4EA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_07_Frequency_Coupling\\06_Experiment.png",
+    "SourceHash": "6230E9486F0444B40C744BD419E39FF2173D9C340E3FA9E3551EEF0126AA520A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_08_Snow_Arena\\01_Hero.png",
+    "SourceHash": "68F59F4D40546DF85D84900DC3ABC78ECB7244C7BBC15675E04B83E0695B11E2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_08_Snow_Arena\\02_Reverse.png",
+    "SourceHash": "1C708B57F77B9438B8B29E553AE167B54FDF8D26C6DC82171163CB1A8DEE2EE9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_08_Snow_Arena\\03_Eye.png",
+    "SourceHash": "E8DCE5B458C5C7FBCCEC4F3653999A8677CAB6B1DB9116F9DE65013E6F3F1207",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_08_Snow_Arena\\04_Model.png",
+    "SourceHash": "5EAEA1B45F4C262EAB3F3182B7A2D4B7F7BCB40F50A66B5AFDFA7112A09AA44F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_08_Snow_Arena\\05_Experiment.png",
+    "SourceHash": "EBEB35E1656E33CC310ECF91B2A42BB1B7B59AD4057A367857DF4785123A3BF0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_08_Snow_Arena\\06_Experiment.png",
+    "SourceHash": "D3D8752769CAED4B2AEC62DCEC58F232A3CA9AF9FA763815FAEA1845EBB39371",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_09_Creative_Workshop\\01_Hero.png",
+    "SourceHash": "97B904D7891EB34B7D4E427AAE141F3D68671BE8BC00807097DBC6A3AB3F6AEB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_09_Creative_Workshop\\02_Reverse.png",
+    "SourceHash": "E4D816A13D962792D225736D959D7015603AFAD0355A96CCDE1AFCABFCDDB303",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_09_Creative_Workshop\\03_Eye.png",
+    "SourceHash": "96E49AF98510C802981A57B5C6EAD6D7912FB08CBD9D7A1C43D09068B1043E29",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_09_Creative_Workshop\\04_Model.png",
+    "SourceHash": "E9BC4098F11FF31AEA8A126DF5E4B7D93FAD938AE9EADE2510E444FFB424AB8B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_09_Creative_Workshop\\05_Experiment.png",
+    "SourceHash": "D5EF4A77B48A0A9F8541E7D8BFB10043D9ECC96C8D3EC8D2B1C235855C4CDE47",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_09_Creative_Workshop\\06_Experiment.png",
+    "SourceHash": "0050ADDD149E85024283B6847421DE05E3F2A8CB175595C71A76B2D70759BEE6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_10_Physics_Laboratory\\01_Hero.png",
+    "SourceHash": "3DDDE43DE4972A5F1624351404207067B2170DCC97DD065093386C33AEC577F2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_10_Physics_Laboratory\\02_Reverse.png",
+    "SourceHash": "C32CE1022DE5E2CFAD9D9027308C79735A2C918DDBF6E0CC64457D5A5B565162",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_10_Physics_Laboratory\\03_Eye.png",
+    "SourceHash": "6DB72BA0669F3DF5C64DA5F125FA5F20AB1E4DC4946CF02E4728707025E65E75",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_10_Physics_Laboratory\\04_Model.png",
+    "SourceHash": "AA8ED9D514FCEED059E023C26F172B7C765A6B019B34A2B7EEDBF64117B46995",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_10_Physics_Laboratory\\05_Experiment.png",
+    "SourceHash": "0FEDC52B7883B98D0A663B71AE24A2A002FA2750DA0A8B968DFAB068A96354CF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_10_Physics_Laboratory\\06_Experiment.png",
+    "SourceHash": "46F6E2C4F6BA9919F3CCD1D057EB5145BA50B5B7F2233DAB06684798ACDC9D71",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_11_Garden_Canal_Design\\01_Hero.png",
+    "SourceHash": "7873499DB332E4E8E32582B4203472DEF5AFFB46D4576B9B5781D86D2DE62DCF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_11_Garden_Canal_Design\\02_Reverse.png",
+    "SourceHash": "2094284E4097A00B789171B612D896C9421DDB222107237E2B0059E232990219",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_11_Garden_Canal_Design\\03_Eye.png",
+    "SourceHash": "A19DADB4C0778E8A1B9DE606F7E240E7CC02B0EFBC0AE911AA6313F517B9BE4B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_11_Garden_Canal_Design\\04_Model.png",
+    "SourceHash": "65F2F9487C7615646D010E03F86F307A1BF7B3CE00200C8990512C0DE50EE65F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_11_Garden_Canal_Design\\05_Experiment.png",
+    "SourceHash": "AFD0D99BA258AAE3107D02EB0A1387B2DB9FDBAFE3636E273FE508B60E9CE892",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_11_Garden_Canal_Design\\06_Experiment.png",
+    "SourceHash": "6CD2B6CDA6757CFB3834D0A3493F2C26DC840D85920294722086A031269E693C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_12_Celestial_Sundial\\01_Hero.png",
+    "SourceHash": "42260976E8E4115A332F25C529A0DB0675B8A596525A5A1B4C8C1491E9FD5B34",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_12_Celestial_Sundial\\02_Reverse.png",
+    "SourceHash": "145C79051AF4B3A36403B9E65097DAC84115B7D0B815DAAAA1EBFE66BD17D1F9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_12_Celestial_Sundial\\03_Eye.png",
+    "SourceHash": "9ABB1FBBE9261A92951BAA7EABE0B1C6B206417D534D0B56FDE1298DBE05094A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_12_Celestial_Sundial\\04_Model.png",
+    "SourceHash": "1F33D99A8734F9EF387064627F6C863C65D15C0890DA85CE53F02447421F77F4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_12_Celestial_Sundial\\05_Experiment.png",
+    "SourceHash": "F32C6F60AFFCFA05DD253448C00D127B85B047EA6DA76738724D790BB4659695",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_12_Celestial_Sundial\\06_Experiment.png",
+    "SourceHash": "D39BE204BD13326AA1296CF13C58CA6929400B2EA2AFE673948F70FFC878A97C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_13_Winter_Asset_Design\\01_Hero.png",
+    "SourceHash": "8FD86E057904A7B21F0B67B694FDA0FF1D70415F3D349C6140128DA4A7A833F2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_13_Winter_Asset_Design\\02_Reverse.png",
+    "SourceHash": "2A01C9060B9F52AF5C02E158963E421E86BED601DD2C16BA9F459EF3309395F2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_13_Winter_Asset_Design\\03_Eye.png",
+    "SourceHash": "827F8D6237C475F1580F47C66DA13C314B9ED0D31E57645ED9E19081F972282B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_13_Winter_Asset_Design\\04_Model.png",
+    "SourceHash": "5FFC828072F8B1456E721E9275C92A66A4A8C85516F1795BEF2A6CBB8E871090",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_13_Winter_Asset_Design\\05_Experiment.png",
+    "SourceHash": "B3C6D86C5FD665A58631321BDF7380CD0C021990CB750EA8578C5CC5AE5C98A4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_13_Winter_Asset_Design\\06_Experiment.png",
+    "SourceHash": "6E73D028710355D7FC6F72D9840E32F720559DCCB2CF513F92A9EBE4AEFA1EBC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\01_Hero.png",
+    "SourceHash": "575858169A090389F35AE2A409174EBC36D8500F6F3BE128A5D7DB139524705F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\02_Reverse.png",
+    "SourceHash": "60DD31D5888B5381077E1FC0EE6E58230FAF9809BACEAACE4B8F78E52CF0C200",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\03_Eye.png",
+    "SourceHash": "A601D8F32BDFAE90525BB64EDF1C14ED164FDA122549097072C697C5B06E4E3F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\04_Model.png",
+    "SourceHash": "246BC771DEFB371AA219CB2FB131B59D69C58E8C2BABB3FDDAC546760DC6FA8B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\05_Experiment.png",
+    "SourceHash": "6FC88A1AA14C130147308216662B463E312508AD0C1ECC8C22F771A9AF0E8450",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\06_Experiment.png",
+    "SourceHash": "B5AF9115C16B5A62EA4CEB1399A06703D626525E65DC81DE052E3C51DE741208",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_01_Introduction.png",
+    "SourceHash": "1EE40F8B44FF2A707088D4C2D79F5173D9871B6A4A3A5BC34DC5D83F6C879071",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_02_Buoyancy_Canal.png",
+    "SourceHash": "FB25D780D282DEF9D7043A93F61D9950F5BAF1C821C2190C91F3E316CABED47B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_03_Acoustic_Resonance.png",
+    "SourceHash": "2BD87F9FEAFDA06D257AB2FB37104129482D872519EB13E378284E449B8422EA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_04_Geomagnetic_Optics.png",
+    "SourceHash": "527F3134F43C4AB59F7B8BC31381D92AE281D84C103F86173E1AC888F72849D6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_05_Electromagnetic_Lock.png",
+    "SourceHash": "50BCE5FDACEA4CAC029C4ED8AC8135BD660B6A00F34DF1BFBF44B693A9A27C89",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_06_Hydraulic_Pipework.png",
+    "SourceHash": "8B34A0895FAD6D26687544CD90595138C9EFC98744F4C277E08135E8B3C60651",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_07_Frequency_Coupling.png",
+    "SourceHash": "52885B5ED300D3FEF190E0CBE5040F8F05C4FC63349D8F19939BCD50625BF779",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_08_Snow_Arena.png",
+    "SourceHash": "68F59F4D40546DF85D84900DC3ABC78ECB7244C7BBC15675E04B83E0695B11E2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_09_Creative_Workshop.png",
+    "SourceHash": "E9BC4098F11FF31AEA8A126DF5E4B7D93FAD938AE9EADE2510E444FFB424AB8B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_10_Physics_Laboratory.png",
+    "SourceHash": "AA8ED9D514FCEED059E023C26F172B7C765A6B019B34A2B7EEDBF64117B46995",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_11_Garden_Canal_Design.png",
+    "SourceHash": "2094284E4097A00B789171B612D896C9421DDB222107237E2B0059E232990219",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_12_Celestial_Sundial.png",
+    "SourceHash": "9ABB1FBBE9261A92951BAA7EABE0B1C6B206417D534D0B56FDE1298DBE05094A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_13_Winter_Asset_Design.png",
+    "SourceHash": "8FD86E057904A7B21F0B67B694FDA0FF1D70415F3D349C6140128DA4A7A833F2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Selected\\Fig_2_15_SelfModeled_Asset_Collection.png",
+    "SourceHash": "60DD31D5888B5381077E1FC0EE6E58230FAF9809BACEAACE4B8F78E52CF0C200",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\AncientGarden_LowPoly\\01_Hero.jpg",
+    "SourceHash": "33CCCCC06C988BD51447A6425BD74F8AA89A48073C231CD52FAD2678D597A95A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\AncientGarden_LowPoly\\02_Reverse.jpg",
+    "SourceHash": "61CE452D3D068BE2130C3DF9EA894FF48BDC4E25FA834E8BA28700004BA0408C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\AncientGarden_LowPoly\\03_Eye.jpg",
+    "SourceHash": "0F328BAD32BEB232B0690366E46060D841FDB251EF02FEDE6E61DF2D020E4258",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\AncientGarden_LowPoly\\04_Model.jpg",
+    "SourceHash": "8520D3BA6FC27116D660CD4EA5F49366F562B88905C5C3239DC3F49C552CF6A0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\AncientGarden_LowPoly\\05_Experiment.jpg",
+    "SourceHash": "BF9E534FBAD4BE365D46BCDFB0DC57977A67382E844FBAD081BA111D907C38BB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\AncientGarden_LowPoly\\06_Experiment.jpg",
+    "SourceHash": "FE768672E8C55CE435E0C0B5A0C64DE652F30CFBF5DFD31707B73C07316C1EF5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_01_Introduction\\01_Hero.jpg",
+    "SourceHash": "E583B5CFF8B4B945BE5BBD779CBE5ADD8C72DE57F4F07E16B53748710A62AF89",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_01_Introduction\\02_Reverse.jpg",
+    "SourceHash": "0D746039D6D1CCF1242AC2788C661378EFF2462ED5EE312511E205B82826B844",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_01_Introduction\\03_Eye.jpg",
+    "SourceHash": "5590C323997865A8658A2B97C24F39C3A64E81FB08EBCFB614FBCCA537D0BF53",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_01_Introduction\\04_Model.jpg",
+    "SourceHash": "7BDFE17A56C864414399E91E22E9291B542A74AEEFFF5CBEC9EF36B11F51A805",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_01_Introduction\\05_Experiment.jpg",
+    "SourceHash": "FBCA2868249E9729F14ED9C967F98F4CF05D2D96BB0DC60C0CB2A1BF8E2B9721",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_01_Introduction\\06_Experiment.jpg",
+    "SourceHash": "33F02408A3EAEB00B3206ED534845C521BB20823F689F0C64EAC054758752C15",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\01_Hero.jpg",
+    "SourceHash": "BC653B61EC06FF62284F63A24CD06CC04D4EC7B7DC18CEB73B6FF4733B1A4400",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\02_Reverse.jpg",
+    "SourceHash": "5049DA0C5BFF185E5D90DE5FF516AB50DD4DE955907092E61ABD565A2F9F0E8C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\03_Eye.jpg",
+    "SourceHash": "26FBEDE75918C9863F9478337BFF36059DA5730F324F3F8DD499490839E53B49",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\04_Model.jpg",
+    "SourceHash": "A01D83FE188727CF3F90D81EBA55E978C1603DEB67896F5B26515B1BC7B1E7E6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\05_Experiment.jpg",
+    "SourceHash": "D728EBDEAB62D1918906CA74A7BC1E006BBFBF4BF8088842D2F867E0384C4E09",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\06_Experiment.jpg",
+    "SourceHash": "06F5DA2FCDF29D05D7678EC6FF9244EFC35FD42AA55E4CEB0999049A77B837B3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\01_Hero.jpg",
+    "SourceHash": "C8FC39BBEB0375F319AEB5631BDFFA7273FB2777A40F560F48FB5BA3DC6ECA20",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\02_Reverse.jpg",
+    "SourceHash": "B392D7722D37D0965CBEA6239ECF52CD59E16B9893314437657F02026A473EF6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\03_Eye.jpg",
+    "SourceHash": "83764710166C8384817A866D43F016FBACE11451E827A9F02744E099978AE4F7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\04_Model.jpg",
+    "SourceHash": "B3CA6C800AC765AF08190EBA851A09FBD9C4471A99167BB7CA65162AE394D592",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\05_Experiment.jpg",
+    "SourceHash": "F3A220748D4A76310594A67912B20B3A3E41DA5F3C61FE10A6A228AF5CDF0E3F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\06_Experiment.jpg",
+    "SourceHash": "D363DFD9A4166BA499869EF23170B3E50E7D3C414E3F6ED2331FD05DEC2A1570",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\01_Hero.jpg",
+    "SourceHash": "D46A5FB1E15BFA02E82F9E827C01885C2C0BC8358956417E02C0DDE568D5EF06",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\02_Reverse.jpg",
+    "SourceHash": "B9A9C73AC84873BC97FEACC103469967B946041A05ABD4521792134D606EC72F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\03_Eye.jpg",
+    "SourceHash": "2E059932DF41940FCFFBE81070F79C338A3627CCCBBBBC716B01530C7551EB88",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\04_Model.jpg",
+    "SourceHash": "8CBD17279883D6995F3093DC9D23364122C6C37BFF96070A1691D4DE75A1A34F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\05_Experiment.jpg",
+    "SourceHash": "27BE722C321299DF06FD1EAB37AB4C2426712615095205A573B768CC9E998A8A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\06_Experiment.jpg",
+    "SourceHash": "AE02809CD9B7A446E8BA6371367369FB81A8E3B1708D58382030C1EBDF2A63A2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\01_Hero.jpg",
+    "SourceHash": "5E16080B0CAEEFFA32EB6037360D306EC77AD6F3FD2D73EB1816786E0A53AF05",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\02_Reverse.jpg",
+    "SourceHash": "4A43AEBA0491759B2B55B55F084B0E2A844BB8FD7316331BCB86A28050E5E1D3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\03_Eye.jpg",
+    "SourceHash": "96554AF04381C1D4C75D7F42CC8F4808C8565DCBE86BF56B56B74E570B514350",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\04_Model.jpg",
+    "SourceHash": "C6D2D08380F19EE4C0D2B8FEE27B1E5441C5DE64C79E2E525EC61EE8EF2C01D0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\05_Experiment.jpg",
+    "SourceHash": "7535DC0C6463921E8EBA4839CF24C00955680A66FB1D103E3D6592C7B1A40F87",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\06_Experiment.jpg",
+    "SourceHash": "E754CF1D9A20A11ABCA4265BAEC11A4ABE5EFBC48CAF7969468DB31799BE5038",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\01_Hero.jpg",
+    "SourceHash": "718F4D447A5E27B30A651F20CD257D52A0F946F79A18D32340086DE40CD1E28B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\02_Reverse.jpg",
+    "SourceHash": "32E7DF1781417029CF298C9E22DECF80D5B887A081B9580B55AD0577D6959390",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\03_Eye.jpg",
+    "SourceHash": "6EDCFBF69AE382724BEE2BCC5FE79A3533F0BFB8FDDC365C63025C24026034AB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\04_Model.jpg",
+    "SourceHash": "5CE4D32A89593244489BFFEE99706FF996C623FD7987A30B2ECCBAA2F563501C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\05_Experiment.jpg",
+    "SourceHash": "3B9495A0C4BA0A7016B17FB5473CC27D382C43C0D52276F0C5E7CF9E76536364",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\06_Experiment.jpg",
+    "SourceHash": "93FD326D1970D0342F3006068354E257EC84462775A41BE8473370A5F8929F74",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_07_Frequency_Coupling\\01_Hero.jpg",
+    "SourceHash": "6D1ADE8E26BE2CDFA79FA7F7B3BD9B5D01F1213D2C556590356581BC3206BD73",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_07_Frequency_Coupling\\02_Reverse.jpg",
+    "SourceHash": "A27AE404F958D6D9350EE9692849F09D8D8276649924CF7930FE0FE04923EA81",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_07_Frequency_Coupling\\03_Eye.jpg",
+    "SourceHash": "6C70E473695B453D4B4F8B4B7A4216690A8E73275CBD070BF08F7459EFE3FABA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_07_Frequency_Coupling\\04_Model.jpg",
+    "SourceHash": "13E3152E727705FF9544AA69643F70F0CF75A4FC3FF294ADF8FB858AAF433AD8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_07_Frequency_Coupling\\05_Experiment.jpg",
+    "SourceHash": "D846DD08A49EB3E63CEF0D24486537EF0D7E4A1C899D46CD97DE9B155029F112",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_07_Frequency_Coupling\\06_Experiment.jpg",
+    "SourceHash": "4F7413C7CF02B3612347702C88FE9FFBBC2186AE1BEBC009036177D82F7433F3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_08_Snow_Arena\\01_Hero.jpg",
+    "SourceHash": "4BAD499D9A594EE36B1AD36FC6E469AD0256AA95D3191BB528E35E585A87968E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_08_Snow_Arena\\02_Reverse.jpg",
+    "SourceHash": "041E268B9F330BBCFB0115533AD55BD468D2ED3B0F807A37CC396539D4D045D6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_08_Snow_Arena\\03_Eye.jpg",
+    "SourceHash": "19B6BA58A613D506EA03A21D46DCF06424E727297A6BF6A7AE002F90D9A5E43F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_08_Snow_Arena\\04_Model.jpg",
+    "SourceHash": "CCFC5BC208715DA2530B551E425C31CBAD309DD4D8702118D9C071B892B3FFB6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_08_Snow_Arena\\05_Experiment.jpg",
+    "SourceHash": "73A48B28153FE00FCFBA46474AD672FEBD700B19F1983E888DF3727C13C2AD88",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_08_Snow_Arena\\06_Experiment.jpg",
+    "SourceHash": "9272000D5D772991BED150835B7BAC110A14216064378D965D2ECBAF0679CC52",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_09_Creative_Workshop\\01_Hero.jpg",
+    "SourceHash": "CED38EDDA9CD8B361DAB02A847C33FD55A4395A60B18C0AAC38773BD769412E5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_09_Creative_Workshop\\02_Reverse.jpg",
+    "SourceHash": "A8BF7087DC868830C6577E83415D4CEBE482708104AE38896C4E9613DA20A569",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_09_Creative_Workshop\\03_Eye.jpg",
+    "SourceHash": "D5FDF4CE47FA02FD1FD35850D527D3EB9A2A03F5E9C2F7911B6D42FAEFB8EA57",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_09_Creative_Workshop\\04_Model.jpg",
+    "SourceHash": "A3FFF32D4FC65248B158D2B08E8712773E6572102CD88018E116FFC2524B57E1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_09_Creative_Workshop\\05_Experiment.jpg",
+    "SourceHash": "0E178494D8870D74805C9C60B8BC49E00C414D1653CE4DA08CB5350099E33EED",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_09_Creative_Workshop\\06_Experiment.jpg",
+    "SourceHash": "5B470A77A0A69918F675312DD8226B9F7457404070E968D3D053802A5F1F1C61",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_10_Physics_Laboratory\\01_Hero.jpg",
+    "SourceHash": "8C2B553E9040E4A97D9FE93D24A684D7B8E122980AE01E749BE5979F3A1A58AB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_10_Physics_Laboratory\\02_Reverse.jpg",
+    "SourceHash": "A31AF9D4F2F3E17D445E69A6EF74BBAD32AA2E8398593BFCD4028F46CAA91A5D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_10_Physics_Laboratory\\03_Eye.jpg",
+    "SourceHash": "419CF00B79990F92DBAD92D5612F669263190AC900D339A056702D4163830568",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_10_Physics_Laboratory\\04_Model.jpg",
+    "SourceHash": "AC798C6E32C71CE8A0F82E01D5CF861E4AC9A0C3813BF2F70F1777AC9B9EB616",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_10_Physics_Laboratory\\05_Experiment.jpg",
+    "SourceHash": "6D48AC55A2DFFC8F00EEE5CA3EE59E2AA72AD9328FB335BBA8E3C270628B908C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_10_Physics_Laboratory\\06_Experiment.jpg",
+    "SourceHash": "6705F9CDD6790F68670C50355848C550CF666C80C436D82FEE6F468A8508B511",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\01_Hero.jpg",
+    "SourceHash": "DAE798EDB02CBE02BAA6FE403B981570BAE4AE3C1172BDCB50606C6BECD14747",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\02_Reverse.jpg",
+    "SourceHash": "2D83A178219A2D306CB49F7CC98C8447D7989BF983D7097EAADE7D41CB633D9C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\03_Eye.jpg",
+    "SourceHash": "FD6471D72FC657DF86DF622681E8DE7589329EC47609E8AC7C2EA88A929D332B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\04_Model.jpg",
+    "SourceHash": "FF59C97F39F2DDF65FC41ABB6B974E2FF042FD628F001AB6F215183CA56AE95F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\05_Experiment.jpg",
+    "SourceHash": "1065BCDAE5D58AA72E16302C7C75D21942A32363249DD9FF85E6714D829C8952",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\06_Experiment.jpg",
+    "SourceHash": "690E11E2354C91A29FA1794875B45F6FCC98D878CAB7013F261068DA1314863E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_12_Celestial_Sundial\\01_Hero.jpg",
+    "SourceHash": "0AF6DD825D681E132742245994D15772413378E93983116902FF34E10DCA47B5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_12_Celestial_Sundial\\02_Reverse.jpg",
+    "SourceHash": "C580539E71D73F19AD3E732518DED62E02F4082BBE8D1B050DCA30F508282CF5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_12_Celestial_Sundial\\03_Eye.jpg",
+    "SourceHash": "6AB1671A6857704BEE9AE92238D0CBA35F42F50FCE26E018924B487B195737BA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_12_Celestial_Sundial\\04_Model.jpg",
+    "SourceHash": "731F0B0B5E0942B85A37F4F5223E123B66A73AC71F902BC197BD43AD3E017325",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_12_Celestial_Sundial\\05_Experiment.jpg",
+    "SourceHash": "64485F6F03547B1C29D08DAA3AEFDD46357E4DA4C85A07272EA2DA737E753BFC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_12_Celestial_Sundial\\06_Experiment.jpg",
+    "SourceHash": "1F8BDB805A4963E4A15617ABBBAE3EB7C1E5C9B0F4C396AACD8A6F7AE17973C7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\01_Hero.jpg",
+    "SourceHash": "DCDD1F4754DC50769161F99E48BC8BBFF05E0EC2A4D905E1FBD82E6AFE6D4FF2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\02_Reverse.jpg",
+    "SourceHash": "C484C65CEE8E2CEFD67EE470A7827457B03E4756EB9BF046F54E296E11A28A8C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\03_Eye.jpg",
+    "SourceHash": "2DCAB78C1B87CF3BFDC7614FC2F61B176BF2A367631B8DFF88C00611A2512504",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\04_Model.jpg",
+    "SourceHash": "C7DB1016115B755297DBB1A29F61982D40C5E0085D11E0FD5B946A66FA28C99F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\05_Experiment.jpg",
+    "SourceHash": "4CCF8C82028068373DE36E31F920C4EC5E3F958A21AE3BBBC0B92B692A7140C4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\06_Experiment.jpg",
+    "SourceHash": "30D18B417450D4DD46F76E65A7E31D9A868ADA26CA082A130840CA4ECC5B59AF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\01_Hero.jpg",
+    "SourceHash": "184F5AB5FE01F2406EFD3116438990C0B086294C5EEF71C229D745003FC1F1D1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\02_Reverse.jpg",
+    "SourceHash": "3D027C9CD24318AB11A6A7AE81F18A8315D1DE6F8CB32BE147564CA1C6B8CF8D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\03_Eye.jpg",
+    "SourceHash": "A179326DFB9E6B73518CD3FA0B6755A4376F7FB340F782A9BEE9D0EF27C8845E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\04_Model.jpg",
+    "SourceHash": "BBE13E85911E6ADD458EB5A5C4FDE2AAFC5F85EEC8684494D3C024566E526DCB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\05_Experiment.jpg",
+    "SourceHash": "0A0678DB95D5E45BBE5F440F9EA9D8A4E1C70BB068144897D9F3C83713A44BF9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003_Details\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\06_Experiment.jpg",
+    "SourceHash": "C7A511D3AEEF74CAA92E316509CEF0B41F4DDA7C65DC01C8823D074C598ADE74",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\Verification\\scene-details-guide.md",
+    "SourceHash": "12454021A0620A8704E421A6F6F3B6308534E420BE3BED7E39D2444FBF9B75FA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\Verification\\scene-details.txt",
+    "SourceHash": "54AA1AC4617D76FBBA0000F5783F891E42FB0EE3B80B57CBA1D011723CD64B1B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\Verification\\windows-build.txt",
+    "SourceHash": "3FE91F4C4268C319A8F7151ECA05B0763BC1DEE29D2B20C2F6FB3C35BB7A6188",
+    "OriginalHash": "0BCC377258402ECAF1A632D8CF7C936E9B35A6483873C06F5B841E6AF9FE0297"
+  }
+]

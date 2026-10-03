@@ -1,0 +1,1 @@
+PASS: first-level specimens have grab + dynamic Rigidbody + convex collision, bases stay fixed; all 15 scenes have one manager and left/right/desktop grabbers; portable props=44.

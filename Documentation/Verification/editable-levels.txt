@@ -1,0 +1,1 @@
+PASS: first-level Inspector values serialize and constrain invalid values; all mounted text explicitly world fixed; wood/stone/bronze specimens editable independently of their collidable bases.

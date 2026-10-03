@@ -6,13 +6,50 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_01_Introduction.unity
+    guid: f4462171ff99ec74bb7776e7ba17fbea
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_02_Buoyancy_Canal.unity
+    guid: 17b85512f5410e741a7547546eb64b2c
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_03_Acoustic_Resonance.unity
+    guid: 53d1e30f0b0611b46b48d39af5712453
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_04_Geomagnetic_Optics.unity
+    guid: f07b706cb950caa488349116b915ec3d
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_05_Electromagnetic_Lock.unity
+    guid: acd4a44a8b93f0940b458e3d671b5724
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_06_Hydraulic_Pipework.unity
+    guid: d89afdb14fa66694aa951144c174991a
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_07_Frequency_Coupling.unity
+    guid: c3b825aa7cfe3674fbfdf716d4617abb
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_08_Snow_Arena.unity
+    guid: 4ce8cebbafbee60439d60599d70d77f7
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_09_Creative_Workshop.unity
+    guid: 9470199c9bcbfe644bae0f73d1dfa5f9
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_10_Physics_Laboratory.unity
+    guid: c3555c4d6bd4b82448e3133bcb1ef87e
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_11_Garden_Canal_Design.unity
+    guid: 81b57e79cc732f548b692621f41ebd74
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_12_Celestial_Sundial.unity
+    guid: 824314a2ea48c05408663cb423350a9c
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_13_Winter_Asset_Design.unity
+    guid: c6e2b4b06e3c3ac4b973e3b23b662f21
+  - enabled: 1
+    path: Assets/ReportScenesLowPoly/Scenes/Fig_2_15_SelfModeled_Asset_Collection.unity
+    guid: 468109dc528c61a40b07570e2b257500
+  - enabled: 1
+    path: Assets/ReportGardenLowPoly/AncientGarden_LowPoly.unity
+    guid: 10210c5191cd24f4f9541aaf95bb7e73
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
-    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 9bec1ce6a03ccba4b9a8215241b32e63, type: 2}
-    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: a49cadc1a815591479693b955ccf08c1, type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 985fdffee33a5944396199c6b7145dd4, type: 3}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 39616d911e22eb14aaf1852b5fcba814, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a9a6963505ddf7f4d886008c6dc86122, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7a4cb814c43d3a940bd278f3bbe6468b, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 927f560e34ed78a4c96f14d800e8c80a, type: 2}

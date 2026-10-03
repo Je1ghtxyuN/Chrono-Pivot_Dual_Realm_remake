@@ -1,0 +1,16 @@
+PASS: 15 scenes; 0.18m path samples, floor + slope + 0.46m capsule clearance; actual CharacterController traversal; input action references; ordered demo completion/reset. Failures=0
+CHECKED Fig_2_01_Introduction route segments=6 stations=3
+CHECKED Fig_2_02_Buoyancy_Canal route segments=6 stations=3
+CHECKED Fig_2_03_Acoustic_Resonance route segments=9 stations=3
+CHECKED Fig_2_04_Geomagnetic_Optics route segments=11 stations=3
+CHECKED Fig_2_05_Electromagnetic_Lock route segments=6 stations=3
+CHECKED Fig_2_06_Hydraulic_Pipework route segments=10 stations=3
+CHECKED Fig_2_07_Frequency_Coupling route segments=13 stations=3
+CHECKED Fig_2_08_Snow_Arena route segments=12 stations=3
+CHECKED Fig_2_09_Creative_Workshop route segments=11 stations=3
+CHECKED Fig_2_10_Physics_Laboratory route segments=11 stations=3
+CHECKED Fig_2_11_Garden_Canal_Design route segments=16 stations=3
+CHECKED Fig_2_12_Celestial_Sundial route segments=10 stations=3
+CHECKED Fig_2_13_Winter_Asset_Design route segments=8 stations=3
+CHECKED Fig_2_15_SelfModeled_Asset_Collection route segments=9 stations=3
+CHECKED AncientGarden_LowPoly route segments=11 stations=3

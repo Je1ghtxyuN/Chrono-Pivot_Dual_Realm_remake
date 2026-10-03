@@ -1,0 +1,1 @@
+PASS: ordered objectives; repeated/out-of-order protection; complete/reset; overload buoyancy; resonance tolerance; pendulum frequency.

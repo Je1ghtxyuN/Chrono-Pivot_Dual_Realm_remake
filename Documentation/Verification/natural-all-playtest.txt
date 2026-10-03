@@ -1,0 +1,15 @@
+PASS: scenes 1..14 / 42 natural tasks. Virtual XR grip/drag/release; actual collisions and measurement updates; calibrated ballistic releases; status cannot bypass; reset and physical exits. First scene is covered by NaturalFirstPlayCheck. Physical headset and SteamVR streaming are not tested.
+PASS scene=1 浮力水渠 · 配重与闸门 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=2 声学庭院 · 调频与共振 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=3 观星台 · 地磁与反射 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=4 电磁实验室 · 线圈与门锁 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=5 液压工房 · 密封与流路 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=6 频率耦合 · 双区协作演示 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=7 冰雪村落 · 抛射与热学 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=8 创意工坊 · 模块与连锁 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=9 综合实验室 · 三类实验 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=10 园林水工 · 配重到巡园 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=11 天体日晷 · 时角与观测 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=12 冰雪资产 · 巡展与结构 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=13 模型展厅 · 器材巡展 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=14 古代园林 · 过桥与巡游 all 3 actual experiment conditions; negative status check; exit opens

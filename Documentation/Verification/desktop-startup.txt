@@ -1,0 +1,1 @@
+PASS: real Windows player launched with -desktop; input initialized; no native OpenXR diagnostics or script exceptions; desktop boot.config skips native pre-init. VR build retains OpenXR pre-init.

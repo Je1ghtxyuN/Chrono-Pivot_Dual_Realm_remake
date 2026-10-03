@@ -1,0 +1,1 @@
+PASS: actual virtual VR grip; material placement auto-progress; physical rail pull/release launches three distinct masses; Rigidbody gravity/target collisions record all three landings; no click bypass; sun model orbital dragging changes directional light; auto completion, physical exit and next scene. Physical headset not tested.

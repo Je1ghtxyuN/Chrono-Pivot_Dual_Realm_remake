@@ -1,0 +1,1 @@
+PASS: preserved self-modeled assets=614; scenes=15; photos=23; unresolved GUIDs=0; Windows executable and OpenXR native plugins present.

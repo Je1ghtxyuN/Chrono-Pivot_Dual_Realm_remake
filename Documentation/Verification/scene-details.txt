@@ -1,0 +1,15 @@
+Fig_2_01_Introduction: groups=9 triangles=7180; existing physics and experiment state unchanged.
+Fig_2_02_Buoyancy_Canal: groups=10 triangles=7564; existing physics and experiment state unchanged.
+Fig_2_03_Acoustic_Resonance: groups=9 triangles=7400; existing physics and experiment state unchanged.
+Fig_2_04_Geomagnetic_Optics: groups=10 triangles=7478; existing physics and experiment state unchanged.
+Fig_2_05_Electromagnetic_Lock: groups=3 triangles=1856; existing physics and experiment state unchanged.
+Fig_2_06_Hydraulic_Pipework: groups=3 triangles=1688; existing physics and experiment state unchanged.
+Fig_2_07_Frequency_Coupling: groups=3 triangles=1332; existing physics and experiment state unchanged.
+Fig_2_08_Snow_Arena: groups=10 triangles=3546; existing physics and experiment state unchanged.
+Fig_2_09_Creative_Workshop: groups=3 triangles=1224; existing physics and experiment state unchanged.
+Fig_2_10_Physics_Laboratory: groups=3 triangles=2452; existing physics and experiment state unchanged.
+Fig_2_11_Garden_Canal_Design: groups=10 triangles=7564; existing physics and experiment state unchanged.
+Fig_2_12_Celestial_Sundial: groups=10 triangles=7478; existing physics and experiment state unchanged.
+Fig_2_13_Winter_Asset_Design: groups=10 triangles=3546; existing physics and experiment state unchanged.
+Fig_2_15_SelfModeled_Asset_Collection: groups=3 triangles=1560; existing physics and experiment state unchanged.
+AncientGarden_LowPoly: groups=9 triangles=7180; existing physics and experiment state unchanged.

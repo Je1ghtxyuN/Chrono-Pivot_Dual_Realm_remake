@@ -1,0 +1,1 @@
+PASS: 15 scenes; 45 authored puzzles; explicit goals and clues; decisions or physical placements; locked collidable exits; no first-level click-only progression.

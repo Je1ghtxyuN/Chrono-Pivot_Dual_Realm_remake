@@ -1,0 +1,1804 @@
+{
+    "shots": [
+        {
+            "scene": "Fig_2_01_Introduction",
+            "figure": "2.1",
+            "title": "基础力学与空间感知引导",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_01_Introduction/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 11.0,
+                "y": 8.600000381469727,
+                "z": 15.0
+            },
+            "focus": {
+                "x": 2.9121532440185549,
+                "y": 3.3061366081237795,
+                "z": 3.5299625396728517
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_01_Introduction",
+            "figure": "2.1",
+            "title": "基础力学与空间感知引导",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_01_Introduction/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -12.0,
+                "y": 8.0,
+                "z": 14.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_01_Introduction",
+            "figure": "2.1",
+            "title": "基础力学与空间感知引导",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_01_Introduction/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 6.699999809265137
+            },
+            "focus": {
+                "x": -7.064927101135254,
+                "y": 1.8849999904632569,
+                "z": 2.9467592239379885
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_01_Introduction",
+            "figure": "2.1",
+            "title": "基础力学与空间感知引导",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_01_Introduction/04_Model.png",
+            "subject": "HubNavigationalSundialAndPortal",
+            "camera": {
+                "x": 5.342454433441162,
+                "y": 7.445757865905762,
+                "z": 7.386514663696289
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 2.69989275932312,
+                "z": -0.2433013916015625
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_01_Introduction",
+            "figure": "2.1",
+            "title": "基础力学与空间感知引导",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_01_Introduction/05_Experiment.png",
+            "subject": "同速同角标定发射器",
+            "camera": {
+                "x": 4.0017571449279789,
+                "y": 1.6781023740768433,
+                "z": 5.263654708862305
+            },
+            "focus": {
+                "x": 4.987913131713867,
+                "y": 0.5900000333786011,
+                "z": 3.1488375663757326
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_01_Introduction",
+            "figure": "2.1",
+            "title": "基础力学与空间感知引导",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_01_Introduction/06_Experiment.png",
+            "subject": "可操作太阳轨道",
+            "camera": {
+                "x": 0.12112760543823242,
+                "y": 2.5383200645446779,
+                "z": -7.882550239562988
+            },
+            "focus": {
+                "x": 1.272792100906372,
+                "y": 0.9649999737739563,
+                "z": -5.412797927856445
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_02_Buoyancy_Canal",
+            "figure": "2.2",
+            "title": "浮力与压强实验",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_02_Buoyancy_Canal/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 9.199999809265137,
+                "y": 7.199999809265137,
+                "z": 12.600000381469727
+            },
+            "focus": {
+                "x": 0.7648382186889648,
+                "y": 1.6529641151428223,
+                "z": 1.505925178527832
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_02_Buoyancy_Canal",
+            "figure": "2.2",
+            "title": "浮力与压强实验",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_02_Buoyancy_Canal/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -12.0,
+                "y": 8.0,
+                "z": 14.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_02_Buoyancy_Canal",
+            "figure": "2.2",
+            "title": "浮力与压强实验",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_02_Buoyancy_Canal/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 7.099999904632568
+            },
+            "focus": {
+                "x": -7.8796563148498539,
+                "y": 1.8849999904632569,
+                "z": 5.7176032066345219
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_02_Buoyancy_Canal",
+            "figure": "2.2",
+            "title": "浮力与压强实验",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_02_Buoyancy_Canal/04_Model.png",
+            "subject": "HandcraftedCargoPavilionBoat",
+            "camera": {
+                "x": 2.7915589809417726,
+                "y": 4.514739036560059,
+                "z": 7.087396144866943
+            },
+            "focus": {
+                "x": -0.7006533145904541,
+                "y": 1.412500262260437,
+                "z": 2.0999999046325685
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_02_Buoyancy_Canal",
+            "figure": "2.2",
+            "title": "浮力与压强实验",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_02_Buoyancy_Canal/05_Experiment.png",
+            "subject": "透明水槽与配重船",
+            "camera": {
+                "x": -8.025070190429688,
+                "y": 2.6552932262420656,
+                "z": 6.040274620056152
+            },
+            "focus": {
+                "x": -4.497918605804443,
+                "y": 0.9049999713897705,
+                "z": 4.756496906280518
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_02_Buoyancy_Canal",
+            "figure": "2.2",
+            "title": "浮力与压强实验",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_02_Buoyancy_Canal/06_Experiment.png",
+            "subject": "水闸操纵台",
+            "camera": {
+                "x": 6.430341720581055,
+                "y": 2.3904531002044679,
+                "z": 3.616368532180786
+            },
+            "focus": {
+                "x": 7.896645545959473,
+                "y": 0.758581817150116,
+                "z": 1.1999735832214356
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_03_Acoustic_Resonance",
+            "figure": "2.3",
+            "title": "声学与共振实验",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_03_Acoustic_Resonance/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 7.300000190734863,
+                "y": 5.800000190734863,
+                "z": 11.199999809265137
+            },
+            "focus": {
+                "x": -0.45309925079345705,
+                "y": 1.2331061363220215,
+                "z": -0.8013725280761719
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_03_Acoustic_Resonance",
+            "figure": "2.3",
+            "title": "声学与共振实验",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_03_Acoustic_Resonance/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -12.0,
+                "y": 8.0,
+                "z": 14.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_03_Acoustic_Resonance",
+            "figure": "2.3",
+            "title": "声学与共振实验",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_03_Acoustic_Resonance/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 6.800000190734863
+            },
+            "focus": {
+                "x": -5.799993991851807,
+                "y": 1.8849999904632569,
+                "z": 1.2900028228759766
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_03_Acoustic_Resonance",
+            "figure": "2.3",
+            "title": "声学与共振实验",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_03_Acoustic_Resonance/04_Model.png",
+            "subject": "FiveGraduatedBronzeBells",
+            "camera": {
+                "x": 5.61942720413208,
+                "y": 6.791908264160156,
+                "z": 8.025374412536621
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.7999999523162842,
+                "z": 0.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_03_Acoustic_Resonance",
+            "figure": "2.3",
+            "title": "声学与共振实验",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_03_Acoustic_Resonance/05_Experiment.png",
+            "subject": "编钟试音台",
+            "camera": {
+                "x": -3.4602880477905275,
+                "y": 2.314258337020874,
+                "z": 5.206321716308594
+            },
+            "focus": {
+                "x": -1.3111698627471924,
+                "y": 0.9549999833106995,
+                "z": 3.2370171546936037
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_03_Acoustic_Resonance",
+            "figure": "2.3",
+            "title": "声学与共振实验",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_03_Acoustic_Resonance/06_Experiment.png",
+            "subject": "双声源拍频实验",
+            "camera": {
+                "x": 4.250941276550293,
+                "y": 2.5856237411499025,
+                "z": 2.6601052284240724
+            },
+            "focus": {
+                "x": 3.227207660675049,
+                "y": 0.8575000166893005,
+                "z": 5.47279167175293
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_04_Geomagnetic_Optics",
+            "figure": "2.4",
+            "title": "地磁感应与反射光学实验",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_04_Geomagnetic_Optics/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 14.0,
+                "y": 9.699999809265137,
+                "z": 18.299999237060548
+            },
+            "focus": {
+                "x": 5.781938552856445,
+                "y": 5.767070770263672,
+                "z": 6.3838090896606449
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_04_Geomagnetic_Optics",
+            "figure": "2.4",
+            "title": "地磁感应与反射光学实验",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_04_Geomagnetic_Optics/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -12.0,
+                "y": 8.0,
+                "z": 14.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_04_Geomagnetic_Optics",
+            "figure": "2.4",
+            "title": "地磁感应与反射光学实验",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_04_Geomagnetic_Optics/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 8.699999809265137
+            },
+            "focus": {
+                "x": -6.993822125878069e-7,
+                "y": 1.8849999904632569,
+                "z": 0.6999998092651367
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_04_Geomagnetic_Optics",
+            "figure": "2.4",
+            "title": "地磁感应与反射光学实验",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_04_Geomagnetic_Optics/04_Model.png",
+            "subject": "MagneticLodestoneSpoonAndCompass",
+            "camera": {
+                "x": -2.207622766494751,
+                "y": 3.855252742767334,
+                "z": 6.673853874206543
+            },
+            "focus": {
+                "x": -4.5,
+                "y": 1.8188639879226685,
+                "z": 3.4000000953674318
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_04_Geomagnetic_Optics",
+            "figure": "2.4",
+            "title": "地磁感应与反射光学实验",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_04_Geomagnetic_Optics/05_Experiment.png",
+            "subject": "地磁司南实验",
+            "camera": {
+                "x": -5.520184516906738,
+                "y": 3.1176228523254396,
+                "z": 4.159071922302246
+            },
+            "focus": {
+                "x": -2.7539138793945314,
+                "y": 1.8125,
+                "z": 3.733302593231201
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_04_Geomagnetic_Optics",
+            "figure": "2.4",
+            "title": "地磁感应与反射光学实验",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_04_Geomagnetic_Optics/06_Experiment.png",
+            "subject": "真实反射实验",
+            "camera": {
+                "x": 3.651158094406128,
+                "y": 3.3921475410461427,
+                "z": 2.3681464195251467
+            },
+            "focus": {
+                "x": 5.914999961853027,
+                "y": 1.9499998092651368,
+                "z": 1.3125
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_05_Electromagnetic_Lock",
+            "figure": "2.5",
+            "title": "电磁锁组装与电路连通",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_05_Electromagnetic_Lock/01_Hero.png",
+            "subject": "室内整体布局",
+            "camera": {
+                "x": 5.760000228881836,
+                "y": 2.950000047683716,
+                "z": 4.199999809265137
+            },
+            "focus": {
+                "x": -1.600000023841858,
+                "y": 1.149999976158142,
+                "z": -1.559999942779541
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_05_Electromagnetic_Lock",
+            "figure": "2.5",
+            "title": "电磁锁组装与电路连通",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_05_Electromagnetic_Lock/02_Reverse.png",
+            "subject": "室内反向全景",
+            "camera": {
+                "x": -5.760000228881836,
+                "y": 2.950000047683716,
+                "z": -4.199999809265137
+            },
+            "focus": {
+                "x": 1.600000023841858,
+                "y": 1.149999976158142,
+                "z": 1.559999942779541
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_05_Electromagnetic_Lock",
+            "figure": "2.5",
+            "title": "电磁锁组装与电路连通",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_05_Electromagnetic_Lock/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 5.300000190734863
+            },
+            "focus": {
+                "x": -4.553678035736084,
+                "y": 1.8849999904632569,
+                "z": -1.2775373458862305
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_05_Electromagnetic_Lock",
+            "figure": "2.5",
+            "title": "电磁锁组装与电路连通",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_05_Electromagnetic_Lock/04_Model.png",
+            "subject": "ElectromagneticAssemblyWorkbench",
+            "camera": {
+                "x": -6.164275169372559,
+                "y": 3.0999999046325685,
+                "z": 4.964275360107422
+            },
+            "focus": {
+                "x": -1.799999713897705,
+                "y": 0.8070740699768066,
+                "z": 0.6000000238418579
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_05_Electromagnetic_Lock",
+            "figure": "2.5",
+            "title": "电磁锁组装与电路连通",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_05_Electromagnetic_Lock/05_Experiment.png",
+            "subject": "线圈磁锁实验",
+            "camera": {
+                "x": -1.4210436344146729,
+                "y": 2.016181707382202,
+                "z": 3.921154737472534
+            },
+            "focus": {
+                "x": -3.565413475036621,
+                "y": 0.7762500643730164,
+                "z": 2.348837375640869
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_05_Electromagnetic_Lock",
+            "figure": "2.5",
+            "title": "电磁锁组装与电路连通",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_05_Electromagnetic_Lock/06_Experiment.png",
+            "subject": "线圈磁锁实验",
+            "camera": {
+                "x": -1.0973730087280274,
+                "y": 2.2432141304016115,
+                "z": 1.7449111938476563
+            },
+            "focus": {
+                "x": -3.565413475036621,
+                "y": 0.7762500643730164,
+                "z": 2.348837375640869
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_06_Hydraulic_Pipework",
+            "figure": "2.6",
+            "title": "流体管网排故与修复",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_06_Hydraulic_Pipework/01_Hero.png",
+            "subject": "室内整体布局",
+            "camera": {
+                "x": 6.4800004959106449,
+                "y": 2.950000047683716,
+                "z": 4.549999713897705
+            },
+            "focus": {
+                "x": -1.8000000715255738,
+                "y": 1.149999976158142,
+                "z": -1.6899999380111695
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_06_Hydraulic_Pipework",
+            "figure": "2.6",
+            "title": "流体管网排故与修复",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_06_Hydraulic_Pipework/02_Reverse.png",
+            "subject": "水箱与中央管路",
+            "camera": {
+                "x": -3.799999952316284,
+                "y": 2.799999952316284,
+                "z": 4.599999904632568
+            },
+            "focus": {
+                "x": -2.4000000953674318,
+                "y": 1.5,
+                "z": -3.0999999046325685
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_06_Hydraulic_Pipework",
+            "figure": "2.6",
+            "title": "流体管网排故与修复",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_06_Hydraulic_Pipework/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 5.800000190734863
+            },
+            "focus": {
+                "x": 7.404374599456787,
+                "y": 1.8849999904632569,
+                "z": 2.7709360122680666
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_06_Hydraulic_Pipework",
+            "figure": "2.6",
+            "title": "流体管网排故与修复",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_06_Hydraulic_Pipework/04_Model.png",
+            "subject": "HydraulicTankNetworkAndLeak",
+            "camera": {
+                "x": 3.0952954292297365,
+                "y": 3.0999999046325685,
+                "z": 4.69809627532959
+            },
+            "focus": {
+                "x": -2.4000000953674318,
+                "y": 1.5750000476837159,
+                "z": -3.1499998569488527
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_06_Hydraulic_Pipework",
+            "figure": "2.6",
+            "title": "流体管网排故与修复",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_06_Hydraulic_Pipework/05_Experiment.png",
+            "subject": "封闭液压实验",
+            "camera": {
+                "x": 4.6251115798950199,
+                "y": 2.266981840133667,
+                "z": 1.094313144683838
+            },
+            "focus": {
+                "x": 5.672792434692383,
+                "y": 0.8385818600654602,
+                "z": 3.972792148590088
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_06_Hydraulic_Pipework",
+            "figure": "2.6",
+            "title": "流体管网排故与修复",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_06_Hydraulic_Pipework/06_Experiment.png",
+            "subject": "封闭液压实验",
+            "camera": {
+                "x": 2.9222521781921388,
+                "y": 2.5285229682922365,
+                "z": 2.971677541732788
+            },
+            "focus": {
+                "x": 5.672792434692383,
+                "y": 0.8385818600654602,
+                "z": 3.972792148590088
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_07_Frequency_Coupling",
+            "figure": "2.7",
+            "title": "频率耦合实验",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_07_Frequency_Coupling/01_Hero.png",
+            "subject": "机械摆与LC两区布局",
+            "camera": {
+                "x": 0.0,
+                "y": 3.0999999046325685,
+                "z": 5.800000190734863
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.350000023841858,
+                "z": -1.600000023841858
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_07_Frequency_Coupling",
+            "figure": "2.7",
+            "title": "频率耦合实验",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_07_Frequency_Coupling/02_Reverse.png",
+            "subject": "室内反向全景",
+            "camera": {
+                "x": -6.4800004959106449,
+                "y": 2.950000047683716,
+                "z": -4.900000095367432
+            },
+            "focus": {
+                "x": 1.8000000715255738,
+                "y": 1.149999976158142,
+                "z": 1.8199999332427979
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_07_Frequency_Coupling",
+            "figure": "2.7",
+            "title": "频率耦合实验",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_07_Frequency_Coupling/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": -4.400000095367432,
+                "y": 1.7350000143051148,
+                "z": 6.0
+            },
+            "focus": {
+                "x": -4.40000057220459,
+                "y": 1.8849999904632569,
+                "z": -2.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_07_Frequency_Coupling",
+            "figure": "2.7",
+            "title": "频率耦合实验",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_07_Frequency_Coupling/04_Model.png",
+            "subject": "ZoneAAdjustableMechanicalPendulum",
+            "camera": {
+                "x": 0.16378021240234376,
+                "y": 3.0999999046325685,
+                "z": 6.449999809265137
+            },
+            "focus": {
+                "x": -4.400000095367432,
+                "y": 1.7374999523162842,
+                "z": 1.0499998331069947
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_07_Frequency_Coupling",
+            "figure": "2.7",
+            "title": "频率耦合实验",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_07_Frequency_Coupling/05_Experiment.png",
+            "subject": "可变摆长单摆",
+            "camera": {
+                "x": -3.799999952316284,
+                "y": 2.5,
+                "z": 3.299999952316284
+            },
+            "focus": {
+                "x": -6.1654133796691898,
+                "y": 1.285000205039978,
+                "z": 4.951162338256836
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_07_Frequency_Coupling",
+            "figure": "2.7",
+            "title": "频率耦合实验",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_07_Frequency_Coupling/06_Experiment.png",
+            "subject": "LC耦合实验",
+            "camera": {
+                "x": 4.106135368347168,
+                "y": 2.491070508956909,
+                "z": 0.383209228515625
+            },
+            "focus": {
+                "x": 3.1272077560424806,
+                "y": 0.8385818600654602,
+                "z": 3.0727920532226564
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_08_Snow_Arena",
+            "figure": "2.8",
+            "title": "冰雪竞技场与热学环境",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_08_Snow_Arena/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 15.5,
+                "y": 11.300000190734864,
+                "z": 19.200000762939454
+            },
+            "focus": {
+                "x": 7.192506790161133,
+                "y": 5.886731147766113,
+                "z": 7.94468879699707
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_08_Snow_Arena",
+            "figure": "2.8",
+            "title": "冰雪竞技场与热学环境",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_08_Snow_Arena/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -18.0,
+                "y": 11.0,
+                "z": 19.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_08_Snow_Arena",
+            "figure": "2.8",
+            "title": "冰雪竞技场与热学环境",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_08_Snow_Arena/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 2.799999952316284,
+                "y": 1.7350000143051148,
+                "z": 10.5
+            },
+            "focus": {
+                "x": 9.659943580627442,
+                "y": 1.8849999904632569,
+                "z": 6.384033203125
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_08_Snow_Arena",
+            "figure": "2.8",
+            "title": "冰雪竞技场与热学环境",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_08_Snow_Arena/04_Model.png",
+            "subject": "SnowmanTarget",
+            "camera": {
+                "x": 1.8259934186935425,
+                "y": 2.66208553314209,
+                "z": 2.1168875694274904
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.0399999618530274,
+                "z": -0.4909011125564575
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_08_Snow_Arena",
+            "figure": "2.8",
+            "title": "冰雪竞技场与热学环境",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_08_Snow_Arena/05_Experiment.png",
+            "subject": "热量传递对照台",
+            "camera": {
+                "x": 9.148412704467774,
+                "y": 2.4201316833496095,
+                "z": 9.332955360412598
+            },
+            "focus": {
+                "x": 8.272791862487793,
+                "y": 0.6274999976158142,
+                "z": 6.9272074699401859
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_08_Snow_Arena",
+            "figure": "2.8",
+            "title": "冰雪竞技场与热学环境",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_08_Snow_Arena/06_Experiment.png",
+            "subject": "热量传递对照台",
+            "camera": {
+                "x": 7.3470659255981449,
+                "y": 2.190178871154785,
+                "z": 9.470616340637207
+            },
+            "focus": {
+                "x": 8.272791862487793,
+                "y": 0.6274999976158142,
+                "z": 6.9272074699401859
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_09_Creative_Workshop",
+            "figure": "2.9",
+            "title": "创意工坊与自由探索",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_09_Creative_Workshop/01_Hero.png",
+            "subject": "室内整体布局",
+            "camera": {
+                "x": 7.560000419616699,
+                "y": 2.950000047683716,
+                "z": 5.599999904632568
+            },
+            "focus": {
+                "x": -2.1000001430511476,
+                "y": 1.149999976158142,
+                "z": -2.0799999237060549
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_09_Creative_Workshop",
+            "figure": "2.9",
+            "title": "创意工坊与自由探索",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_09_Creative_Workshop/02_Reverse.png",
+            "subject": "室内反向全景",
+            "camera": {
+                "x": -7.560000419616699,
+                "y": 2.950000047683716,
+                "z": -5.599999904632568
+            },
+            "focus": {
+                "x": 2.1000001430511476,
+                "y": 1.149999976158142,
+                "z": 2.0799999237060549
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_09_Creative_Workshop",
+            "figure": "2.9",
+            "title": "创意工坊与自由探索",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_09_Creative_Workshop/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 7.0
+            },
+            "focus": {
+                "x": -7.530714988708496,
+                "y": 1.8849999904632569,
+                "z": 4.300310134887695
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_09_Creative_Workshop",
+            "figure": "2.9",
+            "title": "创意工坊与自由探索",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_09_Creative_Workshop/04_Model.png",
+            "subject": "WorkshopRampDominoLeverAssembly",
+            "camera": {
+                "x": 5.397760391235352,
+                "y": 3.0999999046325685,
+                "z": 7.449999809265137
+            },
+            "focus": {
+                "x": -0.19850361347198487,
+                "y": 0.9424999952316284,
+                "z": 0.5854551792144775
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_09_Creative_Workshop",
+            "figure": "2.9",
+            "title": "创意工坊与自由探索",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_09_Creative_Workshop/05_Experiment.png",
+            "subject": "骨牌碰撞台",
+            "camera": {
+                "x": -1.1672782897949219,
+                "y": 2.0899453163146974,
+                "z": 5.405479431152344
+            },
+            "focus": {
+                "x": 0.3511626124382019,
+                "y": 0.8925000429153442,
+                "z": 3.3345863819122316
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_09_Creative_Workshop",
+            "figure": "2.9",
+            "title": "创意工坊与自由探索",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_09_Creative_Workshop/06_Experiment.png",
+            "subject": "真实反射实验",
+            "camera": {
+                "x": 5.848842620849609,
+                "y": 2.422147750854492,
+                "z": -2.8681459426879885
+            },
+            "focus": {
+                "x": 3.585000514984131,
+                "y": 0.9800000190734863,
+                "z": -1.8124996423721314
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_10_Physics_Laboratory",
+            "figure": "2.10",
+            "title": "物理实验室设计",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_10_Physics_Laboratory/01_Hero.png",
+            "subject": "室内整体布局",
+            "camera": {
+                "x": 7.920000076293945,
+                "y": 2.950000047683716,
+                "z": 5.949999809265137
+            },
+            "focus": {
+                "x": -2.200000047683716,
+                "y": 1.149999976158142,
+                "z": -2.2100000381469728
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_10_Physics_Laboratory",
+            "figure": "2.10",
+            "title": "物理实验室设计",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_10_Physics_Laboratory/02_Reverse.png",
+            "subject": "中央走道与实验岛",
+            "camera": {
+                "x": 0.0,
+                "y": 2.799999952316284,
+                "z": -6.699999809265137
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.2000000476837159,
+                "z": 4.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_10_Physics_Laboratory",
+            "figure": "2.10",
+            "title": "物理实验室设计",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_10_Physics_Laboratory/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 7.599999904632568
+            },
+            "focus": {
+                "x": -6.993822125878069e-7,
+                "y": 1.8849999904632569,
+                "z": -0.40000009536743166
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_10_Physics_Laboratory",
+            "figure": "2.10",
+            "title": "物理实验室设计",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_10_Physics_Laboratory/04_Model.png",
+            "subject": "IntegratedLabElectromagneticIsland",
+            "camera": {
+                "x": -1.6598758697509766,
+                "y": 3.0999999046325685,
+                "z": 7.055820941925049
+            },
+            "focus": {
+                "x": -5.199999809265137,
+                "y": 0.8070740699768066,
+                "z": 2.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_10_Physics_Laboratory",
+            "figure": "2.10",
+            "title": "物理实验室设计",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_10_Physics_Laboratory/05_Experiment.png",
+            "subject": "线圈磁锁实验",
+            "camera": {
+                "x": -5.611101150512695,
+                "y": 1.9138915538787842,
+                "z": 2.768947124481201
+            },
+            "focus": {
+                "x": -3.3999998569488527,
+                "y": 0.7762500643730164,
+                "z": 3.8000001907348635
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_10_Physics_Laboratory",
+            "figure": "2.10",
+            "title": "物理实验室设计",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_10_Physics_Laboratory/06_Experiment.png",
+            "subject": "封闭液压实验",
+            "camera": {
+                "x": -0.0037268400192260744,
+                "y": 2.5083682537078859,
+                "z": -2.2274887561798097
+            },
+            "focus": {
+                "x": 1.496645450592041,
+                "y": 0.8385818600654602,
+                "z": -4.700026512145996
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_11_Garden_Canal_Design",
+            "figure": "2.11",
+            "title": "园林水渠场景设计",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_11_Garden_Canal_Design/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 18.0,
+                "y": 14.199999809265137,
+                "z": 27.0
+            },
+            "focus": {
+                "x": 9.657161712646485,
+                "y": 8.220967292785645,
+                "z": 16.06161117553711
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_11_Garden_Canal_Design",
+            "figure": "2.11",
+            "title": "园林水渠场景设计",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_11_Garden_Canal_Design/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -18.0,
+                "y": 11.0,
+                "z": 19.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_11_Garden_Canal_Design",
+            "figure": "2.11",
+            "title": "园林水渠场景设计",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_11_Garden_Canal_Design/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 2.0450000762939455,
+                "z": 16.0
+            },
+            "focus": {
+                "x": -7.76909065246582,
+                "y": 2.194999933242798,
+                "z": 14.091800689697266
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_11_Garden_Canal_Design",
+            "figure": "2.11",
+            "title": "园林水渠场景设计",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_11_Garden_Canal_Design/04_Model.png",
+            "subject": "LowArchStoneBridge",
+            "camera": {
+                "x": 5.427414894104004,
+                "y": 5.921338081359863,
+                "z": 7.971151828765869
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.0999999046325684,
+                "z": 0.2199999988079071
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_11_Garden_Canal_Design",
+            "figure": "2.11",
+            "title": "园林水渠场景设计",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_11_Garden_Canal_Design/05_Experiment.png",
+            "subject": "透明水槽与配重船",
+            "camera": {
+                "x": -8.025070190429688,
+                "y": 2.998551368713379,
+                "z": 14.540275573730469
+            },
+            "focus": {
+                "x": -4.497918605804443,
+                "y": 1.2482582330703736,
+                "z": 13.256497383117676
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_11_Garden_Canal_Design",
+            "figure": "2.11",
+            "title": "园林水渠场景设计",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_11_Garden_Canal_Design/06_Experiment.png",
+            "subject": "水闸操纵台",
+            "camera": {
+                "x": 6.369985103607178,
+                "y": 2.455836772918701,
+                "z": 11.793242454528809
+            },
+            "focus": {
+                "x": 8.5,
+                "y": 1.0989418029785157,
+                "z": 10.800000190734864
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_12_Celestial_Sundial",
+            "figure": "2.12",
+            "title": "天体运行与日晷设计",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_12_Celestial_Sundial/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 10.0,
+                "y": 8.199999809265137,
+                "z": 13.0
+            },
+            "focus": {
+                "x": 1.6730880737304688,
+                "y": 2.4544315338134767,
+                "z": 1.925206184387207
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_12_Celestial_Sundial",
+            "figure": "2.12",
+            "title": "天体运行与日晷设计",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_12_Celestial_Sundial/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -12.0,
+                "y": 8.0,
+                "z": 14.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_12_Celestial_Sundial",
+            "figure": "2.12",
+            "title": "天体运行与日晷设计",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_12_Celestial_Sundial/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 6.199999809265137
+            },
+            "focus": {
+                "x": -6.191658020019531,
+                "y": 1.8849999904632569,
+                "z": 1.1340980529785157
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_12_Celestial_Sundial",
+            "figure": "2.12",
+            "title": "天体运行与日晷设计",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_12_Celestial_Sundial/04_Model.png",
+            "subject": "TwelveHourSundialAndArmillary",
+            "camera": {
+                "x": 7.123199462890625,
+                "y": 8.431251525878907,
+                "z": 11.05245304107666
+            },
+            "focus": {
+                "x": 0.02420663833618164,
+                "y": 2.125,
+                "z": 0.9140408039093018
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_12_Celestial_Sundial",
+            "figure": "2.12",
+            "title": "天体运行与日晷设计",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_12_Celestial_Sundial/05_Experiment.png",
+            "subject": "日晷方位校准台",
+            "camera": {
+                "x": -0.7711155414581299,
+                "y": 2.185346841812134,
+                "z": 4.949745178222656
+            },
+            "focus": {
+                "x": -3.6966447830200197,
+                "y": 0.8050858974456787,
+                "z": 5.400026321411133
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_12_Celestial_Sundial",
+            "figure": "2.12",
+            "title": "天体运行与日晷设计",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_12_Celestial_Sundial/06_Experiment.png",
+            "subject": "可操作太阳轨道",
+            "camera": {
+                "x": -1.7516379356384278,
+                "y": 2.5383198261260988,
+                "z": -5.306403160095215
+            },
+            "focus": {
+                "x": -0.5999735593795776,
+                "y": 0.9649999737739563,
+                "z": -2.836650848388672
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_13_Winter_Asset_Design",
+            "figure": "2.13",
+            "title": "冰雪实验场场景与资产设计",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_13_Winter_Asset_Design/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 12.0,
+                "y": 9.5,
+                "z": 16.0
+            },
+            "focus": {
+                "x": 4.217700958251953,
+                "y": 4.052391529083252,
+                "z": 4.391404151916504
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_13_Winter_Asset_Design",
+            "figure": "2.13",
+            "title": "冰雪实验场场景与资产设计",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_13_Winter_Asset_Design/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -12.0,
+                "y": 8.0,
+                "z": 14.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_13_Winter_Asset_Design",
+            "figure": "2.13",
+            "title": "冰雪实验场场景与资产设计",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_13_Winter_Asset_Design/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 6.599999904632568
+            },
+            "focus": {
+                "x": -7.1554179191589359,
+                "y": 1.8849999904632569,
+                "z": 3.0222935676574709
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_13_Winter_Asset_Design",
+            "figure": "2.13",
+            "title": "冰雪实验场场景与资产设计",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_13_Winter_Asset_Design/04_Model.png",
+            "subject": "SelfModeledFrostedGlove",
+            "camera": {
+                "x": 8.059911727905274,
+                "y": 3.3092739582061769,
+                "z": 3.481417417526245
+            },
+            "focus": {
+                "x": 5.647827625274658,
+                "y": 1.1665456295013428,
+                "z": 0.036603428423404697
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_13_Winter_Asset_Design",
+            "figure": "2.13",
+            "title": "冰雪实验场场景与资产设计",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_13_Winter_Asset_Design/05_Experiment.png",
+            "subject": "雪人重心实验",
+            "camera": {
+                "x": -6.843396186828613,
+                "y": 1.9164073467254639,
+                "z": 2.8930063247680666
+            },
+            "focus": {
+                "x": -4.137017250061035,
+                "y": 0.6531999707221985,
+                "z": 3.011169910430908
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_13_Winter_Asset_Design",
+            "figure": "2.13",
+            "title": "冰雪实验场场景与资产设计",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_13_Winter_Asset_Design/06_Experiment.png",
+            "subject": "热量传递对照台",
+            "camera": {
+                "x": 6.483928680419922,
+                "y": 2.454204559326172,
+                "z": 4.906783103942871
+            },
+            "focus": {
+                "x": 6.900026321411133,
+                "y": 0.8749999403953552,
+                "z": 2.203354835510254
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_15_SelfModeled_Asset_Collection",
+            "figure": "2.15",
+            "title": "三维场景与交互资产建模",
+            "angle": "01_Hero",
+            "file": "Photos/Fig_2_15_SelfModeled_Asset_Collection/01_Hero.png",
+            "subject": "室内整体布局",
+            "camera": {
+                "x": 7.920000076293945,
+                "y": 2.950000047683716,
+                "z": 5.599999904632568
+            },
+            "focus": {
+                "x": -2.200000047683716,
+                "y": 1.149999976158142,
+                "z": -2.0799999237060549
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_15_SelfModeled_Asset_Collection",
+            "figure": "2.15",
+            "title": "三维场景与交互资产建模",
+            "angle": "02_Reverse",
+            "file": "Photos/Fig_2_15_SelfModeled_Asset_Collection/02_Reverse.png",
+            "subject": "室内反向全景",
+            "camera": {
+                "x": -7.920000076293945,
+                "y": 2.950000047683716,
+                "z": -5.599999904632568
+            },
+            "focus": {
+                "x": 2.200000047683716,
+                "y": 1.149999976158142,
+                "z": 2.0799999237060549
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_15_SelfModeled_Asset_Collection",
+            "figure": "2.15",
+            "title": "三维场景与交互资产建模",
+            "angle": "03_Eye",
+            "file": "Photos/Fig_2_15_SelfModeled_Asset_Collection/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 0.0,
+                "y": 1.7350000143051148,
+                "z": 7.0
+            },
+            "focus": {
+                "x": -6.993822125878069e-7,
+                "y": 1.8849999904632569,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_15_SelfModeled_Asset_Collection",
+            "figure": "2.15",
+            "title": "三维场景与交互资产建模",
+            "angle": "04_Model",
+            "file": "Photos/Fig_2_15_SelfModeled_Asset_Collection/04_Model.png",
+            "subject": "AssetGallery_0",
+            "camera": {
+                "x": -5.209439277648926,
+                "y": 3.0999999046325685,
+                "z": 5.842815399169922
+            },
+            "focus": {
+                "x": -7.199999809265137,
+                "y": 1.378425121307373,
+                "z": 3.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_15_SelfModeled_Asset_Collection",
+            "figure": "2.15",
+            "title": "三维场景与交互资产建模",
+            "angle": "05_Experiment",
+            "file": "Photos/Fig_2_15_SelfModeled_Asset_Collection/05_Experiment.png",
+            "subject": "地磁司南实验",
+            "camera": {
+                "x": -6.127321720123291,
+                "y": 1.8284351825714112,
+                "z": 5.950984954833984
+            },
+            "focus": {
+                "x": -4.648837566375732,
+                "y": 0.6625000834465027,
+                "z": 3.934586524963379
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "Fig_2_15_SelfModeled_Asset_Collection",
+            "figure": "2.15",
+            "title": "三维场景与交互资产建模",
+            "angle": "06_Experiment",
+            "file": "Photos/Fig_2_15_SelfModeled_Asset_Collection/06_Experiment.png",
+            "subject": "地磁司南实验",
+            "camera": {
+                "x": -6.969590187072754,
+                "y": 2.0419187545776369,
+                "z": 4.502470970153809
+            },
+            "focus": {
+                "x": -4.648837566375732,
+                "y": 0.6625000834465027,
+                "z": 3.934586524963379
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "AncientGarden_LowPoly",
+            "figure": "附图",
+            "title": "古代园林补充场景",
+            "angle": "01_Hero",
+            "file": "Photos/AncientGarden_LowPoly/01_Hero.png",
+            "subject": "场景主体全景",
+            "camera": {
+                "x": 13.0,
+                "y": 11.0,
+                "z": 18.0
+            },
+            "focus": {
+                "x": 5.460864067077637,
+                "y": 5.20066499710083,
+                "z": 6.401328086853027
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "AncientGarden_LowPoly",
+            "figure": "附图",
+            "title": "古代园林补充场景",
+            "angle": "02_Reverse",
+            "file": "Photos/AncientGarden_LowPoly/02_Reverse.png",
+            "subject": "另一侧环境布局",
+            "camera": {
+                "x": -18.0,
+                "y": 11.0,
+                "z": 19.0
+            },
+            "focus": {
+                "x": 0.0,
+                "y": 1.25,
+                "z": -1.0
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "AncientGarden_LowPoly",
+            "figure": "附图",
+            "title": "古代园林补充场景",
+            "angle": "03_Eye",
+            "file": "Photos/AncientGarden_LowPoly/03_Eye.png",
+            "subject": "玩家高度与进入路线",
+            "camera": {
+                "x": 9.0,
+                "y": 2.0450000762939455,
+                "z": 5.0
+            },
+            "focus": {
+                "x": 6.8022308349609379,
+                "y": 2.194999933242798,
+                "z": -2.6921911239624025
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "AncientGarden_LowPoly",
+            "figure": "附图",
+            "title": "古代园林补充场景",
+            "angle": "04_Model",
+            "file": "Photos/AncientGarden_LowPoly/04_Model.png",
+            "subject": "HexagonalLakesidePavilion",
+            "camera": {
+                "x": -1.1275997161865235,
+                "y": 7.970132827758789,
+                "z": 10.358211517333985
+            },
+            "focus": {
+                "x": -6.699999809265137,
+                "y": 3.0199999809265138,
+                "z": 2.4000000953674318
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "AncientGarden_LowPoly",
+            "figure": "附图",
+            "title": "古代园林补充场景",
+            "angle": "05_Experiment",
+            "file": "Photos/AncientGarden_LowPoly/05_Experiment.png",
+            "subject": "绳鼓水工轮",
+            "camera": {
+                "x": 3.316845178604126,
+                "y": 2.4270219802856447,
+                "z": -0.5930958390235901
+            },
+            "focus": {
+                "x": 6.162982940673828,
+                "y": 1.0985817909240723,
+                "z": -0.4688301682472229
+            },
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "scene": "AncientGarden_LowPoly",
+            "figure": "附图",
+            "title": "古代园林补充场景",
+            "angle": "06_Experiment",
+            "file": "Photos/AncientGarden_LowPoly/06_Experiment.png",
+            "subject": "真实反射实验",
+            "camera": {
+                "x": -9.315408706665039,
+                "y": 2.6963133811950685,
+                "z": -1.6368944644927979
+            },
+            "focus": {
+                "x": -11.17164421081543,
+                "y": 1.1100000143051148,
+                "z": 0.38883012533187868
+            },
+            "width": 2560,
+            "height": 1440
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+Fig_2_01_Introduction | meshes=11 | triangles=12653 | behavior=0 | cameras=1
+Fig_2_02_Buoyancy_Canal | meshes=12 | triangles=5835 | behavior=0 | cameras=2
+Fig_2_03_Acoustic_Resonance | meshes=13 | triangles=11889 | behavior=0 | cameras=1
+Fig_2_04_Geomagnetic_Optics | meshes=8 | triangles=9205 | behavior=0 | cameras=2
+Fig_2_05_Electromagnetic_Lock | meshes=6 | triangles=9580 | behavior=0 | cameras=2
+Fig_2_06_Hydraulic_Pipework | meshes=4 | triangles=7824 | behavior=0 | cameras=2
+Fig_2_07_Frequency_Coupling | meshes=5 | triangles=9296 | behavior=0 | cameras=1
+Fig_2_08_Snow_Arena | meshes=25 | triangles=11610 | behavior=0 | cameras=2
+Fig_2_09_Creative_Workshop | meshes=8 | triangles=5748 | behavior=0 | cameras=1
+Fig_2_10_Physics_Laboratory | meshes=8 | triangles=14144 | behavior=0 | cameras=1
+Fig_2_11_Garden_Canal_Design | meshes=141 | triangles=29056 | behavior=0 | cameras=1
+Fig_2_12_Celestial_Sundial | meshes=7 | triangles=15437 | behavior=0 | cameras=1
+Fig_2_13_Winter_Asset_Design | meshes=9 | triangles=10306 | behavior=0 | cameras=1
+Fig_2_15_SelfModeled_Asset_Collection | meshes=10 | triangles=17501 | behavior=0 | cameras=1

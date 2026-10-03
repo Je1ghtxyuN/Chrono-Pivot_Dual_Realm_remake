@@ -1,0 +1,1 @@
+PASS: 15 scenes; self-authored mesh prefab; head + both hand targets; first-person hiding; no avatar colliders; desktop player bound.

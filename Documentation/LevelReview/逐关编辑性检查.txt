@@ -1,0 +1,103 @@
+
+0 | Fig_2_01_Introduction
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  HubMaterialCube_0 → 底座 / 材料样品; triangles preserved=76
+    材料样品 support contact correction=-0.0450m
+  HubMaterialCube_1 → 底座 / 材料样品; triangles preserved=76
+    材料样品 support contact correction=-0.0450m
+  HubMaterialCube_2 → 底座 / 材料样品; triangles preserved=76
+    材料样品 support contact correction=-0.0450m
+  HubNavigationalSundialAndPortal → 日晷底座 / 刻度盘与晷针 / 引导光环; triangles preserved=4274
+  HubThrowTargetPads → 落点_1 / 落点_2 / 落点_3; triangles preserved=4032
+
+1 | Fig_2_02_Buoyancy_Canal
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  CanalMaterialWeightBench → 工作台 / 配重_1 / 配重_2 / 配重_3; triangles preserved=108
+    配重_1 support contact correction=-0.0050m
+    配重_2 support contact correction=-0.0050m
+    配重_3 support contact correction=-0.0050m
+  HandcraftedCargoPavilionBoat → 船体与亭 / 石配重 / 铜配重; triangles preserved=702
+  CanalWaterLevelGauge → 水位标尺 / 底座; triangles preserved=164
+  CanalSluiceAndCrank → 闸架与丝杆 / 活动闸板; triangles preserved=704
+    restored complete animated part and rebound Fig_2_02_Buoyancy_Canal_Control_2 to 活动闸板_转轴
+
+2 | Fig_2_03_Acoustic_Resonance
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  FiveGraduatedBronzeBells → 钟架 / 编钟_2 / 编钟_3 / 编钟_4 / 编钟_5 / 编钟_1 / 悬绳; triangles preserved=3188
+  AcousticMalletAndBronzeIngot → 工作台 / 钟槌 / 铜锭; triangles preserved=140
+    铜锭 support contact correction=0.0150m
+
+3 | Fig_2_04_Geomagnetic_Optics
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  ObservatoryArmillary → 底座与支柱 / 浑天仪环与轴; triangles preserved=4800
+    浑天仪环与轴 support contact correction=-0.0500m
+  MagneticLodestoneSpoonAndCompass → 底座 / 方位盘; triangles preserved=556
+  FourMirrorStaticOpticalPath → 镜架_1_镜体与支杆 / 镜架_2_镜体与支杆 / 镜架_3_镜体与支杆 / 镜架_4_镜体与支杆 / 镜架_1_底座 / 镜架_2_底座 / 镜架_3_底座 / 镜架_4_底座; triangles preserved=843
+
+4 | Fig_2_05_Electromagnetic_Lock
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  ElectromagneticAssemblyWorkbench → 工作台 / 台上器材; triangles preserved=5320
+
+5 | Fig_2_06_Hydraulic_Pipework
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  PipePartsSealsAndTorqueWrenchBench → 工作台 / 台上器材; triangles preserved=2796
+  HydraulicTankNetworkAndLeak → 装置底座 / 水箱与管网; triangles preserved=3138
+
+6 | Fig_2_07_Frequency_Coupling
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  ZoneAAdjustableMechanicalPendulum → 机械摆支架 / 调频工作台 / 调频表盘 / 摆杆与摆球; triangles preserved=612
+    restored complete animated part and rebound Fig_2_07_Frequency_Coupling_Control_1 to 摆杆与摆球_转轴
+  ZoneBLCFrequencyConsole → 工作台 / 台上器材; triangles preserved=3236
+
+7 | Fig_2_08_Snow_Arena
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  SnowballSupplyBasket → 供给篮 / 演示雪球; triangles preserved=400
+
+8 | Fig_2_09_Creative_Workshop
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  WorkshopOpticalModuleBench → 工作台 / 台上器材; triangles preserved=584
+  WorkshopSpringWheelModuleBench → 工作台 / 木轮 / 弹簧; triangles preserved=2856
+  WorkshopModularPhysicsPartsLibrary → 置物架 / 模块_左_0_0 / 模块_左_0_3 / 模块_左_1_2 / 模块_左_2_1 / 模块_左_2_4 / 模块_右_0_0 / 模块_右_0_3 / 模块_右_1_2 / 模块_右_2_1 / 模块_右_2_4 / 模块_左_0_1 / 模块_左_0_4 / 模块_左_1_0 / 模块_左_1_3 / 模块_左_2_2 / 模块_右_0_1 / 模块_右_0_4 / 模块_右_1_0 / 模块_右_1_3 / 模块_右_2_2 / 模块_左_0_2 / 模块_左_1_1 / 模块_左_1_4 / 模块_左_2_0 / 模块_左_2_3 / 模块_右_0_2 / 模块_右_1_1 / 模块_右_1_4 / 模块_右_2_0 / 模块_右_2_3; triangles preserved=1016
+
+9 | Fig_2_10_Physics_Laboratory
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  IntegratedLabElectromagneticIsland → 工作台 / 台上器材; triangles preserved=5320
+  IntegratedLabOpticalIsland → 工作台 / 台上器材; triangles preserved=352
+  IntegratedLabHydraulicStation → 装置底座 / 水箱与管网; triangles preserved=3948
+  IntegratedLabResonanceStation → 机械摆 / LC 工作台 / LC 器材; triangles preserved=3440
+
+10 | Fig_2_11_Garden_Canal_Design
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  CanalMaterialWeightBench → 工作台 / 配重_1 / 配重_2 / 配重_3; triangles preserved=108
+    配重_1 support contact correction=-0.0050m
+    配重_2 support contact correction=-0.0050m
+    配重_3 support contact correction=-0.0050m
+  HandcraftedCargoPavilionBoat → 船体与亭 / 石配重 / 铜配重; triangles preserved=702
+  CanalWaterLevelGauge → 水位标尺 / 底座; triangles preserved=164
+  CanalSluiceAndCrank → 闸架与丝杆 / 活动闸板; triangles preserved=704
+    restored complete animated part and rebound Fig_2_11_Garden_Canal_Design_Control_2 to 活动闸板_转轴
+
+11 | Fig_2_12_Celestial_Sundial
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  TwelveHourSundialAndArmillary → 日晷_底座 / 浑天仪_底座 / 日晷_仪器 / 浑天仪_仪器; triangles preserved=6770
+    浑天仪_仪器 support contact correction=-0.0500m
+  StylizedCelestialOrbitDisplay → 支杆 / 天体与轨道; triangles preserved=4928
+
+12 | Fig_2_13_Winter_Asset_Design
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  SnowAssetExhibitionPlinths → 展台_1 / 展台_2 / 展台_3 / 展台_4 / 展台_5; triangles preserved=6000
+  SnowballAssetComparisons → 雪球_1 / 雪球_2 / 雪球_3; triangles preserved=180
+
+13 | Fig_2_15_SelfModeled_Asset_Collection
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  AssetGallery_0 → 船体与亭 / 石配重 / 铜配重; triangles preserved=702
+  AssetGallery_1 → 钟架 / 编钟_1 / 编钟_2 / 编钟_3 / 编钟_4 / 编钟_5 / 悬绳; triangles preserved=3832
+  AssetGallery_2 → 底座 / 方位盘 / 司南勺; triangles preserved=680
+  AssetGallery_3 → 工作台 / 台上器材; triangles preserved=5360
+  AssetGallery_4 → 装置底座 / 水箱与管网; triangles preserved=4260
+  AssetGallery_5 → 机械摆支架 / 调频工作台 / 调频表盘 / 摆杆与摆球; triangles preserved=612
+  Fig_2_15_SelfModeled_Asset_Collection_SpacedGalleryPlinths → 展台_1 / 展台_2 / 展台_3 / 展台_4 / 展台_5 / 展台_6 / 展台_7 / 展台_8; triangles preserved=192
+
+14 | AncientGarden_LowPoly
+  explicit text facing; mounted signs fixed to world surfaces; text objects=7
+  independent garden architecture/planting retained; no exhibit-base merge in this tour level

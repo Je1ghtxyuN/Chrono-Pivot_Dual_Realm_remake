@@ -1,0 +1,2 @@
+PASS: actual Play Mode; 15 scenes; grip ray input completes every ordered station; menu resets states; trigger navigation and wrap; held-button protection; HMD and hand tracking; VR mode selected; avatar hands follow controllers; stick movement and snap turn; runtime errors=0.
+Virtual input devices used; physical headset, stereo compositor and SteamVR streaming not tested.

@@ -1,0 +1,1272 @@
+[
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Materials\\Garden_Far Cyan.mat",
+    "SourceHash": "D333C077F465F56E6726B937404B4DC4E865190CF132BA98D447466E2EF58161",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Materials\\Garden_Far Cyan.mat.meta",
+    "SourceHash": "32EE91515823ADCBF02663688A3E57556F9E5694F42B4C3D3A5BAED38FF9FF8A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Materials\\Laboratory_Far Cyan.mat",
+    "SourceHash": "B39E8BEACCC7ED2BD50624FDBA70E00AACD837333DE8C9B60A5113A09D4A4901",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Materials\\Laboratory_Far Cyan.mat.meta",
+    "SourceHash": "0D9F7B5932C54E3ECAB9CBE697CD7077441AA6A81E9BF27DDAC223AC2CB12FA3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Materials\\Snow_Far Cyan.mat",
+    "SourceHash": "F091BB7B0108CA288B83B689832AC2B11F526C5D5C53F470D8ED5597B2F0BB79",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Materials\\Snow_Far Cyan.mat.meta",
+    "SourceHash": "0518A27CD1C124744C51909EA39F851AB56CF5F14DD45D1A262D2A2EFC3C8155",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Materials\\Twilight_Far Cyan.mat",
+    "SourceHash": "3B5B600A05C7111A0A08DBFE8036E9081C038D3E64EEBB7111BE6B115D556547",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Materials\\Twilight_Far Cyan.mat.meta",
+    "SourceHash": "70FEEE73FEC31FA57C140D5614C4C5DB03FBAB6CE7480003F404F1A26AE76DD1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\AncientGarden_LowPoly_SkyDial.asset",
+    "SourceHash": "CE20FED1F3B6A53BB9939241A382DC02C26880223FCDCE456BC40A4943491DEB",
+    "OriginalHash": "BAE5AC2C55CDB470E0D435A58AA1CEA110F869DBF90FD8A5BBF1610CF42906DC"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_01_Introduction_SkyDial.asset",
+    "SourceHash": "37441571120F66F6E2EB756AFE2730073DC53069AA1A385EF5E96DFFC3506CD5",
+    "OriginalHash": "F5A5C3DF42FE9E8DA02E0D2BFD45307B4191C8D2F14A6A7C6F6A10BBE49D7976"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_02_Buoyancy_Canal_SkyDial.asset",
+    "SourceHash": "5A782D390D2F19352ADECE5E85A0FEF6AA54B492396EC574BC861318B9360478",
+    "OriginalHash": "060D4569412A03057EDB6DCB5AB2161565FF82E1D52C9A3557793F1B7EACA86E"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_03_Acoustic_Resonance_SkyDial.asset",
+    "SourceHash": "E725EE815A8EACE8F70F4883B6A67DF4BF8C5195AEC6994A2F7D7D8DF93C574A",
+    "OriginalHash": "50949C5E30ED44322E6ED3F2B5E8AD1610DC25991FCD4558EEF8BA657FA3A498"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_04_Geomagnetic_Optics_SkyDial.asset",
+    "SourceHash": "0490DDCA794BD066D7E5B18B04C7227629A251A9B083ADBEC9C01CC8FF47EDF1",
+    "OriginalHash": "7089D045ADC3B4CC28332341A59431DA6ABD00F1B415BCFC3579F5341225EC93"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_05_Electromagnetic_Lock_SkyDial.asset",
+    "SourceHash": "E85F7E12783913FA43E83450109200F0C5BD04D6D5B1865EC6155A567E0FDA97",
+    "OriginalHash": "5B21F68B341A058BF2136ACB4500AE1059908D32734FB949AEDC3DA1B0F23B71"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_06_Hydraulic_Pipework_SkyDial.asset",
+    "SourceHash": "692BD5CF2E0AE121346B1FB8C4E03185102FE56BB980E54FE787B16F0F007AB7",
+    "OriginalHash": "BF0F2CC7362BB6B62B4AB882D57ECDEDE3B9B2BB5E6EF1D8B3111E0863F85353"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_07_Frequency_Coupling_SkyDial.asset",
+    "SourceHash": "25289509C0F23F0D314F1D3D0EA03A8D0E3802C90155F51BECD4FD43D1080868",
+    "OriginalHash": "0571C1189FA968342D9B9474540A1C672D645C24F724DD49743AFFF671C1A34D"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_08_Snow_Arena_SkyDial.asset",
+    "SourceHash": "84885851004AC0AD961DEA02987961073BB3EEE7641CF9CB50827A9EF1B50595",
+    "OriginalHash": "350E5486B1FCBDADEDE90191839CCC7ADF76D7072C5C9F366AD980EE51837165"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_09_Creative_Workshop_SkyDial.asset",
+    "SourceHash": "887E5527D0C7973C9C4D9BF66DF1901D4572566DBC5A24689F29D66A410EBBE9",
+    "OriginalHash": "DDF4D119B9C518CF2BB127C78A76EAE9D682B51161415308CA10DEE8E26F8552"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_10_Physics_Laboratory_SkyDial.asset",
+    "SourceHash": "41173A674C397C40FDABFFB1488FC9714CC8886790C70CCF021AFEEF5B41D7BD",
+    "OriginalHash": "0FD9704B4604725FAE2BD936B57C23E355D58ABB8A4E8174D5AC4F5E91C61E8A"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_11_Garden_Canal_Design_SkyDial.asset",
+    "SourceHash": "F1B04117A0E1BB21D3FDCDEE89B1D207398189CD122DFABE4EAD9824CC8AAA61",
+    "OriginalHash": "01026383CC3036C5CE0930F9C824BFD319F3A7B4C0363629AD26E42A112370BB"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_12_Celestial_Sundial_SkyDial.asset",
+    "SourceHash": "7976D3776075187D09E80C57263B5D46470294E2A6C4EC3865DDC6C2AB19E97B",
+    "OriginalHash": "B84A096B8AA4D105058E1DC78791ED94759BB155CC3AA353EB239E94D2EA6385"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_13_Winter_Asset_Design_SkyDial.asset",
+    "SourceHash": "B581CA46A49F73700CFE9A10E86F47A243EB47DAE0726C12C88D1CF178017A45",
+    "OriginalHash": "00CAAC4FE2BE33BE4239E88D8A35E2BCBAB6D75788C76F2017463F81C73E069A"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Atmosphere\\Meshes\\Fig_2_15_SelfModeled_Asset_Collection_SkyDial.asset",
+    "SourceHash": "A37B54CEFB668A553B9189B2FA8F6864A1AFE56653EB9D440D8F556E1EB567C7",
+    "OriginalHash": "85EAD293E31B8AC8726892F7875360F2136E47FEABBC18AC06D67C2581D2BA85"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Editor\\EnhanceReportAtmosphere.cs",
+    "SourceHash": "F5CCC73C7E02569F91439898E249B7D4CCDDC51CCF240DACBF1A1195CDFC976C",
+    "OriginalHash": "9CFCC9816DDA708F9421E7346EAAAC75C25CCB5F6E120375F0097C410DC3A5B7"
+  },
+  {
+    "Path": "Assets\\ReportVR\\Editor\\ReportPhotography.cs",
+    "SourceHash": "5BC104928C2275F3CC7098CE4D30E15168829933BB886AB1DE56B825F2E2715A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportVR\\Editor\\ReportPhotography.cs.meta",
+    "SourceHash": "37775EB0D991A8165C3CEB4E4F1BFA4DCFD46F905E5ED8443AE07D9DFC30E7C6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_01_Introduction.unity",
+    "SourceHash": "C3F60A87C3819C45C88F18932CE6A902DBA0796CC1493274322EA7D5ED0D1F62",
+    "OriginalHash": "E55D6CE1C74DD3F980ED06534E4BE4698F354B7A2CFE0D38D6788B397F8D5030"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_02_Buoyancy_Canal.unity",
+    "SourceHash": "2D56B01F9F72FECFB4217E8AA6039EC8C0604FA7FE78E64A13D5514B77F76984",
+    "OriginalHash": "782A0F2FC9A82C77ECA650F32571D5D3EF4CE1CC272BEC571EBAA8F16AB717A0"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_03_Acoustic_Resonance.unity",
+    "SourceHash": "F767F801288832560F2444FC16EBAB15E9389ACC4140FD28829ED80438F9BC7B",
+    "OriginalHash": "A5A6F3D2BADA26B94ADDD7BC9735DAD56CBC4F0E08E982FB063C08CE863AC37B"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_04_Geomagnetic_Optics.unity",
+    "SourceHash": "8983B8BB5CD5950E37EA875BA82D5801D46B5AE903E8A594E2AF6224CE5CF8CA",
+    "OriginalHash": "52103BF879CE84EA514C932D6342E428CB4EAC4B4DD1B66F81495A4612D22125"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_05_Electromagnetic_Lock.unity",
+    "SourceHash": "9C24DA10566657AE9EB3A6CCB1559B0F7E18B2DDCFCC6EBDBCEF9EA57C584CA6",
+    "OriginalHash": "77F7C003194CF6538A03A11DC5DB8B0069A1A9C0430B7659FB415A8AF3306767"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_06_Hydraulic_Pipework.unity",
+    "SourceHash": "3433B30FDF78DEE21F7D4F028916431D85144EF1FAAC3B120369DD8B268A1C4D",
+    "OriginalHash": "D4ADA6959DD09C34C8EE4A9451F420E5447EC849654C835A28106BA908A9B5EA"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_07_Frequency_Coupling.unity",
+    "SourceHash": "0EF8A8BBB5F90F6A3BF2AB4424179747B96F45B9963C292EE5983D5A26AEC898",
+    "OriginalHash": "2EE1AE5E062239D9E4206CC12D02F438E65BCA827616B0769E4D7A95F9347967"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_08_Snow_Arena.unity",
+    "SourceHash": "EBB33F3B2EB9238C74C1326F57907ABD39746763C693E5579129E0AF31C3D4FA",
+    "OriginalHash": "8A882DF15C13CEB0CF52B1863A479A3E52DFA5CA57E6D224DB6948B9FF905AD1"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_09_Creative_Workshop.unity",
+    "SourceHash": "012A7109E7412618CF1642384D42E4D0A59B7A1FB0D5297ABA304913EC54F7C6",
+    "OriginalHash": "C68BF9E1E623759BEAA63943E6B87DA6E4D19700CE8BFAAD06E4833D29CA94E0"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_10_Physics_Laboratory.unity",
+    "SourceHash": "4A50F1FA25F99A5211F25659AD63287326408BC6DA0A0DC6BCAA9C2F7669B3FF",
+    "OriginalHash": "758C50DBE86EB0F47340ACED3DAD452DFB911E36439A7734DB026917E56669CA"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_11_Garden_Canal_Design.unity",
+    "SourceHash": "BB66BD8FE441630B0237AEA4C3CF262759AEB7BCAEC211B8A6ECFE321DDB01BE",
+    "OriginalHash": "6B381145F184FA89408F1054CAEE9420EE9041C96A1417A6CB4FC0DB1EC2238A"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_12_Celestial_Sundial.unity",
+    "SourceHash": "4E46B495F99C16D63EEC77614090A2F715E7DDF05F2C78CDCB77BE5093B3F90B",
+    "OriginalHash": "95C3492969000BAB84C7882D6C95E44DFB23FC12A994680F84CAB2083CDC4851"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_13_Winter_Asset_Design.unity",
+    "SourceHash": "F151DD46E4BA3C6104E431004F877E522D2537972B05B638F9CA7846C6C299D4",
+    "OriginalHash": "EDC1AC4CC2AE5CBB5636EB6568E065C863EA91171EBEFF636DBFD0AA58D2579B"
+  },
+  {
+    "Path": "Assets\\ReportScenesLowPoly\\Scenes\\Fig_2_15_SelfModeled_Asset_Collection.unity",
+    "SourceHash": "3E01FDAD341225ECF8530B1555190602C3EC63288CB7AFD69C42B4C2E4F31B23",
+    "OriginalHash": "4D000ECB70FB4362B1B7178353F81B492074FD7B594A5E042326C8CC8C7ED7B9"
+  },
+  {
+    "Path": "Assets\\ReportGardenLowPoly\\AncientGarden_LowPoly.unity",
+    "SourceHash": "252D8A7FEE0B0976B0A22DF99BBCF940ECCFBF3E18FF98474402338A416B54C9",
+    "OriginalHash": "E87E227ACFC876153873FD03AFD4261A334C950C81637AF8E62D31C185B475E9"
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\index.html",
+    "SourceHash": "F892CC4DDE33D7D83C789C18D00E3ABAF5D7F2D5A056EA3B2BC9FB64666FF485",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\manifest.json",
+    "SourceHash": "B03E320C8A8BBAD2FA8E5F4951B758DC10F9EADB0B1B80463D0A52720E629855",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\README.md",
+    "SourceHash": "D08F348F9C7EE3D6106BBB5AAB2B78852A4B22C76F36D9CB350540FE86152695",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\AncientGarden_LowPoly.jpg",
+    "SourceHash": "C3239B371217C8F61290A561B4998ACBE33462CE73710A2FF21EAB8D7E2DE0A8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_01_Introduction.jpg",
+    "SourceHash": "78127D68E6A612DEE1FC04481B1B67F7092E050E55B101D23057B2996EC98A30",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_02_Buoyancy_Canal.jpg",
+    "SourceHash": "FE205CBCEC32184566CBD5BCE8AD59B141D9E8EBD6673156706E8678FC1A5187",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_03_Acoustic_Resonance.jpg",
+    "SourceHash": "BC9B98FD1421FFB1018B1C68CF5DF9B399501444BBD5B54FE1A8724C707C717B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_04_Geomagnetic_Optics.jpg",
+    "SourceHash": "4BA9B32786D823B6A030CC37434418591BCC30D2663FDFD53A6E64503F74F47F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_05_Electromagnetic_Lock.jpg",
+    "SourceHash": "702A4C02749678CF4F60CFA8B04C309BAB7C7ED2B67E019033210FFC973A613C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_06_Hydraulic_Pipework.jpg",
+    "SourceHash": "7A4653D852D4EF39D0DA5E843AE216CCEB33999EA5A5182D1C3A6D23392CA926",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_07_Frequency_Coupling.jpg",
+    "SourceHash": "79E2C321CC2DC61DE70DB017BE4EA195115F3BF78FF67815284EAD9001ED0E0A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_08_Snow_Arena.jpg",
+    "SourceHash": "0ED443686DDE570AE65E53F7625710BA3703B6ECC575F5692F93D75F2FB650EC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_09_Creative_Workshop.jpg",
+    "SourceHash": "98F6AC404D446FB54B2038ADE3859630453A86AF68C537455ECDBF89F7612D32",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_10_Physics_Laboratory.jpg",
+    "SourceHash": "22A8D9B6A6BC29A90FE82E3765A3D137A14B213948C3DE8A8C5E9CCA9BA345FD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_11_Garden_Canal_Design.jpg",
+    "SourceHash": "5DA0F6F791CC504AE5520F57C332145AEDC32DB9974E07B513F2F6E359F889C4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_12_Celestial_Sundial.jpg",
+    "SourceHash": "F4F0BEF311890C619026CDF153EF36E0B995B99444FE10F9D26CBA917EA6C23E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_13_Winter_Asset_Design.jpg",
+    "SourceHash": "B2C3B2FFA8273E41E0BAC7F4EFBC16340A74339EB4D320E021436511268BAB1E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\ContactSheets\\Fig_2_15_SelfModeled_Asset_Collection.jpg",
+    "SourceHash": "70331D25FAC162C50A7B9562F68D1E29B53F69B04169BFC44028E458A46EFBC2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\AncientGarden_LowPoly\\01_Hero.png",
+    "SourceHash": "DC9F202040021D4C40DD58AA8CBAF4F40680CB8EB3AC7FF64E1BDE5D09D482CE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\AncientGarden_LowPoly\\02_Reverse.png",
+    "SourceHash": "EF11667754D5A632A31E66528A714ED8B68A137ABC6773A0FD9503D7E7FDBB08",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\AncientGarden_LowPoly\\03_Eye.png",
+    "SourceHash": "E64CA627B67EC3508E5D4BAF9ABA30BA17351F4BE2EE40837CFC09591A801949",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\AncientGarden_LowPoly\\04_Model.png",
+    "SourceHash": "061D7A1A8B352E05EF23F706EBE45832B0DA1600DDA90AEC33F1D5462481FF57",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\AncientGarden_LowPoly\\05_Experiment.png",
+    "SourceHash": "437D3DCBCF039E36337243E7EEADA073E13161FF668A67A887ACDA54639D35F5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\AncientGarden_LowPoly\\06_Experiment.png",
+    "SourceHash": "72126F5290C97E88420F7DAE5D74FCF12ED31964181A7744C384E1DDEEAC80E5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_01_Introduction\\01_Hero.png",
+    "SourceHash": "B3A883240C821AB6E96824376F9B36B7B018469E8E1E2D74639B4C964971D579",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_01_Introduction\\02_Reverse.png",
+    "SourceHash": "4D63D53C48526C7A0DB586043322EBE2FF8A0B335953601D8C509A53BCF49F04",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_01_Introduction\\03_Eye.png",
+    "SourceHash": "F5AA5A19A0AC7762544897CD26D7753990D472099D466B2F58DD10E9A0B78660",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_01_Introduction\\04_Model.png",
+    "SourceHash": "A9A65D11E3341EDA74C4BE9EE78BA79C70CC1A83103C1229B40D9F9A468575C7",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_01_Introduction\\05_Experiment.png",
+    "SourceHash": "B0C5980617F8A904A9CB7779D10F739758965DFC9B651DDE9799073565E6DBCB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_01_Introduction\\06_Experiment.png",
+    "SourceHash": "231B5A70386C00B67ECF08F0FCEAAAD20B1AFC03860B4DBCCE9B1D580383515A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_02_Buoyancy_Canal\\01_Hero.png",
+    "SourceHash": "BFD90602BB80050F20110A2CFE62F4F5099CDFE01FE26A8ED6D4F1F799CE8AD1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_02_Buoyancy_Canal\\02_Reverse.png",
+    "SourceHash": "721E5A613AC21053A023640736CCE119ACDB95328CFE593D68EBC2CC66B0676B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_02_Buoyancy_Canal\\03_Eye.png",
+    "SourceHash": "A3F183EE99CA11B3A97E158D2BAB2E1232F5B4D9A712CE3900D8326D13597B68",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_02_Buoyancy_Canal\\04_Model.png",
+    "SourceHash": "10B52BF2BCF02294C919F57422F3704F98F3967F35CD8348F57721B2467AF346",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_02_Buoyancy_Canal\\05_Experiment.png",
+    "SourceHash": "B81D38DFB040A635B477AA717701E6089331F6F3841963E6A35307D8C989A531",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_02_Buoyancy_Canal\\06_Experiment.png",
+    "SourceHash": "3E8AC357E4712BE01BDDD7692E4FEC43E609A577EE42B4C2C2A9989D680AB6F5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_03_Acoustic_Resonance\\01_Hero.png",
+    "SourceHash": "AD6CE8FF93DE99064AC908EB71573E6DB3AEFAA67282F907F51DF57695186939",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_03_Acoustic_Resonance\\02_Reverse.png",
+    "SourceHash": "9257A810C31DA0553E2F322A8705F41E08FA87E40D69099A2936579A347DEA92",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_03_Acoustic_Resonance\\03_Eye.png",
+    "SourceHash": "DDB2AC3BDF937BDE0C940469D054619ACE6B8295AD00DB2999304A68A6DAC1B3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_03_Acoustic_Resonance\\04_Model.png",
+    "SourceHash": "93FB10B770B72505BD90E9C4CFCBFAA7F5DBCC454E4A754B20DFAE8CB296A0F1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_03_Acoustic_Resonance\\05_Experiment.png",
+    "SourceHash": "1DEE6BB13E7D5A459AB9B5621E33EBDCD3AF02CC6F5CFE081FCF26B072D510CC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_03_Acoustic_Resonance\\06_Experiment.png",
+    "SourceHash": "1F0CBA65D2CEFF8FA6DF119D5D333FC1E67F1B3450109D0BC0BC9C46316A9D99",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_04_Geomagnetic_Optics\\01_Hero.png",
+    "SourceHash": "21244283B411CD3F5AA7737352C23AFF00AB5DD2C2A3F49B21806E302119E1E0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_04_Geomagnetic_Optics\\02_Reverse.png",
+    "SourceHash": "2CDAB9561C1C0D913B1B10AA2C07BBC8AC07C279479598FD28E187C2C25B7B4C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_04_Geomagnetic_Optics\\03_Eye.png",
+    "SourceHash": "39D5A18D5848945E9C88C45B4478AC31F76707EC2875CEAB0257CE2C9B8E5DD8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_04_Geomagnetic_Optics\\04_Model.png",
+    "SourceHash": "F7C56CA23EC1BD53AD5824A6A79B71CAB97873598701052BD94D9AF9893C8B6B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_04_Geomagnetic_Optics\\05_Experiment.png",
+    "SourceHash": "0C83C367D38184283E1939653B5C886F48D074197319E33FF1CA384C98BCD610",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_04_Geomagnetic_Optics\\06_Experiment.png",
+    "SourceHash": "6E999E59FC20DD33AF5D3F1CF69FB9FB3B0846DD3AD2F3F11B53446390626910",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_05_Electromagnetic_Lock\\01_Hero.png",
+    "SourceHash": "AAF1C311B14E646E5B13561EBAD277B7B54C6D46F345BACF2F7D6B2CDF402067",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_05_Electromagnetic_Lock\\02_Reverse.png",
+    "SourceHash": "6297F7A84F3226470E259A267D05DD8E0AECB6B17A48AEF7640D57DF7A31924C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_05_Electromagnetic_Lock\\03_Eye.png",
+    "SourceHash": "9841D86C8FADFDE755C73596B7BC230FA6CBADA9E977193185383D8D19D5EC84",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_05_Electromagnetic_Lock\\04_Model.png",
+    "SourceHash": "BF8920505C0F17DE65814BFA4CCC67A5F8232DEF20B6055A24B06BEE8B08CA5F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_05_Electromagnetic_Lock\\05_Experiment.png",
+    "SourceHash": "50D847774C978079A48FC74FAD726B4283EA0B1E2E6C34623A83AA7EC18ED81B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_05_Electromagnetic_Lock\\06_Experiment.png",
+    "SourceHash": "9117CA8FD41CF015659F52B2A66F5F10AEB5A32737F9C5367810EA78D6A023CB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_06_Hydraulic_Pipework\\01_Hero.png",
+    "SourceHash": "BBE196AA60E67A3AC870997B5B649F7EBC9E61164241A0717DCDBD8BC1CE7DB8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_06_Hydraulic_Pipework\\02_Reverse.png",
+    "SourceHash": "FE3C7E60D3EDFFCF4D50E385591D4C7603D9F589B4F3705553AE0DE9A5EB7215",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_06_Hydraulic_Pipework\\03_Eye.png",
+    "SourceHash": "C365873A360173EFAE2E3BED1014F56DBED2BAC7DFB5AB0B90E3A263819E33E5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_06_Hydraulic_Pipework\\04_Model.png",
+    "SourceHash": "55FDD99369D53DE3F99E96DBD7A368E251A03141F94ED5023BA3BCA43AE4D62E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_06_Hydraulic_Pipework\\05_Experiment.png",
+    "SourceHash": "76F3C694106A20273670EF5FA6DC7E06F33E8595CC0A61EEC52B3E1501F6AAA4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_06_Hydraulic_Pipework\\06_Experiment.png",
+    "SourceHash": "1A77607307F0CE802F331F77D48621E6916B28F75AF98103BBC5CCDEA42033D6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_07_Frequency_Coupling\\01_Hero.png",
+    "SourceHash": "6E76915A5BE0513083BF027662F9E03BF95105801482D1DD1150F4257A282596",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_07_Frequency_Coupling\\02_Reverse.png",
+    "SourceHash": "A3783FF9E260651300D4B8178B5BC086F77BFF4E2855691F386CFD13326B1D99",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_07_Frequency_Coupling\\03_Eye.png",
+    "SourceHash": "F0AC3FCFF1525A6F53FADBFAD62DDFA91ED68200217F24DB93CABDE80D8E03E4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_07_Frequency_Coupling\\04_Model.png",
+    "SourceHash": "E22FC8BFBD389F30621C2142549474B56B5D213046619CC685ECABFD9F59A25A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_07_Frequency_Coupling\\05_Experiment.png",
+    "SourceHash": "121776DBD7D1EA3964C31E09875BC4C29514A6F78512E949072030FB87B9E4EA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_07_Frequency_Coupling\\06_Experiment.png",
+    "SourceHash": "6230E9486F0444B40C744BD419E39FF2173D9C340E3FA9E3551EEF0126AA520A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_08_Snow_Arena\\01_Hero.png",
+    "SourceHash": "8806B6F7EA23059717281DB65EA34504BD3A57096C9BEC7FD80FD23CB301BA61",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_08_Snow_Arena\\02_Reverse.png",
+    "SourceHash": "00E7A14970DB6358A15CB9BAA528D200CCF8B445844DEA99E97C5236E0FC8C83",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_08_Snow_Arena\\03_Eye.png",
+    "SourceHash": "E0204013A7B8C5F270282778FB1DCA7AB0F254A875296AC939B3648B8D25FCFB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_08_Snow_Arena\\04_Model.png",
+    "SourceHash": "AEF661186EAD4ABD9989E921B04DC9E9AD94875D9C6BC97486BB614B9BAD5D82",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_08_Snow_Arena\\05_Experiment.png",
+    "SourceHash": "D16564B3D6CC554BF8CC2155DA42E6789351CCD7C4DB8C968F4D5217E9239925",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_08_Snow_Arena\\06_Experiment.png",
+    "SourceHash": "AEF3A807276945964F28B375BC00FED81C638DA1F65D81064DB9914C93C2103C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_09_Creative_Workshop\\01_Hero.png",
+    "SourceHash": "2F941E3C6CCA5A19621B495B6E156D4314EDD7D21038E8F494E4433832ED6837",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_09_Creative_Workshop\\02_Reverse.png",
+    "SourceHash": "58BF4CFAA84C07E67DED92E0118049C540ABE7811D070FBA6E1A6C084D1C144C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_09_Creative_Workshop\\03_Eye.png",
+    "SourceHash": "96DEDEDF177422A9F6193C1CE017355E49E9686EE78DFA453DB0DF33A0AE2A29",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_09_Creative_Workshop\\04_Model.png",
+    "SourceHash": "0B474E229549F71E571C4D43C24B2C1E9C95E341D95B6BA1439E425D499DADCC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_09_Creative_Workshop\\05_Experiment.png",
+    "SourceHash": "73E66D0E79A0D1D17C3A06A06AE308D5D3FA0A709744DE964AC7B8CE027DCD93",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_09_Creative_Workshop\\06_Experiment.png",
+    "SourceHash": "D224FB8CBFFBBD4288B88A47542F854855FC1B7CBE138E0345BF05882E511591",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_10_Physics_Laboratory\\01_Hero.png",
+    "SourceHash": "54907243526F81D318C39629A220EAE78FFDB585D6DD6047900E88DA8D5578ED",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_10_Physics_Laboratory\\02_Reverse.png",
+    "SourceHash": "A830317D92261E4842B5048DE493B3CF7356EF3335DA83B2CAACE7F22395CDCC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_10_Physics_Laboratory\\03_Eye.png",
+    "SourceHash": "58FFC04C3C40BD058523E7C6FD7D20919ABD85BD6F2800F13F05D0A21C02614A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_10_Physics_Laboratory\\04_Model.png",
+    "SourceHash": "B5415F2CAB12C9233D7FFDC4E26833691C8B97CEF8848E2C453EEF78CB27CDBA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_10_Physics_Laboratory\\05_Experiment.png",
+    "SourceHash": "DF8E9A4D52DE3036EC592114D2628F62E061162641E0B5C5B87809E8B440D6A8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_10_Physics_Laboratory\\06_Experiment.png",
+    "SourceHash": "2E9E2D1BCD33AC8A628249DFBA6E023F6534087DB19DB5AE3E1EBFD4F5845D19",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_11_Garden_Canal_Design\\01_Hero.png",
+    "SourceHash": "EE2267F54D0C336D1A985789752ACE3EAF11F97576B4261356BE30830101F482",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_11_Garden_Canal_Design\\02_Reverse.png",
+    "SourceHash": "749DB2CEE9BDFECA781B47C7FBB9E820DACCF52552D9EB64B84063171B91DF6F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_11_Garden_Canal_Design\\03_Eye.png",
+    "SourceHash": "8F2AD6E73D61B149790847EC217357EC9EE9A3ADCA076982E3DFD0493BC23AC5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_11_Garden_Canal_Design\\04_Model.png",
+    "SourceHash": "690D6184052AF57E1B3B589211F6C8331CEE3C3BE80B41000479565D2EEEEFA9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_11_Garden_Canal_Design\\05_Experiment.png",
+    "SourceHash": "8E0F91C55212CB65E9B0B341119D364A495C5E77B4250163678DA76848C7D286",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_11_Garden_Canal_Design\\06_Experiment.png",
+    "SourceHash": "12F7FD3B9EB1EBD131417D005A723FCA71C53E8658A534549040F07BFF02C0A3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_12_Celestial_Sundial\\01_Hero.png",
+    "SourceHash": "4127D022A966AACC5960EF6BC971C0DD0C67F9F2AE99EBE5B258775E74A495CD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_12_Celestial_Sundial\\02_Reverse.png",
+    "SourceHash": "04DCCFD99D2E58F56DA77CFAB14C588BE7BCB86BC6526C676473621EC63FCA22",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_12_Celestial_Sundial\\03_Eye.png",
+    "SourceHash": "B3EECAE399F299427CF3BBE904B6648E4E7ECEF13546523A3807E9999D6962C4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_12_Celestial_Sundial\\04_Model.png",
+    "SourceHash": "B8523E9943CE393B426C7E7340242A0860DDA20D02AA231FCBAFC68CA3D4161C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_12_Celestial_Sundial\\05_Experiment.png",
+    "SourceHash": "D01F53B73149C0E67C44F019A21C3CD2913C029911263E97AACB41BC4E81760F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_12_Celestial_Sundial\\06_Experiment.png",
+    "SourceHash": "36E90C2443B04F869A43B07BFDDF627938E2EDC02279AC3CC08A663ACC7B6F4C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_13_Winter_Asset_Design\\01_Hero.png",
+    "SourceHash": "E247360A7DA1AD49712AB7FF73270C8894C2B140B3B414527D6B85DA4A5B3F95",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_13_Winter_Asset_Design\\02_Reverse.png",
+    "SourceHash": "A5A7CD3940BA48ED01D5D3DDB6F3B2F338A13C814C1EC3230E260C1CC9DE6F0D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_13_Winter_Asset_Design\\03_Eye.png",
+    "SourceHash": "9A5EAE8A4BD77BB77B7791E2B990B18164CC893B4C550F0B30E713C90CBFC34E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_13_Winter_Asset_Design\\04_Model.png",
+    "SourceHash": "34BEC7EFABB7622E916658B850F7D025B6ADE35C01ED7B21F5DE36D2C2D5D438",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_13_Winter_Asset_Design\\05_Experiment.png",
+    "SourceHash": "AC834BA23E6ACC2F50647CBCDAFE8459EF96388E0C4115AA6B3B2DE5A7956263",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_13_Winter_Asset_Design\\06_Experiment.png",
+    "SourceHash": "76F058656B100AD4B9111BF4411AE3CFB3F2AC17991FBADD8E440910B534AB91",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\01_Hero.png",
+    "SourceHash": "D1CEF15BF7B6EDE206207ED7CA491EF3DC1A307ED120F919636767AD81293B5E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\02_Reverse.png",
+    "SourceHash": "EBEF0D808E14ABCFDE1E401303E25BBC099BE0F0D95009C39B7B3636213FC491",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\03_Eye.png",
+    "SourceHash": "753746C9D32D287302ED2CF314A50ABB84FFB7B6D9E42CB7F01397461E9F4A58",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\04_Model.png",
+    "SourceHash": "AEA0C2EB03C33396B9390A0449042A9BD6E3D36EAEDB1CC8E14134BCE9587882",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\05_Experiment.png",
+    "SourceHash": "0D67DA86C745C2AE2193664087197FEF14A5C7AE76F6E6F314921FB11303316B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Photos\\Fig_2_15_SelfModeled_Asset_Collection\\06_Experiment.png",
+    "SourceHash": "8D3AA1C21023D1B72FDC2E5FEEB7F90782D1B4B1454DDD21E9442963FC07C42A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_01_Introduction.png",
+    "SourceHash": "B3A883240C821AB6E96824376F9B36B7B018469E8E1E2D74639B4C964971D579",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_02_Buoyancy_Canal.png",
+    "SourceHash": "10B52BF2BCF02294C919F57422F3704F98F3967F35CD8348F57721B2467AF346",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_03_Acoustic_Resonance.png",
+    "SourceHash": "93FB10B770B72505BD90E9C4CFCBFAA7F5DBCC454E4A754B20DFAE8CB296A0F1",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_04_Geomagnetic_Optics.png",
+    "SourceHash": "2CDAB9561C1C0D913B1B10AA2C07BBC8AC07C279479598FD28E187C2C25B7B4C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_05_Electromagnetic_Lock.png",
+    "SourceHash": "BF8920505C0F17DE65814BFA4CCC67A5F8232DEF20B6055A24B06BEE8B08CA5F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_06_Hydraulic_Pipework.png",
+    "SourceHash": "BBE196AA60E67A3AC870997B5B649F7EBC9E61164241A0717DCDBD8BC1CE7DB8",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_07_Frequency_Coupling.png",
+    "SourceHash": "E22FC8BFBD389F30621C2142549474B56B5D213046619CC685ECABFD9F59A25A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_08_Snow_Arena.png",
+    "SourceHash": "8806B6F7EA23059717281DB65EA34504BD3A57096C9BEC7FD80FD23CB301BA61",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_09_Creative_Workshop.png",
+    "SourceHash": "0B474E229549F71E571C4D43C24B2C1E9C95E341D95B6BA1439E425D499DADCC",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_10_Physics_Laboratory.png",
+    "SourceHash": "B5415F2CAB12C9233D7FFDC4E26833691C8B97CEF8848E2C453EEF78CB27CDBA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_11_Garden_Canal_Design.png",
+    "SourceHash": "749DB2CEE9BDFECA781B47C7FBB9E820DACCF52552D9EB64B84063171B91DF6F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_12_Celestial_Sundial.png",
+    "SourceHash": "B3EECAE399F299427CF3BBE904B6648E4E7ECEF13546523A3807E9999D6962C4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_13_Winter_Asset_Design.png",
+    "SourceHash": "E247360A7DA1AD49712AB7FF73270C8894C2B140B3B414527D6B85DA4A5B3F95",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Selected\\Fig_2_15_SelfModeled_Asset_Collection.png",
+    "SourceHash": "EBEF0D808E14ABCFDE1E401303E25BBC099BE0F0D95009C39B7B3636213FC491",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\AncientGarden_LowPoly\\01_Hero.jpg",
+    "SourceHash": "869D8774C50BEE712C1826457AB3E100D3EB6BE26C2A4BBB37E11EDF7347F4AD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\AncientGarden_LowPoly\\02_Reverse.jpg",
+    "SourceHash": "9847B57A6F5BCA47B34F194A1051166EBA3E3B8148EB014D1D219D0D892FC85B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\AncientGarden_LowPoly\\03_Eye.jpg",
+    "SourceHash": "712DDC4125D61A7DCDACE83B6C62BBED12EEC70B2C6F561C219166375E5F58FD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\AncientGarden_LowPoly\\04_Model.jpg",
+    "SourceHash": "87373089826ECC7B328E3C80428D4E9E7C7F78462E488434A548C42A9FDDC2B2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\AncientGarden_LowPoly\\05_Experiment.jpg",
+    "SourceHash": "BBE01C00295A83D036EBD9A19569D5A56A706ADA996AE79D0BF180D8D0EA8D80",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\AncientGarden_LowPoly\\06_Experiment.jpg",
+    "SourceHash": "C61BB638F3C6D8108B0D2094C8302535E183BEA7233F7A43771ACF77286D8634",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_01_Introduction\\01_Hero.jpg",
+    "SourceHash": "08BAA19D22D7A2807D8187B73D113CF1BA14F1C99AAB7711228B9F381540BEBD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_01_Introduction\\02_Reverse.jpg",
+    "SourceHash": "D2458AFFFC1B13EEE5E67509D3C9795E1CBA789CC063E27F3CDA9DA0F70CFDBD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_01_Introduction\\03_Eye.jpg",
+    "SourceHash": "A2E1F39CD1178251AC775D147C170670EE12323069D4222AE773719E1F6F6AC2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_01_Introduction\\04_Model.jpg",
+    "SourceHash": "DFE237D2C9618D471C121A8A4920204839484CA3CDBD7D60DD4CB28EA5337B63",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_01_Introduction\\05_Experiment.jpg",
+    "SourceHash": "AEC34997636339265155E83EE7344B2CE4216AFB6E5274D705CD020D067A465F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_01_Introduction\\06_Experiment.jpg",
+    "SourceHash": "7B3651B2E97168AD987A3140417BA6B455CA4B87460E72FD49BD0E8851CD7601",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\01_Hero.jpg",
+    "SourceHash": "C82B9D1F304C2AA6F1C886031069434651DCA02118AF2E42A46BD9766A9F2948",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\02_Reverse.jpg",
+    "SourceHash": "DA66C13326F47D953C71F71FEDD9E8D183CF4CB4B307E14FE012E0C013F0CBBE",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\03_Eye.jpg",
+    "SourceHash": "DF02AA95D4E46401D1D1AE92111C35C3B647FA9746010466B4C03FE6B5ADBBE5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\04_Model.jpg",
+    "SourceHash": "648F5B873DEBD780CB3C1CC7A3A03110296568C9F158BB26528281E7147FBBBB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\05_Experiment.jpg",
+    "SourceHash": "70B7E992CCA99B2AB584A26FF7ABFE18B3F5802291715B082C9C5D8E892A6487",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_02_Buoyancy_Canal\\06_Experiment.jpg",
+    "SourceHash": "415D8C79FABA70E7861AD3B338B565F0B1F01BD8D1E73D19A39F1FD8BAE3EB78",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\01_Hero.jpg",
+    "SourceHash": "4506EB887BE9DC48088400D82BCAF3A3107DA92B5702C5559B92B366F27A91F2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\02_Reverse.jpg",
+    "SourceHash": "6F97BF68E5AC8DEB611F14228A965592E7CC5CCCFDA52993BE1552C6B975D693",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\03_Eye.jpg",
+    "SourceHash": "19911DD1F0CF26ECEC53E8BB959AB64721313EE09EDD8B559FBE171D5F106274",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\04_Model.jpg",
+    "SourceHash": "D0878716DA6B9BD8D993C33205756F903284F41BF82C3766C79FE539898FAA16",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\05_Experiment.jpg",
+    "SourceHash": "7B6394B83362A0C16EA46289EB65F5B1EDDC4A4968983A35073512E35C59C080",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_03_Acoustic_Resonance\\06_Experiment.jpg",
+    "SourceHash": "D363DFD9A4166BA499869EF23170B3E50E7D3C414E3F6ED2331FD05DEC2A1570",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\01_Hero.jpg",
+    "SourceHash": "4423CF170921F212D3400CF77D3B02A71FCDD7D5D33B24AA0DCA7E340CEFE39C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\02_Reverse.jpg",
+    "SourceHash": "164AB2656B34C9146482ECB66F9E9C9DBB3995BCAB81503945529BDB25572D0E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\03_Eye.jpg",
+    "SourceHash": "923A1E55C663F8E4103BC4C39A4A0D265CABE5939AA08DB0861406C9D3D56189",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\04_Model.jpg",
+    "SourceHash": "526991C3BEE2CCCE5107DF6401479B1F623EDD536CD60F768036ACA461E26017",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\05_Experiment.jpg",
+    "SourceHash": "347A04D27A0405F9043D4D5C852DCB279489802F19962F2EC01F2ED7D4B5C34D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_04_Geomagnetic_Optics\\06_Experiment.jpg",
+    "SourceHash": "68489144EB43871ECDC7F6CD5425A7B1AEC48111684670779C18C9E5AEC2BD31",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\01_Hero.jpg",
+    "SourceHash": "4A7FA908422B627D2FDEB25963D25295C441641C2F460134E63532DEBD02EB14",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\02_Reverse.jpg",
+    "SourceHash": "0098A779001342F7DCA89A56AA17B1E523431E2EDF227A58ED4D9E3A5DB62B7F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\03_Eye.jpg",
+    "SourceHash": "4EB2CBD980D6DE2E0A600274C4AD619A4984B648D7DEE0EABF6BD614420839BA",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\04_Model.jpg",
+    "SourceHash": "157E98E84C3433946128972F2A3F263A624283A87F6E79FD18E2D87B9FC02608",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\05_Experiment.jpg",
+    "SourceHash": "86C768EB277ED3DB803D6C9EAC3F7BD194EF207E1852C570DF020EDA1CC55A36",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_05_Electromagnetic_Lock\\06_Experiment.jpg",
+    "SourceHash": "020836D26969058D569563720F4E8CD146125CC69522EEBB490BC9F788F041E6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\01_Hero.jpg",
+    "SourceHash": "9AC7921C828E01E1DE4E29B0BA201D8BC5603B08C61CADC6B78EC81DECBEE022",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\02_Reverse.jpg",
+    "SourceHash": "38CF4680000C2660A0D8B120EA33C51447BE5CB2EE82B8CF96321FDF51178350",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\03_Eye.jpg",
+    "SourceHash": "1FC20E94CB73F3D9D014FA396420F52AF24606F645565924A9EA1EC134CCB8B4",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\04_Model.jpg",
+    "SourceHash": "BF6A99D3CE3C190AEA16074473D6EC66B1F10FBF7682E73B6778E9DFE2CF2248",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\05_Experiment.jpg",
+    "SourceHash": "3B9495A0C4BA0A7016B17FB5473CC27D382C43C0D52276F0C5E7CF9E76536364",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_06_Hydraulic_Pipework\\06_Experiment.jpg",
+    "SourceHash": "2FD7498DF8A1DD744B366BE51AC4494F3ACF285218CABFDBFB59A8407D0E647D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_07_Frequency_Coupling\\01_Hero.jpg",
+    "SourceHash": "1172AD6C1A728D3A323B0F11C9FE320786862F03CDBF647D483E8FA44EF70B53",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_07_Frequency_Coupling\\02_Reverse.jpg",
+    "SourceHash": "03B90A976938593FFCD399C20C3CD5FF52E319453409D02AC0412AF4EA62D770",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_07_Frequency_Coupling\\03_Eye.jpg",
+    "SourceHash": "F41F410BE24E201D0B7FF8D66C830E0E2A09AE886873902274A5C614DCCB8906",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_07_Frequency_Coupling\\04_Model.jpg",
+    "SourceHash": "3E491C37FBE19240E2A108C78972B194E4BEB40E645D2BB4E10E9FD91A1F7268",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_07_Frequency_Coupling\\05_Experiment.jpg",
+    "SourceHash": "D846DD08A49EB3E63CEF0D24486537EF0D7E4A1C899D46CD97DE9B155029F112",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_07_Frequency_Coupling\\06_Experiment.jpg",
+    "SourceHash": "4F7413C7CF02B3612347702C88FE9FFBBC2186AE1BEBC009036177D82F7433F3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_08_Snow_Arena\\01_Hero.jpg",
+    "SourceHash": "BD56BF10CA6FFD8C33F38B808F237CDB8E39DCDE6B7330D1B90878DE78182DB9",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_08_Snow_Arena\\02_Reverse.jpg",
+    "SourceHash": "065972385A38E27CD369356CEE914D455032CCB7FA42007360104DD1DE60B55B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_08_Snow_Arena\\03_Eye.jpg",
+    "SourceHash": "4012796A38BAFB2E064C4353DCB5F824C78A08187A6F9B6774AF7286B8976216",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_08_Snow_Arena\\04_Model.jpg",
+    "SourceHash": "32673027B89CEFC09652BF3DB306823E4262839624E790C3965C067350978CA6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_08_Snow_Arena\\05_Experiment.jpg",
+    "SourceHash": "4203ADF2AB776BDE31C42D34C9DB895C770AB819619018559B554DFEFF5EDB0E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_08_Snow_Arena\\06_Experiment.jpg",
+    "SourceHash": "12867F73239826180E15D1F4B98FE75B60E25C9729604EC2B97464A732DC1AC2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_09_Creative_Workshop\\01_Hero.jpg",
+    "SourceHash": "62113C185681560D9099ADF703B8FCE41745D59881449CC1D03655C69928B14A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_09_Creative_Workshop\\02_Reverse.jpg",
+    "SourceHash": "0C73D67282BF747779E44ACCBF5CC4BCE8A77CD158A1A4CF04A2F17800EC58F6",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_09_Creative_Workshop\\03_Eye.jpg",
+    "SourceHash": "CCE4E02BDB968243650F87F640A4F4E32F2238472ABC2E1A02970091769BFC08",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_09_Creative_Workshop\\04_Model.jpg",
+    "SourceHash": "7CB2345E9766E50A778126FD78A84CD838F1952E3EFD18E258A6F57B6554F841",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_09_Creative_Workshop\\05_Experiment.jpg",
+    "SourceHash": "71C03DBCE1C05BAF101E47F58CEF25A8CBF67F31DA5D4EA6AD2A92A769A3001E",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_09_Creative_Workshop\\06_Experiment.jpg",
+    "SourceHash": "2198D0A8E994AE476D5F45F15C175352A2387E7F6F3AFCD2B1EB188C2741281B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_10_Physics_Laboratory\\01_Hero.jpg",
+    "SourceHash": "603A1C1FB431FBA097E8A9DC80D7825A4131D9D475F9E81488BED173D647F800",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_10_Physics_Laboratory\\02_Reverse.jpg",
+    "SourceHash": "6C35E42DB87C4795724FC6360A964EA9F026D335ED90CBA9401C3F22DEE08001",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_10_Physics_Laboratory\\03_Eye.jpg",
+    "SourceHash": "EA8E8064E25EC793DEF5F6118885E07CAE3C75B8CCE5795C1C8B3D92B05F61D2",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_10_Physics_Laboratory\\04_Model.jpg",
+    "SourceHash": "4D71B8C62E8C70F50869874622E16D3E7704E92E2A6060E7671156AF42ECF086",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_10_Physics_Laboratory\\05_Experiment.jpg",
+    "SourceHash": "49C1C35BE290E12DB7CF0AD4F942B376309B6AFF965F1E7788C5D41AAF7EB7B3",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_10_Physics_Laboratory\\06_Experiment.jpg",
+    "SourceHash": "16883A376B47B3F0909735B19C9AA4FAE95B3924BC071B8B3B947114E5D7A3BD",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\01_Hero.jpg",
+    "SourceHash": "BB10E884D371275303D6B6F47CEDD2EE7B8D9CC35AB6C2DD104907CBD475C428",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\02_Reverse.jpg",
+    "SourceHash": "4A9D31347F4F562EA1FD7DB014543BACDE649A9913B0DBAB7CC3557B823CD52B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\03_Eye.jpg",
+    "SourceHash": "E20A65639B48667057585AE2E756D0CDD363B2F6FFDCEC1B765D057A6CFA7170",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\04_Model.jpg",
+    "SourceHash": "D0BD112349A6C05C08762C7F2E869B8BF34932479AFC68B02BD6FB94F9D84092",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\05_Experiment.jpg",
+    "SourceHash": "F8C2935D36D6AB8637ACBCC8870DD7FB6BA061762EDD744EF4990B889271712C",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_11_Garden_Canal_Design\\06_Experiment.jpg",
+    "SourceHash": "5EEFA217A1483ED352788E73D44A7975513999BABEF49D80D5A312A8D17667F5",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_12_Celestial_Sundial\\01_Hero.jpg",
+    "SourceHash": "A40A28F0CECE3CC457AEE3BEC1B69505B7435BF6FB551F3486FD8B35448E40EF",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_12_Celestial_Sundial\\02_Reverse.jpg",
+    "SourceHash": "A8D876AACB6FF98B1333D361542C2ACE41580EC4CA3B2C1A9D21237250BFEF31",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_12_Celestial_Sundial\\03_Eye.jpg",
+    "SourceHash": "D6EFF88EEB9FA09A3E5DA306EC5793677C4801878648CBEABE2AC210D4ECE433",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_12_Celestial_Sundial\\04_Model.jpg",
+    "SourceHash": "1F7CAEBB9326DCBC17619C0E04F708B3177956EC4085B9545750BEFE8E0B7A7B",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_12_Celestial_Sundial\\05_Experiment.jpg",
+    "SourceHash": "3BFD101C568AC2266F6B72059EB94B2E5BCB517539F903CF10E295CD584F6D62",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_12_Celestial_Sundial\\06_Experiment.jpg",
+    "SourceHash": "CA4AABA52B9505D0036F25B6B54998B8B0DF911AD17A0D5DDA13309792D9054D",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\01_Hero.jpg",
+    "SourceHash": "F1E638DACEAC6F4B28C93D067D4CF1A65B93AB82539C6C52E2458361268C617A",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\02_Reverse.jpg",
+    "SourceHash": "A5F6DE6A647CFB4FDE31501E32E5A921ABA0A4F33CB89EBCCCBE012EE40E0536",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\03_Eye.jpg",
+    "SourceHash": "B8C49222FEFAC7FB5063424E0054DD00B07C392B09792F2E902F907D115FA820",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\04_Model.jpg",
+    "SourceHash": "869AB7C8C294CF2CBAE1D331191CD5D2DFEC4F2A1551B6631BF3AE86F3A77751",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\05_Experiment.jpg",
+    "SourceHash": "37EB24D092D989E1E4A603E240BA2F391DFE0DBAE8C6285162997A9B06E008B0",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_13_Winter_Asset_Design\\06_Experiment.jpg",
+    "SourceHash": "FEA474065A3DAADDCD6CDAF3D5DD69879F342545BF6BD1A9170B0831DB14DA0F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\01_Hero.jpg",
+    "SourceHash": "E34FDF43930AC25C855209938F2F6A025AE12901C6A42C6A948720629EA6892F",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\02_Reverse.jpg",
+    "SourceHash": "B3009618210BDB79806F622246C9C0AC9EC907671D74460121B0C503EADC1E63",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\03_Eye.jpg",
+    "SourceHash": "F7B23E84414E48AB9844FC61904438E5C7E89C8684461A0ECCA74831626391EB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\04_Model.jpg",
+    "SourceHash": "ECE47F909EC1252BED96E1D136394ADDCFCE4375A6E301850F7F4692FB075515",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\05_Experiment.jpg",
+    "SourceHash": "2235AC29AC7A105CBEBCE2A3FA6322E964E67D3611A4CF1A0A440E2CA6EA1BBB",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\ReportPhotography\\20261003\\Thumbnails\\Fig_2_15_SelfModeled_Asset_Collection\\06_Experiment.jpg",
+    "SourceHash": "8387D479D9AC5DB1146FFA0D4FAF1761786D902192A7AEB912086D7E1D406038",
+    "OriginalHash": null
+  },
+  {
+    "Path": "Documentation\\Verification\\windows-build.txt",
+    "SourceHash": "0BCC377258402ECAF1A632D8CF7C936E9B35A6483873C06F5B841E6AF9FE0297",
+    "OriginalHash": "CC5AF3385ED988E4F16C3FA1EF2843CDF2D3E82322BA40E4BED0972355DFDEBE"
+  }
+]

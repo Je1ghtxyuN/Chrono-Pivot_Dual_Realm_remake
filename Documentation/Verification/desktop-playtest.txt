@@ -1,0 +1,1 @@
+PASS: actual Play Mode; no-headset fallback; mouse capture/release; editable speed including zero; configured mouse sensitivity and pitch limit; WASD ground collision; R position + view reset; left click single interaction; selected mounted sign stays world fixed; unlocked UI blocks walk/use; PageDown scene change.

@@ -1,0 +1,1 @@
+PASS: actual Play Mode virtual right grip; three materials grabbed, carried, released and settled into sockets; held-piece rejection; choice card input; wrong choice rejection; correct validation; opening delay; physical exit trigger loads next level. Real headset not tested.

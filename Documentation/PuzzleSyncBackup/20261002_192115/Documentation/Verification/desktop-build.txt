@@ -1,0 +1,1 @@
+Exported from verified Windows build: 168 files. Desktop boot.config omits native OpenXR pre-init. Launch with -desktop.

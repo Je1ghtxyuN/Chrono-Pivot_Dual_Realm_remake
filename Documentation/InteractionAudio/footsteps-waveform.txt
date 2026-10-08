@@ -1,0 +1,3 @@
+PASS FootStone: 0.30s, peak=0.1282, RMS=0.0300, energy above 1kHz=8.21e-08; smooth friction, no strike tone.
+PASS FootWood: 0.32s, peak=0.1567, RMS=0.0300, energy above 1kHz=8.02e-08; smooth friction, no strike tone.
+PASS FootSnow: 0.38s, peak=0.1421, RMS=0.0300, energy above 1kHz=8.66e-08; smooth friction, no strike tone.

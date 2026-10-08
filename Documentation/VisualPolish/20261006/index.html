@@ -1,0 +1,35 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>晷枢双界 · 视觉优化对比</title><style>
+*{box-sizing:border-box}body{margin:0;background:#eaf0e8;color:#24463f;font:16px/1.6 'Microsoft YaHei',sans-serif}
+header,main{max-width:1320px;margin:auto;padding:32px}h1{font-size:34px;margin:0 0 10px}p{max-width:1000px;color:#536e66}
+button{padding:10px 22px;background:#fff;border:1px solid #bdcfc3;border-radius:5px;color:#24463f;cursor:pointer;margin:0 6px 8px 0}
+main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding-top:0}.card{background:white;border-radius:10px;padding:14px;box-shadow:0 4px 18px #24463f10}
+h2{font-size:20px;margin:0 0 12px}small{font-size:13px;color:#709087}.compare{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:4px}
+.compare img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.old,.new{position:absolute;top:10px;background:#24463fcc;color:white;padding:3px 10px;border-radius:3px;font-size:13px}.old{left:10px}.new{right:10px}
+input{width:100%;accent-color:#3a8270;margin-top:14px}details{max-width:1320px;margin:0 auto 28px;padding:0 32px}footer{max-width:1320px;margin:auto;padding:20px 32px;color:#688578}
+@media(max-width:800px){main{grid-template-columns:1fr}header,main{padding:20px}h1{font-size:26px}}
+</style><header><h1>晷枢双界 · 精细表面与光照</h1><p>2026 年 10 月 6 日｜拖动滑块比较同一机位。新增木材、石材、墙面、屋瓦、金属、积雪和地表七类共享细节贴图，保持低多边形轮廓与青绿、象牙白、黄铜配色。</p>
+<button onclick="filter('all')">全部视角</button><button onclick="filter('Overview')">全景</button><button onclick="filter('Detail')">近景</button></header><main><article class="card" data-view="Overview"><h2>引导关卡与主题日晷 <small>全景</small></h2>
+<div class="compare"><img src="Before/Fig_2_01_Introduction_Overview.png"><img class="after" src="After/Fig_2_01_Introduction_Overview.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Detail"><h2>引导关卡与主题日晷 <small>近景</small></h2>
+<div class="compare"><img src="Before/Fig_2_01_Introduction_Detail.png"><img class="after" src="After/Fig_2_01_Introduction_Detail.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Overview"><h2>浮力水渠 <small>全景</small></h2>
+<div class="compare"><img src="Before/Fig_2_02_Buoyancy_Canal_Overview.png"><img class="after" src="After/Fig_2_02_Buoyancy_Canal_Overview.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Detail"><h2>浮力水渠 <small>近景</small></h2>
+<div class="compare"><img src="Before/Fig_2_02_Buoyancy_Canal_Detail.png"><img class="after" src="After/Fig_2_02_Buoyancy_Canal_Detail.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Overview"><h2>电磁实验室 <small>全景</small></h2>
+<div class="compare"><img src="Before/Fig_2_05_Electromagnetic_Lock_Overview.png"><img class="after" src="After/Fig_2_05_Electromagnetic_Lock_Overview.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Detail"><h2>电磁实验室 <small>近景</small></h2>
+<div class="compare"><img src="Before/Fig_2_05_Electromagnetic_Lock_Detail.png"><img class="after" src="After/Fig_2_05_Electromagnetic_Lock_Detail.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Overview"><h2>冰雪竞技场 <small>全景</small></h2>
+<div class="compare"><img src="Before/Fig_2_08_Snow_Arena_Overview.png"><img class="after" src="After/Fig_2_08_Snow_Arena_Overview.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Detail"><h2>冰雪竞技场 <small>近景</small></h2>
+<div class="compare"><img src="Before/Fig_2_08_Snow_Arena_Detail.png"><img class="after" src="After/Fig_2_08_Snow_Arena_Detail.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Overview"><h2>园林水渠 <small>全景</small></h2>
+<div class="compare"><img src="Before/Fig_2_11_Garden_Canal_Design_Overview.png"><img class="after" src="After/Fig_2_11_Garden_Canal_Design_Overview.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article><article class="card" data-view="Detail"><h2>园林水渠 <small>近景</small></h2>
+<div class="compare"><img src="Before/Fig_2_11_Garden_Canal_Design_Detail.png"><img class="after" src="After/Fig_2_11_Garden_Canal_Design_Detail.png" style="clip-path:inset(0 0 0 50%)"><span class="old">优化前</span><span class="new">优化后</span></div>
+<input aria-label="前后对比位置" type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.querySelector('.after').style.clipPath='inset(0 0 0 '+this.value+'%)'"></article></main>
+<details><summary>在 Unity 中继续调整</summary><p>选择材质，在 Inspector 的“精细表面”区域调整：每米细节重复次数、细节颜色强度、细节法线强度和粗糙度变化强度。场景灯光的阴影强度、偏移与分辨率也可直接调整。</p></details>
+<footer>模型与 UV、人物控制、关卡路线及互动参数保持原样。增加 14 张共享 1024×1024 贴图；启用 Mipmap、Trilinear 和各向异性过滤。头显中的实际帧率仍需实机测量。</footer>
+<script>function filter(v){document.querySelectorAll('.card').forEach(c=>c.style.display=v==='all'||c.dataset.view===v?'block':'none')}</script></html>

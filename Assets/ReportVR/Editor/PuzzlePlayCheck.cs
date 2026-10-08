@@ -77,7 +77,9 @@ public static class PuzzlePlayCheck
                         {""name"":""gripPressed"",""layout"":""Button"",""format"":""FLT"",""offset"":32}]}");
                     head=InputSystem.AddDevice<XRHMD>();right=(XRController)InputSystem.AddDevice("ReportPuzzleTestController");InputSystem.SetDeviceUsage(right,CommonUsages.RightHand);
                     InputSystem.QueueDeltaStateEvent(head.centerEyePosition,Vector3.up*1.7f);InputSystem.QueueDeltaStateEvent(head.trackingState,3);
-                    origin=UnityEngine.Object.FindObjectOfType<XROrigin>();level=UnityEngine.Object.FindObjectOfType<DemoLevel>();Pose(Placement.item.transform.position,Quaternion.identity);Next(1,.4);break;
+                    origin=UnityEngine.Object.FindObjectOfType<XROrigin>();level=UnityEngine.Object.FindObjectOfType<DemoLevel>();
+                    var gameUI=origin.GetComponent<ReportGameUI>();if(gameUI!=null)gameUI.enabled=false;
+                    Pose(Placement.item.transform.position,Quaternion.identity);Next(1,.4);break;
                 case 1:Grip(1);Next(2,.4);break;
                 case 2:
                     Require(Placement.item.isSelected,"Near grip did not grab material "+item);

@@ -1,0 +1,2 @@
+PASS: actual Play Mode; all 15 scenes; HMD and both hand tracking; VR mode selection; avatar hands follow controllers; left stick movement and right stick snap turn; A button navigation and wrap; held-button protection; runtime errors=0.
+Virtual input devices used; physical headset, stereo compositor and SteamVR streaming not tested.

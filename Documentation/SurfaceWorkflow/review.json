@@ -1,0 +1,32 @@
+{
+    "assets": [
+        {
+            "mesh": "Assets/ReportGardenLowPoly/Models/015_IvoryMoonGate.asset",
+            "name": "015_IvoryMoonGate",
+            "uv": "UV/015_IvoryMoonGate.svg",
+            "albedo": "Assets/ReportVR/BakedSurfaces/Textures/97fb41b99e4ba864da2b2910bab04606_5afec2551e19ad6d52ba2f28d80e7eb0_Albedo.png",
+            "ao": "Assets/ReportVR/BakedSurfaces/Textures/97fb41b99e4ba864da2b2910bab04606_5afec2551e19ad6d52ba2f28d80e7eb0_AO.png",
+            "surface": "Assets/ReportVR/BakedSurfaces/Textures/97fb41b99e4ba864da2b2910bab04606_5afec2551e19ad6d52ba2f28d80e7eb0_MetalRough.png",
+            "preview": ""
+        },
+        {
+            "mesh": "Assets/ReportScenesLowPoly/Models/087_TwelveHourSundialAndArmillary.asset",
+            "name": "087_TwelveHourSundialAndArmillary",
+            "uv": "UV/087_TwelveHourSundialAndArmillary.svg",
+            "albedo": "Assets/ReportVR/BakedSurfaces/Textures/2209a7008ce5fab4bbcb4c3bc60b4896_a161e6c9cf43a3698c7476d229c9ffee_Albedo.png",
+            "ao": "Assets/ReportVR/BakedSurfaces/Textures/2209a7008ce5fab4bbcb4c3bc60b4896_a161e6c9cf43a3698c7476d229c9ffee_AO.png",
+            "surface": "Assets/ReportVR/BakedSurfaces/Textures/2209a7008ce5fab4bbcb4c3bc60b4896_a161e6c9cf43a3698c7476d229c9ffee_MetalRough.png",
+            "preview": ""
+        },
+        {
+            "mesh": "Assets/ReportScenesLowPoly/Models/046_ElectromagneticAssemblyWorkbench.asset",
+            "name": "046_ElectromagneticAssemblyWorkbench",
+            "uv": "UV/046_ElectromagneticAssemblyWorkbench.svg",
+            "albedo": "Assets/ReportVR/BakedSurfaces/Textures/488c166b6d0d27d48979d7a149ddb4f9_77f61c5c6dfc3f367bd2126764cded88_Albedo.png",
+            "ao": "Assets/ReportVR/BakedSurfaces/Textures/488c166b6d0d27d48979d7a149ddb4f9_77f61c5c6dfc3f367bd2126764cded88_AO.png",
+            "surface": "Assets/ReportVR/BakedSurfaces/Textures/488c166b6d0d27d48979d7a149ddb4f9_77f61c5c6dfc3f367bd2126764cded88_MetalRough.png",
+            "preview": ""
+        }
+    ],
+    "checkedMaterials": 2657
+}

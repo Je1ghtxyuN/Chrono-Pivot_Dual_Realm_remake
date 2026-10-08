@@ -14,7 +14,7 @@ public sealed class DesktopPlayerEditor : Editor
     public override void OnInspectorGUI()
     {
         serializedObject.Update();
-        Field("head","视角相机");Field("speed","WASD 移动速度（米/秒）");Field("sensitivity","鼠标转向灵敏度（度/像素）");
+        Field("head","视角相机");Field("controlMode","操作模式（自动 / 键鼠 / VR）");Field("speed","WASD 移动速度（米/秒）");Field("sensitivity","鼠标转向灵敏度（度/像素）");
         Field("pitchLimit","俯仰角限制（度）");Field("invertMouseY","反转鼠标垂直方向");
         Field("eyeHeight","桌面眼睛高度（米）");Field("bodyHeight","桌面胶囊高度（米）");Field("bodyCenter","桌面胶囊中心（米）");
         Field("gravityMultiplier","重力倍率");Field("maximumFallSpeed","最大下落速度（米/秒）");Field("groundStickSpeed","贴地速度（米/秒）");

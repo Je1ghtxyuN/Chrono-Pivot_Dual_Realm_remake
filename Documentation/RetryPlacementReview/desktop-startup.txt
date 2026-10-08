@@ -1,0 +1,1 @@
+PASS: exported desktop package stayed running for 87 seconds; Direct3D 11 initialized; no managed exceptions, shader errors or crash markers in the startup log. The validation process was stopped afterwards. Full manual play and physical headset ergonomics are separate checks.

@@ -1,0 +1,1 @@
+PASS: no-BGM build starts in Desktop mode with Direct3D11; remained alive; no managed exceptions or shader errors during startup. No music classes or resources are included in the player; 15-scene absence and quiet footsteps checked in playtest.txt.

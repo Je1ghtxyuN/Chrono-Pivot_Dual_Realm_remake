@@ -36,7 +36,7 @@ public static class ReportLevelAudit
     public static void Photograph(string path,Vector3 position,Vector3 look,bool ortho,float size)
     {
         var go=new GameObject("Temporary review camera");var c=go.AddComponent<Camera>();c.enabled=false;c.stereoTargetEye=StereoTargetEyeMask.None;c.transform.position=position;c.transform.LookAt(look,ortho?Vector3.forward:Vector3.up);
-        c.orthographic=ortho;c.orthographicSize=size;c.fieldOfView=70;c.farClipPlane=200;c.clearFlags=CameraClearFlags.Skybox;
+        c.orthographic=ortho;c.orthographicSize=size;c.fieldOfView=70;c.farClipPlane=200;c.clearFlags=CameraClearFlags.Skybox;c.depthTextureMode=DepthTextureMode.Depth;
         if(ortho)c.cullingMask&=~(1<<29); // Hide only the ceiling in plan-view review images.
         var rt=new RenderTexture(1600,1000,24);var pix=new Texture2D(1600,1000,TextureFormat.RGB24,false);
         c.targetTexture=rt;c.Render();RenderTexture.active=rt;pix.ReadPixels(new Rect(0,0,1600,1000),0,0);pix.Apply();

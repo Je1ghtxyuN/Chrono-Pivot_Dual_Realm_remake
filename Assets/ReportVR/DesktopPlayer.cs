@@ -8,12 +8,16 @@ using UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement;
 using UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning;
 using Unity.XR.CoreUtils;
 
+public enum ReportControlMode { Auto, Desktop, VR }
+
 [DefaultExecutionOrder(-100)]
 public sealed class DesktopPlayer : MonoBehaviour
 {
     [Header("引用")]
     [Tooltip("键鼠和 VR 共用的视角相机。")]
     public Camera head;
+    [Tooltip("Auto 根据头显连接状态切换；VR 可用于固定头显模式；-desktop 启动参数优先。")]
+    public ReportControlMode controlMode;
     [Header("键鼠移动与转向")]
     [Min(0),Tooltip("WASD 移动速度，单位为米/秒；0 表示停止移动。")]
     public float speed=1.6f;
@@ -42,7 +46,9 @@ public sealed class DesktopPlayer : MonoBehaviour
     public bool showCrosshair=true;
     public bool IsDesktop {get;private set;}
     public bool Captured {get;private set;}
-    public bool CanInteract=>IsDesktop && Captured && !capturedThisFrame;
+    public bool HeadTracked {get;private set;}
+    public bool UIBlocked {get;private set;}
+    public bool CanInteract=>IsDesktop && Captured && !capturedThisFrame && !UIBlocked;
     bool configured,capturedThisFrame;
     float verticalSpeed;
     CharacterController body;
@@ -59,13 +65,19 @@ public sealed class DesktopPlayer : MonoBehaviour
     }
     void Update()
     {
-        bool tracked=XRSettings.isDeviceActive || InputSystem.devices.OfType<XRHMD>().Any(d=>d.trackingState.ReadValue()!=0);
-        bool desktop=ReportXRStartup.ForceDesktop || !tracked;
+        bool connected=XRSettings.isDeviceActive || InputSystem.devices.OfType<XRHMD>().Any();
+        HeadTracked=InputSystem.devices.OfType<XRHMD>().Any(d=>(d.trackingState.ReadValue()&3)==3);
+        bool desktop=ReportXRStartup.ForceDesktop || controlMode==ReportControlMode.Desktop || controlMode==ReportControlMode.Auto && !connected;
         if(!configured || desktop!=IsDesktop)SetMode(desktop);
+        move.enabled=!UIBlocked && !desktop && HeadTracked && HandTracked(true);
+        turn.enabled=!UIBlocked && !desktop && HeadTracked && HandTracked(false);
+        gravity.enabled=!UIBlocked && !desktop && HeadTracked;
         capturedThisFrame=false;
+        if(UIBlocked)return;
         if(!IsDesktop)return;
         var keyboard=Keyboard.current;var mouse=Mouse.current;
-        if(keyboard!=null && keyboard.escapeKey.wasPressedThisFrame)Capture(false);
+        var ui=GetComponent<ReportGameUI>();
+        if((ui==null || !ui.enabled) && keyboard!=null && keyboard.escapeKey.wasPressedThisFrame)Capture(false);
         if(!Captured)
         {
             if(mouse!=null && mouse.leftButton.wasPressedThisFrame && !PointerOverMenu(mouse.position.ReadValue())){Capture(true);capturedThisFrame=true;}
@@ -90,15 +102,26 @@ public sealed class DesktopPlayer : MonoBehaviour
     {
         configured=true;IsDesktop=desktop;verticalSpeed=0;
         foreach(var tracker in trackers)tracker.enabled=!desktop;
-        move.enabled=turn.enabled=gravity.enabled=!desktop;
-        var wrist=offset.Find("Left Controller/Scene and controller instructions");if(wrist!=null)wrist.gameObject.SetActive(!desktop);
+        var wrist=offset.Find("Left Controller/Scene and controller instructions");var ui=GetComponent<ReportGameUI>();if(wrist!=null)wrist.gameObject.SetActive(!desktop && (ui==null || !ui.enabled));
         if(desktop)
         {
             ApplyDesktopBody();head.transform.localRotation=Quaternion.identity;
         }
+        else
+        {
+            var origin=GetComponent<XROrigin>();
+            offset.localPosition=Vector3.up*(origin.CurrentTrackingOriginMode==UnityEngine.XR.TrackingOriginModeFlags.Device?origin.CameraYOffset:0);
+        }
         Capture(false);
     }
+    public bool HandTracked(bool left)
+    {
+        var usage=left?UnityEngine.InputSystem.CommonUsages.LeftHand:UnityEngine.InputSystem.CommonUsages.RightHand;
+        return InputSystem.devices.OfType<UnityEngine.InputSystem.XR.XRController>().Any(d=>d.usages.Contains(usage) && (d.trackingState.ReadValue()&3)==3);
+    }
     public void ResetView(){if(IsDesktop){head.transform.localRotation=Quaternion.identity;verticalSpeed=0;}}
+    public void SetUIBlocked(bool value){UIBlocked=value;if(value)Capture(false);}
+    public void ResumePointer(){if(IsDesktop && !UIBlocked)Capture(true);}
     void ApplyDesktopBody()
     {
         body.height=Mathf.Max(bodyHeight,body.radius*2);body.center=bodyCenter;
@@ -112,8 +135,9 @@ public sealed class DesktopPlayer : MonoBehaviour
         if(Application.isPlaying && IsDesktop && body!=null)ApplyDesktopBody();
     }
     void Capture(bool capture){Captured=capture;Cursor.lockState=capture?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!capture;}
-    static bool PointerOverMenu(Vector2 position)
+    bool PointerOverMenu(Vector2 position)
     {
+        var ui=GetComponent<ReportGameUI>();if(ui!=null && ui.enabled)return ui.PointerOverDesktopUI(position);
         // Existing IMGUI panels occupy the upper left. Keep capture clicks off them.
         return position.x<460 && position.y>Screen.height-510;
     }
@@ -121,11 +145,12 @@ public sealed class DesktopPlayer : MonoBehaviour
     void OnDestroy(){if(IsDesktop)Capture(false);}
     void OnGUI()
     {
+        var ui=GetComponent<ReportGameUI>();if(ui!=null && ui.enabled)return;
         if(!IsDesktop)return;
         if(showControls)GUI.Label(new Rect(16,Screen.height-55,1100,45),Captured?"WASD: move   Mouse: look   Click / E: use; hold to grab   Release: drop   R: reset   Esc: unlock   PgUp / PgDn: scene":"DESKTOP — Click the scene to play. Esc unlocks the mouse for menus.");
         if(Captured && showCrosshair)GUI.Label(new Rect(Screen.width*.5f-5,Screen.height*.5f-10,20,25),"+");
         var grab=head.GetComponent<ReportGrabInteractor>();
         if(Captured && grab!=null && grab.hasSelection)
-            GUI.Label(new Rect(Screen.width-340,Screen.height-90,330,35),grab.firstInteractableSelected is ReportMechanismHandle?"Drag mouse to adjust; release grab to let go":"Hold Right Mouse / F, release to throw: "+(grab.ThrowCharge01*100).ToString("F0")+"%");
+            GUI.Label(new Rect(Screen.width-340,Screen.height-90,330,35),grab.firstInteractableSelected is ReportMechanismHandle?"Drag mouse to adjust; release grab to let go":"Hold Right Mouse / F; release to throw");
     }
 }

@@ -1,0 +1,3 @@
+PASS Windows_OperationFlow: 196 files SHA256 matched; ReportAudio retained; music runtime and bank/themes absent.
+PASS WindowsDesktop_OperationFlow: 196 files SHA256 matched; ReportAudio retained; music runtime and bank/themes absent.
+PASS: all 15 main scenes match the verified clone; desktop boot.config has no native OpenXR pre-init.

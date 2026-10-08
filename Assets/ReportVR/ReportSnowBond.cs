@@ -22,6 +22,7 @@ public sealed class ReportSnowBond : MonoBehaviour
         // Loss of kinetic energy models compaction. The joint never teleports/snaps the piece.
         body.velocity=body.angularVelocity=Vector3.zero;
         joint=piece.gameObject.AddComponent<FixedJoint>();joint.connectedBody=support.attachedRigidbody;joint.breakForce=joint.breakTorque=breakForce;
+        ReportAudio.Play(ReportSound.SnowBond,piece.transform.position);
     }
     public void ResetBond(){if(joint!=null){Destroy(joint);joint=null;}}
 }

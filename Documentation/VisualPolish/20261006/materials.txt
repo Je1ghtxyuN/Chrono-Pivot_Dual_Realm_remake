@@ -1,0 +1,7 @@
+Plaster: 274
+Metal: 466
+Stone: 569
+Wood: 204
+Snow: 66
+Ground: 23
+Tile: 17

@@ -8,7 +8,7 @@ public sealed class LowPolyPlayerAvatar : MonoBehaviour
     public Transform headTarget,leftTarget,rightTarget;
     public Transform torso,face,leftUpperArm,leftForearm,rightUpperArm,rightForearm,leftHand,rightHand,leftLeg,rightLeg;
     public Renderer[] firstPersonHidden;
-    [Tooltip("第一人称中隐藏头部与衣身，只保留投影；在开始播放时应用。")]
+    [Tooltip("第一人称只显示双手，完整身体仅投影；在开始播放时应用。")]
     public bool firstPerson;
     [Header("模型姿态校准（米）")]
     public Vector2 trackedHeightRange=new Vector2(1.1f,2.05f);
@@ -68,10 +68,11 @@ public sealed class LowPolyPlayerAvatar : MonoBehaviour
         face.position=headTarget.TransformPoint(headOffset);
         face.rotation=headTarget.rotation;
         bool desk=desktop!=null && desktop.IsDesktop;
-        Vector3 left=desk?headTarget.TransformPoint(desktopLeftHandOffset):leftTarget.position;
-        Vector3 right=desk?headTarget.TransformPoint(desktopRightHandOffset):rightTarget.position;
-        PoseArm(-1,height,left,desk?headTarget.rotation:leftTarget.rotation,leftUpperArm,leftForearm,leftHand);
-        PoseArm(1,height,right,desk?headTarget.rotation:rightTarget.rotation,rightUpperArm,rightForearm,rightHand);
+        bool leftRest=desk || Application.isPlaying && desktop!=null && !desktop.HandTracked(true),rightRest=desk || Application.isPlaying && desktop!=null && !desktop.HandTracked(false);
+        Vector3 left=leftRest?headTarget.TransformPoint(desktopLeftHandOffset):leftTarget.position;
+        Vector3 right=rightRest?headTarget.TransformPoint(desktopRightHandOffset):rightTarget.position;
+        PoseArm(-1,height,left,leftRest?headTarget.rotation:leftTarget.rotation,leftUpperArm,leftForearm,leftHand);
+        PoseArm(1,height,right,rightRest?headTarget.rotation:rightTarget.rotation,rightUpperArm,rightForearm,rightHand);
         float distance=Vector3.Distance(new Vector3(transform.position.x,0,transform.position.z),new Vector3(previousPosition.x,0,previousPosition.z));
         previousPosition=transform.position;
         if(distance<teleportDistance)gait+=distance*gaitRate;
@@ -88,8 +89,9 @@ public sealed class LowPolyPlayerAvatar : MonoBehaviour
         torso.position+=transform.up*(height-bindEyeHeight);
         face.rotation=headTarget.rotation*headCalibration;
         bool desk=desktop!=null && desktop.IsDesktop;
-        BoneArm(desk?headTarget.TransformPoint(desktopLeftHandOffset):leftTarget.position,desk?headTarget.rotation:leftTarget.rotation,-1,leftUpperArm,leftForearm,leftHand,leftHandCalibration);
-        BoneArm(desk?headTarget.TransformPoint(desktopRightHandOffset):rightTarget.position,desk?headTarget.rotation:rightTarget.rotation,1,rightUpperArm,rightForearm,rightHand,rightHandCalibration);
+        bool leftRest=desk || Application.isPlaying && desktop!=null && !desktop.HandTracked(true),rightRest=desk || Application.isPlaying && desktop!=null && !desktop.HandTracked(false);
+        BoneArm(leftRest?headTarget.TransformPoint(desktopLeftHandOffset):leftTarget.position,leftRest?headTarget.rotation:leftTarget.rotation,-1,leftUpperArm,leftForearm,leftHand,leftHandCalibration);
+        BoneArm(rightRest?headTarget.TransformPoint(desktopRightHandOffset):rightTarget.position,rightRest?headTarget.rotation:rightTarget.rotation,1,rightUpperArm,rightForearm,rightHand,rightHandCalibration);
         float distance=Vector3.Distance(new Vector3(transform.position.x,0,transform.position.z),new Vector3(previousPosition.x,0,previousPosition.z));
         previousPosition=transform.position;if(distance<teleportDistance)gait+=distance*gaitRate;
         float swing=distance>.001f && distance<teleportDistance?Mathf.Sin(gait)*gaitAngle:0;

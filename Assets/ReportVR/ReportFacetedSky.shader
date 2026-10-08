@@ -7,6 +7,7 @@ Shader "ChronoPivot/Faceted Sky"
         _CloudColor ("云层", Color) = (1,.98,.9,1)
         _CloudCover ("云量", Range(0,1)) = .45
         _Stars ("星光", Range(0,1)) = 0
+        _SkyRotation ("星空旋转", Vector) = (0,0,0,1)
     }
     SubShader
     {
@@ -21,7 +22,7 @@ Shader "ChronoPivot/Faceted Sky"
             #include "UnityCG.cginc"
             struct appdata { float4 vertex : POSITION; UNITY_VERTEX_INPUT_INSTANCE_ID };
             struct v2f { float4 pos : SV_POSITION; float3 direction : TEXCOORD0; UNITY_VERTEX_OUTPUT_STEREO };
-            float4 _Zenith, _Horizon, _CloudColor;
+            float4 _Zenith, _Horizon, _CloudColor, _SkyRotation;
             float _CloudCover, _Stars;
             v2f vert(appdata v)
             {
@@ -38,12 +39,13 @@ Shader "ChronoPivot/Faceted Sky"
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
                 float3 d=normalize(i.direction);
+                float3 skyDirection=d+2*cross(_SkyRotation.xyz,cross(_SkyRotation.xyz,d)+_SkyRotation.w*d);
                 float h=saturate(d.y);
                 float3 color=lerp(_Horizon.rgb,_Zenith.rgb,pow(h,.58));
                 // Longitude/elevation placement keeps the clouds upright on the horizon.
                 // Four overlapping faceted lobes form each broad, flat-bottomed cloud.
                 // Cell hashes only choose whole static clouds, never noisy surface detail.
-                float2 cloudGrid=float2(atan2(d.x,d.z)*(12.0/6.28318530718),asin(clamp(d.y,-1,1))*(4.0/1.57079632679));
+                float2 cloudGrid=float2(atan2(skyDirection.x,skyDirection.z)*(12.0/6.28318530718),asin(clamp(skyDirection.y,-1,1))*(4.0/1.57079632679));
                 cloudGrid.x+=floor(cloudGrid.y)*.38;
                 float2 cell=floor(cloudGrid), p=frac(cloudGrid)-.5;
                 p.x/=.86+.14*hash(cell+float2(4,7));
@@ -57,7 +59,7 @@ Shader "ChronoPivot/Faceted Sky"
                 float3 cloudShade=lerp(_CloudColor.rgb*.90+_Zenith.rgb*.10,_CloudColor.rgb,step(-.025+.08*p.x,p.y));
                 color=lerp(color,cloudShade,cloud*.82);
                 // An integer number of longitude cells closes the sky seam.
-                float2 starGrid=float2(atan2(d.x,d.z)*(288.0/6.28318530718),d.y*110);
+                float2 starGrid=float2(atan2(skyDirection.x,skyDirection.z)*(288.0/6.28318530718),skyDirection.y*110);
                 float2 starCell=floor(starGrid), starLocal=frac(starGrid)-.5;
                 float star=(1-smoothstep(.025,.075,length(starLocal)))*step(.985,hash(starCell));
                 color+=star*_Stars*smoothstep(.05,.3,d.y)*(1-smoothstep(.94,.995,d.y))*float3(.75,.84,1);

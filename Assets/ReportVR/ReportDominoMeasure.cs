@@ -9,6 +9,6 @@ public sealed class ReportDominoMeasure : ReportLearningMeasure
     Vector3[] positions;
     Quaternion[] rotations;
     void Awake(){positions=new Vector3[dominoes.Length];rotations=new Quaternion[dominoes.Length];for(int i=0;i<dominoes.Length;i++){positions[i]=dominoes[i].position;rotations[i]=dominoes[i].rotation;}}
-    void Update(){if(readout!=null)readout.text="抛球或手推第一块，启动真实碰撞链\n已倒下 "+Reading.ToString("F0")+" / "+dominoes.Length+"\n高度0.36m · 间距0.15m · 刚体骨牌";}
+    void Update(){if(readout!=null)readout.text="推动第一块，观察碰撞接连传递\n"+(Reading==dominoes.Length?"骨牌全部倒下":Reading>0?"碰撞正在沿骨牌传递":"用球轻推第一块骨牌");}
     public override void ResetMeasurements(){if(positions==null)return;for(int i=0;i<dominoes.Length;i++){dominoes[i].velocity=dominoes[i].angularVelocity=Vector3.zero;dominoes[i].position=positions[i];dominoes[i].rotation=rotations[i];}}
 }

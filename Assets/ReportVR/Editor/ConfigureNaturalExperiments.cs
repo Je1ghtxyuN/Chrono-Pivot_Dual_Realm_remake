@@ -28,11 +28,11 @@ public static partial class ConfigureNaturalLearning
             model.Face(LevelModelBuilder.Mat(material),P(x,y),P(x+1,y),P(x+1,y+1),P(x,y+1));
         }
     }
-    static Transform Bench(int station,string name)
+    static Transform Bench(int station,string name,float width=1.25f,float depth=.85f)
     {
         var root=Point(layout,name,Vector3.zero);root.position=ConfigureReportPuzzles.ExperimentLocation(level.stations[station]);
         root.rotation=Quaternion.LookRotation(Vector3.ProjectOnPlane(root.position-level.stations[station].viewingPoint,Vector3.up));
-        var m=new LevelModelBuilder();m.Box(Vector3.up*.9f,new Vector3(1.25f,.08f,.85f),"Celadon");
+        var m=new LevelModelBuilder();m.Box(Vector3.up*.9f,new Vector3(width,.08f,depth),"Celadon");
         foreach(float x in new[]{-.48f,.48f}){m.Beam(new Vector3(x,.08f,0),new Vector3(x,.87f,0),.065f,"SatinBrass");m.Box(new Vector3(x,.035f,0),new Vector3(.3f,.07f,.65f),"SageStone");}
         Model(m,name+"台架",root);return root;
     }
@@ -71,7 +71,7 @@ public static partial class ConfigureNaturalLearning
     public static void All()
     {
         naturalGuide.Clear();naturalGuide.Add("# 自然物理实验逐关攻略\n\n全部关卡通过直接操作模型与实测结果自动推进，状态灯不能替代实验。VR：握把拿取、转手/沿轨道拖动，挥手松开抛掷。桌面：WASD移动、鼠标转向；按住左键/E拿取，拿住机关后拖鼠标；拿住普通物件时按住右键/F蓄力，松开右键/F抛出。R重置。\n\n每关三步按顺序完成；全部通过后实体出口打开，走入出口进入下一关。自由跳关默认关闭。\n");
-        FirstLevel();naturalGuide.Add("## 1. 材料与抛射\n\n三种材料按槽位归位；逐件入标定发射杯，拉杆拉到底松手，三种质量都命中；把太阳模型拖至东方90°，看日晷影子向西。\n");
+        FirstLevel();naturalGuide.Add("## 1. 材料与抛射\n\n分别拿起三件材料；将三件材料分别自由抛到金色落点区；把太阳模型拖至东方90°，看日晷影子向西。\n");
         for(int index=1;index<EditorBuildSettings.scenes.Length;index++)
         {
             EditorSceneManager.OpenScene(EditorBuildSettings.scenes[index].path);level=Object.FindObjectOfType<DemoLevel>();key=Path.GetFileNameWithoutExtension(EditorBuildSettings.scenes[index].path);modelNumber=0;
@@ -100,6 +100,16 @@ public static partial class ConfigureNaturalLearning
             foreach(var grab in Object.FindObjectsOfType<ReportGrabbable>())if(!grab.transform.IsChildOf(layout))
             {grab.enabled=false;var body=grab.GetComponent<Rigidbody>();body.isKinematic=true;body.useGravity=false;var oldLabel=grab.transform.Find("Puzzle Item Label");if(oldLabel!=null)Object.DestroyImmediate(oldLabel.gameObject);}
             level.mission="拿取、装配、转动与抛掷器材，观察结果；三个实验完成后沿步道进入出口。";
+            if(index==2)ReportAcousticUpgrade.ApplyCurrentScene();
+            if(index==3)ReportOrientationUpgrade.ApplyCurrentScene();
+            ReportWaterUpgrade.ApplyCurrentScene();ReportFloatingStatus.ConfigureScene(level);
+            if(index>=4)
+            {
+                ReportRemainingUpgrade.ApplyCurrentScene(index);
+                naturalGuide.RemoveRange(naturalGuide.Count-3,3);
+                foreach(var station in level.stations)
+                    naturalGuide.Add("### "+(station.index+1)+". "+station.instruction+"\n\n目标："+station.puzzle.goal+"\n\n操作："+station.puzzle.hint+"\n\n物理关系："+station.puzzle.clue+"\n");
+            }
             ConfigureReportPuzzles.EnsureExit();level.grabbables=Object.FindObjectsOfType<ReportGrabbable>().Where(g=>g.enabled).ToArray();level.Refresh();Physics.SyncTransforms();EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
         }
         AssetDatabase.SaveAssets();File.WriteAllLines("Documentation/逐关解谜攻略.md",naturalGuide);
@@ -107,13 +117,13 @@ public static partial class ConfigureNaturalLearning
     }
     static void Water()
     {
-        var first=Task(0,"木载荷与浮力","将木配重装入船舱，观察25%水线","船体2kg，木4kg，最大排水量24kg；浸没比例=总质量/24。","拿木配重放进木槽并松手，船体会按排水量下沉。");
-        var second=Task(1,"调整目标水线","再装入石配重，使船达到50%水线","石6kg，木+石+船体=12kg；铜18kg会使两者总量超过最大排水量。","回到船边，把石配重装入石槽；不要再装铜，观察50%刻线。");
+        var first=Task(0,"木载荷与浮力","将木配重装入船舱，观察25%水线","船体10kg，木20kg，最大排水量120kg；浸没比例=总质量/120。",key=="Fig_2_02_Buoyancy_Canal"?"把木块移到小木船船舱正上方并松手，观察下沉与后方大船同步变化。":"拿木配重放进木槽并松手，观察船壳白色25%刻线降至水面。");
+        var second=Task(1,"调整目标水线","再装入石配重，使船达到50%水线","石30kg，木+石+船体=60kg；再装铜90kg会超过最大排水量。",key=="Fig_2_02_Buoyancy_Canal"?"再把石块移到船面上方并松手，观察金色50%水线。铜块只用于可选过载实验。":"把石配重装入石槽并松手，观察船再下沉10cm，金色50%刻线与水面齐平。");
         var third=Task(2,"转闸通航","保持50%水线并打开闸门，让船驶过闸口","只有载荷安全且闸门足够开时，船能通过。","握住闸轮转至全开并松手，等待船体移过闸口。");
         var root=Bench(0,"透明水槽与配重船");
         var tank=new LevelModelBuilder();tank.Box(new Vector3(0,.98f,0),new Vector3(1.1f,.025f,.7f),"GlacierBlue");Model(tank,"实验水面",root,false);
         var hullRoot=Point(root,"箱形船体",new Vector3(-.45f,1.04f,0));var m=new LevelModelBuilder();m.Box(Vector3.zero,new Vector3(.8f,.15f,.2f),"InkTeal");m.Box(Vector3.up*.08f,new Vector3(.82f,.01f,.22f),"SatinBrass");Model(m,"箱形船壳",hullRoot,false);
-        var seats=new List<ReportCargoSeat>();float[] masses={4,6,18},sizes={.19f,.14f,.126f};string[] labels={"木4kg","石6kg","铜18kg"};string[] materials={"WarmWood","SageStone","Copper"};
+        var seats=new List<ReportCargoSeat>();float[] masses={20,30,90},sizes={.32f,.23f,.216f};string[] labels={"木20kg","石30kg","铜90kg"};string[] materials={"WarmWood","SageStone","Copper"};
         for(int i=0;i<3;i++)
         {
             string color=LevelModelBuilder.Mat(materials[i])!=null?materials[i]:"CoralRed";
@@ -122,7 +132,7 @@ public static partial class ConfigureNaturalLearning
             Text(root,"配重标记"+i,new Vector3((i-1)*.36f,1.36f,-.3f),labels[i],.009f);
         }
         var gateRoot=Bench(2,"水闸操纵台");var gate=Knob(gateRoot,"闸轮",new Vector3(0,1.25f,-.15f),new Vector2(0,1),0,"开度");
-        var boat=root.gameObject.AddComponent<ReportBuoyancyMeasure>();boat.hull=hullRoot;boat.seats=seats.ToArray();boat.gate=gate;boat.waterHeight=root.position.y+.98f;boat.transitTravel=root.right*1.1f;boat.readout=Readout(root,"");boat.label="浸没比例";
+        var boat=root.gameObject.AddComponent<ReportBuoyancyMeasure>();boat.hull=hullRoot;boat.seats=seats.ToArray();boat.gate=gate;boat.hullMass=10;boat.maximumVolume=.12f;boat.hullDepth=.4f;boat.waterHeight=root.position.y+.98f;boat.transitTravel=root.right*1.1f;boat.readout=Readout(root,"");boat.label="浸没比例";
         var transit=gateRoot.gameObject.AddComponent<ReportBoatTransitMeasure>();transit.boat=boat;transit.label="闸口通过";
         Conditions(first,Condition(boat,.24f,.26f));Conditions(second,Condition(boat,.49f,.51f));Conditions(third,Condition(transit,.98f,1));
         var channel=new LevelModelBuilder();channel.Box(new Vector3(.1f,.98f,0),new Vector3(1.95f,.025f,.7f),"GlacierBlue");foreach(float z in new[]{-.35f,.35f})channel.Beam(new Vector3(.15f,1,z),new Vector3(.15f,1.75f,z),.045f,"SatinBrass");Model(channel,"通航闸口",root,false);
@@ -130,7 +140,7 @@ public static partial class ConfigureNaturalLearning
     }
     static void Acoustics()
     {
-        var strike=Task(0,"敲钟试音","用钟槌实际敲响试验钟","敲击的相对速度须超过0.35m/s；轻放不算一次敲击。","拿起旁侧钟槌，敲到钟身；VR挥动，桌面可抛槌击钟。");
+        var strike=Task(0,"握槌敲钟，观察余振","拿住木槌敲钟，听到钟声后松手","沿钟身法线的撞击速度至少0.35m/s；轻放、擦碰、投掷及其他物件不计。","VR握把拿住木槌并挥动；桌面按住左键/E拿住，移动视线使槌头撞钟。敲响后松手。");
         var root=Bench(0,"编钟试音台");var mallet=Piece(root,"试音钟槌",new Vector3(.42f,1.07f,-.2f),new Vector3(.12f,.25f,.12f),"CoralRed");
         var m=new LevelModelBuilder();m.Box(Vector3.zero,new Vector3(.32f,.42f,.3f),"SatinBrass");var bell=Model(m,"实际碰撞试验钟",root);bell.transform.localPosition=new Vector3(-.2f,1.34f,0);bell.GetComponent<MeshCollider>().convex=true;
         var body=bell.AddComponent<Rigidbody>();body.constraints=RigidbodyConstraints.FreezeAll;body.useGravity=false;
@@ -140,7 +150,7 @@ public static partial class ConfigureNaturalLearning
     static void AcousticFrequency(int step,ReportAcousticReading kind)
     {
         bool resonance=kind==ReportAcousticReading.Resonance;
-        var task=Task(step,resonance?"调频寻找共振":"调平两个声源",resonance?"调节驱动频率，获得最大振幅":"调节第二声源，使拍频小于0.3Hz",resonance?"共振幅度由驱动频率与阻尼公式计算，固有频率100Hz。":"拍频=两个声源频率差的绝对值；可听到周期性强弱变化。","握住调频轮转动；观察振幅/拍频读数，找到匹配后松手。");
+        var task=Task(step,resonance?"调频寻找共振峰":"听拍频，微调至平稳",resonance?"相对峰值振幅达到94%，松手保持1秒":"拍频≤0.3Hz，松开两只旋钮保持1.5秒",resonance?"固有频率220Hz、阻尼比0.04，共振峰约219.65Hz；摆片为慢速示意。":"参考220Hz；可调频率=粗调+微调，拍频为频差。同频时变化停止。",resonance?"转调频轮，观察曲线与摆片，亮绿后松手。":"粗调先接近220Hz，再用±1Hz微调；听强弱变化、看同步光柱，亮绿后松手。");
         var root=Bench(step,resonance?"受迫振动实验":"双声源拍频实验");var h=Knob(root,"调频轮",new Vector3(.3f,1.2f,-.2f),new Vector2(75,125),80,"Hz");
         var body=new LevelModelBuilder();body.Box(new Vector3(-.3f,1.16f,0),new Vector3(.25f,.42f,.3f),"InkTeal");Model(body,"声源",root,false);
         var marker=Point(root,"振幅标记",new Vector3(-.3f,1.6f,0));var shape=new LevelModelBuilder();Gem(shape,Vector3.zero,.055f,"AmberLight");Model(shape,"振幅摆片",marker,false);
@@ -149,7 +159,7 @@ public static partial class ConfigureNaturalLearning
     }
     static void Compass(int step)
     {
-        var task=Task(step,"拨动司南定向","拨动勺柄后松手，观察它自行回指南","磁性勺柄受到简化地磁恢复力矩，松手后趋于南向。","握住勺柄转开至少几度，然后松手；读数回到南向偏差5°以内。");
+        var task=Task(step,"拨动司南定向","拨离南向至少20°，松手后回到5°内稳定1秒","简化磁力矩与阻尼使勺柄回摆并趋于南向。","握住勺柄拨开至少20°，再松手，观察回摆逐渐稳定；微小拨动不计。");
         var root=Bench(step,"地磁司南实验");var disc=new LevelModelBuilder();Ring(disc,new Vector3(0,1.1f,0),.38f,.04f,"SatinBrass");Model(disc,"方位盘",root,false);
         var needle=new LevelModelBuilder();needle.Beam(Vector3.zero,Vector3.forward*.3f,.055f,"SatinBrass");Ball(needle,Vector3.back*.1f,.085f,"SatinBrass");var go=Model(needle,"司南勺柄",root);go.transform.localPosition=Vector3.up*1.12f;
         var h=Handle(go,ReportHandleMotion.Rotation,Vector3.up,new Vector2(0,360),180);h.angleRange=new Vector2(0,360);h.vrDegreesForFullRange=360;h.unit="°";
@@ -158,11 +168,11 @@ public static partial class ConfigureNaturalLearning
     }
     static void ObservationRing(int step)
     {
-        var task=Task(step,"观测环对准星标","转动浑天仪观测环，使环上的照准线对准星标","观测环模拟天球坐标；环转角控制实际照准线方向。","握住观测环转动到星标45°附近，观察两条照准标记重合并松手。");
+        var task=Task(step,"观测环对准星标","让红色照准线指向星标，偏差≤3°并松手稳定1秒","测量照准线与星标在观测环平面内的实际夹角；这是平面照准示教。","握住圆环沿圆周拖动，看红线靠近星标；读数达标后松手。");
         var root=Bench(step,"观测环实验");var ring=new LevelModelBuilder();Ring(ring,Vector3.zero,.35f,.03f,"SatinBrass",Quaternion.Euler(90,0,0));ring.Beam(Vector3.zero,Vector3.up*.32f,.02f,"CoralRed");var model=Model(ring,"活动观测环",root);model.transform.localPosition=Vector3.up*1.35f;
         var h=Handle(model,ReportHandleMotion.Rotation,Vector3.forward,new Vector2(-90,90),-45);h.angleRange=new Vector2(-90,90);h.vrDegreesForFullRange=180;h.rotationFromPosition=true;h.unit="°";
-        var target=new LevelModelBuilder();Gem(target,new Vector3(-.25f,1.6f,.02f),.06f,"AmberLight");Model(target,"45度星标",root,false);
-        var measure=HandleReading(h,"观测环照准角","°");h.readout=Readout(root,"目标星标45°");Conditions(task,Condition(measure,42,48));
+        var target=new LevelModelBuilder();Gem(target,new Vector3(-.25f,1.6f,.02f),.06f,"AmberLight");var star=Model(target,"45度星标",root,false);
+        var measure=root.gameObject.AddComponent<ReportSightMeasure>();measure.ring=h;measure.target=star.GetComponent<Renderer>();measure.label="照准偏差";measure.unit="°";measure.readout=Readout(root,"");Conditions(task,Condition(measure,0,3));task.learningTask.stableDuration=1;
     }
     static void Mirror(int step)
     {
@@ -317,9 +327,9 @@ public static partial class ConfigureNaturalLearning
     }
     static void BridgeSupport(int step)
     {
-        var task=Task(step,"桥梁支撑装配","补齐中部支撑，再放桥面和载荷使其稳定","模型通过真实重力与接触支撑；这是桥梁支撑实验台，不代表完整拱桥有限元分析。","将青色支撑块放到中央，再放横向桥面板，最后放红色载荷；松手等待稳定。");var root=Bench(step,"桥梁支撑实验");
+        var task=Task(step,"桥梁支撑装配","补齐中部支撑，再放桥面和载荷使其稳定","模型通过真实重力与接触支撑；这是桥梁支撑实验台，不代表完整拱桥有限元分析。","将青色支撑块放到中央，再放横向桥面板，最后放红色载荷；松手等待稳定。");var root=Bench(step,"桥梁支撑实验",1.65f,1.7f);
         Vector3[] sizes={new Vector3(.25f,.22f,.3f),new Vector3(.8f,.08f,.32f),Vector3.one*.16f};Vector3[] targets={new Vector3(0,1.05f,.12f),new Vector3(0,1.2f,.12f),new Vector3(0,1.32f,.12f)};var pieces=new List<ReportGrabbable>();var marks=new List<Transform>();
-        Vector3[] supplies={new Vector3(-.47f,1.06f,.22f),new Vector3(0,.99f,-.27f),new Vector3(.52f,1.03f,.22f)};
+        Vector3[] supplies={new Vector3(-.62f,1.06f,.22f),new Vector3(0,.99f,-.62f),new Vector3(.67f,1.03f,.22f)};
         for(int i=0;i<3;i++){pieces.Add(Piece(root,new[]{"支撑块","桥面板","试验载荷"}[i],supplies[i],sizes[i],new[]{"Celadon","SatinBrass","CoralRed"}[i]));marks.Add(Point(root,"结构目标"+i,targets[i]));}
         var measure=root.gameObject.AddComponent<ReportStackMeasure>();measure.pieces=pieces.ToArray();measure.positions=marks.ToArray();measure.tolerance=.13f;measure.readout=Readout(root,"");measure.label="稳定结构件";Conditions(task,Condition(measure,3,3));task.learningTask.stableDuration=2;
     }

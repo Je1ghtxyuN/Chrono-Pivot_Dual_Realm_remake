@@ -1,0 +1,1 @@
+PASS: desktop E/mouse grab, follow, scroll placement distance and reach limits, release/gravity, charged throw, no recapture; VR grip/analog near/ray grabs, hand ownership, reset, tracking loss/recovery, swing-and-release throw; real acoustic wheel coarse drag and Shift fine adjustment. Physical headset and SteamVR streaming not tested.

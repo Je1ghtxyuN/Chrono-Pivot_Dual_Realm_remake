@@ -1,0 +1,10 @@
+PASS: tutor source switched to D:/_work/_SRTP/AI物理导师/ai-physics-tutor
+PASS: all 47 original delivery files match delivery_manifest.json
+PASS at folder switch: API contract and Unity protocol identical to previous source; legacy backend subsequently removed
+PASS: copied Qwen2.5-3B-Instruct; all 12 official files verified against pinned download manifest
+PASS: baseModelPath and serviceEndpoint remain blank
+NOTE: legacy default HTTP backend removed; 3B HTTP backend pending
+NOTE: prior Unity UI/transport checks reused because runtime behavior and contract are unchanged
+PASS: 4 new-source API unit tests
+PASS: HTTP fixture imports new-source api_contract
+PASS: Unity compile and plugin export; 11 assets; new source README; blank configuration; no weights

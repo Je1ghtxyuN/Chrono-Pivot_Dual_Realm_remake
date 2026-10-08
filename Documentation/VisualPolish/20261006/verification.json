@@ -1,0 +1,70 @@
+{
+  "mesh_assets_unchanged": 1365,
+  "scenes_with_backup_component_comparison": 14,
+  "scenes_with_editor_gameplay_state_checks": 15,
+  "compared_views": [
+    {
+      "scene": "Fig_2_01_Introduction",
+      "view": "Overview",
+      "average_pixel_change": 5.116,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_01_Introduction",
+      "view": "Detail",
+      "average_pixel_change": 6.247,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_02_Buoyancy_Canal",
+      "view": "Overview",
+      "average_pixel_change": 5.749,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_02_Buoyancy_Canal",
+      "view": "Detail",
+      "average_pixel_change": 6.325,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_05_Electromagnetic_Lock",
+      "view": "Overview",
+      "average_pixel_change": 2.561,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_05_Electromagnetic_Lock",
+      "view": "Detail",
+      "average_pixel_change": 14.126,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_08_Snow_Arena",
+      "view": "Overview",
+      "average_pixel_change": 3.672,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_08_Snow_Arena",
+      "view": "Detail",
+      "average_pixel_change": 4.114,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_11_Garden_Canal_Design",
+      "view": "Overview",
+      "average_pixel_change": 4.35,
+      "magenta_fraction": 0.0
+    },
+    {
+      "scene": "Fig_2_11_Garden_Canal_Design",
+      "view": "Detail",
+      "average_pixel_change": 5.664,
+      "magenta_fraction": 0.0
+    }
+  ],
+  "shared_maps": 14,
+  "resolution": 1024,
+  "gallery": "D:\\_work\\_SRTP\\ChronoPivot_NewVersion\\Documentation\\VisualPolish\\20261006\\index.html"
+}

@@ -1,0 +1,467 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-31966" at "2026-10-07T03:47:33.7126505Z"
+[Licensing::Client] Code 1 while verifying Licensing Client signature (process Id: 3704, path: "D:/Unity/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.16.1+e780b2e
+  Session Id:              087b5af0962749fcb71c38dc9d4db800
+  Correlation Id:          06baf17c68746b1f13bdd0cf68ed5065
+  External correlation Id: 3646847371124941725
+  Machine Id:              luX5VAqDRJ71wgkpJf6Oy6zAIeM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-31966" (connect: 0.00s, validation: 0.02s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-31966-notifications" at "2026-10-07T03:47:33.7380132Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '2022.3/china_unity/release~1' branch; Version is '2022.3.53f1c1 (f16e16b78e06) revision 15822358'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16010 MB
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-N3RB-R8MW-BCU4-GYC6-XXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Successfully resolved entitlement details
+
+COMMAND LINE ARGUMENTS:
+D:\2022.3.53f1c1\Editor\Unity.exe
+-batchmode
+-projectPath
+D:/_work/_SRTP/ChronoPivot_ReportVR
+-executeMethod
+NaturalAllPlayCheck.OrientationOnly
+-logFile
+D:/_work/_SRTP/output/orientation-play-final.log
+Successfully changed project path to: D:/_work/_SRTP/ChronoPivot_ReportVR
+D:/_work/_SRTP/ChronoPivot_ReportVR
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [64324]  Target information:
+
+Player connection [64324]  * "[IP] 172.29.32.1 [Port] 55504 [Flags] 2 [Guid] 324435665 [EditorId] 324435665 [Version] 1048832 [Id] WindowsEditor(7,as811_) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [64324]  * "[IP] 10.208.83.246 [Port] 55504 [Flags] 2 [Guid] 324435665 [EditorId] 324435665 [Version] 1048832 [Id] WindowsEditor(7,as811_) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [64324] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [64324] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[Package Manager] UpmClient::Connect -- Connected to IPC stream "Upm-32640" after 0.3 seconds.
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 22 packages:
+  Packages from [https://packages.unity.cn]:
+    com.unity.inputsystem@1.13.1 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.inputsystem@1.13.1)
+    com.unity.xr.core-utils@2.4.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.xr.core-utils@2.4.0)
+    com.unity.xr.interaction.toolkit@3.1.2 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.xr.interaction.toolkit@3.1.2)
+    com.unity.xr.management@4.5.1 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.xr.management@4.5.1)
+    com.unity.xr.openxr@1.14.1 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.xr.openxr@1.14.1)
+    com.unity.xr.legacyinputhelpers@2.1.11 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.11)
+    com.unity.mathematics@1.2.6 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.mathematics@1.2.6)
+  Built-in packages:
+    com.unity.modules.animation@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.animation@1.0.0)
+    com.unity.modules.audio@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.audio@1.0.0)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.imageconversion@1.0.0)
+    com.unity.modules.imgui@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.imgui@1.0.0)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0)
+    com.unity.modules.physics@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.physics@1.0.0)
+    com.unity.modules.screencapture@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.screencapture@1.0.0)
+    com.unity.modules.terrain@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.terrain@1.0.0)
+    com.unity.modules.ui@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.ui@1.0.0)
+    com.unity.modules.xr@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.xr@1.0.0)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.particlesystem@1.0.0)
+    com.unity.modules.subsystems@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.subsystems@1.0.0)
+    com.unity.modules.vr@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.vr@1.0.0)
+    com.unity.ugui@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.ugui@1.0.0)
+    com.unity.modules.uielements@1.0.0 (location: D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.modules.uielements@1.0.0)
+[Subsystems] Looking for new subsystems at path D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.xr.openxr@1.14.1
+[Subsystems] Novel subsystem found at Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json
+[Subsystems] Discovering subsystems at path D:/2022.3.53f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/_work/_SRTP/ChronoPivot_ReportVR/Assets
+[Subsystems] Discovering subsystems at path D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.xr.openxr@1.14.1
+[Subsystems] No descriptors matched for  examples in Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] 1 'inputs' descriptors matched in Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json
+[Subsystems] 1 'displays' descriptors matched in Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json
+[Subsystems] No descriptors matched for  meshings in Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.45 seconds
+Refreshing native plugins compatible for Editor in 13.44 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.53f1c1 (f16e16b78e06)
+[Subsystems] Discovering subsystems at path D:/2022.3.53f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/_work/_SRTP/ChronoPivot_ReportVR/Assets
+[Subsystems] Discovering subsystems at path D:\_work\_SRTP\ChronoPivot_ReportVR\Library\PackageCache\com.unity.xr.openxr@1.14.1
+[Subsystems] No descriptors matched for  examples in Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] 1 'inputs' descriptors matched in Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json
+[Subsystems] 1 'displays' descriptors matched in Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json
+[Subsystems] No descriptors matched for  meshings in Library/PackageCache/com.unity.xr.openxr@1.14.1/Runtime/UnitySubsystemsManifest.json.
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7956 MB
+    Driver:   32.0.15.9174
+[Licensing::Client] Successfully resolved entitlement details
+Initialize mono
+Mono path[0] = 'D:/2022.3.53f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/2022.3.53f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/2022.3.53f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: D:/2022.3.53f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/2022.3.53f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.020380 seconds.
+- Loaded All Assemblies, in  0.284 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 2251 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.455 seconds
+Domain Reload Profiling: 2737ms
+	BeginReloadAssembly (90ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (102ms)
+		LoadAssemblies (87ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (100ms)
+			TypeCache.Refresh (98ms)
+				TypeCache.ScanAssembly (88ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (2455ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2424ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2309ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (75ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: D:\2022.3.53f1c1\Editor\Data\bee_backend.exe --dont-print-to-structured-log --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/_work/_SRTP/ChronoPivot_ReportVR
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s495ms
+[368/374    1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[372/374    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[373/374    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (1.46 seconds), 3 items updated, 374 evaluated
+AssetDatabase: script compilation time: 1.907867s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.542 seconds
+Refreshing native plugins compatible for Editor in 11.06 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Start importing Assets/ReportVR/ReportCompassMeasure.cs using Guid(bee29b0498070644b989cf1cc9cb6845) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'fc324150e749bc147d17ef61b5805125') in 0.008650 seconds
+Refreshing native plugins compatible for Editor in 11.15 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.327 seconds
+Domain Reload Profiling: 575ms
+	BeginReloadAssembly (125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (73ms)
+		LoadAssemblies (93ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (47ms)
+			TypeCache.Refresh (34ms)
+				TypeCache.ScanAssembly (27ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (327ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (241ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 24.17 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=98f73ba441cc4d74680a2a5c587ecd08): Total: 3.951 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=951 ms
+		Asset DB Callback time: managed=114 ms, native=28 ms
+		Scripting: domain reloads=1, domain reload time=927 ms, compile time=1908 ms, other=18 ms
+		Project Asset Count: scripts=2344, non-scripts=8080
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeBeforeRefreshCallbacks: 0.978ms
+	ApplyChangesToAssetFolders: 0.019ms
+	Scan: 57.900ms
+	OnSourceAssetsModified: 1.733ms
+	GetAllGuidsForCategorization: 0.921ms
+	CategorizeAssets: 96.379ms
+	ImportOutOfDateAssets: 380.873ms (-1549.948ms without children)
+		ImportManagerImport: 10.798ms (1.780ms without children)
+			ImportInProcess: 8.997ms
+			UpdateCategorizedAssets: 0.021ms
+		CompileScripts: 1907.965ms
+		ReloadNativeAssets: 0.005ms
+		UnloadImportedAssets: 9.289ms
+		ReloadImportedAssets: 0.401ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.336ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 1.027ms
+	PostProcessAllAssets: 115.106ms
+	Hotreload: 25.312ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
+	UnloadStreamsBegin: 0.253ms
+	PersistCurrentRevisions: 0.397ms
+	UnloadStreamsEnd: 0.021ms
+	GenerateScriptTypeHashes: 0.710ms
+	Untracked: 3271.193ms
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Scanning for USB devices : 1.369ms
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-ChronoPivot Report VR
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ProgressiveSceneManager::Cancel()
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (493.8 KB). Loaded Objects now: 2374.
+Memory consumption went from 134.4 MB to 133.9 MB.
+Total: 2.568000 ms (FindLiveObjects: 0.115900 ms CreateObjectMapping: 0.029700 ms MarkObjects: 2.222400 ms  DeleteObjects: 0.197200 ms)
+
+Opening scene 'Assets/ReportScenesLowPoly/Scenes/Fig_2_04_Geomagnetic_Optics.unity'
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/ReportScenesLowPoly/Scenes/Fig_2_04_Geomagnetic_Optics.unity'
+	Deserialize:            30.551 ms
+	Integration:            173.738 ms
+	Integration of assets:  0.041 ms
+	Thread Wait Time:       0.051 ms
+	Total Operation Time:   204.381 ms
+Unloading 2 unused Assets / (1.4 KB). Loaded Objects now: 3280.
+Memory consumption went from 145.4 MB to 145.4 MB.
+Total: 2.424100 ms (FindLiveObjects: 0.149400 ms CreateObjectMapping: 0.048500 ms MarkObjects: 2.204500 ms  DeleteObjects: 0.021000 ms)
+
+[Project] Loading completed in 9.588 seconds
+	Project init time: 				8.638 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.310 seconds
+		Asset Database init time: 		0.638 seconds
+		Global illumination init time: 	0.005 seconds
+		Assemblies load time: 			2.754 seconds
+		Unity extensions init time: 	0.002 seconds
+		Asset Database refresh time: 	0.000 seconds
+	Scene opening time: 			0.290 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1791344863269,"processId":32640,"projectLoad":9.587595400000002,"projectInit":8.6379433,"templateInit":0.0,"packageManagerInit":0.3101688,"assetDatabaseInit":0.6383902,"globalIlluminationInit":0.0045682,"assembliesLoad":2.7537605,"unityExtensionsInit":0.0021077,"assetDatabaseRefresh":0.0,"sceneOpening":0.290312}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1791344863269,"processId":32640,"editorVersion":"2022.3.53f1c1 (f16e16b78e06)","branch":"2022.3/china_unity/release~1","buildType":"Release","platform":"Windows"}
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            147.498 ms
+	Integration:            48.281 ms
+	Integration of assets:  23.743 ms
+	Thread Wait Time:       -0.046 ms
+	Total Operation Time:   219.476 ms
+Created GICache directory at C:/Users/31966/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.087s, timestamps: [10.026 - 10.113]
+NATURAL_SCENE_PLAY_OK index=3
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NaturalAllPlayCheck/<Exercises>d__48:MoveNext () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:284)
+NaturalAllPlayCheck:Tick () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:83)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/ReportVR/Editor/NaturalAllPlayCheck.cs Line: 284)
+
+Unloading 1008 Unused Serialized files (Serialized files now loaded: 0)
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+UnloadTime: 6.546600 ms
+Loaded scene 'Assets/ReportScenesLowPoly/Scenes/Fig_2_09_Creative_Workshop.unity'
+	Deserialize:            3641.671 ms
+	Integration:            16.330 ms
+	Integration of assets:  55.337 ms
+	Thread Wait Time:       -2.928 ms
+	Total Operation Time:   3710.410 ms
+Unloading 586 unused Assets / (42.8 MB). Loaded Objects now: 3992.
+Memory consumption went from 274.1 MB to 231.3 MB.
+Total: 4.095100 ms (FindLiveObjects: 0.219600 ms CreateObjectMapping: 0.063800 ms MarkObjects: 2.482500 ms  DeleteObjects: 1.328500 ms)
+
+NATURAL_SCENE_PLAY_OK index=8
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NaturalAllPlayCheck/<Exercises>d__48:MoveNext () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:284)
+NaturalAllPlayCheck:Tick () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:83)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/ReportVR/Editor/NaturalAllPlayCheck.cs Line: 284)
+
+Unloading 407 Unused Serialized files (Serialized files now loaded: 0)
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+UnloadTime: 1.609700 ms
+Loaded scene 'Assets/ReportScenesLowPoly/Scenes/Fig_2_10_Physics_Laboratory.unity'
+	Deserialize:            2933.048 ms
+	Integration:            17.438 ms
+	Integration of assets:  28.045 ms
+	Thread Wait Time:       -2.150 ms
+	Total Operation Time:   2976.380 ms
+Unloading 711 unused Assets / (37.6 MB). Loaded Objects now: 3612.
+Memory consumption went from 263.1 MB to 225.5 MB.
+Total: 4.917900 ms (FindLiveObjects: 0.178100 ms CreateObjectMapping: 0.057900 ms MarkObjects: 2.691400 ms  DeleteObjects: 1.989900 ms)
+
+NATURAL_SCENE_PLAY_OK index=9
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NaturalAllPlayCheck/<Exercises>d__48:MoveNext () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:284)
+NaturalAllPlayCheck:Tick () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:83)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/ReportVR/Editor/NaturalAllPlayCheck.cs Line: 284)
+
+Unloading 484 Unused Serialized files (Serialized files now loaded: 0)
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+UnloadTime: 2.541700 ms
+Loaded scene 'Assets/ReportScenesLowPoly/Scenes/Fig_2_15_SelfModeled_Asset_Collection.unity'
+	Deserialize:            2938.640 ms
+	Integration:            14.096 ms
+	Integration of assets:  46.396 ms
+	Thread Wait Time:       -2.065 ms
+	Total Operation Time:   2997.067 ms
+Unloading 579 unused Assets / (38.4 MB). Loaded Objects now: 3732.
+Memory consumption went from 300.2 MB to 261.9 MB.
+Total: 4.155100 ms (FindLiveObjects: 0.170600 ms CreateObjectMapping: 0.057300 ms MarkObjects: 2.496200 ms  DeleteObjects: 1.430600 ms)
+
+NATURAL_SCENE_PLAY_OK index=13
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NaturalAllPlayCheck/<Exercises>d__48:MoveNext () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:284)
+NaturalAllPlayCheck:Tick () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:83)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/ReportVR/Editor/NaturalAllPlayCheck.cs Line: 284)
+
+Unloading 591 Unused Serialized files (Serialized files now loaded: 0)
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+UnloadTime: 1.170600 ms
+Loaded scene 'Assets/ReportGardenLowPoly/AncientGarden_LowPoly.unity'
+	Deserialize:            2685.690 ms
+	Integration:            17.014 ms
+	Integration of assets:  42.078 ms
+	Thread Wait Time:       -1.737 ms
+	Total Operation Time:   2743.045 ms
+Unloading 658 unused Assets / (68.2 MB). Loaded Objects now: 4369.
+Memory consumption went from 337.5 MB to 269.2 MB.
+Total: 4.513400 ms (FindLiveObjects: 0.225200 ms CreateObjectMapping: 0.067500 ms MarkObjects: 2.608200 ms  DeleteObjects: 1.612000 ms)
+
+NATURAL_SCENE_PLAY_OK index=14
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NaturalAllPlayCheck/<Exercises>d__48:MoveNext () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:284)
+NaturalAllPlayCheck:Tick () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:83)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/ReportVR/Editor/NaturalAllPlayCheck.cs Line: 284)
+
+NATURAL_ORIENTATION_PLAYTEST_OK scenes=5 tasks=15
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NaturalAllPlayCheck:Tick () (at Assets/ReportVR/Editor/NaturalAllPlayCheck.cs:85)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/ReportVR/Editor/NaturalAllPlayCheck.cs Line: 85)
+
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.776 ms
+	Integration:            88.393 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.004 ms
+	Total Operation Time:   92.175 ms
+Unloading 638 unused Assets / (59.8 MB). Loaded Objects now: 3302.
+Memory consumption went from 255.5 MB to 195.7 MB.
+Total: 4.841500 ms (FindLiveObjects: 0.198700 ms CreateObjectMapping: 0.067200 ms MarkObjects: 2.711900 ms  DeleteObjects: 1.863200 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+[UnityConnectServicesConfig] config is NOT valid, switching to default
+gi::BakeBackendSwitch: switching bake backend from 3 to 1.
+[00:00:00] Builtin Sky manager started.
+Start importing ProjectSettings/EditorSettings.asset using Guid(0000000000000000c000000000000000) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '833fd8b95bc379c0fa32edbb3836570f') in 0.003541 seconds
+Refreshing native plugins compatible for Editor in 22.52 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=50bc9ce33af66634e8abc6beee05e18e): Total: 0.071 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Killing ADB server in 0.0881804 seconds.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[Licensing::IpcConnector] LicenseClient-31966-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-31966 channel disconnected successfully.

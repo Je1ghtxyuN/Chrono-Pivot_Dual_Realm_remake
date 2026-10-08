@@ -1,0 +1,1 @@
+PASS: 40 imported mono clips; 3D world / 2D paused UI; mute, cooldown, loop start/stop, reset silence; actual XRI grab/release/throw; real Rigidbody material collision and target trigger; seating, boat loading, snow joint; UI pointer hover; completion/unlock/reset; runtime audio attachment and no exceptions in all 15 scenes. Physical SteamVR headset not tested.

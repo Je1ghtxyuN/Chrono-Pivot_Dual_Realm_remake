@@ -1,0 +1,3 @@
+PASS: all 15 source scenes match the built scenes.
+PASS: Windows_IntuitiveDemo SHA256 verified 196 files.
+PASS: WindowsDesktop_IntuitiveDemo SHA256 verified 196 files.

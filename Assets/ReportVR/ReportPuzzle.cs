@@ -36,7 +36,7 @@ public sealed class ReportPuzzle : MonoBehaviour
         int ready=0;foreach(var p in placements)if(p.IsReady)ready++;
         if(ready!=placements.Length)
         {
-            message="已归位 "+ready+" / "+placements.Length+"；请按槽位标记摆放并松手，再按验证。";return false;
+            message=mode==ReportPuzzleMode.Physical?hint:"已归位 "+ready+" / "+placements.Length+"；请按槽位标记摆放并松手，再按验证。";return false;
         }
         foreach(var item in excludedItems)foreach(var placement in placements)
             if(item!=null && Vector3.Distance(item.transform.position,placement.socket.position)<.7f)
@@ -47,7 +47,7 @@ public sealed class ReportPuzzle : MonoBehaviour
             if(SelectedChoice!=correctChoice){message=wrongMessage;return false;}
         }
         if(mode==ReportPuzzleMode.Physical && (learningTask==null || !learningTask.Complete))
-        {message="请直接操作实验器材并观察结果。\n"+(learningTask!=null?learningTask.Summary:"");return false;}
+        {message=hint;return false;}
         message=successMessage;return true;
     }
     void Update()

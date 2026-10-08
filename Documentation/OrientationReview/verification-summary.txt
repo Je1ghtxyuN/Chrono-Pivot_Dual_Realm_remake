@@ -1,0 +1,13 @@
+Fourth level verification, 2026-10-07
+
+PASS: regression first reproduced incident light passing through an obstruction (output/orientation-red.log).
+PASS: actual sight angle; moving the star rejects the old 45-degree setting; world south calibration.
+PASS: incident and reflected obstruction/recovery checks in build indices 3,8,9,14.
+PASS: virtual XR grip/drag/release in indices 3,8,9,13,14; all 15 tasks; incorrect angles, small compass deflections and incident obstruction rejected; physical exits and reset checked.
+PASS: final presentation inspected; fixed measurement screens retain their orientation when the viewer walks around them.
+PASS: 15-scene VR/path validation; Windows build succeeded and Unity exited with code 0.
+PASS: VR and Desktop each contain 196 files; all 195 files outside boot.config have matching SHA256 hashes; desktop native XR preinit absent.
+PASS: desktop D3D11 startup on RTX 4060, no runtime exceptions or shader errors; own smoke process stopped after inspection.
+
+Play test results are reused after final changes to fixed screen orientation and task wording, since the interaction and measurement behavior did not change. Final scene generation and geometry checks were rerun in release.log.
+Physical headset, SteamVR streaming, comfort and frame rate were not tested.

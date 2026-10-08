@@ -22,3 +22,6 @@
 *.assets filter=lfs diff=lfs merge=lfs -text
 *.bundle filter=lfs diff=lfs merge=lfs -text
 *.unity3d filter=lfs diff=lfs merge=lfs -text
+
+# Selected physics LoRA; base model folder is ignored.
+*.safetensors filter=lfs diff=lfs merge=lfs -text

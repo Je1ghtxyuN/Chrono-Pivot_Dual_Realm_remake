@@ -14,6 +14,16 @@ public static class Ch46TrackingCheck
   Debug.Log("CH46_ORIENTATION left="+a.transform.InverseTransformPoint(a.leftHand.position)+" right="+a.transform.InverseTransformPoint(a.rightHand.position)+" toe="+a.transform.InverseTransformPoint(a.leftLeg.GetChild(0).GetChild(0).GetChild(0).position));
   if(a.transform.InverseTransformPoint(a.leftHand.position).x>0)throw new Exception("Ch46 faces backwards: left hand lies on the right");
   a.SendMessage("Start");
+  var hands=a.firstPersonVisible[0] as SkinnedMeshRenderer;
+  if(hands==null)throw new Exception("First person hand mesh missing");
+  var weights=hands.sharedMesh.boneWeights;bool left=false,right=false;
+  foreach(var index in hands.sharedMesh.triangles)
+  {
+   var name=hands.bones[weights[index].boneIndex0].name;
+   if(!name.Contains("Hand"))throw new Exception("First person mesh includes non-hand geometry: "+name);
+   left|=name.Contains("LeftHand");right|=name.Contains("RightHand");
+  }
+  if(!left || !right)throw new Exception("Both first person hands must be visible");
   for(int i=0;i<4;i++)
   {
    a.headTarget.position=origin.transform.TransformPoint(new Vector3(.12f,1.65f-i*.12f,-.08f));a.headTarget.rotation=Quaternion.Euler(i*10,i*40,0);
@@ -23,7 +33,7 @@ public static class Ch46TrackingCheck
    if(float.IsNaN(a.face.position.x))throw new Exception("Invalid bone pose");
    if(a.firstPersonHidden[0].shadowCastingMode!=ShadowCastingMode.ShadowsOnly || !a.firstPersonVisible[0].enabled)throw new Exception("First person visibility failed");
   }
-  File.WriteAllText("Documentation/Verification/ch46-tracking.txt","PASS: forward orientation; hands match targets under yaw, pitch and height changes; repeat pose does not drift; full body shadows only; first person limbs visible.\n");
+  File.WriteAllText("Documentation/Verification/ch46-tracking.txt","PASS: forward orientation; hands match targets under yaw, pitch and height changes; repeat pose does not drift; full body shadows only; only left and right hand geometry visible in first person.\n");
   Debug.Log("CH46_TRACKING_OK");
  }
 }

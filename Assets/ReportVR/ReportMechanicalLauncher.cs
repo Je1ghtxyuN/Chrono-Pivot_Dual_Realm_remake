@@ -23,6 +23,6 @@ public sealed class ReportMechanicalLauncher : MonoBehaviour
         body.position=cup.position;loaded.transform.position=cup.position;body.angularVelocity=Vector3.zero;
         body.velocity=transform.TransformDirection(localLaunchDirection.normalized)*speed;
         loaded.GetComponent<ReportThrowTrack>().RecordRelease(body.velocity);
-        if(readout!=null)readout.text="已发射："+loaded.name+"\n标定初速 "+speed.ToString("F2")+"m/s · 仰角45°\n轨迹和落点由真实刚体产生";
+        if(readout!=null)readout.text="样品已发射，观察弧形轨迹与落点";
     }
 }

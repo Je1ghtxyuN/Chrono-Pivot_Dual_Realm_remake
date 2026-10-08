@@ -24,6 +24,7 @@ public static class OfflineVRCheck
     static int phase,index,switches;
     static int demoAttempts,demoStep;
     static bool demoChecked;
+    static bool trackingOnly;
     static Vector3[] demoInitialPositions;
     static Quaternion[] demoInitialRotations;
     static Vector3 demoDoorClosed;
@@ -36,6 +37,7 @@ public static class OfflineVRCheck
 
     public static void Run()
     {
+        trackingOnly=false;
         oldOptions=EditorSettings.enterPlayModeOptions;oldOptionsEnabled=EditorSettings.enterPlayModeOptionsEnabled;
         EditorSettings.enterPlayModeOptionsEnabled=true;EditorSettings.enterPlayModeOptions=EnterPlayModeOptions.DisableDomainReload;
         var xr=XRGeneralSettingsPerBuildTarget.XRGeneralSettingsForBuildTarget(BuildTargetGroup.Standalone);oldXRStart=xr.InitManagerOnStart;xr.InitManagerOnStart=false;
@@ -44,6 +46,7 @@ public static class OfflineVRCheck
         timeout=EditorApplication.timeSinceStartup+150;
         Application.logMessageReceived+=OnLog;EditorApplication.update+=Tick;EditorApplication.isPlaying=true;
     }
+    public static void TrackingAndLocomotion(){Run();trackingOnly=true;}
     static void OnLog(string message,string stack,LogType type)
     {
         if(type==LogType.Error || type==LogType.Exception || type==LogType.Assert)errors.Add(message);
@@ -102,7 +105,7 @@ public static class OfflineVRCheck
                     NextPhase(1,.5);break;
                 case 1:
                     CheckPoses();visited.Add(index);
-                    if(!demoChecked)
+                    if(!demoChecked && !trackingOnly)
                     {
                         var initial=UnityEngine.Object.FindObjectOfType<DemoLevel>();
                         demoInitialPositions=initial.stations.Select(s=>s.movingPart!=null?s.movingPart.localPosition:Vector3.zero).ToArray();
@@ -110,7 +113,7 @@ public static class OfflineVRCheck
                         demoDoorClosed=initial.exitDoor!=null?initial.exitDoor.localPosition:Vector3.zero;
                         demoStep=0;demoAttempts=0;AimAtStation();NextPhase(10,.15);break;
                     }
-                    if(index==0 || index==7 || index==10)Snapshot();
+                    if(!trackingOnly && (index==0 || index==7 || index==10))Snapshot();
                     if(switches==15){Finish();break;}
                     if(index==0 && switches==0)
                     {
@@ -130,20 +133,20 @@ public static class OfflineVRCheck
                     InputSystem.QueueDeltaStateEvent(right.GetChildControl<Vector2Control>("primary2DAxis"),Vector2.zero);NextPhase(4,.2);break;
                 case 4:
                     UnityEngine.Object.FindObjectOfType<ReportSceneBrowser>().allowDebugNavigation=true;
-                    InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("triggerPressed"),1f);index=(index+1)%15;switches++;NextPhase(5,.6);break;
+                    InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("primaryButton"),1f);index=(index+1)%15;switches++;NextPhase(5,.6);break;
                 case 5:
                     if(SceneManager.GetActiveScene().buildIndex!=index){NextPhase(5,.1);break;}
                     NextPhase(6,.25);break;
                 case 6:
-                    Require(SceneManager.GetActiveScene().buildIndex==index,"Held trigger advanced a second scene, expected "+index);
-                    CheckPoses();demoChecked=false;InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("triggerPressed"),0f);NextPhase(1,.3);break;
+                    Require(SceneManager.GetActiveScene().buildIndex==index,"Held scene button advanced a second scene, expected "+index);
+                    CheckPoses();demoChecked=false;InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("primaryButton"),0f);NextPhase(1,.3);break;
                 case 10:
-                    InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("gripPressed"),1f);NextPhase(11,.12);break;
+                    InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("triggerPressed"),1f);NextPhase(11,.12);break;
                 case 11:
                     var level=UnityEngine.Object.FindObjectOfType<DemoLevel>();
-                    Require(level.stations[demoStep].Attempts==demoAttempts+1,"Grip ray did not activate the pointed station: scene="+index+" step="+demoStep);
+                    Require(level.stations[demoStep].Attempts==demoAttempts+1,"Trigger ray did not activate the pointed station: scene="+index+" step="+demoStep);
                     demoAttempts++;
-                    InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("gripPressed"),0f);NextPhase(12,.12);break;
+                    InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("triggerPressed"),0f);NextPhase(12,.12);break;
                 case 12:
                     var demo=UnityEngine.Object.FindObjectOfType<DemoLevel>();
                     if(demo.Step>demoStep){demoStep++;demoAttempts=0;}
@@ -165,7 +168,7 @@ public static class OfflineVRCheck
                     }
                     if(resetLevel.exitDoor!=null)Require(Vector3.Distance(resetLevel.exitDoor.localPosition,demoDoorClosed)<.001f,"Reset did not close the exit door");
                     InputSystem.QueueDeltaStateEvent(left.GetChildControl<ButtonControl>("menu"),0f);QueueHand(right,new Vector3(.25f,1.25f,.35f));
-                    demoChecked=true;Debug.Log("OFFLINE_DEMO_OK scene="+index+" grip-ray ordered completion + menu reset");NextPhase(1,.15);break;
+                    demoChecked=true;Debug.Log("OFFLINE_DEMO_OK scene="+index+" trigger-ray ordered completion + menu reset");NextPhase(1,.15);break;
                 case 14:
                     var completed=UnityEngine.Object.FindObjectOfType<DemoLevel>();
                     if(completed.exitDoor!=null)Require(Vector3.Distance(completed.exitDoor.localPosition,demoDoorClosed)>2,"Completed electromagnetic level did not open its physical door");
@@ -175,7 +178,7 @@ public static class OfflineVRCheck
         catch(Exception exception)
         {
             failed=true;Application.logMessageReceived-=OnLog;Debug.LogError(exception.ToString());
-            Directory.CreateDirectory("Documentation/Verification");File.WriteAllText("Documentation/Verification/offline-playtest.txt","FAIL\n"+exception);
+            Directory.CreateDirectory("Documentation/Verification");File.WriteAllText("Documentation/Verification/"+(trackingOnly?"vr-tracking-all-scenes.txt":"offline-playtest.txt"),"FAIL\n"+exception);
             phase=99;EditorApplication.isPlaying=false;
         }
     }
@@ -196,6 +199,7 @@ public static class OfflineVRCheck
     }
     static void CheckPoses()
     {
+        var gameUI=UnityEngine.Object.FindObjectOfType<ReportGameUI>();if(gameUI!=null)gameUI.enabled=false;
         Require(SceneManager.GetActiveScene().buildIndex==index,"Wrong scene loaded");
         var origin=UnityEngine.Object.FindObjectOfType<XROrigin>();
         var desktop=origin.GetComponent<DesktopPlayer>();
@@ -219,7 +223,8 @@ public static class OfflineVRCheck
     {
         Require(visited.Count==15,"Not all scenes visited");
         Directory.CreateDirectory("Documentation/Verification");
-        File.WriteAllText("Documentation/Verification/offline-playtest.txt","PASS: actual Play Mode; 15 scenes; grip ray input completes every ordered station; menu resets states; trigger navigation and wrap; held-button protection; HMD and hand tracking; VR mode selected; avatar hands follow controllers; stick movement and snap turn; runtime errors=0.\nVirtual input devices used; physical headset, stereo compositor and SteamVR streaming not tested.\n");
+        string result=trackingOnly?"PASS: actual Play Mode; all 15 scenes; HMD and both hand tracking; VR mode selection; avatar hands follow controllers; left stick movement and right stick snap turn; A button navigation and wrap; held-button protection; runtime errors=0.":"PASS: actual Play Mode; 15 scenes; trigger ray input completes every ordered station; menu resets states; A navigation and wrap; held-button protection; HMD and hand tracking; VR mode selected; avatar hands follow controllers; stick movement and snap turn; runtime errors=0.";
+        File.WriteAllText("Documentation/Verification/"+(trackingOnly?"vr-tracking-all-scenes.txt":"offline-playtest.txt"),result+"\nVirtual input devices used; physical headset, stereo compositor and SteamVR streaming not tested.\n");
         Debug.Log("REPORT_VR_OFFLINE_PLAYTEST_OK scenes=15 errors=0");phase=99;EditorApplication.isPlaying=false;
     }
     static void NextPhase(int value,double delay){phase=value;waitUntil=EditorApplication.timeSinceStartup+delay;}

@@ -1,9 +1,19 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using System.Text.RegularExpressions;
 
 public class ReportGrabbable : XRGrabInteractable
 {
+    string displayName;
+    public string DisplayName=>displayName??(displayName=FindDisplayName());
+    string FindDisplayName()
+    {
+        if(name=="材料样品")for(var parent=transform.parent;parent!=null;parent=parent.parent)
+            for(int i=0;i<3;i++)if(parent.name=="HubMaterialCube_"+i)return new[]{"木块","石块","铜块"}[i];
+        string text=Regex.Replace(name,@"^[A-Za-z0-9_]+_|_\d+$|\d+kg","");
+        return text=="木" || text=="石" || text=="铜"?text+"块":text;
+    }
     [Tooltip("桌面默认平稳放下；开启后才从相机移动估算抛掷速度。")]
     public bool throwInDesktop;
     [Min(0),Tooltip("VR 或开启桌面抛掷时的释放速度上限，单位为米/秒。")]
@@ -17,7 +27,7 @@ public class ReportGrabbable : XRGrabInteractable
     bool requestedThrow;
     Vector3 requestedVelocity;
     public void RequestThrow(Vector3 velocity){requestedVelocity=velocity;requestedThrow=true;}
-    protected override void Awake(){base.Awake();CapturePose();}
+    protected override void Awake(){base.Awake();CapturePose();displayName=FindDisplayName();}
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);GetComponent<ReportThrowTrack>()?.ResetMeasurements();desktopSelection=args.interactorObject is ReportGrabInteractor grabber && grabber.desktopOnly;

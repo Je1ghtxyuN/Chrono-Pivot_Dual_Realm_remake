@@ -1,0 +1,1 @@
+PASS: levels 2,8,11,13 configured in place; physical components unchanged; repeated configuration does not duplicate emitters.

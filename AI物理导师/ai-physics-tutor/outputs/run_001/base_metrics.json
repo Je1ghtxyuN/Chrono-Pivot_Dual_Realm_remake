@@ -1,0 +1,11 @@
+{
+  "json": 0.9975,
+  "schema": 0.9975,
+  "hint_level": 0.9925,
+  "evidence": 0.755,
+  "target": 0.345,
+  "parameter": 0.335,
+  "n": 400,
+  "wall_seconds": 421.3113043308258,
+  "decode": "greedy; batch=4; max_new_tokens=384"
+}

@@ -1,6 +1,10 @@
-PASS: 15 scenes; 0.18m path samples, floor + slope + 0.46m capsule clearance; actual CharacterController traversal; input/experiment references. Physical experiment completion requires separate Play Mode checks. Failures=0
+FAIL: 15 scenes; 0.18m path samples, floor + slope + 0.46m capsule clearance; actual CharacterController traversal; input/experiment references. Physical experiment completion requires separate Play Mode checks. Failures=4
 CHECKED Fig_2_01_Introduction route segments=6 stations=3
+FAIL Fig_2_02_Buoyancy_Canal segment=1 p=(-4.01, 0.09, 6.02) blocked by Fig_2_02_Buoyancy_Canal_Water_cargo_tray_17
 CHECKED Fig_2_02_Buoyancy_Canal route segments=6 stations=3
+FAIL Fig_2_03_Acoustic_Resonance segment=6 p=(3.44, 0.21, 4.20) blocked by Fig_2_03_Acoustic_Resonance_Natural_双声源拍频实验台架_7
+FAIL Fig_2_03_Acoustic_Resonance segment=7 p=(4.50, 0.21, 4.20) blocked by Fig_2_03_Acoustic_Resonance_Natural_双声源拍频实验台架_7
+FAIL Fig_2_03_Acoustic_Resonance character walk: stuck at (3.93, 0.18, 3.65) towards (4.50, 0.21, 4.20)
 CHECKED Fig_2_03_Acoustic_Resonance route segments=9 stations=3
 CHECKED Fig_2_04_Geomagnetic_Optics route segments=11 stations=3
 CHECKED Fig_2_05_Electromagnetic_Lock route segments=6 stations=3

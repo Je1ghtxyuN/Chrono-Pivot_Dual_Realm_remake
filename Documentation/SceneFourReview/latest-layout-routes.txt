@@ -1,0 +1,20 @@
+FAIL: 15 scenes; 0.18m path samples, floor + slope + 0.46m capsule clearance; actual CharacterController traversal; input/experiment references. Physical experiment completion requires separate Play Mode checks. Failures=4
+CHECKED Fig_2_01_Introduction route segments=6 stations=3
+FAIL Fig_2_02_Buoyancy_Canal segment=1 p=(-4.01, 0.09, 6.02) blocked by Fig_2_02_Buoyancy_Canal_Water_cargo_tray_17
+CHECKED Fig_2_02_Buoyancy_Canal route segments=6 stations=3
+FAIL Fig_2_03_Acoustic_Resonance segment=6 p=(3.44, 0.21, 4.20) blocked by Fig_2_03_Acoustic_Resonance_Natural_双声源拍频实验台架_7
+FAIL Fig_2_03_Acoustic_Resonance segment=7 p=(4.50, 0.21, 4.20) blocked by Fig_2_03_Acoustic_Resonance_Natural_双声源拍频实验台架_7
+FAIL Fig_2_03_Acoustic_Resonance character walk: stuck at (3.93, 0.18, 3.65) towards (4.50, 0.21, 4.20)
+CHECKED Fig_2_03_Acoustic_Resonance route segments=9 stations=3
+CHECKED Fig_2_04_Geomagnetic_Optics route segments=11 stations=3
+CHECKED Fig_2_05_Electromagnetic_Lock route segments=6 stations=3
+CHECKED Fig_2_06_Hydraulic_Pipework route segments=10 stations=3
+CHECKED Fig_2_07_Frequency_Coupling route segments=13 stations=3
+CHECKED Fig_2_08_Snow_Arena route segments=12 stations=3
+CHECKED Fig_2_09_Creative_Workshop route segments=11 stations=3
+CHECKED Fig_2_10_Physics_Laboratory route segments=11 stations=3
+CHECKED Fig_2_11_Garden_Canal_Design route segments=16 stations=3
+CHECKED Fig_2_12_Celestial_Sundial route segments=10 stations=3
+CHECKED Fig_2_13_Winter_Asset_Design route segments=8 stations=3
+CHECKED Fig_2_15_SelfModeled_Asset_Collection route segments=9 stations=3
+CHECKED AncientGarden_LowPoly route segments=11 stations=3

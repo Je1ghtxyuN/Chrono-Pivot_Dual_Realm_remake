@@ -1,0 +1,3 @@
+Windows_LevelReview: 196 files SHA256 verified
+WindowsDesktop_LevelReview: 196 files SHA256 verified
+Runtime assembly contains no BGM classes; player Resources contain no music bank or four theme clips; level14 contains the repaired bridge assembly marker.

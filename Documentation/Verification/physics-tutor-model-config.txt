@@ -1,0 +1,4 @@
+PASS: backend config model_path and Unity Base Model Path point to D:/_work/_SRTP/AI物理导师/ai-physics-tutor/models/Qwen2.5-3B-Instruct
+PASS: model index and referenced weight shards present
+PASS: Unity compilation and plugin export; exported model path configured; endpoint blank; no weights included
+NOTE: configuration only; no model loading or inference executed; prior runtime input/transport results unchanged

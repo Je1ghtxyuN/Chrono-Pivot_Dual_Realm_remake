@@ -24,6 +24,8 @@ public static class GrabPlayCheck
     static ReportGrabbable prop;
     static ReportGrabInteractor desktopGrab,leftGrab,rightGrab;
     static Vector3 initial,held;
+    static float originalHoldDistance,coarseDelta,handleBefore,pickupDistance;
+    static ReportMechanismHandle fineHandle;
     static int phase;
     static double until,timeout;
     static string error;
@@ -86,6 +88,8 @@ public static class GrabPlayCheck
                     InputSystem.settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
                     keyboard=InputSystem.AddDevice<Keyboard>();mouse=InputSystem.AddDevice<Mouse>();
                     origin=UnityEngine.Object.FindObjectOfType<XROrigin>();player=origin.GetComponent<DesktopPlayer>();level=UnityEngine.Object.FindObjectOfType<DemoLevel>();
+                    // UI has a separate input/pause test; isolate this physical interaction check.
+                    var gameUI=origin.GetComponent<ReportGameUI>();if(gameUI!=null){gameUI.Resume();gameUI.enabled=false;}
                     prop=GameObject.Find("HubMaterialCube_0").transform.Find("材料样品").GetComponent<ReportGrabbable>();initial=prop.transform.position;
                     if(prop.GetComponent<ReportThrowTrack>()==null)prop.gameObject.AddComponent<ReportThrowTrack>();
                     desktopGrab=origin.Camera.GetComponent<ReportGrabInteractor>();
@@ -97,14 +101,28 @@ public static class GrabPlayCheck
                     InputSystem.QueueStateEvent(mouse,new MouseState{buttons=1,position=new Vector2(1000,20)});Next(2);break;
                 case 2:
                     Require(player.Captured,"Desktop pointer did not capture");InputSystem.QueueStateEvent(mouse,new MouseState());AimDesktop();Next(3);break;
-                case 3:Keys(Key.E);Next(4,.4);break;
+                case 3:
+                    pickupDistance=Vector3.Distance(prop.transform.position,origin.Camera.transform.position);Keys(Key.E);Next(4,.4);break;
                 case 4:
                     Require(prop.isSelected && desktopGrab.IsSelecting(prop),"E did not physically grab the specimen");
+                    Require(Mathf.Abs(Vector3.Distance(prop.transform.position,origin.Camera.transform.position)-pickupDistance)<.12f,"Desktop pickup pulled the object abruptly to a fixed distance");
                     held=prop.transform.position;origin.transform.position+=Vector3.right*.8f;origin.Camera.transform.localRotation=Quaternion.Euler(-25,0,0);Next(5,.5);break;
                 case 5:
                     Require(Vector3.Distance(held,prop.transform.position)>.5f,"Held specimen did not follow camera movement");
                     Require(Vector3.Distance(prop.transform.position,desktopGrab.attachTransform.position)<.12f,"Specimen did not reach configured desktop hold point");
-                    held=prop.transform.position;Keys();Next(6,.35);break;
+                    originalHoldDistance=desktopGrab.desktopHoldDistance;InputSystem.QueueStateEvent(mouse,new MouseState{scroll=new Vector2(0,120)});Next(32);break;
+                case 32:
+                    Require(prop.isSelected && desktopGrab.desktopHoldDistance<originalHoldDistance-.1f,"Scroll up did not bring the held object closer");
+                    InputSystem.QueueStateEvent(mouse,new MouseState{scroll=new Vector2(0,-120)});Next(33);break;
+                case 33:
+                    Require(Mathf.Abs(desktopGrab.desktopHoldDistance-originalHoldDistance)<.01f,"Scroll down did not move the object back out");
+                    InputSystem.QueueStateEvent(mouse,new MouseState{scroll=new Vector2(0,2400)});Next(34);break;
+                case 34:
+                    Require(desktopGrab.desktopHoldDistance>=.45f && desktopGrab.desktopHoldDistance<originalHoldDistance,"Close placement distance was not limited");
+                    InputSystem.QueueStateEvent(mouse,new MouseState{scroll=new Vector2(0,-4800)});Next(35);break;
+                case 35:
+                    Require(desktopGrab.desktopHoldDistance<=2.5f && prop.isSelected,"Placement distance exceeded reach or released the item");
+                    desktopGrab.desktopHoldDistance=originalHoldDistance;held=prop.transform.position;Keys();Next(6,.35);break;
                 case 6:
                     Require(!prop.isSelected && !prop.GetComponent<Rigidbody>().isKinematic,"E release did not return specimen to physics");
                     Require(prop.transform.position.y<held.y-.05f,"Released specimen did not fall under gravity; before="+held+" after="+prop.transform.position+" velocity="+prop.GetComponent<Rigidbody>().velocity+" gravity="+prop.GetComponent<Rigidbody>().useGravity);
@@ -128,7 +146,8 @@ public static class GrabPlayCheck
                         {""name"":""deviceRotation"",""layout"":""Quaternion"",""offset"":12},
                         {""name"":""trackingState"",""layout"":""Integer"",""offset"":28},
                         {""name"":""gripPressed"",""layout"":""Button"",""format"":""FLT"",""offset"":32},
-                        {""name"":""grip"",""layout"":""Axis"",""offset"":36}]}");
+                        {""name"":""grip"",""layout"":""Axis"",""offset"":36},
+                        {""name"":""triggerPressed"",""layout"":""Button"",""format"":""FLT"",""offset"":40}]}");
                     head=InputSystem.AddDevice<XRHMD>();left=(XRController)InputSystem.AddDevice("ReportGrabTestController");right=(XRController)InputSystem.AddDevice("ReportGrabTestController");
                     InputSystem.SetDeviceUsage(left,CommonUsages.LeftHand);InputSystem.SetDeviceUsage(right,CommonUsages.RightHand);
                     InputSystem.QueueDeltaStateEvent(head.centerEyePosition,Vector3.up*1.7f);InputSystem.QueueDeltaStateEvent(head.trackingState,3);
@@ -137,6 +156,8 @@ public static class GrabPlayCheck
                     Require(!player.IsDesktop,"Tracked virtual headset did not select VR");Grip(right,1);Next(11,.4);break;
                 case 11:
                     Require(prop.isSelected && rightGrab.IsSelecting(prop),"Right grip ray did not grab specimen");
+                    var avatar=origin.GetComponentInChildren<LowPolyPlayerAvatar>();
+                    Require(Vector3.Distance(avatar.rightHand.position,rightGrab.transform.position)<.01f,"Avatar hand did not follow tracked controller");
                     held=prop.transform.position;Pose(right,rightGrab.transform.position+Vector3.up*.4f,Quaternion.LookRotation(Vector3.back));Next(12,.4);break;
                 case 12:
                     Require(Vector3.Distance(prop.transform.position,held)>.25f,"VR specimen did not follow tracked hand");
@@ -164,7 +185,44 @@ public static class GrabPlayCheck
                     Require(!prop.isSelected,"Lost hand tracking did not release object");Pose(right,initial,Quaternion.identity);Next(22);break;
                 case 22:
                     Require(!prop.isSelected,"Tracking recovery regrabbed with already held grip");Grip(right,0);level.ResetLevel();
-                    Directory.CreateDirectory("Documentation/Verification");File.WriteAllText("Documentation/Verification/grab-playtest.txt","PASS: actual Play Mode input; desktop E and mouse grab, follow, release and gravity; held F charges, F release applies aimed Rigidbody throw velocity and records real throw; held grab does not recapture; Escape release; right VR grip ray grab and tracked follow; analog left grip near grab; single-hand ownership; reset while held; release latch; tracking loss/recovery. Physical headset and SteamVR streaming not tested.\n");
+                    InputSystem.QueueDeltaStateEvent(head.trackingState,0);Next(23);break;
+                case 23:
+                    Require(!player.IsDesktop,"Temporary HMD tracking loss switched to desktop and overwrote tracked poses");
+                    Require(!origin.GetComponent<UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.ContinuousMoveProvider>().enabled,"Locomotion continued with untracked HMD");
+                    InputSystem.QueueDeltaStateEvent(head.trackingState,3);Next(24);break;
+                case 24:
+                    Require(!player.IsDesktop && origin.GetComponent<UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.ContinuousMoveProvider>().enabled,"HMD recovery failed to restore VR locomotion");
+                    InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("triggerPressed"),1f);Next(25);break;
+                case 25:
+                    Require(!origin.GetComponent<ReportSceneBrowser>().nextScene.action.IsPressed(),"Interaction trigger also requests a scene change");
+                    InputSystem.QueueDeltaStateEvent(right.GetChildControl<ButtonControl>("triggerPressed"),0f);level.ResetLevel();Pose(right,initial,Quaternion.identity);Next(26);break;
+                case 26:Grip(right,1);Next(27,.3);break;
+                case 27:
+                    Require(prop.isSelected,"Cannot grab before VR throwing check");
+                    Pose(right,rightGrab.transform.position+Vector3.up*.4f+Vector3.forward*.15f,Quaternion.identity);Next(28,.08);break;
+                case 28:Grip(right,0);Next(29,.12);break;
+                case 29:
+                    Require(!prop.isSelected && prop.GetComponent<ReportThrowTrack>().HasThrown,"Swing and grip release failed to register a physical VR throw");
+                    Require(prop.GetComponent<ReportThrowTrack>().ReleaseVelocity.magnitude>.1f,"VR throw lost tracked hand velocity");
+                    foreach(var device in new InputDevice[]{head,left,right})if(device!=null && device.added)InputSystem.RemoveDevice(device);
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(2);Next(36,.6);break;
+                case 36:
+                    if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex!=2){Next(36);break;}
+                    origin=UnityEngine.Object.FindObjectOfType<XROrigin>();player=origin.GetComponent<DesktopPlayer>();level=UnityEngine.Object.FindObjectOfType<DemoLevel>();
+                    var ui=origin.GetComponent<ReportGameUI>();ui.Resume();ui.enabled=false;player.controlMode=ReportControlMode.Desktop;
+                    fineHandle=UnityEngine.Object.FindObjectsOfType<ReportAcousticMeasure>().First(m=>m.experiment==ReportAcousticReading.Resonance).frequency;
+                    prop=fineHandle;desktopGrab=origin.Camera.GetComponent<ReportGrabInteractor>();AimDesktop();Next(37,.4);break;
+                case 37:player.ResumePointer();Keys();InputSystem.QueueStateEvent(mouse,new MouseState());Next(38);break;
+                case 38:Keys(Key.E);Next(39,.4);break;
+                case 39:
+                    Require(fineHandle.isSelected,"Could not grab the real acoustic frequency wheel");handleBefore=fineHandle.Value;
+                    InputSystem.QueueStateEvent(mouse,new MouseState{delta=new Vector2(20,0)});Next(40);break;
+                case 40:
+                    coarseDelta=fineHandle.Value-handleBefore;Require(coarseDelta>.001f,"Mouse drag did not adjust the actual wheel");handleBefore=fineHandle.Value;
+                    Keys(Key.E,Key.LeftShift);InputSystem.QueueStateEvent(mouse,new MouseState{delta=new Vector2(20,0)});Next(41);break;
+                case 41:
+                    Require(Mathf.Abs(fineHandle.Value-handleBefore-coarseDelta*.2f)<Mathf.Max(.01f,coarseDelta*.05f),"Shift did not provide precise adjustment: normal="+coarseDelta+" fine="+(fineHandle.Value-handleBefore));Keys();
+                    Directory.CreateDirectory("Documentation/Verification");File.WriteAllText("Documentation/Verification/grab-playtest.txt","PASS: desktop E/mouse grab retaining pickup distance, follow, scroll placement distance and reach limits, release/gravity, charged throw, no recapture; VR grip/analog near/ray grabs, hand ownership, reset, tracking loss/recovery, swing-and-release throw; real acoustic wheel coarse drag and Shift fine adjustment. Physical headset and SteamVR streaming not tested.\n");
                     Debug.Log("REPORT_GRAB_PLAYTEST_OK");phase=99;EditorApplication.isPlaying=false;break;
             }
         }

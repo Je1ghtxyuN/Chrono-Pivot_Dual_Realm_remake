@@ -24,7 +24,6 @@ public static class DesktopPlayerCheck
     static InputSettings.EditorInputBehaviorInPlayMode oldEditorInput;
     static Vector3 start;
     static float yaw;
-    static Quaternion signRotation;
     static int attempts;
     static XROrigin origin;
     static MonoBehaviour player;
@@ -49,14 +48,15 @@ public static class DesktopPlayerCheck
     static void Aim()
     {
         var station=level.stations[0];var body=origin.GetComponent<CharacterController>();body.enabled=false;
-        origin.transform.position=station.viewingPoint;body.enabled=true;
-        signRotation=station.label.transform.rotation;AimView();attempts=station.Attempts;
+        var sample=station.GetComponent<ReportPickupMeasure>().samples[0];
+        origin.transform.position=new Vector3(sample.transform.position.x,level.spawn.y,sample.transform.position.z+2);body.enabled=true;
+        AimView();attempts=station.Attempts;
     }
     static void AimView()
     {
         var station=level.stations[0];
-        var hint=station.puzzle.buttons.First(b=>b.kind==ReportPuzzleButtonKind.Hint);
-        Vector3 direction=hint.GetComponent<Collider>().bounds.center-origin.Camera.transform.position;
+        var sample=station.GetComponent<ReportPickupMeasure>().samples[0];
+        Vector3 direction=sample.GetComponent<Collider>().bounds.center-origin.Camera.transform.position;
         origin.transform.rotation=Quaternion.Euler(0,Quaternion.LookRotation(direction).eulerAngles.y,0);
         origin.Camera.transform.localRotation=Quaternion.Euler(Mathf.DeltaAngle(0,Quaternion.LookRotation(direction).eulerAngles.x),0,0);
         Physics.SyncTransforms();
@@ -83,6 +83,7 @@ public static class DesktopPlayerCheck
             {
                 case 0:
                     origin=UnityEngine.Object.FindObjectOfType<XROrigin>();level=UnityEngine.Object.FindObjectOfType<DemoLevel>();
+                    var gameUI=origin.GetComponent<ReportGameUI>();if(gameUI!=null){gameUI.Resume();gameUI.enabled=false;}
                     player=origin.GetComponents<MonoBehaviour>().FirstOrDefault(c=>c.GetType().Name=="DesktopPlayer");
                     Require(player!=null,"Missing desktop player on the playable rig");
                     InputSystem.settings.updateMode=InputSettings.UpdateMode.ProcessEventsInDynamicUpdate;
@@ -120,12 +121,14 @@ public static class DesktopPlayerCheck
                     AimView();
                     InputSystem.QueueStateEvent(mouse,new MouseState{buttons=1});Next(7);break;
                 case 7:
-                    Require(level.Feedback=="提示："+level.stations[0].puzzle.hint && level.Step==0,"Left click hint failed or bypassed experiment; captured="+Read("Captured")+" ray="+string.Join(",",Physics.RaycastAll(origin.Camera.transform.position,origin.Camera.transform.forward,4).OrderBy(h=>h.distance).Select(h=>h.collider.name+"@"+h.distance.ToString("F2"))));
+                    var pickup=level.stations[0].GetComponent<ReportPickupMeasure>();
+                    Require(pickup.samples[0].isSelected && pickup.Reading==1 && level.Step==0,"Left click did not grab resized material or falsely completed three pickups");
                     level.ShowFeedback("Desktop held-click sentinel");
                     Next(8);break;
                 case 8:
                     Require(level.Feedback=="Desktop held-click sentinel","Held left click repeats interactions");
-                    Require(Quaternion.Angle(level.stations[0].label.transform.rotation,signRotation)<.01f,"Mounted sign rotated toward the player while selected");
+                    var label=level.stations[0].label.transform;
+                    Require(Vector3.Dot(label.forward,Vector3.ProjectOnPlane(label.position-origin.Camera.transform.position,Vector3.up).normalized)>.999f,"Floating status did not face player");
                     InputSystem.QueueStateEvent(mouse,new MouseState());Keys(Key.Escape);Next(9);break;
                 case 9:
                     Require(!Read("Captured"),"Escape did not unlock pointer");Keys();start=origin.transform.position;attempts=level.stations[0].Attempts;
@@ -139,7 +142,7 @@ public static class DesktopPlayerCheck
                     Require(SceneManager.GetActiveScene().buildIndex==1,"PageDown did not load next scene");Keys();
                     origin=UnityEngine.Object.FindObjectOfType<XROrigin>();player=origin.GetComponents<MonoBehaviour>().First(c=>c.GetType().Name=="DesktopPlayer");
                     Require(Read("IsDesktop"),"Desktop mode lost after scene load");
-                    File.WriteAllText("Documentation/Verification/desktop-playtest.txt","PASS: actual Play Mode; no-headset fallback; mouse capture/release; editable speed including zero; configured mouse sensitivity and pitch limit; WASD ground collision; R position + view reset; left click single interaction; selected mounted sign stays world fixed; unlocked UI blocks walk/use; PageDown scene change.\n");
+                    File.WriteAllText("Documentation/Verification/desktop-playtest.txt","PASS: actual Play Mode; no-headset fallback; mouse capture/release; editable speed including zero; configured mouse sensitivity and pitch limit; WASD ground collision; R position + view reset; left click grabs resized sample once; floating status faces player; unlocked UI blocks walk/use; PageDown scene change.\n");
                     Debug.Log("DESKTOP_PLAYTEST_OK");phase=99;EditorApplication.isPlaying=false;break;
             }
         }

@@ -26,6 +26,7 @@ public sealed class ReportThrowTrack : MonoBehaviour
     {
         HasThrown=velocity.magnitude>=minimumThrowSpeed;InFlight=HasThrown;
         if(!HasThrown)return;
+        ReportAudio.Play(ReportSound.Throw,transform.position,Mathf.Clamp01(velocity.magnitude/4));
         ThrowSerial++;ReleasePosition=transform.position;ReleaseVelocity=velocity;ReleaseTime=Time.time;HorizontalDistance=FlightTime=0;LastCollision="";
         points.Clear();points.Add(ReleasePosition);
         if(line==null)

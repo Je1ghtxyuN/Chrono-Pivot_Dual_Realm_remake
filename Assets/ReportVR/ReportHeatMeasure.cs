@@ -10,6 +10,7 @@ public sealed class ReportHeatMeasure : ReportLearningMeasure
     public float warmTemperature=20;
     [Range(0,1)] public float insulationFactor=.08f;
     public bool insulationTask;
+    public Transform meltWater;
     public float MeltFraction {get;private set;}
     public float InsulatedSeconds {get;private set;}
     public override float Reading=>insulationTask?InsulatedSeconds:MeltFraction;
@@ -26,9 +27,10 @@ public sealed class ReportHeatMeasure : ReportLearningMeasure
         if(warm && !wasWarm || covered && !wasInsulated)entries++;
         wasWarm=warm;wasInsulated=covered;
         if(warm)MeltFraction=Mathf.Clamp01(MeltFraction+thermalConductance*Mathf.Max(0,warmTemperature)*(covered?insulationFactor:1)*Time.deltaTime/(sampleMass*latentHeat));
-        if(warm && covered)InsulatedSeconds+=Time.deltaTime;
-        sample.transform.localScale=scale*Mathf.Pow(Mathf.Max(.3f,1-MeltFraction),1f/3);
-        if(readout!=null)readout.text="暖区 "+warmTemperature.ToString("F0")+"°C · 融化 "+(MeltFraction*100).ToString("F0")+"%\n热流率 "+(warm?thermalConductance*warmTemperature*(covered?insulationFactor:1):0).ToString("F0")+"W\n"+(covered?"隔热罩降低热传递；对比时间 "+InsulatedSeconds.ToString("F1")+"s":"搬动样品入暖区；可加隔热罩")+"\n缩时传热模型：Q=mL（初始冰温0°C）";
+        if(warm && covered)InsulatedSeconds+=Time.deltaTime;else InsulatedSeconds=0;
+        sample.transform.localScale=scale*Mathf.Pow(Mathf.Max(.001f,1-MeltFraction),1f/3);
+        if(meltWater!=null)meltWater.localScale=new Vector3(Mathf.Sqrt(MeltFraction),1,Mathf.Sqrt(MeltFraction));
+        if(readout!=null)readout.text="受热时冰变小，融水增加\n"+(!warm?"把冰样放到红色暖区并松手":covered?"隔热罩让融化变慢，保持罩住观察":insulationTask?"放上隔热罩，对比融化快慢":"观察冰样逐渐融化");
     }
-    public override void ResetMeasurements(){entries=0;wasWarm=wasInsulated=false;MeltFraction=InsulatedSeconds=0;if(sample!=null)sample.transform.localScale=scale;}
+    public override void ResetMeasurements(){entries=0;wasWarm=wasInsulated=false;MeltFraction=InsulatedSeconds=0;if(sample!=null)sample.transform.localScale=scale;if(meltWater!=null)meltWater.localScale=new Vector3(0,1,0);}
 }

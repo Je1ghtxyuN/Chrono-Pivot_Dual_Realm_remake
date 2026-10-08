@@ -1,0 +1,1 @@
+PASS: invalid/locked requests, actual scene-selection button, departure particles, unscaled fade while paused, input/re-entry guard, actual scene loading, cleared overlay/particles, one persistent effect, physical unlocked exit, arrival gameplay restore.

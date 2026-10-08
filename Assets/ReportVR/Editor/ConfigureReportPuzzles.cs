@@ -77,9 +77,6 @@ public static class ConfigureReportPuzzles
     static void Controls(ReportPuzzle puzzle)
     {
         var root=new GameObject("Puzzle Controls").transform;root.SetParent(puzzle.station.transform,false);
-        var plate=new LevelModelBuilder();plate.Box(new Vector3(0,2.14f,.02f),new Vector3(2.5f,1.0f,.06f),"Ivory");
-        plate.Beam(new Vector3(-.6f,1.35f,.04f),new Vector3(-.6f,2.62f,.04f),.045f,"SatinBrass");plate.Beam(new Vector3(.6f,1.35f,.04f),new Vector3(.6f,2.62f,.04f),.045f,"SatinBrass");plate.Save(key+"_PuzzleClue_"+puzzle.station.index,root,false);
-        Text(root,"目标与线索",new Vector3(0,2.14f,-.022f),Wrap("目标："+puzzle.goal+"\n线索："+puzzle.clue,22),.015f);
         var buttons=new List<ReportPuzzleButton>();
         for(int i=0;i<puzzle.choices.Length;i++)
         {
@@ -89,10 +86,6 @@ public static class ConfigureReportPuzzles
             var input=button.AddComponent<ReportPuzzleButton>();input.puzzle=puzzle;input.choiceIndex=i;input.indicator=button.GetComponent<Renderer>();buttons.Add(input);
             Text(button.transform,"选项文字",new Vector3(0,0,-.047f),((char)('A'+i))+"\n"+Wrap(puzzle.choices[i],7),.011f);
         }
-        var hintModel=new LevelModelBuilder();hintModel.Box(Vector3.zero,new Vector3(.3f,.17f,.08f),"GlacierBlue");
-        var hint=hintModel.Save(key+"_PuzzleHint_"+puzzle.station.index,root);hint.transform.localPosition=new Vector3(.56f,1.13f,-.72f);
-        TouchTarget(hint);
-        var hintInput=hint.AddComponent<ReportPuzzleButton>();hintInput.puzzle=puzzle;hintInput.kind=ReportPuzzleButtonKind.Hint;hintInput.indicator=hint.GetComponent<Renderer>();buttons.Add(hintInput);Text(hint.transform,"提示文字",new Vector3(0,0,-.046f),"提示",.012f);
         puzzle.station.indicator.transform.localPosition=new Vector3(-.2f,1.11f,-.72f);TouchTarget(puzzle.station.indicator.gameObject);Text(root,"验证文字",new Vector3(-.2f,1.12f,-.834f),"验证",.011f);
         var shelf=new LevelModelBuilder();shelf.Box(new Vector3(0,.74f,-.4f),new Vector3(1.7f,.05f,.7f),"InkTeal");shelf.Save(key+"_PuzzleButtonShelf_"+puzzle.station.index,root,false);
         puzzle.buttons=buttons.ToArray();puzzle.ResetPuzzle();

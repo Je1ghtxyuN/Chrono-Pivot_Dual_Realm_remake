@@ -1,0 +1,1 @@
+PASS: final WindowsDesktop package starts in Desktop mode with Direct3D11 on NVIDIA RTX 4060; remained alive; no managed exceptions or shader errors during startup. Startup smoke only, not headset or gameplay verification.

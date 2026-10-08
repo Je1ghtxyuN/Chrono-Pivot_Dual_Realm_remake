@@ -36,21 +36,55 @@ public sealed class DemoLevel : MonoBehaviour
         if(Completed){Feedback="演示完成，可前往出口。";Refresh();return;}
         if(station!=stations[Step]){Feedback="请先完成第 "+(Step+1)+" 步。";Refresh();return;}
         bool success=station.Activate();Feedback=station.Result;
-        if(success)Step++;
+        if(success){Step++;PlayProgress(station.transform.position);}
         Refresh();
     }
     public void ShowFeedback(string message){Feedback=message;Refresh();}
+    ReportThrowTarget CurrentThrowTarget()
+    {
+        if(Completed)return null;
+        var task=stations[Step].puzzle!=null?stations[Step].puzzle.learningTask:null;
+        if(task!=null)foreach(var condition in task.requirements)
+            if(condition.measure is ReportThrowMeasure measure)return measure.target;
+        return null;
+    }
+    public bool CanRetrieveThrows
+    {
+        get
+        {
+            var target=CurrentThrowTarget();
+            if(target!=null)foreach(var item in target.acceptedItems)
+                if(item!=null && !target.HasHit(item))return true;
+            return false;
+        }
+    }
+    public void RetrieveThrows()
+    {
+        var target=CurrentThrowTarget();if(target==null)return;
+        foreach(var item in target.acceptedItems)
+            if(item!=null && !target.HasHit(item))item.GetComponent<ReportGrabbable>().ResetPose();
+        ShowFeedback("未命中的投掷物已回到台上，可以继续尝试。");
+    }
     public void ResolveStation(DemoStation station)
     {
         if(Completed || station!=stations[Step])return;
-        Feedback=station.Result;Step++;Refresh();
+        Feedback=station.Result;Step++;PlayProgress(station.transform.position);Refresh();
+    }
+    void PlayProgress(Vector3 position)
+    {
+        ReportAudio.Play(Completed?ReportSound.LevelComplete:ReportSound.StepComplete,position,1,Completed);
+        if(Completed && exitDoor!=null)ReportAudio.Play(ReportSound.DoorUnlock,exitDoor.position);
     }
     public void ResetLevel()
     {
+        ReportAudio.SilenceWorld();ReportAudio.Play(ReportSound.Reset,transform.position,1,true);
         Step=0;Feedback="已重置，请从第 1 步开始。";
         foreach(var station in stations)station.ResetStation();
         foreach(var grab in grabbables)if(grab!=null)grab.ResetPose();
         foreach(var measurement in FindObjectsOfType<ReportLearningMeasure>())measurement.ResetMeasurements();
+        foreach(var effect in FindObjectsOfType<ReportBoatParticles>())effect.ResetFeedback();
+        foreach(var effect in FindObjectsOfType<ReportMeltParticles>())effect.ResetFeedback();
+        foreach(var effect in FindObjectsOfType<ReportSnowParticles>())effect.ResetFeedback();
         if(exitDoor!=null)exitDoor.localPosition=closedDoor;
         if(player!=null)
         {
@@ -63,25 +97,22 @@ public sealed class DemoLevel : MonoBehaviour
     void Update()
     {
         if(exitDoor!=null)exitDoor.localPosition=Vector3.MoveTowards(exitDoor.localPosition,closedDoor+(Completed?exitDoorTravel:Vector3.zero),Time.deltaTime*exitDoorSpeed);
+        if(board!=null && Completed)board.text=title+"\n"+(ExitReady?"沿步道前往出口":"出口正在打开");
     }
     public void Refresh()
     {
-        if(board!=null)board.text=title+"\n"+Wrap(mission,Mathf.Max(1,feedbackLineLength))+"\n"+(Completed?"出口已解锁 → 沿步道离开":(Step+1)+" / "+stations.Length+"  "+stations[Step].instruction)+"\n"+Wrap(Feedback,Mathf.Max(1,feedbackLineLength))+"\n握把 / 左键 / E：操作    R：重置";
+        if(board!=null){board.text=title+"\n"+(ExitReady?"沿步道前往出口":"出口正在打开");board.GetComponent<Renderer>().enabled=Completed;}
         if(stations==null)return;
         for(int i=0;i<stations.Length;i++)stations[i].SetState(i<Step,i==Step);
     }
-    static string Wrap(string text,int count)
-    {
-        for(int i=text.Length/count;i>0;i--)if(i*count<text.Length)text=text.Insert(i*count,"\n");return text;
-    }
     void OnGUI()
     {
+        var ui=player!=null?player.GetComponent<ReportGameUI>():null;if(ui!=null && ui.enabled)return;
         GUILayout.BeginArea(new Rect(16,125,430,300),GUI.skin.box);
         GUILayout.Label(title);GUILayout.Label(Completed?"出口已解锁，请沿步道离开":(Step+1)+" / "+stations.Length+" "+stations[Step].instruction);
         if(!Completed && stations[Step].puzzle!=null)
         {
             var puzzle=stations[Step].puzzle;GUILayout.Label("目标："+puzzle.goal);GUILayout.Label("线索："+puzzle.clue);
-            if(GUILayout.Button("查看提示"))puzzle.RequestHint();
         }
         GUILayout.Label(Feedback);
         if(GUILayout.Button("Reset / R"))ResetLevel();

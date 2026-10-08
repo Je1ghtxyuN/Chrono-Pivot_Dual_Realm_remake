@@ -1,0 +1,20 @@
+{
+  "version": "basic-prototype-20261006",
+  "model_path": "D:/_work/_SRTP/AI物理导师/ai-physics-tutor/models/Qwen2.5-3B-Instruct",
+  "knowledge_cards": 34,
+  "knowledge_version": "v5.6",
+  "acceptance_status": "basic_prototype_to_verify_not_expert_approved",
+  "training_artifact": "outputs/run_001/best_adapter",
+  "deferred_work": [
+    "accuracy",
+    "training_data_review",
+    "retrieval",
+    "multi_turn_stability",
+    "expert_assessment",
+    "latency"
+  ],
+  "backend_status": "local CUDA NF4 3B + physics LoRA",
+  "max_input_tokens": 4096,
+  "max_new_tokens": 512,
+  "quantization": "nf4_double_quant"
+}

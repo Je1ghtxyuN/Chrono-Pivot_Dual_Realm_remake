@@ -1,0 +1,15 @@
+PASS 空间力学 · 材料与投掷: qualitative guidance; physical components and task thresholds unchanged.
+PASS 浮力水渠 · 配重与闸门: qualitative guidance; physical components and task thresholds unchanged.
+PASS 声学庭院 · 调频与共振: qualitative guidance; physical components and task thresholds unchanged.
+PASS 观星台 · 地磁与反射: qualitative guidance; physical components and task thresholds unchanged.
+PASS 电磁实验室 · 线圈与门锁: qualitative guidance; physical components and task thresholds unchanged.
+PASS 液压工房 · 密封与流路: qualitative guidance; physical components and task thresholds unchanged.
+PASS 频率耦合 · 双区协作演示: qualitative guidance; physical components and task thresholds unchanged.
+PASS 冰雪村落 · 抛射与热学: qualitative guidance; physical components and task thresholds unchanged.
+PASS 创意工坊 · 模块与连锁: qualitative guidance; physical components and task thresholds unchanged.
+PASS 综合实验室 · 三类实验: qualitative guidance; physical components and task thresholds unchanged.
+PASS 园林水工 · 配重到巡园: qualitative guidance; physical components and task thresholds unchanged.
+PASS 天体日晷 · 时角与观测: qualitative guidance; physical components and task thresholds unchanged.
+PASS 冰雪资产 · 巡展与结构: qualitative guidance; physical components and task thresholds unchanged.
+PASS 模型展厅 · 器材巡展: qualitative guidance; physical components and task thresholds unchanged.
+PASS 古代园林 · 过桥与巡游: qualitative guidance; physical components and task thresholds unchanged.

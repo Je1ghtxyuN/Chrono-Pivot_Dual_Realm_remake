@@ -1,0 +1,10 @@
+{
+  "materials_checked": 2657,
+  "scenes_structurally_checked": 15,
+  "previews": 5,
+  "uv_diagrams": 3,
+  "shader_error_check_passed": true,
+  "windows_build": "Succeeded\nErrors: 0\nSize: 1022086842",
+  "desktop_export": "Exported from verified Windows build: 195 files. Desktop boot.config omits native OpenXR pre-init. Launch with -desktop.",
+  "headset_runtime_tested": false
+}

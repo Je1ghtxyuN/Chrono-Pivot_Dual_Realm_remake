@@ -1,0 +1,1 @@
+PASS: deck-wide release, weight, storage, tray exclusion, safe waterline, overload, unloading, below-deck exclusion and reset.

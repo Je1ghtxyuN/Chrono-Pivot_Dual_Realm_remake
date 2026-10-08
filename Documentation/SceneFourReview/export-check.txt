@@ -1,0 +1,4 @@
+PASS: all 15 main project scene SHA256 hashes unchanged by build; build snapshot matches main project exactly.
+PASS Windows_SceneFour: 196 files SHA256 match; user's current placement included.
+PASS WindowsDesktop_SceneFour: 196 files SHA256 match; user's current placement included.
+PASS desktop pre-init disabled; scene4 mechanics present; background music runtime types absent.

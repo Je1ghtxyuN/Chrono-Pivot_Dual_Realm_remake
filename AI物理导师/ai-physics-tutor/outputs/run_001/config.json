@@ -1,0 +1,76 @@
+{
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "seed": 42,
+  "epochs": 3,
+  "batch_size": 4,
+  "gradient_accumulation": 8,
+  "max_sequence_length": 2048,
+  "max_observed_tokens": 575,
+  "learning_rate": 0.0002,
+  "warmup_ratio": 0.03,
+  "scheduler": "cosine",
+  "optimizer": "AdamW8bit",
+  "weight_decay": 0.0,
+  "nf4": true,
+  "double_quant": true,
+  "compute_dtype": "bfloat16",
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "targets": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "slurm_job": "1146344",
+  "host": "h005",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_total_bytes": 85017493504,
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3",
+    "peft": "0.15.2",
+    "bitsandbytes": "0.45.5"
+  },
+  "start_utc": "2026-10-05T11:26:39Z",
+  "data_manifest": {
+    "version": "v3",
+    "seed": 42,
+    "origin": "authored condition-aware synthetic curriculum; not actual players, not expert reviewed",
+    "split_unit": "wording families held out; scenario-wording groups keep all four hint levels together",
+    "limitations": "physics condition families shared; state_variant is metadata and does not create independent physical cases; all synthetic",
+    "distinct_condition_families": 40,
+    "wording_families": {
+      "train": 8,
+      "val": 1,
+      "test": 1
+    },
+    "files": {
+      "train": {
+        "n": 3200,
+        "groups": 800,
+        "sha256": "03b171ecfd34f9e0de0adb0f74ee9c0d66ce386f182fb148717e56118b1ffc20"
+      },
+      "val": {
+        "n": 400,
+        "groups": 100,
+        "sha256": "0b37618f23f2a578b56eb45957e1de09c2a9aa4a2505ade6ba2388a16499b80d"
+      },
+      "test": {
+        "n": 400,
+        "groups": 100,
+        "sha256": "9bfaf9eabb8fa75feb93eb126432fc22941a484fb7e38b0706785a5031f4886f"
+      }
+    }
+  },
+  "challenge_manifest": {
+    "n": 40,
+    "groups": 20,
+    "sha256": "e7216f2e53093d4d5a32edfe599d833a6c49b30633cb3e60cc560e71dcb24884",
+    "scope": "held-out wording and states, same physics concepts/evidence; hints 1 and 2 only; synthetic not human-reviewed"
+  }
+}

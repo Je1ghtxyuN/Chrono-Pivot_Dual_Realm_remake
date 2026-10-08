@@ -1,0 +1,2 @@
+PASS: actual virtual VR pickup, throwing, landing, sun movement, progress, completion, moving door, reset and scene travel all played expected clips.
+Observed: DoorMove, DoorUnlock, Grab, HandleMetal, ImpactMetal, ImpactStone, ImpactWood, LevelComplete, MenuClose, MenuOpen, Release, Reset, SceneTravel, StepComplete, TargetHit, Throw

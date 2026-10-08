@@ -1,0 +1,5 @@
+{
+  "criterion": "minimum epoch validation assistant-token CE; test unseen during selection",
+  "selected_epoch": 3,
+  "selected_validation_loss": 1.714834455176126e-05
+}

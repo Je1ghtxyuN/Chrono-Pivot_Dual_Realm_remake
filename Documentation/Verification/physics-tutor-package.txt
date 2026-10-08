@@ -1,0 +1,1 @@
+PASS: exported Unity plugin contains runtime scripts, original game UI integration, editor tools and empty shared model/service configuration; no model weights. Windows build blocked by 4 pre-existing level-route collisions, matching output/cargo-loading-20261007/ValidationProject/Documentation/Verification/level-routes.txt; original executable builds retained.

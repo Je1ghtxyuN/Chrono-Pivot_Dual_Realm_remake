@@ -52,7 +52,11 @@ public sealed class ReportMechanismHandle : ReportGrabbable
         if(phase==XRInteractionUpdateOrder.UpdatePhase.Dynamic && isSelected && source!=null)
         {
             float old=Value,delta;
-            if(desktop)delta=Mouse.current==null?0:(Mouse.current.delta.ReadValue().x-Mouse.current.delta.ReadValue().y)*desktopUnitsPerPixel;
+            if(desktop)
+            {
+                bool fine=Keyboard.current!=null && (Keyboard.current.leftShiftKey.isPressed || Keyboard.current.rightShiftKey.isPressed);
+                delta=Mouse.current==null?0:(Mouse.current.delta.ReadValue().x-Mouse.current.delta.ReadValue().y)*desktopUnitsPerPixel*(fine?.2f:1);
+            }
             else if(motion==ReportHandleMotion.Slide)
                 delta=Vector3.Dot(source.position-previousHandPosition,worldAxis)*(valueRange.y-valueRange.x)/vrTravelForFullRange;
             else
@@ -77,7 +81,7 @@ public sealed class ReportMechanismHandle : ReportGrabbable
         var p=restPosition+(motion==ReportHandleMotion.Slide?worldAxis*Mathf.Lerp(slideRange.x,slideRange.y,t):Vector3.zero);
         var q=motion==ReportHandleMotion.Rotation?Quaternion.AngleAxis(Mathf.Lerp(angleRange.x,angleRange.y,t),worldAxis)*restRotation:restRotation;
         transform.SetPositionAndRotation(p,q);if(body!=null){body.position=p;body.rotation=q;}
-        if(readout!=null)readout.text=Value.ToString("F2")+" "+unit+"\n握住模型后：转手 / 拖鼠标";
+        if(readout!=null)readout.text=name.Contains("太阳")?"拖动太阳，观察针影方向":motion==ReportHandleMotion.Slide?"沿滑轨拖动，松手观察":"转动调节轮，松手观察";
     }
     public override void ResetPose(){InitializeMechanism();base.ResetPose();Value=startingValue;Operations=0;ApplyPose();}
 }

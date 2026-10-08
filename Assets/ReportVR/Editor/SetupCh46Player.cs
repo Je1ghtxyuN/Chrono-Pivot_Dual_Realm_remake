@@ -19,6 +19,23 @@ public static class SetupCh46Player
   var old=AssetDatabase.LoadMainAssetAtPath(path);
   if(old!=null){EditorUtility.CopySerialized(asset,old);Object.DestroyImmediate(asset);EditorUtility.SetDirty(old);}else AssetDatabase.CreateAsset(asset,path);
  }
+ static Mesh CreateFirstPersonHands(SkinnedMeshRenderer renderer)
+ {
+  var mesh=Object.Instantiate(renderer.sharedMesh);mesh.name="Ch46 first person hands";
+  var weights=mesh.boneWeights;var bones=renderer.bones;
+  var visible=new bool[mesh.vertexCount];
+  for(int i=0;i<visible.Length;i++)visible[i]=bones[weights[i].boneIndex0].name.Contains("Hand");
+  var indices=mesh.triangles;var keep=new List<int>();
+  for(int i=0;i<indices.Length;i+=3)if(visible[indices[i]] && visible[indices[i+1]] && visible[indices[i+2]])keep.AddRange(new[]{indices[i],indices[i+1],indices[i+2]});
+  mesh.triangles=keep.ToArray();return mesh;
+ }
+ [MenuItem("Report VR/Update First Person Hands Only")]
+ public static void UpdateFirstPersonHands()
+ {
+  var avatar=AssetDatabase.LoadAssetAtPath<GameObject>(Prefab).GetComponent<LowPolyPlayerAvatar>();
+  SaveAsset(CreateFirstPersonHands((SkinnedMeshRenderer)avatar.firstPersonHidden[0]),Folder+"/Ch46FirstPerson.asset");
+  AssetDatabase.SaveAssets();Validate();Ch46TrackingCheck.Run();Debug.Log("CH46_HANDS_ONLY_OK");
+ }
  [MenuItem("Report VR/Use Ch46 as Main Player")]
  public static void Apply()
  {
@@ -39,7 +56,6 @@ public static class SetupCh46Player
   var mesh=Object.Instantiate(renderer.sharedMesh);mesh.name="Ch46 styled body";
   var colors=new Color[mesh.vertexCount];var weights=mesh.boneWeights;
   var points=mesh.vertices;var bones=renderer.bones;
-  var visible=new bool[mesh.vertexCount];
   for(int i=0;i<points.Length;i++)
   {
    var p=root.transform.InverseTransformPoint(renderer.transform.TransformPoint(points[i]));
@@ -49,15 +65,11 @@ public static class SetupCh46Player
    Color c=p.y<.32f?new Color(.35f,.20f,.13f):p.y<.57f?new Color(.91f,.86f,.70f):p.y<.95f?new Color(.065f,.12f,.15f):new Color(.10f,.40f,.38f);
    if(!head && !hand && p.y>1.27f && Mathf.Abs(p.x)<.13f)c=new Color(.91f,.86f,.70f);
    c.a=head || hand?0:1;colors[i]=c;
-   visible[i]=name.Contains("Arm") || name.Contains("Hand") || name.Contains("Leg") || name.Contains("Foot") || name.Contains("Toe");
   }
   mesh.colors=colors;SaveAsset(mesh,Folder+"/Ch46Body.asset");renderer.sharedMesh=AssetDatabase.LoadAssetAtPath<Mesh>(Folder+"/Ch46Body.asset");renderer.sharedMaterials=new[]{material};renderer.updateWhenOffscreen=true;
-  var fp=Object.Instantiate(renderer.gameObject,renderer.transform.parent);fp.name="First person arms and legs";
+  var fp=Object.Instantiate(renderer.gameObject,renderer.transform.parent);fp.name="First person hands";
   var fpRenderer=fp.GetComponent<SkinnedMeshRenderer>();fpRenderer.bones=renderer.bones;fpRenderer.rootBone=renderer.rootBone;
-  var fpMesh=Object.Instantiate(renderer.sharedMesh);fpMesh.name="Ch46 first person limbs";
-  var indices=fpMesh.triangles;var keep=new List<int>();
-  for(int i=0;i<indices.Length;i+=3)if(visible[indices[i]] && visible[indices[i+1]] && visible[indices[i+2]])keep.AddRange(new[]{indices[i],indices[i+1],indices[i+2]});
-  fpMesh.triangles=keep.ToArray();SaveAsset(fpMesh,Folder+"/Ch46FirstPerson.asset");fpRenderer.sharedMesh=AssetDatabase.LoadAssetAtPath<Mesh>(Folder+"/Ch46FirstPerson.asset");fpRenderer.shadowCastingMode=ShadowCastingMode.Off;fpRenderer.enabled=false;
+  SaveAsset(CreateFirstPersonHands(renderer),Folder+"/Ch46FirstPerson.asset");fpRenderer.sharedMesh=AssetDatabase.LoadAssetAtPath<Mesh>(Folder+"/Ch46FirstPerson.asset");fpRenderer.shadowCastingMode=ShadowCastingMode.Off;fpRenderer.enabled=false;
   var avatar=root.AddComponent<LowPolyPlayerAvatar>();avatar.skinnedRig=true;avatar.torso=Bone(root,"Hips");avatar.face=Bone(root,"Head");
   avatar.leftUpperArm=Bone(root,"LeftArm");avatar.leftForearm=Bone(root,"LeftForeArm");avatar.leftHand=Bone(root,"LeftHand");avatar.leftLeg=Bone(root,"LeftUpLeg");
   avatar.rightUpperArm=Bone(root,"RightArm");avatar.rightForearm=Bone(root,"RightForeArm");avatar.rightHand=Bone(root,"RightHand");avatar.rightLeg=Bone(root,"RightUpLeg");
@@ -84,10 +96,12 @@ public static class SetupCh46Player
    var a=avatars[0];if(a.headTarget!=origin.Camera.transform || a.leftTarget==null || a.rightTarget==null || !a.firstPerson)throw new Exception("Tracking binding missing");
    if(a.GetComponentsInChildren<Collider>().Length!=0)throw new Exception("Avatar blocks grabs");
    if(a.firstPersonVisible.Length!=1 || a.firstPersonHidden.Length!=1)throw new Exception("First person meshes missing");
+   var hands=a.firstPersonVisible[0] as SkinnedMeshRenderer;
+   if(hands==null || hands.sharedMesh!=AssetDatabase.LoadAssetAtPath<Mesh>(Folder+"/Ch46FirstPerson.asset"))throw new Exception("Shared first person hand mesh missing: "+entry.path);
    var r=a.firstPersonHidden[0] as SkinnedMeshRenderer;if(r==null || r.sharedMaterial.shader.name!="Report VR/Ch46 Palette")throw new Exception("Style material missing");
    if(a.GetComponentsInChildren<Animator>().Length!=0)throw new Exception("Animation overrides tracked bones");count++;
   }
-  Directory.CreateDirectory("Documentation/Verification");File.WriteAllText("Documentation/Verification/ch46-scenes.txt","PASS: "+count+" scenes; Ch46 skinned player; head and controller bindings; jade/ivory/ink matte palette; limb-only first-person mesh; no avatar colliders or Animator conflicts.\n");
+  Directory.CreateDirectory("Documentation/Verification");File.WriteAllText("Documentation/Verification/ch46-scenes.txt","PASS: "+count+" scenes; Ch46 skinned player; head and controller bindings; jade/ivory/ink matte palette; hands-only first-person mesh; no avatar colliders or Animator conflicts.\n");
  }
  public static void Capture()
  {

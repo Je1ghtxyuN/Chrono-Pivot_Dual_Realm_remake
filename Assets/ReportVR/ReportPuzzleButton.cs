@@ -9,6 +9,7 @@ public sealed class ReportPuzzleButton : MonoBehaviour
     public Renderer indicator;
     public void Press()
     {
+        ReportAudio.Play(ReportSound.UIClick,transform.position);
         if(kind==ReportPuzzleButtonKind.Hint)puzzle.RequestHint();else puzzle.SelectChoice(choiceIndex);
     }
     public void Refresh()

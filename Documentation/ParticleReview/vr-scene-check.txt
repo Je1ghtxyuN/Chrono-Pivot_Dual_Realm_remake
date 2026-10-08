@@ -1,0 +1,2 @@
+PASS: 15 scenes; floor XR origins; 3 tracked poses per scene; one active camera; locomotion; environment colliders; valid ground; OpenXR Windows x64 D3D11; all scenes in build.
+Hardware headset/SteamVR streaming not tested.

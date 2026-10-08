@@ -1,0 +1,1 @@
+PASS: single bell sound path; resonance on/off target; coarse+fine tuning; bounded PCM; actual 1Hz audio envelope trough/crest; reset.

@@ -1,0 +1,1 @@
+PASS: tabletop/canal separation; large boat cargo, visible draft, overload, unloading, gate opening, transit and reset follow the tabletop experiment.

@@ -1,0 +1,4 @@
+PASS: interaction bank changes only three footstep volumes; movement logic unchanged.
+PASS FootStone: playback peak reduced 26.81dB before distance attenuation.
+PASS FootWood: playback peak reduced 25.07dB before distance attenuation.
+PASS FootSnow: playback peak reduced 25.92dB before distance attenuation.

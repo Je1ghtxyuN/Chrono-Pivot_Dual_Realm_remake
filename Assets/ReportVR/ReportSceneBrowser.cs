@@ -11,6 +11,7 @@ public sealed class ReportSceneBrowser : MonoBehaviour
     public bool allowDebugNavigation;
     public DemoLevel level;
     bool loading;
+    public AsyncOperation LoadingOperation=>ReportSceneTransition.LoadingOperation;
     bool navigationReady;
     bool showSceneList;
     Vector2 scroll;
@@ -19,7 +20,8 @@ public sealed class ReportSceneBrowser : MonoBehaviour
 
     void Update()
     {
-        if(loading)return;
+        var ui=GetComponent<ReportGameUI>();if(ui!=null && ui.enabled && ui.MenuOpen)return;
+        if(loading || ReportSceneTransition.IsTransitioning)return;
         // A held button must be released after loading before it can change scenes again.
         if(!navigationReady)
         {
@@ -30,7 +32,7 @@ public sealed class ReportSceneBrowser : MonoBehaviour
         if(nextScene.action.WasPressedThisFrame() || (keyboard!=null && keyboard.pageDownKey.wasPressedThisFrame))ChangeScene(1);
         else if(previousScene.action.WasPressedThisFrame() || (keyboard!=null && keyboard.pageUpKey.wasPressedThisFrame))ChangeScene(-1);
         var desktop=GetComponent<DesktopPlayer>();
-        if(keyboard!=null && keyboard.escapeKey.wasPressedThisFrame && (desktop==null || !desktop.IsDesktop))Application.Quit();
+        if((ui==null || !ui.enabled) && keyboard!=null && keyboard.escapeKey.wasPressedThisFrame && (desktop==null || !desktop.IsDesktop))Application.Quit();
     }
 
     public static int AdjacentSceneIndex(int current,int offset,int count)
@@ -47,17 +49,28 @@ public sealed class ReportSceneBrowser : MonoBehaviour
     void LoadScene(int index)
     {
         if(!CanBrowse)return;
+        TryLoadScene(index);
+    }
+    public bool TryLoadScene(int index)
+    {
+        if(loading || ReportSceneTransition.IsTransitioning || index<0 || index>=SceneManager.sceneCountInBuildSettings)return false;
+        var ui=GetComponent<ReportGameUI>();
+        if(ui!=null && ui.enabled){if(!ui.IsSceneUnlocked(index))return false;}
+        else if(!CanBrowse)return false;
+        ReportAudio.SilenceWorld();ReportAudio.Play(ReportSound.SceneTravel,transform.position,1,true);
+        if(!ReportSceneTransition.Begin(index))return false;
         loading=true;
-        SceneManager.LoadSceneAsync(index);
+        return true;
     }
 
     // Desktop companion controls; the HMD sees only the scene and wrist instructions.
     void OnGUI()
     {
+        var ui=GetComponent<ReportGameUI>();if(ui!=null && ui.enabled)return;
         GUILayout.BeginArea(new Rect(16,16,390,showSceneList?480:100),GUI.skin.box);
         GUILayout.Label(level!=null?level.title:SceneManager.GetActiveScene().name);
         GUILayout.BeginHorizontal();
-        GUI.enabled=!loading && CanBrowse;
+        GUI.enabled=!loading && !ReportSceneTransition.IsTransitioning && CanBrowse;
         if(GUILayout.Button("Previous / Page Up"))ChangeScene(-1);
         if(GUILayout.Button("Next / Page Down"))ChangeScene(1);
         if(GUILayout.Button("Scenes"))showSceneList=!showSceneList;

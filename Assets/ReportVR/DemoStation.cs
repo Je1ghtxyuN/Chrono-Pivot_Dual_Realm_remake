@@ -38,6 +38,7 @@ public sealed class DemoStation : MonoBehaviour
     bool initialized,activated,done;
     float displayTime;
     float completionRemaining;
+    float nextStatusRefresh;
     public bool IsResolving=>completionRemaining>0;
     public float CurrentValue=>values[Mathf.Clamp(puzzle!=null?(puzzle.SelectedChoice>=0?puzzle.SelectedChoice:0):Attempts-1,0,values.Length-1)];
     void OnValidate(){index=Mathf.Max(0,index);if(values==null || values.Length==0)values=new[]{target};}
@@ -89,14 +90,20 @@ public sealed class DemoStation : MonoBehaviour
             case DemoAction.RotateExhibit:
                 if(movingPart!=null)movingPart.localRotation=initialRotation*Quaternion.Euler(0,30,0);
                 Result="展品旋转 30°，观察轮廓与结构。";break;
-            default:Result=puzzle!=null && puzzle.mode==ReportPuzzleMode.Physical?"实验结果：\n"+puzzle.learningTask.Summary:"已观察："+instruction;break;
+            default:Result=puzzle!=null && puzzle.mode==ReportPuzzleMode.Physical?"":"已观察："+instruction;break;
         }
         done=success;
-        if(puzzle!=null && success)Result=puzzle.successMessage+"\n"+Result;
+        if(puzzle!=null && success)Result=puzzle.mode==ReportPuzzleMode.Physical?puzzle.successMessage:puzzle.successMessage+"\n"+Result;
         if(success && completionDelay>0){completionRemaining=completionDelay;Result="动作进行中，请等待结果。";return false;}
         return success;
     }
-    void Update()=>SimulateStep(Time.deltaTime);
+    void Update()
+    {
+        SimulateStep(Time.deltaTime);
+        if(Time.unscaledTime<nextStatusRefresh)return;
+        nextStatusRefresh=Time.unscaledTime+.2f;
+        SetState(index<level.Step,index==level.Step);
+    }
     public void SimulateStep(float deltaTime)
     {
         if(completionRemaining>0)
@@ -142,7 +149,13 @@ public sealed class DemoStation : MonoBehaviour
     }
     public void SetState(bool complete,bool current)
     {
-        if(label!=null)label.text=(index+1)+"  "+instruction+"\n"+(complete?"完成 ✓":current?puzzle!=null?puzzle.mode==ReportPuzzleMode.Physical?"操作器材 → 观察结果":"选择或摆放 → 验证":"握把键 / E 操作":"先完成前一步");
+        if(label!=null)
+        {
+            label.GetComponent<Renderer>().enabled=current;
+            string status=complete?"已完成":current?"进行中":"未开始";
+            label.text=(index+1)+"  "+instruction+"\n"+status;
+            label.color=complete?new Color(.5f,1,.72f):current?new Color(1,.85f,.35f):new Color(.82f,.9f,.94f);
+        }
         if(indicator!=null)
         {
             var block=new MaterialPropertyBlock();block.SetColor("_Color",complete?completedColor:current?currentColor:pendingColor);indicator.SetPropertyBlock(block);

@@ -43,48 +43,94 @@ public static partial class ConfigureNaturalLearning
         Hide("StaticIntroThrowTrajectory");Hide("HubThrowTargetPads");
         var samples=Enumerable.Range(0,3).Select(i=>ConfigureReportPuzzles.I("HubMaterialCube_"+i,"材料样品")).ToArray();
         for(int i=0;i<samples.Length;i++)samples[i].GetComponent<Rigidbody>().mass=i+1;
-        var place=ConfigureReportPuzzles.P(0,"比较与归位材料","拿起木、石、铜样品，放入同名槽位","实验样品质量为1、2、3kg；先按标记归位，松手后自动记录。","拿住物件不计归位；错误槽位不会推进。",samples,new[]{"木材 1kg","石材 2kg","铜材 3kg"});
-        place.mode=ReportPuzzleMode.Physical;place.station.action=DemoAction.Inspect;place.learningTask=place.gameObject.AddComponent<ReportLearningTask>();
-        var status=place.station.transform.Find("Puzzle Controls/验证文字");status.GetComponent<TextMesh>().text="状态";Object.DestroyImmediate(place.station.indicator.GetComponent<Collider>());
-        var launchPuzzle=ConfigureReportPuzzles.Natural(1,"同条件抛掷实验","逐件发射三种材料，比较实测轨迹与落点","发射器初速与角度固定，忽略空气阻力；同条件下质量不改变落点。","把一件材料放进发射杯，握住拉杆并拉到底，松手发射；重复三种材料。");
-        BuildLauncher(launchPuzzle,samples);
+        ResizeSamples(samples);
+        var place=ConfigureReportPuzzles.Natural(0,"拿起三件材料","分别拿起木、石、铜三件材料","每件材料只记录一次拿取。","");
+        BuildPickup(place,samples);
+        var launchPuzzle=ConfigureReportPuzzles.Natural(1,"投向金色落点区","把三件材料分别抛到金色落点区","真实挥手释放；直接搬入或重复投同一件不计完成。","");
+        BuildFreeThrow(launchPuzzle,samples,ConfigureReportPuzzles.ExperimentLocation(launchPuzzle.station)+Vector3.back*3.6f);
         var shadow=ConfigureReportPuzzles.Natural(2,"晨光与日晷","把太阳模型拖到东方，观察日晷影子向西","太阳在东方时，入射光向西；实际阴影随太阳模型移动。","握住金色太阳模型；VR绕圆环拖动，桌面抓住后拖动鼠标，读数接近90°。 ");
         BuildSun(shadow);
+        ReportFloatingStatus.ConfigureScene(level);
         level.mission="操作器材完成真实实验；条件达成后自动推进，沿步道通过出口。";
         ConfigureReportPuzzles.EnsureExit();level.grabbables=Object.FindObjectsOfType<ReportGrabbable>();level.Refresh();EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());AssetDatabase.SaveAssets();
-        File.WriteAllText("Documentation/自然实验第一关.md","# 第一关自然物理实验\n\n1. 拿起三种材料，放入同名槽位并松手，自动记录。\n2. 将材料逐件放进标定发射杯，握住拉杆拉到底并松手；三种材料必须都命中实验落点区。初速和仰角由发射器保持相同，轨迹由真实刚体重力和碰撞形成。\n3. 握住金色太阳模型拖至东方（约90°），观察日晷阴影向西。\n\n自由手抛：VR挥手松开；桌面拿住后按住右键/F蓄力，松开右键/F抛出。标准实验使用标定发射器保证同条件。\n\n状态灯不能触发答案；目标达成并稳定后自动推进。\n");
+        WriteFirstGuide();
         Debug.Log("NATURAL_FIRST_LEVEL_CONFIGURED");
     }
-    static void BuildLauncher(ReportPuzzle puzzle,ReportGrabbable[] samples)
+    public static void UpdateFirstSteps(DemoLevel target)
     {
-        var p=ConfigureReportPuzzles.ExperimentLocation(puzzle.station);var destination=new Vector3(p.x,level.spawn.y,p.z-3.6f);
-        var root=new GameObject("同速同角标定发射器").transform;root.SetParent(layout,false);root.position=p;root.rotation=Quaternion.LookRotation(Vector3.ProjectOnPlane(destination-p,Vector3.up));
-        var bench=new LevelModelBuilder();bench.Box(Vector3.up*.85f,new Vector3(1.2f,.12f,.8f),"Celadon");foreach(float x in new[]{-.45f,.45f})bench.Beam(new Vector3(x,.04f,0),new Vector3(x,.85f,0),.09f,"SatinBrass");bench.Save(key+"_NaturalLauncherBench",root);
-        float half=samples[0].GetComponent<Renderer>().bounds.extents.y;
-        var cup=new GameObject("发射杯").transform;cup.SetParent(root,false);cup.localPosition=Vector3.up*(.91f+half+.02f);
-        var tray=new LevelModelBuilder();tray.Box(Vector3.up*.95f,new Vector3(.85f,.08f,.75f),"InkTeal");tray.Save(key+"_NaturalLauncherCup",root);
-        foreach(var sample in samples)
-        {
-            if(sample.GetComponent<ReportThrowTrack>()==null)sample.gameObject.AddComponent<ReportThrowTrack>();
-            var seat=cup.gameObject.AddComponent<ReportPlacementSocket>();seat.item=sample;seat.captureDistance=.4f;
-        }
-        var rail=new LevelModelBuilder();rail.Beam(new Vector3(-.72f,.9f,-.1f),new Vector3(-.72f,.9f,-.6f),.055f,"SatinBrass");rail.Save(key+"_NaturalLauncherRail",root,false);
-        var knob=new LevelModelBuilder();knob.Box(Vector3.zero,new Vector3(.25f,.12f,.15f),"CoralRed");var go=knob.Save(key+"_NaturalLauncherPull",root);go.transform.localPosition=new Vector3(-.72f,.9f,-.1f);
-        var pull=Handle(go,ReportHandleMotion.Slide,Vector3.back,new Vector2(0,1),0);pull.slideRange=new Vector2(0,.5f);pull.unit="拉杆行程";
-        var launcher=root.gameObject.AddComponent<ReportMechanicalLauncher>();launcher.pull=pull;launcher.cup=cup;launcher.samples=samples;
-        float distance=Vector3.ProjectOnPlane(destination-cup.position,Vector3.up).magnitude;
-        float fall=cup.position.y-destination.y-half;
-        launcher.speed=Mathf.Sqrt(Physics.gravity.magnitude*distance*distance/(distance+fall));
-        launcher.readout=Text(root,"发射操作与读数",new Vector3(0,1.95f,.12f),"一件样品入杯 → 拉到底 → 松手\n初速 "+launcher.speed.ToString("F2")+"m/s · 仰角45°");
-        launcher.readout.transform.rotation=Quaternion.LookRotation(launcher.readout.transform.position-puzzle.station.viewingPoint);
-        var pad=new LevelModelBuilder();pad.Box(Vector3.up*.016f,new Vector3(1.6f,.032f,1.6f),"Celadon");pad.Box(Vector3.up*.035f,new Vector3(.9f,.008f,.9f),"SatinBrass");var target=pad.Save(key+"_NaturalLandingZone",layout);target.transform.position=destination;
-        var zone=target.AddComponent<BoxCollider>();zone.isTrigger=true;zone.center=Vector3.up*.38f;zone.size=new Vector3(1.8f,.7f,1.8f);
-        var detector=target.AddComponent<ReportThrowTarget>();detector.launchArea=cup;detector.launchRadius=.8f;detector.minimumFlightDistance=2;detector.acceptedItems=samples.Select(s=>s.GetComponent<ReportThrowTrack>()).ToArray();
-        detector.acceptedSpeed=new Vector2(launcher.speed-.12f,launcher.speed+.12f);detector.acceptedAngle=new Vector2(44,46);
-        detector.readout=Text(target.transform,"落点读数",Vector3.up*.95f,"等待同条件发射三种材料");detector.readout.transform.rotation=Quaternion.LookRotation(detector.readout.transform.position-puzzle.station.viewingPoint);
-        var measure=target.AddComponent<ReportThrowMeasure>();measure.target=detector;measure.countDifferentItems=true;measure.label="同条件命中样品";measure.unit="种";
-        puzzle.learningTask.requirements=new[]{Condition(measure,3,3,3)};
+        level=target;key=Path.GetFileNameWithoutExtension(EditorSceneManager.GetActiveScene().path);
+        layout=level.transform.Find("Natural Learning Layout");
+        var samples=Enumerable.Range(0,3).Select(i=>ConfigureReportPuzzles.I("HubMaterialCube_"+i,"材料样品")).ToArray();
+        ResizeSamples(samples);
+        var first=level.stations[0].puzzle;
+        foreach(var placement in first.placements)if(placement.socket!=null)Object.DestroyImmediate(placement.socket.parent.gameObject);
+        first.placements=new PuzzlePlacement[0];first.station.instruction="拿起三件材料";
+        first.goal="分别拿起木、石、铜三件材料";first.clue="每件材料只记录一次拿取。";first.hint="";
+        BuildPickup(first,samples);
+        var second=level.stations[1].puzzle;second.station.instruction="投向金色落点区";
+        second.goal="把三件材料分别抛到金色落点区";second.clue="真实挥手释放；直接搬入或重复投同一件不计完成。";second.hint="";
+        var previous=Object.FindObjectOfType<ReportThrowTarget>();var location=previous.transform.position;
+        Object.DestroyImmediate(previous.gameObject);
+        var launcher=Object.FindObjectOfType<ReportMechanicalLauncher>();if(launcher!=null)Object.DestroyImmediate(launcher.gameObject);
+        BuildFreeThrow(second,samples,location);
+        first.successMessage="三件材料已全部拿取。";second.successMessage="三件材料已全部投入落点区。";
+        level.mission="依次拿起三件材料，抛到金色落点区，再把太阳转到东方。";
+        WriteFirstGuide();
     }
+    static void BuildPickup(ReportPuzzle puzzle,ReportGrabbable[] samples)
+    {
+        var pickup=puzzle.GetComponent<ReportPickupMeasure>();if(pickup==null)pickup=puzzle.gameObject.AddComponent<ReportPickupMeasure>();
+        pickup.station=puzzle.station;pickup.samples=samples;pickup.label="已拿取材料";pickup.unit="件";
+        puzzle.learningTask.requirements=new[]{Condition(pickup,3,3,0,false)};
+    }
+    static void ResizeSamples(ReportGrabbable[] samples)
+    {
+        for(int i=0;i<samples.Length;i++)
+        {
+            var sample=samples[i];
+            var renderer=sample.GetComponent<Renderer>();var oldBounds=renderer.bounds;
+            float bottom=oldBounds.min.y;
+            float factor=.14f/Mathf.Max(oldBounds.size.x,oldBounds.size.y,oldBounds.size.z);
+            sample.transform.localScale*=factor;Physics.SyncTransforms();
+            sample.transform.position+=Vector3.up*(bottom-renderer.bounds.min.y);
+            var label=sample.transform.Find("Puzzle Item Label");
+            if(label==null)
+            {
+                label=new GameObject("Puzzle Item Label").transform;label.SetParent(sample.transform,false);
+                Text(label,"物件标记",Vector3.zero,"",.012f);
+            }
+            if(label!=null)
+            {
+                label.localScale=Vector3.one/sample.transform.lossyScale.x;
+                label.position=renderer.bounds.center+Vector3.up*.22f;
+                foreach(var r in label.GetComponentsInChildren<MeshRenderer>())if(r.GetComponent<TextMesh>()==null)r.enabled=false;
+                var text=label.GetComponentInChildren<TextMesh>();text.text=new[]{"木材","石材","铜材"}[i];text.color=new Color(1,.92f,.65f);
+                var facing=text.GetComponent<ReportTextFacing>();facing.mode=ReportTextFacingMode.FacePlayer;facing.yawOnly=true;
+                facing.viewer=Object.FindObjectOfType<Unity.XR.CoreUtils.XROrigin>().Camera.transform;
+            }
+        }
+    }
+    static void BuildFreeThrow(ReportPuzzle puzzle,ReportGrabbable[] samples,Vector3 location)
+    {
+        var pad=new LevelModelBuilder();
+        pad.Box(Vector3.up*.012f,new Vector3(2.8f,.024f,2.8f),"Celadon");
+        foreach(int side in new[]{-1,1})
+        {
+            pad.Box(new Vector3(side*1.4f,.035f,0),new Vector3(.06f,.04f,2.86f),"AmberLight");
+            pad.Box(new Vector3(0,.035f,side*1.4f),new Vector3(2.86f,.04f,.06f),"AmberLight");
+        }
+        for(int i=0;i<3;i++)pad.Box(new Vector3((i-1)*.8f,.03f,0),new Vector3(.6f,.012f,.6f),"SatinBrass");
+        var go=pad.Save(key+"_FreeThrowLandingZone",layout);go.transform.position=location;
+        var zone=go.AddComponent<BoxCollider>();zone.isTrigger=true;zone.center=Vector3.up*.3f;zone.size=new Vector3(2.8f,.58f,2.8f);
+        foreach(var sample in samples)if(sample.GetComponent<ReportThrowTrack>()==null)sample.gameObject.AddComponent<ReportThrowTrack>();
+        var detector=go.AddComponent<ReportThrowTarget>();detector.requiredStation=puzzle.station;
+        detector.acceptedItems=samples.Select(s=>s.GetComponent<ReportThrowTrack>()).ToArray();
+        detector.minimumFlightDistance=.8f;detector.minimumFlightTime=.12f;detector.acceptedSpeed=new Vector2(.8f,20);
+        var measure=go.AddComponent<ReportThrowMeasure>();measure.target=detector;measure.countDifferentItems=true;measure.label="已投入材料";measure.unit="件";
+        puzzle.learningTask.requirements=new[]{Condition(measure,3,3,0)};
+        puzzle.station.label.transform.position=location+Vector3.up*2.1f;
+    }
+    static void WriteFirstGuide()=>File.WriteAllText("Documentation/自然实验第一关.md","# 第一关\n\n1. 分别拿起木、石、铜三件材料，每件只计一次；无需归位。\n2. 把三件材料分别抛进金色边框落点区。实际释放速度至少0.8m/s，水平飞行至少0.8m；近距离放入与同件重复命中不能代替三件材料。\n3. 原第三步保留：握住金色太阳模型拖到东方（约90°），观察日晷阴影向西。\n\nVR：挥手并松握把。桌面：左键/E拿住后，右键/F蓄力并松开抛出。浮空文字显示步骤状态和拿取/投掷计数；菜单不再提供提示选项。R/菜单重置会清空计数并恢复物件。\n");
     static void BuildSun(ReportPuzzle puzzle)
     {
         var p=ConfigureReportPuzzles.ExperimentLocation(puzzle.station);var root=new GameObject("可操作太阳轨道").transform;root.SetParent(layout,false);root.position=p;

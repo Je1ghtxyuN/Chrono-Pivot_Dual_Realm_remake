@@ -34,9 +34,15 @@ public static class NaturalLearningCheck
             if(station.puzzle.mode!=ReportPuzzleMode.Physical || station.puzzle.learningTask==null || station.puzzle.choices.Length>0)
                 throw new Exception("First level still uses answers rather than experiments");
         level.Use(level.stations[0]);if(level.Step!=0)throw new Exception("Status click bypasses material placement");
-        var launcher=Object.FindObjectOfType<ReportMechanicalLauncher>();
-        if(launcher==null || launcher.samples.Length!=3 || launcher.pull==null)throw new Exception("No physical calibrated launcher");
-        if(launcher.samples.Select(s=>s.GetComponent<Rigidbody>().mass).Distinct().Count()!=3)throw new Exception("Material experiment has identical sample masses");
+        var pickup=Object.FindObjectOfType<ReportPickupMeasure>();
+        if(pickup==null || pickup.samples.Length!=3 || pickup.samples.Distinct().Count()!=3)throw new Exception("No distinct material pickup goal");
+        if(level.stations[0].puzzle.placements.Length!=0)throw new Exception("Pickup still requires placement");
+        if(pickup.samples.Select(s=>s.GetComponent<Rigidbody>().mass).Distinct().Count()!=3)throw new Exception("Material experiment has identical sample masses");
+        foreach(var sample in pickup.samples)
+            if(Mathf.Abs(sample.GetComponent<Renderer>().bounds.size.x-.14f)>.005f)throw new Exception("Material does not fit player hand: "+sample.name);
+        if(Object.FindObjectOfType<ReportMechanicalLauncher>()!=null)throw new Exception("Calibrated launcher still misleads free throwing");
+        var target=Object.FindObjectOfType<ReportThrowTarget>();
+        if(target==null || target.acceptedItems.Length!=3 || target.requiredStation!=level.stations[1] || target.launchArea!=null)throw new Exception("Free throw target invalid");
         if(Object.FindObjectOfType<ReportSunlightMeasure>()==null)throw new Exception("No direct sun/shadow interaction");
         var arc=Object.FindObjectsOfType<Transform>(true).First(t=>t.name=="StaticIntroThrowTrajectory");
         if(arc.gameObject.activeSelf)throw new Exception("Unexplained static parabola remains");

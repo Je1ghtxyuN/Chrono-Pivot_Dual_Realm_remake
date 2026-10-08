@@ -1,1 +1,1 @@
-PASS: forward orientation; hands match targets under yaw, pitch and height changes; repeat pose does not drift; full body shadows only; first person limbs visible.
+PASS: forward orientation; hands match targets under yaw, pitch and height changes; repeat pose does not drift; full body shadows only; only left and right hand geometry visible in first person.

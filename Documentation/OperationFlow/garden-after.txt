@@ -1,0 +1,3 @@
+PASS: scenes 14..14 / 3 natural tasks. Virtual XR grip/drag/release; actual collisions and measurement updates; calibrated ballistic releases; status cannot bypass; reset and physical exits. First scene is covered by NaturalFirstPlayCheck. Physical headset and SteamVR streaming are not tested.
+PASS scene=14 古代园林 · 过桥与巡游 all 3 actual experiment conditions; negative status check; exit opens
+PASS bridge supplies remain on the bench before assembly and after reset; gravity/contact remain active.

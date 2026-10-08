@@ -17,11 +17,13 @@ public sealed class ReportLearningTask : MonoBehaviour
     public ReportLearningRequirement[] requirements=new ReportLearningRequirement[0];
     [Min(.05f)] public float stableDuration=.5f;
     public bool Complete {get;private set;}
+    public bool Ready {get;private set;}
+    public float StabilityProgress=>Mathf.Clamp01(stableTime/stableDuration);
     float stableTime;
     public void BeginGoal()
     {
         foreach(var condition in requirements)condition.initialOperations=condition.measure.Operations;
-        stableTime=0;Complete=false;
+        stableTime=0;Complete=Ready=false;
     }
     public void Observe(bool placementsReady,float deltaTime)
     {
@@ -33,8 +35,8 @@ public sealed class ReportLearningTask : MonoBehaviour
             ready &= source.Operations-condition.initialOperations>=condition.freshOperations;
             ready &= !condition.requireReleased || !source.Held;
         }
-        stableTime=ready?stableTime+deltaTime:0;Complete=stableTime>=stableDuration;
+        Ready=ready;stableTime=ready?stableTime+deltaTime:0;Complete=stableTime>=stableDuration;
     }
     public string Summary=>string.Join("\n",requirements.Select(r=>r.measure.Summary));
-    public void ResetProgress(){stableTime=0;Complete=false;}
+    public void ResetProgress(){stableTime=0;Complete=Ready=false;}
 }

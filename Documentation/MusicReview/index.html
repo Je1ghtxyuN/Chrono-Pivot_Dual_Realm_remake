@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>晷枢双界 · 轻脚步试听</title>
+<style>body{margin:40px auto;max-width:820px;padding:0 20px;background:#eef2e9;color:#173b3d;font:16px/1.7 system-ui}h1{font-size:28px}article{background:#fffdf4;padding:18px 24px;margin:18px 0;border-radius:12px}h2{margin:0 0 8px;font-size:20px}audio{width:100%}p{margin:6px 0 16px}</style>
+<h1>晷枢双界 · 轻脚步试听</h1><p>背景音乐已移除。游戏保留轻脚步、物理实验与交互音效。</p>
+<h2>脚步 · 极轻的沙沙摩擦</h2><p>三种地面均去掉敲击感。这里以20%音量循环便于听辨；游戏内音源音量仅3.2%，还会随距离衰减。</p>
+<article><h2>石地</h2><audio controls loop preload="metadata" src="../../Assets/ReportVR/Audio/FootStone.wav"></audio></article>
+<article><h2>木桥</h2><audio controls loop preload="metadata" src="../../Assets/ReportVR/Audio/FootWood.wav"></audio></article>
+<article><h2>雪地</h2><audio controls loop preload="metadata" src="../../Assets/ReportVR/Audio/FootSnow.wav"></audio></article>
+<script>document.querySelectorAll('audio').forEach(a=>{a.src+='?v=low-soft-20261007';a.volume=.2;a.addEventListener('play',()=>document.querySelectorAll('audio').forEach(b=>{if(a!==b)b.pause()}))})</script>
+</html>

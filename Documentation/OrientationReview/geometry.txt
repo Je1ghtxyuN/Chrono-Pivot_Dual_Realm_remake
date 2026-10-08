@@ -1,0 +1,1 @@
+PASS: world south calibration; actual planar sight angle; relocated target rejects old angle; incident and reflected obstruction and recovery in scenes 3,8,9,14.

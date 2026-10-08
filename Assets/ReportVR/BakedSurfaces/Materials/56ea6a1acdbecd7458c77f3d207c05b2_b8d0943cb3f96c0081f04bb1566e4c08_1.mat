@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "Ivory \xB7 Baked"
+  m_Shader: {fileID: 4800000, guid: cd409bb33d55b4c47afd52c82f1e8b29, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _SURFACE_DETAIL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    OriginalSurfaceMaterial: 392d7a38ee80ae446bd79dbff2fd50a3
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 74581697c38a825408ad1be116428700, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: fa2bd795407ebe7489f99ebe943ada3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: e087004c13f941543a3c05ad6ddaee5a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceDetail:
+        m_Texture: {fileID: 2800000, guid: 95730a6ab7b1f4e4cbc4474ca43b587b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceNormal:
+        m_Texture: {fileID: 2800000, guid: 28ba4bb0a376f2c45b7d13dbc4c791a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DetailStrength: 0.35
+    - _GlossMapScale: 1
+    - _OcclusionStrength: 0.55
+    - _SurfaceNormalStrength: 0.2
+    - _SurfaceRoughness: 0.1
+    - _SurfaceScale: 1.25
+    - _SurfaceStrength: 0.32
+    - _UseSurfaceDetail: 1
+    m_Colors:
+    - _BakeTint: {r: 0.94, g: 0.92, b: 0.83, a: 1}
+    - _Color: {r: 0.94, g: 0.92, b: 0.83, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

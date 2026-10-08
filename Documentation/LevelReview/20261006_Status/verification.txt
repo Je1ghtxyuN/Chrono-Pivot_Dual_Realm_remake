@@ -1,0 +1,1 @@
+PASS: 15 scenes; floating player-facing status labels; no task boards or hint buttons; physical tasks preserved.

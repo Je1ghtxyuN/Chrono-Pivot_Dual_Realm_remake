@@ -1,0 +1,3 @@
+PASS Windows_RetryPlacement: 196 files SHA256 matched; retrieval API and ReportAudio present; BGM runtime, bank and four themes absent.
+PASS WindowsDesktop_RetryPlacement: 196 files SHA256 matched; retrieval API and ReportAudio present; BGM runtime, bank and four themes absent.
+PASS: main runtime/editor scripts and all 15 scenes match the tested clone; desktop boot has no native OpenXR pre-init.

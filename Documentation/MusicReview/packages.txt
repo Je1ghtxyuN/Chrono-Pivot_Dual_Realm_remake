@@ -1,0 +1,1 @@
+PASS: BGM runtime classes absent from player assembly; music bank and four clips absent from player Resources; 195 non-boot files have matching SHA256; desktop disables native OpenXR pre-init.

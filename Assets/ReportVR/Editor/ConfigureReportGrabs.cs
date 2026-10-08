@@ -67,7 +67,7 @@ public static class ConfigureReportGrabs
             Interactor(origin.transform.Find("Camera Floor Offset/Right Controller"),player,manager,right,false,InteractorHandedness.Right);
             Interactor(origin.Camera.transform,player,manager,null,true,InteractorHandedness.None);
             var wrist=origin.transform.Find("Camera Floor Offset/Left Controller/Scene and controller instructions");
-            if(wrist!=null)wrist.GetComponent<TextMesh>().text="Left stick: walk | Right stick: turn\nHold either grip: grab | Release: drop\nRight grip on controls: use | Left menu / R: reset\nR / L trigger: next / previous scene";
+            if(wrist!=null)wrist.GetComponent<TextMesh>().text="Left stick: walk | Right stick: turn\nHold grip: grab | Swing + release: throw\nRight trigger: use | Left B / menu: reset\nA / X: next / previous (after completion)";
             foreach(var t in Object.FindObjectsOfType<Transform>(true))
             {
                 string parent=t.parent!=null?t.parent.name:"";

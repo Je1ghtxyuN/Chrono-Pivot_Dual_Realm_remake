@@ -12,12 +12,16 @@ public sealed class ReportThrowTarget : MonoBehaviour
     public Vector2 acceptedSpeed=new Vector2(.5f,20);
     public Vector2 acceptedAngle=new Vector2(-90,90);
     public TextMesh readout;
+    [Tooltip("指定时仅在该步骤进行中记录命中，避免提前投掷跳过任务。")]
+    public DemoStation requiredStation;
     public int Hits {get;private set;}
     public int DifferentItems=>items.Count;
     readonly HashSet<ReportThrowTrack> items=new HashSet<ReportThrowTrack>();
     readonly Dictionary<ReportThrowTrack,int> serials=new Dictionary<ReportThrowTrack,int>();
+    public bool HasHit(ReportThrowTrack item)=>items.Contains(item);
     void OnTriggerEnter(Collider other)
     {
+        if(requiredStation!=null && requiredStation.level.Step!=requiredStation.index)return;
         var track=other.GetComponentInParent<ReportThrowTrack>();if(track==null || !track.HasThrown)return;
         var grab=track.GetComponent<ReportGrabbable>();if(grab!=null && grab.isSelected)return;
         if(acceptedItems.Length>0 && System.Array.IndexOf(acceptedItems,track)<0)return;
@@ -28,7 +32,8 @@ public sealed class ReportThrowTarget : MonoBehaviour
         if(launchArea!=null && Vector3.ProjectOnPlane(track.ReleasePosition-launchArea.position,Vector3.up).magnitude>launchRadius)return;
         if(speed<acceptedSpeed.x || speed>acceptedSpeed.y || track.LaunchAngle<acceptedAngle.x || track.LaunchAngle>acceptedAngle.y)return;
         serials[track]=track.ThrowSerial;items.Add(track);Hits++;
-        if(readout!=null)readout.text="命中 "+Hits+" 次 / "+DifferentItems+" 种样品\n初速 "+speed.ToString("F2")+"m/s  角度 "+track.LaunchAngle.ToString("F1")+"°\n水平距离 "+distance.ToString("F2")+"m";
+        ReportAudio.Play(ReportSound.TargetHit,track.transform.position);
+        if(readout!=null)readout.text="已落入目标区\n观察抛物线，再比较不同材料的落点";
     }
     // A wide landing zone can be entered before the minimum flight distance is reached.
     void OnTriggerStay(Collider other)=>OnTriggerEnter(other);

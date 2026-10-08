@@ -1,0 +1,1 @@
+PASS: BGM runtime player, Resources bank, installer, and music clips removed from Assets.

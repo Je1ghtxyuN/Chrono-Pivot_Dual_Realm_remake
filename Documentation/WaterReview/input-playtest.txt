@@ -1,0 +1,5 @@
+PASS: scenes 1,5,9,10 / 12 natural tasks. Virtual XR grip/drag/release; actual collisions and measurement updates; calibrated ballistic releases; status cannot bypass; reset and physical exits. First scene is covered by NaturalFirstPlayCheck. Physical headset and SteamVR streaming are not tested.
+PASS scene=1 浮力水渠 · 配重与闸门 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=5 液压工房 · 密封与流路 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=9 综合实验室 · 三类实验 all 3 actual experiment conditions; negative status check; exit opens
+PASS scene=10 园林水工 · 配重到巡园 all 3 actual experiment conditions; negative status check; exit opens

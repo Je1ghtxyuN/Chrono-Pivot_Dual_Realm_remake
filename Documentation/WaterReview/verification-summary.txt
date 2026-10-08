@@ -1,0 +1,9 @@
+Verified 2026-10-06 23:45:00
+NewVersion absent: True
+Water verification: WATER_BUOYANCY_OK, WATER_HYDRAULIC_OK, WATER_PREVIEW_OK, WATER_VERIFICATION_OK
+Input: PASS scenes 1,5,9,10 / 12 actual virtual XR tasks; overload blocks transit; unloading, reset and physical exits verified.
+Routes: PASS 15 scenes; 0.18m samples; 0.46m capsule clearance; CharacterController traversal; 0 failures.
+Build: Succeeded; 0 errors; Windows and WindowsDesktop installed; 196 SHA256-verified files each.
+Desktop startup: Direct3D 11 and assemblies loaded; process stayed running; no exception, shader error or crash. Smoke process closed after observation.
+Broader regression: scenes 1..13 passed earlier. Scene14 bridge plank failed once; original and upgraded standalone scene tests subsequently passed. No single full 42-task run certified.
+Physical headset stereo display, controller feel, streaming and frame rate have not been tested.

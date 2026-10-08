@@ -1,0 +1,2 @@
+PASS scene=1 wood=.25 wood+stone=.50 visibleChange=0.100m overload blocks transit; unloading and reset restore boat
+PASS scene=10 wood=.25 wood+stone=.50 visibleChange=0.100m overload blocks transit; unloading and reset restore boat

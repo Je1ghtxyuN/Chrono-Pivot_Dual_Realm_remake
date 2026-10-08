@@ -1,0 +1,1 @@
+PASS: levels 6 and 10; actual closed-valve socket seating; open/unsealed leaks; closing/sealing stops new droplets.

@@ -1,0 +1,1 @@
+PASS: current-user-placement build stayed alive and responsive for 89 seconds; Direct3D11 initialized; no managed exceptions, shader errors or crash markers.

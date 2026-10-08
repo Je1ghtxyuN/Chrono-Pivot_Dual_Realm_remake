@@ -125,17 +125,10 @@ public static class SetupReportVR
             map.AddAction("Move",InputActionType.Value,"<XRController>{LeftHand}/primary2DAxis",processors:"stickDeadzone(min=0.2,max=0.95)",expectedControlLayout:"Vector2");
             map.AddAction("Turn",InputActionType.Value,"<XRController>{RightHand}/primary2DAxis",processors:"stickDeadzone(min=0.3,max=0.95)",expectedControlLayout:"Vector2");
             map.AddAction("NextScene",InputActionType.Button,"<XRController>{RightHand}/primaryButton");
-            map.AddAction("PreviousScene",InputActionType.Button,"<XRController>{RightHand}/secondaryButton");
+            map.AddAction("PreviousScene",InputActionType.Button,"<XRController>{LeftHand}/primaryButton");
             File.WriteAllText(path,asset.ToJson());Object.DestroyImmediate(asset);AssetDatabase.ImportAsset(path);
         }
         inputs=AssetDatabase.LoadAssetAtPath<InputActionAsset>(path);
-        if(!inputs.FindAction("NextScene").bindings.Any(b=>b.path.EndsWith("/triggerPressed")))
-        {
-            inputs.FindAction("NextScene").AddBinding("<XRController>{RightHand}/triggerPressed");
-            inputs.FindAction("PreviousScene").AddBinding("<XRController>{LeftHand}/triggerPressed");
-            File.WriteAllText(path,inputs.ToJson());AssetDatabase.ImportAsset(path,ImportAssetOptions.ForceUpdate);
-            inputs=AssetDatabase.LoadAssetAtPath<InputActionAsset>(path);
-        }
         actions.Clear();
         foreach(var action in inputs)
         {
@@ -192,7 +185,7 @@ public static class SetupReportVR
             {
                 var label=new GameObject("Scene and controller instructions");label.transform.SetParent(hand.transform,false);label.transform.localPosition=new Vector3(0,.06f,.04f);
                 label.transform.localRotation=Quaternion.Euler(70,0,0);
-                var text=label.AddComponent<TextMesh>();text.text=sceneName.Replace("Fig_","Figure ").Replace('_',' ')+"\nLeft stick: walk\nRight stick: 30 deg turn\nR / L trigger: next / previous";
+                var text=label.AddComponent<TextMesh>();text.text=sceneName.Replace("Fig_","Figure ").Replace('_',' ')+"\nLeft stick: walk\nRight stick: 30 deg turn\nA / X: next / previous";
                 text.characterSize=.006f;text.fontSize=48;text.anchor=TextAnchor.MiddleCenter;text.color=Color.white;
             }
         }

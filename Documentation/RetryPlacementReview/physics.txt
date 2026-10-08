@@ -1,0 +1,15 @@
+PASS: A core beside its socket is not installed
+PASS: Latch depends on actual armature engagement
+PASS: An open valve does not scale equilibrium pressure by its opening
+PASS: Changing pendulum length invalidates the previous period
+PASS: Throw target records only its active task
+PASS: Throw target records only its active task
+PASS: A real release reaching the later target before its turn is ignored
+PASS: Guided assembly socket aligns the connector orientation
+PASS: Sundial alignment measures the physical north-south line rather than a fixed knob value
+PASS: Removing the cover interrupts the continuous insulation observation
+PASS: Near-target pieces suspended above support do not count as stable stacking
+PASS: A thrown ball passing the ramp start cannot arm the gravity-roll task
+PASS: Player can see continuous stable-hold progress
+PASS: Stability progress reflects elapsed valid observation
+PASS: Invalid observation clears stability progress

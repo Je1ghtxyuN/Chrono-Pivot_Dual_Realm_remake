@@ -1,0 +1,7 @@
+FAIL
+System.Exception: Scene 14 step 1: Could not grab AncientGarden_LowPoly_Natural_桥面板_5 position=(-1.43, -23.03, 10.89) hand=(-1.87, -16.13, 9.38) velocity=(1.27, -21.45, 4.31) nearby=
+  at NaturalAllPlayCheck.Require (System.Boolean condition, System.String message) [0x00003] in D:\_work\_SRTP\output\cargo-loading-20261007\ValidationProject\Assets\ReportVR\Editor\NaturalAllPlayCheck.cs:45 
+  at NaturalAllPlayCheck+<Grab>d__39.MoveNext () [0x00077] in D:\_work\_SRTP\output\cargo-loading-20261007\ValidationProject\Assets\ReportVR\Editor\NaturalAllPlayCheck.cs:94 
+  at NaturalAllPlayCheck+<Move>d__40.MoveNext () [0x00080] in D:\_work\_SRTP\output\cargo-loading-20261007\ValidationProject\Assets\ReportVR\Editor\NaturalAllPlayCheck.cs:98 
+  at NaturalAllPlayCheck+<Exercises>d__48.MoveNext () [0x02e34] in D:\_work\_SRTP\output\cargo-loading-20261007\ValidationProject\Assets\ReportVR\Editor\NaturalAllPlayCheck.cs:298 
+  at NaturalAllPlayCheck.Tick () [0x00137] in D:\_work\_SRTP\output\cargo-loading-20261007\ValidationProject\Assets\ReportVR\Editor\NaturalAllPlayCheck.cs:83 

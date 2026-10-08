@@ -1,0 +1,3 @@
+FAIL phase=1
+System.Exception: Model connection must be empty until configured
+  at PhysicsTutorPlayCheck.Tick () [0x001d2] in D:\_work\_SRTP\ChronoPivot_ReportVR\Assets\ReportVR\Editor\PhysicsTutorPlayCheck.cs:57 

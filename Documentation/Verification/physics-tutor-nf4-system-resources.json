@@ -1,0 +1,9 @@
+{
+  "ModelPID": 43704,
+  "WorkingSetGiB": 1.103,
+  "PrivateCommittedGiB": 6.153,
+  "PeakWorkingSetGiB": 3.085,
+  "UnityRunning": true,
+  "TotalGPU": "3808 MiB",
+  "FreeSystemRamGiB": 1.704
+}

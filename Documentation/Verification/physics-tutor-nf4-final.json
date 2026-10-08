@@ -1,0 +1,14 @@
+{
+  "unit_tests": 29,
+  "real_http_text_cases": 3,
+  "unity_real_text_input": true,
+  "local_context_limit_rejected": true,
+  "actual_quantized_layers": 252,
+  "quantization": "NF4 double quant",
+  "base_and_adapter_files_modified": false,
+  "unity_export_verified": true,
+  "model_quality_sample_passed": false,
+  "test_model_server_stopped": true,
+  "review": "physics-tutor-nf4-text-review.md",
+  "screenshot": "../UIPreviews/15_AI_Tutor_Real_NF4.png"
+}

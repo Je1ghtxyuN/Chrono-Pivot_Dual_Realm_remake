@@ -148,7 +148,7 @@ public static class PolishReportLevels
             PlaceNoticeBoard(level,noticeGo,boardGo);
             level.Refresh();
             var wrist=rig.transform.Find("Camera Floor Offset/Left Controller/Scene and controller instructions");
-            if(wrist!=null)wrist.GetComponent<TextMesh>().text="Left stick: walk | Right stick: turn\nGrip / E: use | Left menu / R: reset\nR / L trigger: next / previous scene";
+            if(wrist!=null)wrist.GetComponent<TextMesh>().text="Left stick: walk | Right stick: turn\nHold grip: grab | Swing + release: throw\nRight trigger: use | Left B / menu: reset\nA / X: next / previous (after completion)";
             Physics.SyncTransforms();EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             changes.Add(key+": continuous route; 3 ordered demo stations; entrance/exit; interaction/reset; corrected collisions.");
         }
@@ -164,7 +164,7 @@ public static class PolishReportLevels
     static void ConfigureDemoInput()
     {
         const string path="Assets/ReportVR/Input/ReportVR.inputactions";var asset=AssetDatabase.LoadAssetAtPath<InputActionAsset>(path);var map=asset.FindActionMap("ReportVR");
-        if(map.FindAction("Interact")==null)map.AddAction("Interact",InputActionType.Button,"<XRController>{RightHand}/gripPressed");
+        if(map.FindAction("Interact")==null)map.AddAction("Interact",InputActionType.Button,"<XRController>{RightHand}/triggerPressed");
         if(map.FindAction("ResetDemo")==null){var reset=map.AddAction("ResetDemo",InputActionType.Button,"<XRController>{LeftHand}/menu");reset.AddBinding("<XRController>{LeftHand}/secondaryButton");}
         File.WriteAllText(path,asset.ToJson());AssetDatabase.ImportAsset(path,ImportAssetOptions.ForceUpdate);asset=AssetDatabase.LoadAssetAtPath<InputActionAsset>(path);
         foreach(string name in new[]{"Interact","ResetDemo"})

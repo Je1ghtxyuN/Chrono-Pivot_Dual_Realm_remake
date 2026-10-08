@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52084f86525a4276b4df80beddfdc874, type: 3}
+  m_Name: PhysicsTutorConnection
+  m_EditorClassIdentifier:
+  baseModelPath: D:/_work/_SRTP/AI物理导师/ai-physics-tutor/models/Qwen2.5-3B-Instruct
+  serviceEndpoint: http://127.0.0.1:18080/api/tutor

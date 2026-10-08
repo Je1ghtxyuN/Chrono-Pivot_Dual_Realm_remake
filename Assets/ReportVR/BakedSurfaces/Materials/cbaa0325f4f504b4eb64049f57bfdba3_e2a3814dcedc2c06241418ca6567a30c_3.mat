@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "InkTealRoof \xB7 Baked"
+  m_Shader: {fileID: 4800000, guid: cd409bb33d55b4c47afd52c82f1e8b29, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _SURFACE_DETAIL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    OriginalSurfaceMaterial: 96014812df197b0498a432cee601a65f
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 48251717f797ebb47a1dfb0b8d47ccc8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: f4695d12fa4c966408c39575ba069644, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: cba0142ace34d5e4e9f7d6ff7311ae92, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceDetail:
+        m_Texture: {fileID: 2800000, guid: 9d5c0f74dd437384589a991b814fd46a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceNormal:
+        m_Texture: {fileID: 2800000, guid: 27f68ce67a7e49f448aa0db352d116d5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DetailStrength: 0.35
+    - _GlossMapScale: 1
+    - _OcclusionStrength: 0.55
+    - _SurfaceNormalStrength: 0.35
+    - _SurfaceRoughness: 0.1
+    - _SurfaceScale: 1.5
+    - _SurfaceStrength: 0.7
+    - _UseSurfaceDetail: 1
+    m_Colors:
+    - _BakeTint: {r: 0.15999997, g: 0.30999997, b: 0.33999997, a: 1}
+    - _Color: {r: 0.15999997, g: 0.30999997, b: 0.33999997, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

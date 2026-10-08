@@ -1,0 +1,256 @@
+{
+  "privacy_sanitized": true,
+  "base_weights_included": false,
+  "local_gpu_deployment_verified": true,
+  "files": [
+    {
+      "path": "ai-physics-tutor/README.md",
+      "bytes": 881,
+      "sha256": "cdc98126e40eb06384f460078e7d3f4698c6ab86a06b70d19b89dff8311b9991"
+    },
+    {
+      "path": "ai-physics-tutor/experiments/model-readiness-v5/diagnostic_support.py",
+      "bytes": 3142,
+      "sha256": "f74d1cacc158600e795acb4a42dc2da8862c23490841c1b8db1a97b24ccd5ebe"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/base_challenge_metrics.json",
+      "bytes": 211,
+      "sha256": "f7d48a6ebe39d2f3df71cda16f47d8c1473dec5a67917e7966f4c2a4fe0c6406"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/base_metrics.json",
+      "bytes": 226,
+      "sha256": "63fe41cd5946409a7e1893cf52201319a5644279b1e77a92d9af9f796e030358"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/README.md",
+      "bytes": 5090,
+      "sha256": "0258284534d9db1494b6224c312359d17f144487f27cb19c63e4bea5eb7592cb"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/adapter_config.json",
+      "bytes": 858,
+      "sha256": "dc39c45e0e6aac7e6d99e14daf55fbf89d1a5e5c18f49cd748918c75b05c8c20"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/adapter_model.safetensors",
+      "bytes": 119801528,
+      "sha256": "72126029c07637ea8b1d89b041db8aa94236a630e9650b458e2204f2801fddc1"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/special_tokens_map.json",
+      "bytes": 496,
+      "sha256": "a36726f7fe394c1324021cac4a9ee3ad6c4f6285c0d98721f9b0b95888ec9905"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/tokenizer.json",
+      "bytes": 11422060,
+      "sha256": "63a2951d5edfa5cc0a2346ef872f8c77a2920274cfc3b503b04e3799104dee80"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/tokenizer_config.json",
+      "bytes": 7333,
+      "sha256": "f91b80bdb7722bdd0a25d79246fa79e513a7d4d78056b2eac8cbf92767937ab8"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/best_adapter/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/completion.json",
+      "bytes": 331,
+      "sha256": "7d09b10b8eb7217a88a00d34414c65fd0403546912239e812b51bc354f3b617b"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/config.json",
+      "bytes": 2119,
+      "sha256": "c3b921a6cc3e45638897238b25a0e8d73da14592de2b4dd50d509fd8c7ecafaa"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/finetuned_challenge_metrics.json",
+      "bytes": 210,
+      "sha256": "aa4068d080e0f9b7973ce18cc308c5580e12b3d000dcf8bd6f5b68d5b914108c"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/finetuned_metrics.json",
+      "bytes": 211,
+      "sha256": "8499579ab43d80d1ff5368844a9eca70c7d5caf08cf30bf5646d703134e6e31f"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/history.json",
+      "bytes": 60790,
+      "sha256": "246f10a315f02d0d3c5d80683e98f77eea44b24bf80b2c6af1be29fe7e8bbe48"
+    },
+    {
+      "path": "ai-physics-tutor/outputs/run_001/selection.json",
+      "bytes": 170,
+      "sha256": "21088a693681de165565f438340de8ffe0555dd71092e143716643a09411bd65"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/README.md",
+      "bytes": 896,
+      "sha256": "6515a8c0d7a89867b9af421fcf8375fad24f89170972d1d985657487a544c911"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/api_contract.py",
+      "bytes": 2057,
+      "sha256": "171d110af803e8d605502cf9df3a5f6063e8950ab7c573ba9ab56e39ad92595f"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/calculator.py",
+      "bytes": 1930,
+      "sha256": "18031c10c1b3e16801d0781a6f494fc7364166ad53bfa9bd0a9cf95fcb4fcc2a"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/config.json",
+      "bytes": 641,
+      "sha256": "c2278a94f7cc77b2bf6e1ca161d443db60dc8b65b9b450d0b5956e81ede5968c"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/data/fixed_source_index.json",
+      "bytes": 5927,
+      "sha256": "43c7b4eaf5b0f568ade28e3ba9543b42da2406b7c3362462578f215e1f01573f"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/data/knowledge.json",
+      "bytes": 48255,
+      "sha256": "f6ca4d3a37801841586c7830f04618777fb8fa3cdfb4bbab0a9c00df68bc4f35"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/e2e_check.py",
+      "bytes": 2632,
+      "sha256": "c5bf8f122a3bb3d4b285baae56d444590a55d2f4d294a13af8de7d9fa8c86a4d"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/formatting.py",
+      "bytes": 967,
+      "sha256": "326675d4e4af48657027f83912827a69678ce5f71244b415a4a8e5a33e8b85fe"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/knowledge_sources.md",
+      "bytes": 1713,
+      "sha256": "9e643e17a9f2a12be3fb729ae7118aa0ef399139e05ffddaa58aa541b5ef3a50"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/load_trained_adapter.py",
+      "bytes": 2655,
+      "sha256": "ebf1c5184112798e8cd94e8006bf9be22cee44d31cea476ee2d568734e13f834"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/local_backend.py",
+      "bytes": 5463,
+      "sha256": "8a0d23c89b9d4fa726aa17dfd140366ea0ec56348dbc404edca89082bef119a8"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/local_server.py",
+      "bytes": 4580,
+      "sha256": "cec12ec541516b639734edc59f73cde49537a97bab938074bf6e78736da26477"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/pipeline.py",
+      "bytes": 12472,
+      "sha256": "b0df4c947415e7c268f3ca6031c98c029bd33ee6c4fcbd659086510513559332"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/prompting.py",
+      "bytes": 3310,
+      "sha256": "2849244b1de48a477e19b162f3b224b5e1f3c72571fd1c8bec80d9591c265f6c"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/requirements-service.txt",
+      "bytes": 120,
+      "sha256": "08107882f3520744edda9bd54c34579d3973f06a20bcac90b0e610099a3404c3"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/retrieval.py",
+      "bytes": 2744,
+      "sha256": "b35b3a3c208603584639ab21cedffb005a3137b0afae3c5809a3fd793247a83a"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/routes.py",
+      "bytes": 2279,
+      "sha256": "97032d3a32fd31d3f7d2f5a9b2763fb929c47ac5bd3dddd0411064c64ba4b90c"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/tests/local_text_check.py",
+      "bytes": 2953,
+      "sha256": "e962b412162ca093a1be7c5e87a20d2bf72e535a5da359317d5863e97eb26779"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/tests/test_api_contract.py",
+      "bytes": 1505,
+      "sha256": "9da62fb91561c96d41cf886293290b23f10e6e13d360ba150bd7de185b88bb37"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/tests/test_dialogue_retrieval.py",
+      "bytes": 1877,
+      "sha256": "218ae61116df10a4aed831ba8017d464ba76b9a024d646d1a8a71717fd505071"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/tests/test_local_server.py",
+      "bytes": 2889,
+      "sha256": "44839fbbb906c7cc18dd71eacc6df8da054c1a395d0cd7d0c4d2edba72ae4533"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/tests/test_pipeline.py",
+      "bytes": 4666,
+      "sha256": "1c39ca7297a8f80ea3e175387c34094e304ff4c5f271f5c03fabfed88fbeb87e"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/tests/test_structured_teaching.py",
+      "bytes": 1343,
+      "sha256": "4629a8ebeaa6463b563aa26e91654d6e64d32bc01685c167e7d3e64d3e20de59"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/tests/test_validation_feedback.py",
+      "bytes": 1575,
+      "sha256": "4bb7e7961d66a37782a70ca8dadcd2879a125cb6d4db83962f24f00638988557"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/unity/PhysicsTutorClient.cs",
+      "bytes": 2521,
+      "sha256": "28d18181acdfaeeb7d96ece6a81f2bc58658f0413263b100fea92fd8df7cf58e"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/unity/PhysicsTutorDemo.cs",
+      "bytes": 3052,
+      "sha256": "c59bec43df9d82bb34e0e8e18ac2c22e6d22f5b74d3a4e2da89411c6b166cdf4"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/unity/PhysicsTutorProtocol.cs",
+      "bytes": 1255,
+      "sha256": "630a5960f17a23d1c0197ef526148bdaf427acdeb355ef9d105c2b075152590d"
+    },
+    {
+      "path": "ai-physics-tutor/prototype_delivery/web/index.html",
+      "bytes": 6735,
+      "sha256": "28f102898f966b849d43f4563a14a8a49c0ea4295c4122fa3dc1d7584ef8c4bc"
+    },
+    {
+      "path": "ai-physics-tutor/启动导师.cmd",
+      "bytes": 370,
+      "sha256": "41945b0969fb767e2e7c9285ccf65dd55a3e1354b34719293b8c168a2bdf4e56"
+    },
+    {
+      "path": "ai-physics-tutor/队友部署说明.md",
+      "bytes": 2635,
+      "sha256": "0dacebbad464786cd0dd3d5bab3168ab40cf02d734368e2dab41aed27b12964d"
+    }
+  ],
+  "local_modified": true,
+  "http_backend_implemented": true,
+  "teaching_quality_verified": false,
+  "distribution": "Git source snapshot; base model and environment prepared locally"
+}

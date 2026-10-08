@@ -1,1 +1,1 @@
-PASS: 15 scenes; Ch46 skinned player; head and controller bindings; jade/ivory/ink matte palette; limb-only first-person mesh; no avatar colliders or Animator conflicts.
+PASS: 15 scenes; Ch46 skinned player; head and controller bindings; jade/ivory/ink matte palette; hands-only first-person mesh; no avatar colliders or Animator conflicts.

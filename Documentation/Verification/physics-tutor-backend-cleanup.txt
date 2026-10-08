@@ -1,0 +1,8 @@
+PASS: dedicated inference, HTTP server and Slurm launcher removed from active tutor source
+PASS: model references removed from active source, docs and exported plugin README
+PASS: 3B base weight shards and physics adapter hashes unchanged
+PASS: local delivery manifest updated for 57 files including downloaded base model
+PASS: 25 unit tests with python -X utf8
+PASS: Unity plugin export; model path and endpoint blank; no weights included
+NOTE: 3B HTTP backend not implemented; no real inference run
+NOTE: old inactive tutor directory preserved

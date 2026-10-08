@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "Meadow_3 \xB7 Baked"
+  m_Shader: {fileID: 4800000, guid: cd409bb33d55b4c47afd52c82f1e8b29, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _SURFACE_DETAIL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    OriginalSurfaceMaterial: da6ee09ddd2117f429114294c9251b11
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: adf35b69ad77bbb4d98c031fa1fee9ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 30da8257f749558469c9c0e15bdfb921, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: f661f95d6511e3f4e9d6b43dcdf85835, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceDetail:
+        m_Texture: {fileID: 2800000, guid: c5a6a910e44e85b4b90fa9feb0b8d8ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceNormal:
+        m_Texture: {fileID: 2800000, guid: c9cde64ae778bc148a877de9a50a7095, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DetailStrength: 0.35
+    - _GlossMapScale: 1
+    - _OcclusionStrength: 0.55
+    - _SurfaceNormalStrength: 0.2
+    - _SurfaceRoughness: 0.1
+    - _SurfaceScale: 0.65
+    - _SurfaceStrength: 0.48
+    - _UseSurfaceDetail: 1
+    m_Colors:
+    - _BakeTint: {r: 0.47999996, g: 0.6, b: 0.39999998, a: 1}
+    - _Color: {r: 0.47999996, g: 0.6, b: 0.39999998, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

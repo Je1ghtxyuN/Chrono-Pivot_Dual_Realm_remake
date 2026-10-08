@@ -1,0 +1,282 @@
+[
+  {
+    "cue": "Grab",
+    "path": "Assets/ReportVR/Audio/Grab.wav",
+    "loop": false,
+    "seconds": 0.14,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "Release",
+    "path": "Assets/ReportVR/Audio/Release.wav",
+    "loop": false,
+    "seconds": 0.17,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "Throw",
+    "path": "Assets/ReportVR/Audio/Throw.wav",
+    "loop": false,
+    "seconds": 0.32,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "ImpactWood",
+    "path": "Assets/ReportVR/Audio/ImpactWood.wav",
+    "loop": false,
+    "seconds": 0.32,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "ImpactStone",
+    "path": "Assets/ReportVR/Audio/ImpactStone.wav",
+    "loop": false,
+    "seconds": 0.3,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "ImpactMetal",
+    "path": "Assets/ReportVR/Audio/ImpactMetal.wav",
+    "loop": false,
+    "seconds": 0.75,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "ImpactSnow",
+    "path": "Assets/ReportVR/Audio/ImpactSnow.wav",
+    "loop": false,
+    "seconds": 0.25,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "ImpactGlass",
+    "path": "Assets/ReportVR/Audio/ImpactGlass.wav",
+    "loop": false,
+    "seconds": 0.65,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "Socket",
+    "path": "Assets/ReportVR/Audio/Socket.wav",
+    "loop": false,
+    "seconds": 0.3,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "SnowBond",
+    "path": "Assets/ReportVR/Audio/SnowBond.wav",
+    "loop": false,
+    "seconds": 0.42,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "TargetHit",
+    "path": "Assets/ReportVR/Audio/TargetHit.wav",
+    "loop": false,
+    "seconds": 0.45,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "HandleWood",
+    "path": "Assets/ReportVR/Audio/HandleWood.wav",
+    "loop": false,
+    "seconds": 0.09,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "HandleMetal",
+    "path": "Assets/ReportVR/Audio/HandleMetal.wav",
+    "loop": false,
+    "seconds": 0.12,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "HandleStone",
+    "path": "Assets/ReportVR/Audio/HandleStone.wav",
+    "loop": false,
+    "seconds": 0.16,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "HandleSlide",
+    "path": "Assets/ReportVR/Audio/HandleSlide.wav",
+    "loop": false,
+    "seconds": 0.16,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "BellStrike",
+    "path": "Assets/ReportVR/Audio/BellStrike.wav",
+    "loop": false,
+    "seconds": 2.6,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "WaterFlow",
+    "path": "Assets/ReportVR/Audio/WaterFlow.wav",
+    "loop": true,
+    "seconds": 2.0,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "WaterSplash",
+    "path": "Assets/ReportVR/Audio/WaterSplash.wav",
+    "loop": false,
+    "seconds": 0.65,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "ElectricHum",
+    "path": "Assets/ReportVR/Audio/ElectricHum.wav",
+    "loop": true,
+    "seconds": 2.0,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "ElectricLatch",
+    "path": "Assets/ReportVR/Audio/ElectricLatch.wav",
+    "loop": false,
+    "seconds": 0.2,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "ElectricOff",
+    "path": "Assets/ReportVR/Audio/ElectricOff.wav",
+    "loop": false,
+    "seconds": 0.22,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "Heat",
+    "path": "Assets/ReportVR/Audio/Heat.wav",
+    "loop": true,
+    "seconds": 2.0,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "MeltDrop",
+    "path": "Assets/ReportVR/Audio/MeltDrop.wav",
+    "loop": false,
+    "seconds": 0.16,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "LightAligned",
+    "path": "Assets/ReportVR/Audio/LightAligned.wav",
+    "loop": false,
+    "seconds": 0.45,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "Domino",
+    "path": "Assets/ReportVR/Audio/Domino.wav",
+    "loop": false,
+    "seconds": 0.16,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "Roll",
+    "path": "Assets/ReportVR/Audio/Roll.wav",
+    "loop": true,
+    "seconds": 2.0,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "DoorMove",
+    "path": "Assets/ReportVR/Audio/DoorMove.wav",
+    "loop": true,
+    "seconds": 2.0,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "DoorUnlock",
+    "path": "Assets/ReportVR/Audio/DoorUnlock.wav",
+    "loop": false,
+    "seconds": 0.32,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "StepComplete",
+    "path": "Assets/ReportVR/Audio/StepComplete.wav",
+    "loop": false,
+    "seconds": 0.75,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "LevelComplete",
+    "path": "Assets/ReportVR/Audio/LevelComplete.wav",
+    "loop": false,
+    "seconds": 1.6,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "Reset",
+    "path": "Assets/ReportVR/Audio/Reset.wav",
+    "loop": false,
+    "seconds": 0.55,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "UIHover",
+    "path": "Assets/ReportVR/Audio/UIHover.wav",
+    "loop": false,
+    "seconds": 0.075,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "UIClick",
+    "path": "Assets/ReportVR/Audio/UIClick.wav",
+    "loop": false,
+    "seconds": 0.12,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "UIAdjust",
+    "path": "Assets/ReportVR/Audio/UIAdjust.wav",
+    "loop": false,
+    "seconds": 0.075,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "MenuOpen",
+    "path": "Assets/ReportVR/Audio/MenuOpen.wav",
+    "loop": false,
+    "seconds": 0.3,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "MenuClose",
+    "path": "Assets/ReportVR/Audio/MenuClose.wav",
+    "loop": false,
+    "seconds": 0.25,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "SceneTravel",
+    "path": "Assets/ReportVR/Audio/SceneTravel.wav",
+    "loop": false,
+    "seconds": 1.1,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "FootStone",
+    "path": "Assets/ReportVR/Audio/FootStone.wav",
+    "loop": false,
+    "seconds": 0.3,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "FootWood",
+    "path": "Assets/ReportVR/Audio/FootWood.wav",
+    "loop": false,
+    "seconds": 0.32,
+    "source": "Original procedural synthesis"
+  },
+  {
+    "cue": "FootSnow",
+    "path": "Assets/ReportVR/Audio/FootSnow.wav",
+    "loop": false,
+    "seconds": 0.38,
+    "source": "Original procedural synthesis"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "scene": "AncientGarden_LowPoly.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_01_Introduction.unity",
+    "learning_task_changes": 2,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_02_Buoyancy_Canal.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_03_Acoustic_Resonance.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_04_Geomagnetic_Optics.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_05_Electromagnetic_Lock.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_06_Hydraulic_Pipework.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_07_Frequency_Coupling.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_08_Snow_Arena.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_09_Creative_Workshop.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_10_Physics_Laboratory.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_11_Garden_Canal_Design.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_12_Celestial_Sundial.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_13_Winter_Asset_Design.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  },
+  {
+    "scene": "Fig_2_15_SelfModeled_Asset_Collection.unity",
+    "learning_task_changes": 0,
+    "third_step_preserved": true
+  }
+]

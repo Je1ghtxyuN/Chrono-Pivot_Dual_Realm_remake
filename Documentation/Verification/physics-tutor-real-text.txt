@@ -1,0 +1,15 @@
+PASS: Chinese text key events -> game input -> real localhost HTTP -> NF4 3B + physics LoRA reply displayed; game progress unchanged.
+Question: 为什么船装入配重后会下沉一点？
+Reply: 先观察船的下沉程度，并确认“已完成 0 / 3；反馈：读数：浸没比例 0.08 ；操作次数：0；正在拿取：False”这一状态。
+
+参考：浮力与漂浮 · 14.4
+https://d3bxy9euw4e147.cloudfront.net/oscms-qa/media/documents/University_Physics_Volume_1-LR.pdf#page=731
+
+参考：小角度单摆 · 15.4
+https://d3bxy9euw4e147.cloudfront.net/oscms-qa/media/documents/University_Physics_Volume_1-LR.pdf#page=790
+
+参考：全反射与临界角 · 1.4
+https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/UniversityPhysicsVolume3-OP.pdf#page=27
+Status: 回答已收到 · 可继续提问
+Evidence log: C:/Users/31966/AppData/LocalLow/ChronoPivot/ChronoPivot Report VR\physics_tutor_calls.jsonl
+No fixture responses used. OS IME and microphone not covered.

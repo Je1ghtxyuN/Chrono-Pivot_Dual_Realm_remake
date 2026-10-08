@@ -1,0 +1,1 @@
+PASS: real melting, insulation, leaving warmth, idle, pause, reset, disable; real Rigidbody snowball collision and resting contact. Bare drops=11 covered drops=0

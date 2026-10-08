@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
 
-// Grip activates a pointed station. Triggers keep their existing scene-browser meaning.
+// Trigger uses a pointed station; grip remains reserved for physical manipulation.
 public sealed class DemoInteractor : MonoBehaviour
 {
     [Header("玩家与关卡引用")]
@@ -40,10 +40,11 @@ public sealed class DemoInteractor : MonoBehaviour
     void UpdateFontAtlas(Font rebuilt){if(rebuilt==font)textMaterial.mainTexture=font.material.mainTexture;}
     void Update()
     {
+        if(desktop!=null && desktop.UIBlocked){if(ray!=null)ray.enabled=false;gripHeld=true;resetHeld=true;return;}
         bool desk=desktop!=null && desktop.IsDesktop;
-        bool tracked=!desk && InputSystem.devices.OfType<UnityEngine.InputSystem.XR.XRController>().Any(d=>d.usages.Contains(UnityEngine.InputSystem.CommonUsages.RightHand) && d.trackingState.ReadValue()!=0);
+        bool tracked=!desk && desktop.HeadTracked && desktop.HandTracked(false);
         Transform source=tracked?hand:head.transform;
-        bool pressed=!desk && interact!=null && interact.action.IsPressed(),reset=!desk && resetDemo!=null && resetDemo.action.IsPressed();
+        bool pressed=tracked && interact!=null && interact.action.IsPressed(),reset=!desk && desktop.HeadTracked && desktop.HandTracked(true) && resetDemo!=null && resetDemo.action.IsPressed();
         var keyboard=Keyboard.current;
         bool use=pressed&&!gripHeld || (!desk || desktop.CanInteract) && (keyboard!=null && keyboard.eKey.wasPressedThisFrame || desk && Mouse.current!=null && Mouse.current.leftButton.wasPressedThisFrame);
         if(reset&&!resetHeld || keyboard!=null && keyboard.rKey.wasPressedThisFrame)level.ResetLevel();

@@ -1,0 +1,1 @@
+PASS: updated no-BGM desktop package stayed alive for 20 seconds; Direct3D graphics initialized; no managed exceptions or shader errors during startup.

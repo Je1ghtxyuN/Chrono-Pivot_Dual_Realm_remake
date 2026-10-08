@@ -1,0 +1,2 @@
+PASS: scenes 2 / 3 natural tasks. Virtual XR grip/drag/release; actual collisions and measurement updates; calibrated ballistic releases; status cannot bypass; reset and physical exits. First scene is covered by NaturalFirstPlayCheck. Physical headset and SteamVR streaming are not tested.
+PASS scene=2 声学庭院 · 调频与共振 all 3 actual experiment conditions; negative status check; exit opens

@@ -1,0 +1,32 @@
+{
+  "quantization": {
+    "ready": true,
+    "model_path": "D:\\_work\\_SRTP\\AI物理导师\\ai-physics-tutor\\models\\Qwen2.5-3B-Instruct",
+    "adapter_path": "D:\\_work\\_SRTP\\AI物理导师\\ai-physics-tutor\\outputs\\run_001\\best_adapter",
+    "quantization": "NF4 4-bit double quant",
+    "quantized_layers": 252,
+    "compute_dtype": "torch.bfloat16",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "max_input_tokens": 4096,
+    "max_new_tokens": 512,
+    "model_bytes": 2129813760,
+    "gpu_allocated_bytes": 2175028736,
+    "gpu_reserved_bytes": 3703570432,
+    "process_rss_bytes": 89198592
+  },
+  "text_cases": 3,
+  "gpu_peak_allocated_bytes": 2420728320,
+  "gpu_peak_reserved_bytes": 3703570432,
+  "case_elapsed_seconds": [
+    13.102861499995925,
+    7.480321700000786,
+    6.955805599995074
+  ],
+  "tokens_per_second": [
+    7.678583447902852,
+    9.121064818872139,
+    9.098284215252582
+  ],
+  "model_quality": "FAIL in this sample: buoyancy and gravity incorrectly called same direction; level 3 lacks actionable steps",
+  "scope": "3 text cases, technical protocol verification only; not expert-reviewed, not proof of quantization causing errors"
+}

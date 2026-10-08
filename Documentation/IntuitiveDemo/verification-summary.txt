@@ -1,0 +1,4 @@
+Presentation: PASS, all 15 levels. Numeric scientific labels removed from the scene display; current-step guidance and qualitative physical effects retained. Physics components, task thresholds and release/stability conditions are unchanged by the presentation migration.
+Virtual XR interaction: PASS for level 1 and levels 2 through 14 (42 completed tasks), including grab, release, physical observation, progression, reset and exits.
+Level 15: FAIL in both the consecutive suite and isolated rerun. The bridge deck falls outside the scene before the automated controller can grab it. Details are preserved in garden-playtest.txt and all-playtest-first-run.txt. Do not treat this as an all-level interaction pass.
+Physical headset feel and streaming have not been tested.

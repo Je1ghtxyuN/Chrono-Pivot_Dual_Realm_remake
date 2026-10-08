@@ -1,0 +1,276 @@
+[
+  {
+    "volume": 1,
+    "url": "https://d3bxy9euw4e147.cloudfront.net/oscms-qa/media/documents/University_Physics_Volume_1-LR.pdf",
+    "bytes": 17703582,
+    "sha256": "57b30b354f524482bc82201e1347146659f5bb4113a7ef1926692ba39389fce2",
+    "file": "University_Physics_Volume_1-LR.pdf",
+    "license": "CC-BY-4.0",
+    "license_pdf_page": 2,
+    "revision": "UP1-2016-000(09/16)-BW ",
+    "sections": [
+      {
+        "id": "kinematics",
+        "section": "3.4",
+        "pdf_pages_with_section_header": [
+          136
+        ]
+      },
+      {
+        "id": "newton_net",
+        "section": "5.3",
+        "pdf_pages_with_section_header": [
+          228
+        ]
+      },
+      {
+        "id": "weight_normal",
+        "section": "5.6",
+        "pdf_pages_with_section_header": [
+          248
+        ]
+      },
+      {
+        "id": "static_friction",
+        "section": "6.2",
+        "pdf_pages_with_section_header": [
+          296
+        ]
+      },
+      {
+        "id": "kinetic_friction",
+        "section": "6.2",
+        "pdf_pages_with_section_header": [
+          296
+        ]
+      },
+      {
+        "id": "work",
+        "section": "7.1",
+        "pdf_pages_with_section_header": [
+          344
+        ]
+      },
+      {
+        "id": "work_energy",
+        "section": "7.3",
+        "pdf_pages_with_section_header": [
+          357
+        ]
+      },
+      {
+        "id": "energy",
+        "section": "8.3",
+        "pdf_pages_with_section_header": [
+          388
+        ]
+      },
+      {
+        "id": "power",
+        "section": "7.4",
+        "pdf_pages_with_section_header": [
+          361
+        ]
+      },
+      {
+        "id": "impulse",
+        "section": "9.2",
+        "pdf_pages_with_section_header": [
+          416
+        ]
+      },
+      {
+        "id": "momentum",
+        "section": "9.3",
+        "pdf_pages_with_section_header": [
+          430
+        ]
+      },
+      {
+        "id": "circular",
+        "section": "6.3",
+        "pdf_pages_with_section_header": [
+          307
+        ]
+      },
+      {
+        "id": "pressure",
+        "section": "14.3",
+        "pdf_pages_with_section_header": [
+          726
+        ]
+      },
+      {
+        "id": "buoyancy",
+        "section": "14.4",
+        "pdf_pages_with_section_header": [
+          731
+        ]
+      },
+      {
+        "id": "continuity",
+        "section": "14.5",
+        "pdf_pages_with_section_header": [
+          735
+        ]
+      },
+      {
+        "id": "bernoulli",
+        "section": "14.6",
+        "pdf_pages_with_section_header": [
+          740
+        ]
+      },
+      {
+        "id": "spring",
+        "section": "15.1",
+        "pdf_pages_with_section_header": [
+          770
+        ]
+      },
+      {
+        "id": "pendulum",
+        "section": "15.4",
+        "pdf_pages_with_section_header": [
+          790
+        ]
+      },
+      {
+        "id": "waves",
+        "section": "16.2",
+        "pdf_pages_with_section_header": [
+          822
+        ]
+      },
+      {
+        "id": "projectile",
+        "section": "4.3",
+        "pdf_pages_with_section_header": [
+          183
+        ]
+      },
+      {
+        "id": "spring_energy",
+        "section": "15.2",
+        "pdf_pages_with_section_header": [
+          780
+        ]
+      }
+    ]
+  },
+  {
+    "volume": 2,
+    "url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/UniversityPhysicsVolume2-OP.pdf",
+    "file": "UniversityPhysicsVolume2-OP.pdf",
+    "bytes": 52843468,
+    "sha256": "5ee0b136f3d64040608f00b9958400bdc517990f4652be7f963dcbf9e9e00a8e",
+    "license": "CC-BY-4.0",
+    "license_pdf_page": 4,
+    "revision": "UP2-2016-003(05/18)-MJ ",
+    "sections": [
+      {
+        "id": "sensible_heat",
+        "section": "1.4",
+        "pdf_pages_with_section_header": [
+          29
+        ]
+      },
+      {
+        "id": "latent_heat",
+        "section": "1.5",
+        "pdf_pages_with_section_header": [
+          36
+        ]
+      },
+      {
+        "id": "first_law",
+        "section": "3.3",
+        "pdf_pages_with_section_header": [
+          126
+        ]
+      },
+      {
+        "id": "ideal_gas",
+        "section": "2.1",
+        "pdf_pages_with_section_header": [
+          78
+        ]
+      },
+      {
+        "id": "ohm",
+        "section": "9.4",
+        "pdf_pages_with_section_header": [
+          416
+        ]
+      },
+      {
+        "id": "series_parallel",
+        "section": "10.2",
+        "pdf_pages_with_section_header": [
+          450
+        ]
+      },
+      {
+        "id": "electric_power",
+        "section": "9.5",
+        "pdf_pages_with_section_header": [
+          419
+        ]
+      },
+      {
+        "id": "lc_oscillation",
+        "section": "14.5",
+        "pdf_pages_with_section_header": [
+          655
+        ]
+      },
+      {
+        "id": "current_charge",
+        "section": "9.1",
+        "pdf_pages_with_section_header": [
+          396
+        ]
+      }
+    ]
+  },
+  {
+    "volume": 3,
+    "url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/UniversityPhysicsVolume3-OP.pdf",
+    "file": "UniversityPhysicsVolume3-OP.pdf",
+    "bytes": 44023047,
+    "sha256": "be1ab585ae1297036288d47237029fecf9d0ea16f254ac7cd79eecc686dfd9b9",
+    "license": "CC-BY-4.0",
+    "license_pdf_page": 4,
+    "revision": "UP3-2016-002(05/18)-MJ ",
+    "sections": [
+      {
+        "id": "reflection",
+        "section": "1.2",
+        "pdf_pages_with_section_header": [
+          20
+        ]
+      },
+      {
+        "id": "refraction",
+        "section": "1.3",
+        "pdf_pages_with_section_header": [
+          23
+        ]
+      },
+      {
+        "id": "total_internal",
+        "section": "1.4",
+        "pdf_pages_with_section_header": [
+          27
+        ]
+      },
+      {
+        "id": "lens",
+        "section": "2.4",
+        "pdf_pages_with_section_header": [
+          78
+        ]
+      }
+    ]
+  }
+]

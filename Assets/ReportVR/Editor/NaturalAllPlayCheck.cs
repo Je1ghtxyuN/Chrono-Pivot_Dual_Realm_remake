@@ -31,7 +31,15 @@ public static class NaturalAllPlayCheck
     static readonly List<string> results=new List<string>();
     static Vector3 lastHandPosition;
     static int firstIndex=1;
-    public static void Remaining(){firstIndex=7;Run();}
+    static bool waterOnly;
+    static bool acousticOnly;
+    static bool orientationOnly;
+    static int SceneCount=>orientationOnly?5:acousticOnly?1:waterOnly?4:15-firstIndex;
+    static string ReportPath=>orientationOnly?"Documentation/OrientationReview/input-playtest.txt":acousticOnly?"Documentation/AcousticReview/input-playtest.txt":waterOnly?"Documentation/WaterReview/input-playtest.txt":"Documentation/Verification/natural-all-playtest.txt";
+    public static void OrientationOnly(){orientationOnly=true;firstIndex=3;Run();}
+    public static void AcousticOnly(){acousticOnly=true;firstIndex=2;Run();}
+    public static void WaterOnly(){waterOnly=true;firstIndex=1;Run();}
+    public static void Remaining(){firstIndex=4;Run();}
     public static void LastThree(){firstIndex=12;Run();}
     public static void LastOne(){firstIndex=14;Run();}
     static void Require(bool condition,string message){if(!condition)throw new Exception("Scene "+SceneManager.GetActiveScene().buildIndex+" step "+(level!=null?level.Step:-1)+": "+message);}
@@ -47,6 +55,7 @@ public static class NaturalAllPlayCheck
     static void Pose(Vector3 position)=>Pose(position,Quaternion.identity);
     public static void Run()
     {
+        Directory.CreateDirectory(Path.GetDirectoryName(ReportPath));
         oldOptions=EditorSettings.enterPlayModeOptions;oldOptionsEnabled=EditorSettings.enterPlayModeOptionsEnabled;
         EditorSettings.enterPlayModeOptionsEnabled=true;EditorSettings.enterPlayModeOptions=EnterPlayModeOptions.DisableDomainReload;
         var xr=XRGeneralSettingsPerBuildTarget.XRGeneralSettingsForBuildTarget(BuildTargetGroup.Standalone);oldXR=xr.InitManagerOnStart;xr.InitManagerOnStart=false;
@@ -72,12 +81,12 @@ public static class NaturalAllPlayCheck
             if(!EditorApplication.isPlaying || EditorApplication.timeSinceStartup<until)return;
             Require(runtimeError==null,"Runtime error: "+runtimeError);
             if(routine.MoveNext()){until=EditorApplication.timeSinceStartup+routine.Current;return;}
-            results.Insert(0,"PASS: scenes "+firstIndex+"..14 / "+((15-firstIndex)*3)+" natural tasks. Virtual XR grip/drag/release; actual collisions and measurement updates; calibrated ballistic releases; status cannot bypass; reset and physical exits. First scene is covered by NaturalFirstPlayCheck. Physical headset and SteamVR streaming are not tested.");
-            File.WriteAllLines("Documentation/Verification/natural-all-playtest.txt",results);Debug.Log("NATURAL_ALL_PLAYTEST_OK scenes="+(15-firstIndex)+" tasks="+((15-firstIndex)*3));finishing=true;EditorApplication.isPlaying=false;
+            results.Insert(0,"PASS: scenes "+(orientationOnly?"3,8,9,13,14":acousticOnly?"2":waterOnly?"1,5,9,10":firstIndex+"..14")+" / "+(SceneCount*3)+" natural tasks. Virtual XR grip/drag/release; actual collisions and measurement updates; calibrated ballistic releases; status cannot bypass; reset and physical exits. First scene is covered by NaturalFirstPlayCheck. Physical headset and SteamVR streaming are not tested.");
+            File.WriteAllLines(ReportPath,results);Debug.Log((orientationOnly?"NATURAL_ORIENTATION_PLAYTEST_OK":acousticOnly?"NATURAL_ACOUSTIC_PLAYTEST_OK":waterOnly?"NATURAL_WATER_PLAYTEST_OK":"NATURAL_ALL_PLAYTEST_OK")+" scenes="+SceneCount+" tasks="+(SceneCount*3));finishing=true;EditorApplication.isPlaying=false;
         }
         catch(Exception e)
         {
-            failed=finishing=true;Application.logMessageReceived-=OnLog;Debug.LogError(e);File.WriteAllLines("Documentation/Verification/natural-all-playtest.txt",new[]{"FAIL",e.ToString()}.Concat(results));EditorApplication.isPlaying=false;
+            failed=finishing=true;Application.logMessageReceived-=OnLog;Debug.LogError(e);File.WriteAllLines(ReportPath,new[]{"FAIL",e.ToString()}.Concat(results));EditorApplication.isPlaying=false;
         }
     }
     static IEnumerable<float> Grab(ReportGrabbable item)
@@ -129,12 +138,27 @@ public static class NaturalAllPlayCheck
     static void Step(int expected){Require(level.Step==expected,"Expected step "+expected+"; "+level.Feedback);}
     static T One<T>() where T:UnityEngine.Object=>Object.FindObjectOfType<T>();
     static IEnumerable<float> Mirror()
-    {foreach(var t in Turn(One<ReportMirrorMeasure>().mirror,135))yield return t;Require(One<ReportMirrorMeasure>().Reading==1,"Actual reflected ray missed receiver");}
+    {
+        var measure=One<ReportMirrorMeasure>();int before=level.Step;
+        foreach(var t in Turn(measure.mirror,60,1.2f))yield return t;Require(measure.Reading==0 && level.Step==before,"Incorrect reflection passed");
+        var blocker=GameObject.CreatePrimitive(PrimitiveType.Cube);blocker.name="Incident light obstruction";
+        blocker.transform.position=Vector3.Lerp(measure.emitter.position,measure.mirror.transform.position,.5f);blocker.transform.localScale=Vector3.one*.12f;
+        foreach(var t in Turn(measure.mirror,135,1.2f))yield return t;Require(measure.Reading==0 && level.Step==before,"Incident obstruction bypassed optics task");
+        Object.Destroy(blocker);yield return .2f;
+        if(measure.secondMirror!=null)
+        {
+            Require(measure.Reading==0 && level.Step==before,"First reflection alone completed the two-mirror task");
+            foreach(var t in Turn(measure.secondMirror,60,1.2f))yield return t;Require(measure.Reading==0,"Incorrect second reflection passed");
+            foreach(var t in Turn(measure.secondMirror,135,1.2f))yield return t;
+        }
+        else yield return 1.2f;
+        Require(measure.Reading==1,"Actual reflected ray missed receiver after removing blocker and aligning mirrors");
+    }
     static IEnumerable<float> Power(ReportElectromagnetMeasure power)
     {
         foreach(var t in Move(power.core,power.coreSeat.position))yield return t;
-        foreach(var t in Turn(power.current,2.5f))yield return t;
-        Require(power.Energized && power.Field>2,"Magnetic field / core did not energize");
+        foreach(var t in Turn(power.current,2.5f,1.4f))yield return t;
+        Require(power.ArmatureEngaged && power.Field>2,"Core / actual armature did not engage");
     }
     static IEnumerable<float> Throw(ReportThrowTarget target)
     {
@@ -153,8 +177,12 @@ public static class NaturalAllPlayCheck
         InputSystem.QueueDeltaStateEvent(head.centerEyePosition,Vector3.up*1.7f);InputSystem.QueueDeltaStateEvent(head.trackingState,3);
         for(int index=firstIndex;index<15;index++)
         {
+            if(waterOnly && index!=1 && index!=5 && index!=9 && index!=10)continue;
+            if(acousticOnly && index!=2)continue;
+            if(orientationOnly && index!=3 && index!=8 && index!=9 && index!=13 && index!=14)continue;
             if(SceneManager.GetActiveScene().buildIndex!=index)SceneManager.LoadScene(index);yield return .6f;
-            origin=One<XROrigin>();level=One<DemoLevel>();Grip(0);Pose(origin.transform.position+Vector3.up*1.5f);yield return .15f;
+            origin=One<XROrigin>();level=One<DemoLevel>();var gameUI=origin.GetComponent<ReportGameUI>();if(gameUI!=null)gameUI.enabled=false;
+            Grip(0);Pose(origin.transform.position+Vector3.up*1.5f);yield return .15f;
             Require(level.Step==0,"Untouched scene advanced automatically");level.Use(level.stations[0]);Require(level.Step==0,"Status bypassed experiment");
             switch(index)
             {
@@ -171,42 +199,75 @@ public static class NaturalAllPlayCheck
                 case 2:
                 {
                     var bell=Object.FindObjectsOfType<ReportAcousticMeasure>().First(m=>m.experiment==ReportAcousticReading.Strike);
+                    var wrong=GameObject.CreatePrimitive(PrimitiveType.Cube);wrong.transform.localScale=Vector3.one*.08f;wrong.transform.position=bell.transform.position+bell.transform.right*.5f;
+                    var wrongBody=wrong.AddComponent<Rigidbody>();wrongBody.useGravity=false;wrongBody.velocity=-bell.transform.right*2;yield return .6f;
+                    Require(bell.Strikes==0 && level.Step==0,"An unrelated object counted as a mallet strike");Object.Destroy(wrong);
+                    var malletBody=bell.mallet.GetComponent<Rigidbody>();bell.mallet.transform.position=bell.transform.position+bell.transform.right*.5f;malletBody.useGravity=false;malletBody.velocity=-bell.transform.right*2;yield return .6f;
+                    Require(bell.Strikes==0 && level.Step==0,"Throwing an unheld mallet counted as intentional playing");malletBody.useGravity=true;bell.mallet.ResetPose();yield return .3f;
                     foreach(var t in Grab(bell.mallet))yield return t;
+                    yield return .3f;Require(bell.Strikes==0,"Pickup or stationary holding counted as striking");
                     Pose(bell.transform.position+bell.transform.right*.45f);yield return .2f;Pose(bell.transform.position);yield return .18f;Grip(0);yield return .7f;
                     Require(bell.Strikes>0,"Real mallet collision did not ring bell");Step(1);
-                    foreach(var t in Turn(Object.FindObjectsOfType<ReportAcousticMeasure>().First(m=>m.experiment==ReportAcousticReading.Resonance).frequency,100,.8f))yield return t;Step(2);
-                    foreach(var t in Turn(Object.FindObjectsOfType<ReportAcousticMeasure>().First(m=>m.experiment==ReportAcousticReading.Beats).frequency,100,.8f))yield return t;break;
+                    Require(Object.FindObjectsOfType<AudioSource>().Any(a=>a.isPlaying && a.clip!=null && a.clip.name.Contains("BellStrike")),"Accepted strike did not produce its bell sound");
+                    var resonance=Object.FindObjectsOfType<ReportAcousticMeasure>().First(m=>m.experiment==ReportAcousticReading.Resonance);
+                    foreach(var t in Turn(resonance.frequency,resonance.frequency.valueRange.x,1.2f))yield return t;Require(level.Step==1,"Far-off drive passed resonance");
+                    foreach(var t in Turn(resonance.frequency,resonance.naturalFrequency,1.2f))yield return t;Step(2);
+                    var beats=Object.FindObjectsOfType<ReportAcousticMeasure>().First(m=>m.experiment==ReportAcousticReading.Beats);
+                    foreach(var t in Turn(beats.frequency,beats.naturalFrequency-1,1.8f))yield return t;Require(level.Step==2,"One-hertz beats passed tuning");
+                    foreach(var t in Turn(beats.fineFrequency,1,1.8f))yield return t;Require(beats.Reading<.3f,"Fine tuning did not align the actual signal");break;
                 }
                 case 3:case 13:
                 {
-                    var compass=One<ReportCompassMeasure>();foreach(var t in Turn(compass.needle,250,3.6f))yield return t;Require(compass.Reading<5,"Needle failed to return south");Step(1);
-                    if(index==3){foreach(var t in Turn(Object.FindObjectsOfType<ReportHandleMeasure>().First(m=>m.label=="观测环照准角").handle,45))yield return t;Step(2);foreach(var t in Mirror())yield return t;}
+                    var compass=One<ReportCompassMeasure>();
+                    float direction=compass.southBearing>280?-1:1;
+                    foreach(var t in Turn(compass.needle,compass.southBearing+direction*8,2))yield return t;Require(level.Step==0 && compass.Operations==0,"Tiny compass deflection passed");
+                    foreach(var t in Turn(compass.needle,compass.southBearing+direction*70,3.6f))yield return t;Require(compass.Reading<5,"Needle failed to return south");Step(1);
+                    if(index==3)
+                    {
+                        var sight=One<ReportSightMeasure>();var sky=One<ReportStarDial>();var skyBefore=sky.skyRoot.rotation;
+                        foreach(var t in Turn(sight.ring,0,1.2f))yield return t;Require(level.Step==1,"Off-target sight passed");
+                        Require(Quaternion.Angle(skyBefore,sky.skyRoot.rotation)>40,"Actual star dial drag failed to rotate the sky and Big Dipper");
+                        foreach(var t in Turn(sight.ring,45,1.2f))yield return t;Require(sight.Reading<=3,"Sight direction did not point at actual star");Step(2);foreach(var t in Mirror())yield return t;
+                    }
                     else{foreach(var t in Power(One<ReportElectromagnetMeasure>()))yield return t;Step(2);foreach(var t in Throw(One<ReportThrowTarget>()))yield return t;}break;
                 }
                 case 4:
                 {
-                    var p=One<ReportElectromagnetMeasure>();foreach(var t in Move(p.core,p.coreSeat.position,.8f))yield return t;Step(1);
+                    var p=One<ReportElectromagnetMeasure>();foreach(var t in Turn(p.current,2.5f,.8f))yield return t;Require(!p.ArmatureEngaged && level.Step==0,"No-core power accepted");
+                    foreach(var t in Turn(p.current,0,.1f))yield return t;
+                    foreach(var t in Move(p.core,p.coreSeat.position,.8f))yield return t;Step(1);
                     foreach(var t in Turn(p.current,4,.7f))yield return t;Require(level.Step==1 && !p.Energized,"Overcurrent accepted");
-                    foreach(var t in Turn(p.current,2.5f,.8f))yield return t;Step(2);
+                    foreach(var t in Turn(p.current,2.5f,1.4f))yield return t;Require(p.ArmatureEngaged,"Armature has not actually closed");Step(2);
+                    foreach(var t in Turn(p.current,0,.8f))yield return t;Require(p.latch.Value==0 && !p.ArmatureEngaged,"Loss of power did not relock latch");
+                    foreach(var t in Turn(p.current,2.5f,1.4f))yield return t;
                     foreach(var t in Turn(p.latch,1,.8f))yield return t;break;
                 }
                 case 5:
                 {
-                    var p=One<ReportHydraulicMeasure>();foreach(var t in Turn(p.inlet,0,.8f))yield return t;Step(1);
+                    var p=One<ReportHydraulicMeasure>();foreach(var t in Turn(p.inlet,1,.2f))yield return t;
+                    foreach(var t in Move(p.seal,p.sealSeat.position,.6f))yield return t;Require(!p.Sealed && level.Step==0,"Pressurized seal installation accepted");
+                    foreach(var t in Move(p.seal,p.sealSeat.position+p.transform.right*.4f,.2f))yield return t;
+                    foreach(var t in Turn(p.inlet,0,.8f))yield return t;Step(1);
                     foreach(var t in Move(p.seal,p.sealSeat.position,.8f))yield return t;Step(2);
-                    foreach(var t in Turn(p.inlet,1,.2f))yield return t;foreach(var t in Turn(p.plunger,.4f,.8f))yield return t;
+                    foreach(var t in Turn(p.plunger,.4f,.6f))yield return t;Require(p.Reading==0 && level.Step==2,"Closed discharge valve raised load");
+                    foreach(var t in Turn(p.plunger,0,.1f))yield return t;foreach(var t in Turn(p.inlet,.5f,.2f))yield return t;
+                    Require(Mathf.Abs(p.Pressure-p.inputForce/p.inputArea)<1,"Half-open valve reduced equilibrium pressure");
+                    foreach(var t in Turn(p.plunger,.4f,.8f))yield return t;
                     Require(Mathf.Abs(p.Reading-.1f)<.005f,"Hydraulic volume ratio wrong");break;
                 }
                 case 6:
                 {
-                    var p=One<ReportPendulumMeasure>();foreach(var t in Turn(p.angle,20,6.5f))yield return t;Require(p.Period>2,"No actual pendulum crossing period");Step(1);
-                    foreach(var t in Turn(p.length,1,.15f))yield return t;foreach(var t in Turn(p.angle,20,6.5f))yield return t;Step(2);
+                    var p=One<ReportPendulumMeasure>();foreach(var t in Turn(p.angle,5,4.5f))yield return t;Require(p.Period==0 && level.Step==0,"Tiny swing recorded a period");
+                    foreach(var t in Turn(p.angle,20,6.5f))yield return t;Require(p.Period>2,"No actual pendulum crossing period");Step(1);
+                    foreach(var t in Turn(p.length,1,.15f))yield return t;Require(p.Period==0,"Changed length retained old period");
+                    foreach(var t in Turn(p.angle,20,6.5f))yield return t;Step(2);
                     var lc=One<ReportLCMeasure>();float frequency=1/p.Period,capacitance=1/(4*Mathf.PI*Mathf.PI*lc.inductance*frequency*frequency);
+                    foreach(var t in Turn(lc.capacitance,lc.capacitance.valueRange.x,1))yield return t;Require(level.Step==2,"Mismatched LC passed");
                     foreach(var t in Turn(lc.capacitance,capacitance,1))yield return t;break;
                 }
                 case 7:
                 {
-                    var targets=Object.FindObjectsOfType<ReportThrowTarget>().OrderBy(t=>t.name).ToArray();
+                    var targets=Object.FindObjectsOfType<ReportThrowTarget>().OrderBy(t=>t.requiredStation.index).ToArray();
                     foreach(var t in Throw(targets[0]))yield return t;Step(1);foreach(var t in Throw(targets[1]))yield return t;Step(2);
                     var heat=One<ReportHeatMeasure>();foreach(var t in Move(heat.sample,heat.warmZone.position,2))yield return t;break;
                 }
@@ -224,8 +285,11 @@ public static class NaturalAllPlayCheck
                 }
                 case 11:
                 {
-                    foreach(var t in Turn(Object.FindObjectsOfType<ReportHandleMeasure>().First(m=>m.label=="方位误差").handle,0))yield return t;Step(1);
-                    foreach(var t in Turn(Object.FindObjectsOfType<ReportHandleMeasure>().First(m=>m.label=="观测环照准角").handle,45))yield return t;Step(2);
+                    var dial=One<ReportDialMeasure>();float alignment=Vector3.SignedAngle(dial.transform.forward,dial.referenceLine.forward,Vector3.up);
+                    if(alignment>90)alignment-=180;if(alignment<-90)alignment+=180;
+                    foreach(var t in Turn(dial.dial,alignment,1.2f))yield return t;Require(dial.Reading<=3,"Actual dial line not aligned");Step(1);
+                    var sight=One<ReportSightMeasure>();var ring=sight!=null?sight.ring:Object.FindObjectsOfType<ReportHandleMeasure>().First(m=>m.label=="观测环照准角").handle;
+                    foreach(var t in Turn(ring,45,1.2f))yield return t;Step(2);
                     foreach(var t in Turn(One<ReportSunlightMeasure>().sunModel,225))yield return t;break;
                 }
                 case 12:
@@ -233,20 +297,43 @@ public static class NaturalAllPlayCheck
                     var stack=One<ReportStackMeasure>();for(int i=0;i<stack.pieces.Length;i++)foreach(var t in Move(stack.pieces[i],stack.positions[i].position,.8f))yield return t;yield return 2.5f;
                     Require(stack.Reading==3,"Physical snow stack unstable "+stack.Reading+" positions="+string.Join(";",stack.pieces.Select(g=>g.transform.position.ToString())));Step(1);
                     var roll=One<ReportRollMeasure>();foreach(var t in Move(roll.ball,roll.rampStart.position,1.5f))yield return t;Require(roll.Reading==1,"Real ramp roll did not arrive");Step(2);
-                    var heat=One<ReportHeatMeasure>();foreach(var t in Move(heat.sample,heat.warmZone.position,.3f))yield return t;foreach(var t in Move(heat.insulation,heat.coverSeat.position,5.8f))yield return t;break;
+                    var heat=One<ReportHeatMeasure>();foreach(var t in Move(heat.sample,heat.warmZone.position,.3f))yield return t;
+                    foreach(var t in Move(heat.insulation,heat.coverSeat.position,1.2f))yield return t;Require(heat.InsulatedSeconds>0 && level.Step==2,"Cover observation did not begin");
+                    foreach(var t in Move(heat.insulation,heat.coverSeat.position+heat.transform.right*.5f,.3f))yield return t;Require(heat.InsulatedSeconds==0,"Removed cover retained observation");
+                    foreach(var t in Move(heat.insulation,heat.coverSeat.position,5.8f))yield return t;break;
                 }
                 case 14:
                 {
                     foreach(var t in Turn(One<ReportWheelLiftMeasure>().wheel,250))yield return t;Step(1);
-                    var stack=One<ReportStackMeasure>();for(int i=0;i<stack.pieces.Length;i++)foreach(var t in Move(stack.pieces[i],stack.positions[i].position,.7f))yield return t;yield return 2.5f;
+                    var stack=One<ReportStackMeasure>();yield return 5;
+                    BridgeSupplies(stack);Require(stack.Reading==0,"Unassembled bridge counted as supported");
+                    for(int i=0;i<stack.pieces.Length;i++)foreach(var t in Move(stack.pieces[i],stack.positions[i].position,.7f))yield return t;yield return 2.5f;
                     Require(stack.Reading==3,"Bridge load support unstable "+stack.Reading+" positions="+string.Join(";",stack.pieces.Select(p=>p.transform.position.ToString())));Step(2);foreach(var t in Mirror())yield return t;break;
                 }
             }
             yield return .8f;Require(level.Completed,"Natural experiments did not complete");yield return 2.7f;Require(level.ExitReady,"Physical exit did not open");
             results.Add("PASS scene="+index+" "+level.title+" all 3 actual experiment conditions; negative status check; exit opens");Debug.Log("NATURAL_SCENE_PLAY_OK index="+index);
             level.ResetLevel();yield return .6f;Require(level.Step==0 && !level.Completed && !level.ExitReady,"Reset did not relock goal/exit");
+            if(index==3)
+            {
+                Require(Quaternion.Angle(One<ReportStarDial>().skyRoot.rotation,Quaternion.identity)<.01f,"Reset did not restore the demonstration sky");
+                var optics=One<ReportMirrorMeasure>();Require(optics.secondMirror.Operations==0 && optics.Reading==0,"Reset retained second-mirror operation or an unlocked light path");
+            }
+            if(index==14){yield return 2;BridgeSupplies(One<ReportStackMeasure>());results.Add("PASS bridge supplies remain on the bench before assembly and after reset; gravity/contact remain active.");}
             foreach(var m in Object.FindObjectsOfType<ReportThrowTarget>())Require(m.Hits==0,"Throw hits retained on reset");
+            foreach(var m in Object.FindObjectsOfType<ReportCompassMeasure>())Require(m.Operations==0,"Compass displacement retained on reset");
+            foreach(var m in Object.FindObjectsOfType<ReportPendulumMeasure>())Require(m.Period==0,"Pendulum period retained on reset");
+            foreach(var m in Object.FindObjectsOfType<ReportHeatMeasure>())Require(m.InsulatedSeconds==0,"Heat observation retained on reset");
             Pose(origin.transform.position+Vector3.up*1.5f);Grip(0);
+        }
+    }
+    static void BridgeSupplies(ReportStackMeasure stack)
+    {
+        foreach(var piece in stack.pieces)
+        {
+            var body=piece.GetComponent<Rigidbody>();var bounds=piece.GetComponent<Collider>().bounds;
+            Require(!body.isKinematic && body.useGravity && !piece.isSelected && body.velocity.magnitude<.12f && Mathf.Abs(bounds.min.y-stack.baseSupport.bounds.max.y)<.03f,
+                "Bridge supply fell or failed to settle: "+piece.name+" position="+piece.transform.position+" velocity="+body.velocity);
         }
     }
 }

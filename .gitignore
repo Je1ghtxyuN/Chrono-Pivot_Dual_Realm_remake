@@ -6,9 +6,22 @@
 *.csproj
 *.sln
 
-# Keep all imported assets, documentation and Windows demo dependencies.
+# Keep imported assets, project settings and documentation.
 !/Assets/**
 !/Packages/**
 !/ProjectSettings/**
 !/Documentation/**
-!/Builds/**
+# Builds contain local history; retain the current tutor plugin package.
+/Builds/*
+!/Builds/PhysicsTutor/
+!/Builds/PhysicsTutor/**
+
+# Local IDE/Python caches and downloaded base models.
+/.vs/
+/obj/
+/AI物理导师/ai-physics-tutor/.venv/
+/AI物理导师/ai-physics-tutor/models/
+/AI物理导师/ai-physics-tutor/prototype_delivery/results/
+**/__pycache__/
+*.pyc
+**/.pytest_cache/

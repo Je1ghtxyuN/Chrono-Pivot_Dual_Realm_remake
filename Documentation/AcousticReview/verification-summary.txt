@@ -1,0 +1,9 @@
+Verified 2026-10-07 in ChronoPivot_ReportVR.
+PASS physical/math/audio checks: one bell sound path; sound bank present; normalized damped resonance; coarse+fine coupling; bounded PCM; real 1Hz audio-envelope trough/crest; reset.
+PASS actual virtual XR scene2 / 3 tasks: wrong object, unheld throw and idle holding rejected; held swept mallet strikes and plays bell sound; off-peak resonance rejected; 1Hz beats rejected; fine tuning, stable release, exit opening and reset pass.
+PASS routes/VR configuration: 15 scenes, 0 failures. Other report scenes have unchanged SHA256 hashes.
+PASS Windows build: 0 errors. WindowsDesktop copied from Windows, all non-boot files verified identical; desktop OpenXR native pre-init omitted.
+PASS desktop startup smoke: Direct3D and assemblies loaded, process kept running, no exception/shader error/crash. Smoke process closed after observation.
+Visual review: bell shape and mallet; readable boards; visible slow resonance marker and curve; beat column plus fine control.
+The completed Play Mode test editor stalled during native shutdown and was terminated after PASS report and settings restoration; batch build exited normally with code 0.
+Not tested: physical headset stereo display, sound perception, hand/controller feel, streaming or frame rate.

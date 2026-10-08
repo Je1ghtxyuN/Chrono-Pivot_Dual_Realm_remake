@@ -1,0 +1,11 @@
+Processed meshes: 1352
+UV regenerated this run: False
+Faces removed this run: 0
+Baked palette variants: 1126
+Texture files: 3378
+AO: 12 cosine-weighted local rays, 0.65 material strength.
+UV0 and UV1: padded unique chart atlas.
+Albedo: neutral grain multiplied by material palette.
+Gutters: full nearest-island extension.
+Total invalid or duplicate faces removed versus the original project: 1285.
+See geometry-verification.json for the per-mesh comparison.

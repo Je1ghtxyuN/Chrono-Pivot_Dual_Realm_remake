@@ -1,0 +1,22 @@
+Mono path[0] = 'D:/_work/_SRTP/ChronoPivot_ReportVR/Builds/WindowsDesktop/ChronoPivot_ReportVR_Data/Managed'
+Mono config path = 'D:/_work/_SRTP/ChronoPivot_ReportVR/Builds/WindowsDesktop/MonoBleedingEdge/etc'
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Initialize engine version: 2022.3.53f1c1 (f16e16b78e06)
+[Subsystems] Discovering subsystems at path D:/_work/_SRTP/ChronoPivot_ReportVR/Builds/WindowsDesktop/ChronoPivot_ReportVR_Data/UnitySubsystems
+[Subsystems] No descriptors matched for  examples in UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json.
+[Subsystems] 1 'inputs' descriptors matched in UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json
+[Subsystems] 1 'displays' descriptors matched in UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json
+[Subsystems] No descriptors matched for  meshings in UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json.
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7956 MB
+    Driver:   32.0.15.9174
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  5.253 seconds
+- Finished resetting the current domain, in  0.002 seconds
+XRGeneral Settings awakening...
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+UnloadTime: 3.973800 ms

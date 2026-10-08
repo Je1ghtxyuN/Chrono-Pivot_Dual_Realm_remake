@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -38,10 +37,9 @@ public sealed class ReportGrabInteractor : XRBaseInteractor
     {
         get
         {
-            if(player==null || player.IsDesktop!=desktopOnly)return false;
+            if(player==null || player.UIBlocked || player.IsDesktop!=desktopOnly)return false;
             if(desktopOnly)return player.CanInteract;
-            var usage=handedness==InteractorHandedness.Left?CommonUsages.LeftHand:CommonUsages.RightHand;
-            return InputSystem.devices.OfType<UnityEngine.InputSystem.XR.XRController>().Any(d=>d.usages.Contains(usage) && d.trackingState.ReadValue()!=0);
+            return player.HeadTracked && player.HandTracked(handedness==InteractorHandedness.Left);
         }
     }
     public override bool isHoverActive=>base.isHoverActive && Active;
@@ -55,9 +53,19 @@ public sealed class ReportGrabInteractor : XRBaseInteractor
         if(desktopOnly && attachTransform!=null)attachTransform.localPosition=Vector3.forward*desktopHoldDistance;
     }
     public override bool CanSelect(IXRSelectInteractable target)=>base.CanSelect(target) && (!hasSelection || IsSelecting(target));
+    protected override void OnSelectEntering(SelectEnterEventArgs args)
+    {
+        if(desktopOnly && args.interactableObject is ReportGrabbable item && !(item is ReportMechanismHandle))
+        {
+            desktopHoldDistance=Mathf.Clamp(Vector3.Distance(transform.position,item.transform.position),.45f,2.5f);
+            attachTransform.localPosition=Vector3.forward*desktopHoldDistance;
+        }
+        base.OnSelectEntering(args);
+    }
     void Update()
     {
         if(!desktopOnly || !Active || !hasSelection || firstInteractableSelected is ReportMechanismHandle){chargingThrow=false;ThrowCharge01=0;return;}
+        if(Mouse.current!=null)desktopHoldDistance=Mathf.Clamp(desktopHoldDistance-Mouse.current.scroll.ReadValue().y*.0025f,.45f,2.5f);
         bool charge=Mouse.current!=null && Mouse.current.rightButton.isPressed || Keyboard.current!=null && Keyboard.current.fKey.isPressed;
         if(charge){chargingThrow=true;ThrowCharge01=Mathf.Clamp01(ThrowCharge01+Time.deltaTime/Mathf.Max(.1f,throwChargeDuration));}
         else if(chargingThrow)
